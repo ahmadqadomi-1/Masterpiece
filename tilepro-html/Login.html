@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Al-Qadomy | Tiling & Flooring Services | Home Page</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/Logo-removebg-preview (1).png" type="image/x-icon">
+    <link rel="icon" href="img/Logo-removebg-preview (1).png" type="image/x-icon">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    <style>
+        .gradient-custom-2 {
+            background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+        }
+
+        @media (min-width: 768px) {
+            .gradient-form {
+                height: 100vh !important;
+            }
+        }
+
+        @media (min-width: 769px) {
+            .gradient-custom-2 {
+                border-top-right-radius: .3rem;
+                border-bottom-right-radius: .3rem;
+            }
+        }
+
+        section.h-100.gradient-form {
+            padding-top: 4em;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="main-header header-style-one">
+        <!-- Header Content -->
+    </header>
+
+    <section class="h-100 gradient-form" style="background-color: #eee;">
+        <div class="container py-5 h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-xl-10">
+                    <div class="card rounded-3 text-black">
+                        <div class="row g-0">
+                            <div class="col-lg-6">
+                                <div class="card-body p-md-5 mx-md-4">
+
+                                    <div class="text-center">
+                                        <img src="img/Logo-removebg-preview (1).png" style="width: 185px;" alt="logo">
+                                        <h4 class="mt-1 mb-5 pb-1">القدومي للسيراميك والبورسلان</h4>
+                                    </div>
+
+                                    <form id="form">
+                                        <p>يرجى تسجيل الدخول إلى حسابك</p>
+
+                                        <div data-mdb-input-init class="form-outline mb-4">
+                                            <input name="Username" type="text" id="username" class="form-control" placeholder="أسم المستخدم" />
+                                            <label class="form-label" for="username">أسم المستخدم</label>
+                                        </div>
+
+                                        <div data-mdb-input-init class="form-outline mb-4">
+                                            <input name="Password" type="password" id="password" class="form-control" placeholder="كلمة المرور" />
+                                            <label class="form-label" for="password">كلمة المرور</label>
+                                        </div>
+
+                                        <div class="text-center pt-1 mb-5 pb-1">
+                                            <button data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="submit">تسجيل الدخول</button>
+                                            <a class="text-muted" href="#!">نسيت كلمة المرور؟</a>
+                                        </div>
+
+                                        <div class="d-flex align-items-center justify-content-center pb-4">
+                                            <p class="mb-0 me-2">ليس لديك حساب؟</p>
+                                            <button type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-outline-danger">إنشاء حساب جديد</button>
+                                        </div>
+
+                                    </form>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
+                                <div class="text-white px-3 py-4 p-md-5 mx-md-4">
+                                    <h4 class="mb-4">أهلاً بكم في معرض القدومي للسيراميك والبورسلان، الوجهة المثلى لتصميم منزلكم بأحدث وأفخم الموديلات</h4>
+                                    <p class="small mb-0">منذ انطلاقنا في عام 1967، نحن ملتزمون بتقديم أعلى معايير الجودة والابتكار في عالم السيراميك والبورسلان.
+                                        شعارنا هو البحث المستمر عن الرقي والتميز، حيث نحرص على توفير كل ما هو جديد ومتميز في هذا المجال
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const url = "https://localhost:44327/api/User/Login";
+        let form = document.getElementById("form");
+
+        form.addEventListener("submit", async function (event) {
+            event.preventDefault();
+
+            let data = {
+                username: document.getElementById("username").value,
+                password: document.getElementById("password").value
+            };
+
+            let response = await fetch(url, {
+                method: "POST",
+                body: JSON.stringify(data),
+                headers: {
+                    "Content-Type": "application/json",
+                },
+            });
+
+            var result = await response.json();
+            localStorage.setItem('jwtToken', result.token);
+
+            if (response.ok) {
+                alert("تم تسجيل الدخول بنجاح");
+                window.location.href = "index.html";
+            } else {
+                alert("اسم المستخدم أو كلمة المرور غير صحيحة");
+            }
+        });
+    </script>
+</body>
+
+</html>

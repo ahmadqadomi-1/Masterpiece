@@ -1,0 +1,118 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Orange\\Desktop\\My Web Sites\\AlQadomy\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A6C11B7D-9FF0-4350-AB83-43B0FBB3898E}|AlQadomy\\AlQadomy.csproj|c:\\users\\orange\\desktop\\my web sites\\alqadomy\\alqadomy\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6C11B7D-9FF0-4350-AB83-43B0FBB3898E}|AlQadomy\\AlQadomy.csproj|solutionrelative:alqadomy\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6C11B7D-9FF0-4350-AB83-43B0FBB3898E}|AlQadomy\\AlQadomy.csproj|c:\\users\\orange\\desktop\\my web sites\\alqadomy\\alqadomy\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6C11B7D-9FF0-4350-AB83-43B0FBB3898E}|AlQadomy\\AlQadomy.csproj|solutionrelative:alqadomy\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6C11B7D-9FF0-4350-AB83-43B0FBB3898E}|AlQadomy\\AlQadomy.csproj|c:\\users\\orange\\desktop\\my web sites\\alqadomy\\alqadomy\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6C11B7D-9FF0-4350-AB83-43B0FBB3898E}|AlQadomy\\AlQadomy.csproj|solutionrelative:alqadomy\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6C11B7D-9FF0-4350-AB83-43B0FBB3898E}|AlQadomy\\AlQadomy.csproj|c:\\users\\orange\\desktop\\my web sites\\alqadomy\\alqadomy\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A6C11B7D-9FF0-4350-AB83-43B0FBB3898E}|AlQadomy\\AlQadomy.csproj|solutionrelative:alqadomy\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6C11B7D-9FF0-4350-AB83-43B0FBB3898E}|AlQadomy\\AlQadomy.csproj|c:\\users\\orange\\desktop\\my web sites\\alqadomy\\alqadomy\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6C11B7D-9FF0-4350-AB83-43B0FBB3898E}|AlQadomy\\AlQadomy.csproj|solutionrelative:alqadomy\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6C11B7D-9FF0-4350-AB83-43B0FBB3898E}|AlQadomy\\AlQadomy.csproj|c:\\users\\orange\\desktop\\my web sites\\alqadomy\\alqadomy\\models\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6C11B7D-9FF0-4350-AB83-43B0FBB3898E}|AlQadomy\\AlQadomy.csproj|solutionrelative:alqadomy\\models\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\AlQadomy\\AlQadomy\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "AlQadomy\\Controllers\\CategoryController.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\AlQadomy\\AlQadomy\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "AlQadomy\\Controllers\\CategoryController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T04:09:36.451Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\AlQadomy\\AlQadomy\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "AlQadomy\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\AlQadomy\\AlQadomy\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "AlQadomy\\Controllers\\ProductController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACcAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T04:10:13.967Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\AlQadomy\\AlQadomy\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "AlQadomy\\Models\\Product.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\AlQadomy\\AlQadomy\\Models\\Product.cs",
+              "RelativeToolTip": "AlQadomy\\Models\\Product.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T04:08:42.086Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\AlQadomy\\AlQadomy\\appsettings.json",
+              "RelativeDocumentMoniker": "AlQadomy\\appsettings.json",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\AlQadomy\\AlQadomy\\appsettings.json",
+              "RelativeToolTip": "AlQadomy\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-17T04:08:18.098Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\AlQadomy\\AlQadomy\\Program.cs",
+              "RelativeDocumentMoniker": "AlQadomy\\Program.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\AlQadomy\\AlQadomy\\Program.cs",
+              "RelativeToolTip": "AlQadomy\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T04:07:34.696Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MyDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\AlQadomy\\AlQadomy\\Models\\MyDbContext.cs",
+              "RelativeDocumentMoniker": "AlQadomy\\Models\\MyDbContext.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\AlQadomy\\AlQadomy\\Models\\MyDbContext.cs",
+              "RelativeToolTip": "AlQadomy\\Models\\MyDbContext.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAlwBYAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T04:06:45.094Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

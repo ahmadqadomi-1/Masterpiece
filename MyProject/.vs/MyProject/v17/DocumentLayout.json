@@ -1,0 +1,183 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Orange\\Desktop\\My Web Sites\\MyProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E324C85A-D884-4788-BE77-517B781E72EE}|MyProject\\MyProject.csproj|c:\\users\\orange\\desktop\\my web sites\\myproject\\myproject\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E324C85A-D884-4788-BE77-517B781E72EE}|MyProject\\MyProject.csproj|solutionrelative:myproject\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E324C85A-D884-4788-BE77-517B781E72EE}|MyProject\\MyProject.csproj|c:\\users\\orange\\desktop\\my web sites\\myproject\\myproject\\dtos\\changepassworddtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E324C85A-D884-4788-BE77-517B781E72EE}|MyProject\\MyProject.csproj|solutionrelative:myproject\\dtos\\changepassworddtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E324C85A-D884-4788-BE77-517B781E72EE}|MyProject\\MyProject.csproj|c:\\users\\orange\\desktop\\my web sites\\myproject\\myproject\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E324C85A-D884-4788-BE77-517B781E72EE}|MyProject\\MyProject.csproj|solutionrelative:myproject\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E324C85A-D884-4788-BE77-517B781E72EE}|MyProject\\MyProject.csproj|c:\\users\\orange\\desktop\\my web sites\\myproject\\myproject\\dtos\\passwordhash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E324C85A-D884-4788-BE77-517B781E72EE}|MyProject\\MyProject.csproj|solutionrelative:myproject\\dtos\\passwordhash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E324C85A-D884-4788-BE77-517B781E72EE}|MyProject\\MyProject.csproj|c:\\users\\orange\\desktop\\my web sites\\myproject\\myproject\\dtos\\dtoslogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E324C85A-D884-4788-BE77-517B781E72EE}|MyProject\\MyProject.csproj|solutionrelative:myproject\\dtos\\dtoslogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E324C85A-D884-4788-BE77-517B781E72EE}|MyProject\\MyProject.csproj|c:\\users\\orange\\desktop\\my web sites\\myproject\\myproject\\dtos\\dtosuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E324C85A-D884-4788-BE77-517B781E72EE}|MyProject\\MyProject.csproj|solutionrelative:myproject\\dtos\\dtosuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E324C85A-D884-4788-BE77-517B781E72EE}|MyProject\\MyProject.csproj|c:\\users\\orange\\desktop\\my web sites\\myproject\\myproject\\dtos\\tokengenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E324C85A-D884-4788-BE77-517B781E72EE}|MyProject\\MyProject.csproj|solutionrelative:myproject\\dtos\\tokengenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E324C85A-D884-4788-BE77-517B781E72EE}|MyProject\\MyProject.csproj|c:\\users\\orange\\desktop\\my web sites\\myproject\\myproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E324C85A-D884-4788-BE77-517B781E72EE}|MyProject\\MyProject.csproj|solutionrelative:myproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E324C85A-D884-4788-BE77-517B781E72EE}|MyProject\\MyProject.csproj|c:\\users\\orange\\desktop\\my web sites\\myproject\\myproject\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E324C85A-D884-4788-BE77-517B781E72EE}|MyProject\\MyProject.csproj|solutionrelative:myproject\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E324C85A-D884-4788-BE77-517B781E72EE}|MyProject\\MyProject.csproj|c:\\users\\orange\\desktop\\my web sites\\myproject\\myproject\\models\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E324C85A-D884-4788-BE77-517B781E72EE}|MyProject\\MyProject.csproj|solutionrelative:myproject\\models\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ChangePasswordDTOs.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\MyProject\\MyProject\\DTOs\\ChangePasswordDTOs.cs",
+              "RelativeDocumentMoniker": "MyProject\\DTOs\\ChangePasswordDTOs.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\MyProject\\MyProject\\DTOs\\ChangePasswordDTOs.cs",
+              "RelativeToolTip": "MyProject\\DTOs\\ChangePasswordDTOs.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T03:05:12.022Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\MyProject\\MyProject\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "MyProject\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\MyProject\\MyProject\\Controllers\\UserController.cs",
+              "RelativeToolTip": "MyProject\\Controllers\\UserController.cs",
+              "ViewState": "AQIAALUAAAAAAAAAAAAIwK0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T12:29:38.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "passwordhash.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\MyProject\\MyProject\\DTOs\\passwordhash.cs",
+              "RelativeDocumentMoniker": "MyProject\\DTOs\\passwordhash.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\MyProject\\MyProject\\DTOs\\passwordhash.cs",
+              "RelativeToolTip": "MyProject\\DTOs\\passwordhash.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T12:26:59.579Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DTOsLogin.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\MyProject\\MyProject\\DTOs\\DTOsLogin.cs",
+              "RelativeDocumentMoniker": "MyProject\\DTOs\\DTOsLogin.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\MyProject\\MyProject\\DTOs\\DTOsLogin.cs",
+              "RelativeToolTip": "MyProject\\DTOs\\DTOsLogin.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T11:49:53.239Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\MyProject\\MyProject\\Models\\User.cs",
+              "RelativeDocumentMoniker": "MyProject\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\MyProject\\MyProject\\Models\\User.cs",
+              "RelativeToolTip": "MyProject\\Models\\User.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAA8wAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T11:47:45.82Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DTOsUser.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\MyProject\\MyProject\\DTOs\\DTOsUser.cs",
+              "RelativeDocumentMoniker": "MyProject\\DTOs\\DTOsUser.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\MyProject\\MyProject\\DTOs\\DTOsUser.cs",
+              "RelativeToolTip": "MyProject\\DTOs\\DTOsUser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T11:47:38.19Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TokenGenerator.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\MyProject\\MyProject\\DTOs\\TokenGenerator.cs",
+              "RelativeDocumentMoniker": "MyProject\\DTOs\\TokenGenerator.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\MyProject\\MyProject\\DTOs\\TokenGenerator.cs",
+              "RelativeToolTip": "MyProject\\DTOs\\TokenGenerator.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T11:22:44.831Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\MyProject\\MyProject\\appsettings.json",
+              "RelativeDocumentMoniker": "MyProject\\appsettings.json",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\MyProject\\MyProject\\appsettings.json",
+              "RelativeToolTip": "MyProject\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-22T11:14:26.492Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\MyProject\\MyProject\\Program.cs",
+              "RelativeDocumentMoniker": "MyProject\\Program.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\MyProject\\MyProject\\Program.cs",
+              "RelativeToolTip": "MyProject\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADAAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T11:13:41.585Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MyDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\MyProject\\MyProject\\Models\\MyDbContext.cs",
+              "RelativeDocumentMoniker": "MyProject\\Models\\MyDbContext.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\MyProject\\MyProject\\Models\\MyDbContext.cs",
+              "RelativeToolTip": "MyProject\\Models\\MyDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T11:13:36.728Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

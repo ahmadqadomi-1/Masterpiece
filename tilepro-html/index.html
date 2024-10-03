@@ -16,6 +16,13 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+
 
 <style>
     .exp-box .title {
@@ -25,12 +32,43 @@
     transition: all 0.5s ease-in-out;
 }
 
+.choose-us-section .content-column .inner-column .sec-title .text {
+    color: var(--darkreader-text--theme-color-light, #e8e6e3);
+    position: relative;
+    left: 7px;
+}
 
 .news-block .inner-box .image img {
     width: 374px;
     height: 323.45px;
+    display: block;
 }
 
+.swiper-container {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.swiper-wrapper {
+  display: flex;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto; /* دع السلايد يحصل على العرض المناسب */
+}
+
+.project-block {
+  max-width: 100%;
+}
+
+.project-block .inner-box .image-box .image img {
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    height: 342px;
+}
 
 </style>
 </head>
@@ -96,7 +134,7 @@
                         </a>
                     </div>
                     <div class="btn">
-                        <a href="Regis.html" class="theme-btn" style="position: relative; left: 5em;">تسجيل</a>
+                        <a href="Login.html" class="theme-btn" style="position: relative; left: 5em;">تسجيل</a>
                     </div>
                     <div class="mobile-nav-toggler">
                         <i class="fa fa-bars"></i>
@@ -379,7 +417,7 @@
 <li><i class="fa-solid fa-check"></i>معايير مهنية لبناء المشاريع</li>
 </ul>
 <div class="btn-box">
-<a href="Regis.html" class="theme-btn-v2">بدء الاستخدام    <i class="btn-icon fa-sharp far fa-arrow-right ml-10 font-size-18"></i>
+<a href="Login.html" class="theme-btn-v2">بدء الاستخدام    <i class="btn-icon fa-sharp far fa-arrow-right ml-10 font-size-18"></i>
 </a>
 <a href="tel:+962-79-184-0140" class="contact-btn">
 <i class="flaticon-phone-call"></i>
@@ -395,123 +433,24 @@
 
 <!--  -->
 <section class="project-section">
-<div class="auto-container">
-<div class="sec-title">
-<h2>اكتشف المنتجات المتاحة لدينا</h2>
-<div class="text">القدومي يقدم لك جميع الحلول اللازمة لبناء منزلك بطريقة عصرية ومتوافقة مع احتياجاتك</div>
-</div>
-<div class="slider-btn">
-<button class="prev-btn"><span><i class="flaticon-arrow-pointing-to-right btn-icon"></i></span></button>
-<button class="next-btn"><span><i class="flaticon-arrow-pointing-to-right btn-icon"></i></span></button>
-</div>
-</div>
-<div class="row project-slider">
+    <div class="auto-container">
+    <div class="sec-title">
+    <h2>اكتشف المنتجات المتاحة لدينا</h2>
+    <div class="text">القدومي يقدم لك جميع الحلول اللازمة لبناء منزلك بطريقة عصرية ومتوافقة مع احتياجاتك</div>
+    </div>
+    <div class="slider-btn">
+    <button class="prev-btn"><span><i class="flaticon-arrow-pointing-to-right btn-icon"></i></span></button>
+    <button class="next-btn"><span><i class="flaticon-arrow-pointing-to-right btn-icon"></i></span></button>
+    </div>
+    </div>
+    <div class="row project-slider" id="Batool">
+    
 
-<div class="project-block col-lg-3 col-md-6">
-<div class="inner-box">
-<div class="image-box">
-<figure class="image overlay-anim"><a href="shop-products.html"><img src="img/product/Stone ceramics/3.jpg" width="575px" height="575px" alt></a></figure>
-<figure class="image-2"><a href="shop-products.html"><img src="images/resource/projec1-2.png" alt></a></figure>
-</div>
-<div class="content-box">
-<span>سيراميك حجاري</span>
-<h6 class="title"><a href="shop-products.html">المزيد</a></h6>
-</div>
-</div>
-</div>
 
-<div class="project-block col-lg-3 col-md-6">
-<div class="inner-box">
-<div class="image-box">
-<figure class="image overlay-anim"><a href="shop-products.html"><img src="img/product/Wall Tiles/1.jpg" width="575px" height="575px" alt></a></figure>
-<figure class="image-2"><a href="shop-products.html"><img src="images/resource/projec1-2.png" alt></a></figure>
-</div>
-<div class="content-box">
-<span>جدران</span>
-<h6 class="title"><a href="shop-products.html">المزيد</a></h6>
-</div>
-</div>
-</div>
 
-<div class="project-block col-lg-3 col-md-6">
-<div class="inner-box">
-<div class="image-box">
-<figure class="image overlay-anim"><a href="shop-products.html"><img src="img/product/Floor tiles/3.jpg" width="575px" height="575px" alt></a></figure>
-<figure class="image-2"><a href="shop-products.html"><img src="images/resource/projec1-2.png" alt></a></figure>
-</div>
-<div class="content-box">
-<span>أرضيات</span>
-<h6 class="title"><a href="shop-products.html">المزيد</a></h6>
-</div>
-</div>
-</div>
-
-<div class="project-block col-lg-3 col-md-6">
-<div class="inner-box">
-<div class="image-box">
-<figure class="image overlay-anim"><a href="shop-products.html"><img src="img/product/Accessories/5x.jpg" width="575px" height="575px" alt></a></figure>
-<figure class="image-2"><a href="shop-products.html"><img src="images/resource/projec1-2.png" alt></a></figure>
-</div>
-<div class="content-box">
-<span>أكسسوارات</span>
-<h6 class="title"><a href="shop-products.html">المزيد</a></h6>
-</div>
-</div>
-</div>
-
-<div class="project-block col-lg-3 col-md-6">
-<div class="inner-box">
-<div class="image-box">
-<figure class="image overlay-anim"><a href="shop-products.html"><img src="img/product/Shawer/4.jpg" width="575px" height="575px" alt></a></figure>
-<figure class="image-2"><a href="shop-products.html"><img src="images/resource/projec1-2.png" alt></a></figure>
-</div>
-<div class="content-box">
-<span>شور بوكس</span>
-<h6 class="title"><a href="shop-products.html">المزيد</a></h6>
-</div>
-</div>
-</div>
-
-<div class="project-block col-lg-3 col-md-6">
-<div class="inner-box">
-<div class="image-box">
-<figure class="image overlay-anim"><a href="shop-products.html"><img src="img/product/Built-in Ceramic Washbasin/One.jpg" width="575px" height="575px" alt></a></figure>
-<figure class="image-2"><a href="shop-products.html"><img src="images/resource/projec1-2.png" alt></a></figure>
-</div>
-<div class="content-box">
-<span>مغاسل البورسلان</span>
-<h6 class="title"><a href="shop-products.html">المزيد</a></h6>
-</div>
-</div>
-</div>
-
-<div class="project-block col-lg-3 col-md-6">
-<div class="inner-box">
-<div class="image-box">
-<figure class="image overlay-anim"><a href="shop-products.html"><img src="img/product/Masafi/3.jpg" width="575px" height="575px" alt></a></figure>
-<figure class="image-2"><a href="shop-products.html"><img src="images/resource/projec1-2.png" alt></a></figure>
-</div>
-<div class="content-box">
-<span>تصريف مخفي</span>
-<h6 class="title"><a href="shop-products.html">المزيد</a></h6>
-</div>
-</div>
-</div>
-
-<div class="project-block col-lg-3 col-md-6">
-<div class="inner-box">
-<div class="image-box">
-<figure class="image overlay-anim"><a href="shop-products.html"><img src="img/product/Mirrors/12.jpg" width="575px" height="575px" alt></a></figure>
-<figure class="image-2"><a href="shop-products.html"><img src="images/resource/projec1-2.png" alt></a></figure>
-</div>
-<div class="content-box">
-<span>مرايا</span>
-<h6 class="title"><a href="shop-products.html">المزيد</a></h6>
-</div>
-</div>
-</div>
-</div>
-</section>
+    </div>
+    </section>
+  
 
 
 <section class="testimonial-section">
@@ -519,154 +458,13 @@
 <div class="sec-title text-center">
 <h2>ماذا يقول <br/> عملاؤنا؟</h2>
 </div>
-<div class="row testi-slider">
-
-<div class="testimonial-block col-md-6">
-<div class="inner-box">
-<div class="icon-box">
-<i class="flaticon-quote-1"></i>
-</div>
-<div class="content-box">
-<div class="text">خدمة استثنائية لا مثيل لها. أسعار وجودة لا مثيل لها! كانت الاحتراف والاهتمام بالتفاصيل رائعة حقا. القيمة المعروضة رائعة ، والبلاط ليس أقل من رائع. تم التعامل مع كل جانب بامتياز. موصى به بشدة لأي شخص يبحث عن منتجات وخدمات فائقة</div>
-<div class="auther-info">
-<img src="img/team/Mohammed Frehat.png" width="70px" height="70px" alt>
-<div class="info-box">
-<h6 class="title"> محمد فريحات</h6>
-<span>المهندس</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<div class="testimonial-block col-md-6">
-<div class="inner-box">
-<div class="icon-box">
-<i class="flaticon-quote-1"></i>
-</div>
-<div class="content-box">
-<div class="text">من البداية إلى النهاية ، كانت الجودة والخدمة استثنائية. قدم الفريق دعما حاسما وحافظ على كل الوعود التي قطعها. بلاطها ذو جودة ممتازة ، والأسعار لا مثيل لها. أنا راض تماما عن التجربة الشاملة. أوصي بها بشدة لأي شخص يبحث عن منتجات وخدمات من الدرجة الأولى</div>
-<div class="auther-info">
-<img src="img/team/Amer.png" width="70px" height="70px" alt>
-<div class="info-box">
-<h6 class="title"> عامر أبو اليجاء</h6>
-<span>الأستاذ</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<div class="testimonial-block col-md-6">
-<div class="inner-box">
-<div class="icon-box">
-<i class="flaticon-quote-1"></i>
-</div>
-<div class="content-box">
-<div class="text">جودة وخدمة استثنائية من البداية إلى النهاية. قدم الفريق مساعدة لا تقدر بثمن وفى بكل وعد. بلاطها ذو جودة عالية ، والأسعار لا تقبل المنافسة. أنا راض تماما عن التجربة بأكملها. موصى به للغاية لأي شخص يبحث عن منتجات وخدمات من الدرجة الأولى</div>
-<div class="auther-info">
-<img src="img/team/Ayman Al-Jaradat.png" width="70px" height="70px" alt>
-<div class="info-box">
-<h6 class="title">أيمن جرادات</h6>
-<span>المهندس</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<div class="testimonial-block col-md-6">
-<div class="inner-box">
-<div class="icon-box">
-<i class="flaticon-quote-1"></i>
-</div>
-<div class="content-box">
-<div class="text">تجربة رائعة من البداية إلى النهاية بجودة وخدمة استثنائية. كان الفريق مفيدا بشكل لا يصدق وحقق كل التزام. بلاطهم من الدرجة الأولى ، والتسعير لا يهزم. أنا سعيد للغاية بالعملية برمتها. نوصي بشدة لأي شخص يبحث عن منتجات وخدمات متفوقة</div>
-<div class="auther-info">
-<img src="img/team/Batool Al Dalki.png" width="70px" height="70px" alt>
-<div class="info-box">
-<h6 class="title">بتول الدلكي</h6>
-<span>المهندسة</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<div class="testimonial-block col-md-6">
-    <div class="inner-box">
-    <div class="icon-box">
-    <i class="flaticon-quote-1"></i>
-    </div>
-    <div class="content-box">
-    <div class="text">من البداية إلى النهاية، كانت الجودة والخدمة استثنائية. قدم الفريق دعماً حاسماً ووفوا بكل وعد. بلاطهم ممتاز والأسعار لا مثيل لها. أنا راضٍ تماماً عن التجربة بالكامل. أوصي بهم بشدة لأي شخص يبحث عن منتجات وخدمات عالية الجودة.</div>
-    <div class="auther-info">
-    <img src="img/team/Eng Ahmad Al-Yacoub.png" width="70px" height="70px" alt>
-    <div class="info-box">
-    <h6 class="title">أحمد يعقوب </h6>
-    <span>المهندس</span>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-
-    <div class="testimonial-block col-md-6">
-        <div class="inner-box">
-        <div class="icon-box">
-        <i class="flaticon-quote-1"></i>
-        </div>
-        <div class="content-box">
-        <div class="text">من البداية إلى النهاية ، كانت الجودة والخدمة رائعة. قدم الفريق مساعدة حيوية واحترم كل التزام. بلاطهم من الدرجة الأولى ، والتسعير لا يهزم. أنا سعيد تماما بالتجربة الشاملة. أقترحها بشدة على أي شخص يبحث عن منتجات وخدمات متميزة</div>
-        <div class="auther-info">
-        <img src="img/team/Salam Al-Momani.png" width="70px" height="70px" alt>
-        <div class="info-box">
-        <h6 class="title">سلام المومني</h6>
-        <span>المهندسة</span>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
+<div class="row testi-slider" id="feedback">
+    
 
 
-        <div class="testimonial-block col-md-6">
-        <div class="inner-box">
-        <div class="icon-box">
-        <i class="flaticon-quote-1"></i>
-        </div>
-        <div class="content-box">
-        <div class="text">كانت الجودة والخدمة فوق الممتازة. قدم الفريق دعماً حاسماً ووفوا بكل تعهداتهم. البلاط الذي قدموه كان ممتازاً والأسعار لا تضاهى. أنا راضٍ تماماً عن التجربة برمتها وأوصي بشدة بكل من يبحث عن منتجات وخدمات عالية الجودة</div>
-        <div class="auther-info">
-        <img src="img/team/Eng-Malik Al-Ibdah.png" width="70px" height="70px" alt>
-        <div class="info-box">
-        <h6 class="title">مالك إبداح</h6>
-        <span>المهندس</span>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
 
 
-        <div class="testimonial-block col-md-6">
-            <div class="inner-box">
-            <div class="icon-box">
-            <i class="flaticon-quote-1"></i>
-            </div>
-            <div class="content-box">
-            <div class="text">من البداية إلى النهاية ، كانت الجودة والخدمة استثنائية. قدم الفريق دعما حاسما وحافظ على كل الوعود التي قطعها. بلاطها ذو جودة ممتازة ، والأسعار لا مثيل لها. أنا سعيد بالتجربة الشاملة. أوصي بها بشدة لأي شخص يبحث عن منتجات وخدمات من الدرجة الأولى</div>
-            <div class="auther-info">
-            <img src="img/team/Rahaf.png" width="70px" height="70px" alt>
-            <div class="info-box">
-            <h6 class="title">رهف دهميش </h6>
-            <span>المهندسة</span>
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
-            
+
 </div>
 </div>
 </section>
@@ -711,7 +509,7 @@
 <div class="image-column col-lg-6 col-md-12 col-sm-12">
 <div class="inner-column">
 <div class="image-box">
-<figure class="image overlay-anim"><a href="page-about.html"><img src="img/All/BG-Main.jpg" width="601px" height="660px" alt="AlQadomy-Co."></a></figure>
+<figure class="image overlay-anim"><a href="page-about.html"><img src="img/BG-Main.jpg" width="601px" height="660px" alt="AlQadomy-Co."></a></figure>
 <div class="exp-box bounce-y">
 <h6 class="title">57+</h6>
 <div class="text">عاماً من التميز
@@ -943,76 +741,11 @@
 <div class="sec-title text-center">
 <h2>أخر مشاريعنا</h2>
 </div>
-<div class="row">
+<div class="row" id="Projects">
 
-<div class="news-block col-lg-4 col-md-6">
-<div class="inner-box">
-<div class="image-box">
-<figure class="image"><a href="shop-product-details.html"><img src="img/projects/Farm.jpg"  alt></a></figure>
-</div>
-<div class="content-box">
-<ul class="post">
-<li>
-<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-<path opacity="0.8" d="M4.9 0V1.4H9.1V0H10.5V1.4H13.3C13.6866 1.4 14 1.7134 14 2.1V13.3C14 13.6866 13.6866 14 13.3 14H0.7C0.313404 14 0 13.6866 0 13.3V2.1C0 1.7134 0.313404 1.4 0.7 1.4H3.5V0H4.9ZM12.6 7H1.4V12.6H12.6V7ZM3.5 2.8H1.4V5.6H12.6V2.8H10.5V4.2H9.1V2.8H4.9V4.2H3.5V2.8Z" fill="#F94A29" />
-</svg>01 JAN 2024
-</li>
-<li>
-<svg xmlns="http://www.w3.org/2000/svg" width="10" height="14" viewBox="0 0 10 14" fill="none">
-<path opacity="0.8" d="M0.625 0H9.375C9.72019 0 10 0.303636 10 0.678183V13.6608C10 13.8481 9.86006 14 9.6875 14C9.62881 14 9.57125 13.982 9.5215 13.9481L5 10.8722L0.478494 13.9481C0.332269 14.0476 0.139412 13.9997 0.0477311 13.841C0.0165436 13.787 0 13.7246 0 13.6608V0.678183C0 0.303636 0.279825 0 0.625 0ZM8.75 1.35637H1.25V11.8224L5 9.27123L8.75 11.8224V1.35637Z" fill="#F94A29" />
-</svg>مزرعة
-</li>
-</ul>
-<h6 class="title"><a href="shop-product-details.html">مزرعة علي بابا</a></h6>
-</div>
-</div>
-</div>
 
-<div class="news-block col-lg-4 col-md-6">
-<div class="inner-box">
-<div class="image-box">
-<figure class="image"><a href="shop-product-details.html"><img src="img/projects/Viber.jpg" alt></a></figure>
-</div>
-<div class="content-box">
-<ul class="post">
-<li>
-<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-<path opacity="0.8" d="M4.9 0V1.4H9.1V0H10.5V1.4H13.3C13.6866 1.4 14 1.7134 14 2.1V13.3C14 13.6866 13.6866 14 13.3 14H0.7C0.313404 14 0 13.6866 0 13.3V2.1C0 1.7134 0.313404 1.4 0.7 1.4H3.5V0H4.9ZM12.6 7H1.4V12.6H12.6V7ZM3.5 2.8H1.4V5.6H12.6V2.8H10.5V4.2H9.1V2.8H4.9V4.2H3.5V2.8Z" fill="#F94A29" />
-</svg>22 May 2024
-</li>
-<li>
-<svg xmlns="http://www.w3.org/2000/svg" width="10" height="14" viewBox="0 0 10 14" fill="none">
-<path opacity="0.8" d="M0.625 0H9.375C9.72019 0 10 0.303636 10 0.678183V13.6608C10 13.8481 9.86006 14 9.6875 14C9.62881 14 9.57125 13.982 9.5215 13.9481L5 10.8722L0.478494 13.9481C0.332269 14.0476 0.139412 13.9997 0.0477311 13.841C0.0165436 13.787 0 13.7246 0 13.6608V0.678183C0 0.303636 0.279825 0 0.625 0ZM8.75 1.35637H1.25V11.8224L5 9.27123L8.75 11.8224V1.35637Z" fill="#F94A29" />
-</svg>صالة ألعاب
-</li>
-</ul>
-<h6 class="title"><a href="shop-product-details.html">بلايستيشن فايبر الفرع الثالث </a></h6>
-</div>
-</div>
-</div>
 
-<div class="news-block col-lg-4 col-md-6">
-<div class="inner-box">
-<div class="image-box">
-<figure class="image"><a href="shop-product-details.html"><img src="img/projects/House.jpg" alt></a></figure>
-</div>
-<div class="content-box">
-<ul class="post">
-<li>
-<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-<path opacity="0.8" d="M4.9 0V1.4H9.1V0H10.5V1.4H13.3C13.6866 1.4 14 1.7134 14 2.1V13.3C14 13.6866 13.6866 14 13.3 14H0.7C0.313404 14 0 13.6866 0 13.3V2.1C0 1.7134 0.313404 1.4 0.7 1.4H3.5V0H4.9ZM12.6 7H1.4V12.6H12.6V7ZM3.5 2.8H1.4V5.6H12.6V2.8H10.5V4.2H9.1V2.8H4.9V4.2H3.5V2.8Z" fill="#F94A29" />
-</svg>11 Jun 2024
-</li>
-<li>
-<svg xmlns="http://www.w3.org/2000/svg" width="10" height="14" viewBox="0 0 10 14" fill="none">
-<path opacity="0.8" d="M0.625 0H9.375C9.72019 0 10 0.303636 10 0.678183V13.6608C10 13.8481 9.86006 14 9.6875 14C9.62881 14 9.57125 13.982 9.5215 13.9481L5 10.8722L0.478494 13.9481C0.332269 14.0476 0.139412 13.9997 0.0477311 13.841C0.0165436 13.787 0 13.7246 0 13.6608V0.678183C0 0.303636 0.279825 0 0.625 0ZM8.75 1.35637H1.25V11.8224L5 9.27123L8.75 11.8224V1.35637Z" fill="#F94A29" />
-</svg>فيلا
-</li>
-</ul>
-<h6 class="title"><a href="shop-product-details.html">منزل المهندس محمد فريحات</a></h6>
-</div>
-</div>
-</div>
+
 </div>
 </div>
 </section>
@@ -1144,8 +877,9 @@
 <div class="scroll-to-top scroll-to-target arrow-btn" data-target="html" style><i class="fa-sharp fa-solid fa-arrow-up"></i></div>
 </footer>
 
-</div>
-<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/jquery.js"></script>
+<script src="Index.js"></script>
+<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js">
+</script><script src="js/jquery.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/slick.min.js"></script>
@@ -1157,51 +891,6 @@
 <script src="js/mixitup.js"></script>
 <script src="js/script.js"></script>
 
-
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        // تحديد العنصر الذي يحتوي على الرقم
-        var counterElement = document.querySelector('.exp-box .title');
-        var endValue = parseInt(counterElement.textContent, 10);
-        var duration = 2000; // مدة العدّاد بالميلي ثانية
-        var startValue = 0;
-        var stepTime = Math.abs(Math.floor(duration / endValue));
-        var currentValue = startValue;
-    
-        function updateCounter() {
-            if (currentValue <= endValue) {
-                counterElement.textContent = currentValue + '+';
-                currentValue += 1;
-                setTimeout(updateCounter, stepTime);
-            }
-        }
-    
-        updateCounter();
-    });
-
-
-document.addEventListener('DOMContentLoaded', function () {
-    // تحديد العنصر الذي يحتوي على الرقم
-    var counterElement = document.querySelector('.choose-us-section .exp-box .title');
-    var endValue = parseInt(counterElement.textContent, 10);
-    var duration = 2000; // مدة العدّاد بالميلي ثانية
-    var startValue = 0;
-    var stepTime = Math.abs(Math.floor(duration / endValue));
-    var currentValue = startValue;
-
-    function updateCounter() {
-        if (currentValue <= endValue) {
-            counterElement.textContent = currentValue + '+';
-            currentValue += 1;
-            setTimeout(updateCounter, stepTime);
-        }
-    }
-
-    updateCounter();
-});
-
-    </script>
-    
 </body>
 
 <!-- Mirrored from html.kodesolution.com/2024/tilepro-html/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Sep 2024 20:37:00 GMT -->

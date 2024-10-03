@@ -12,11 +12,65 @@
     <link href="css/style.css" rel="stylesheet">
     <link rel="shortcut icon" href="img/Logo-removebg-preview (1).png" type="image/x-icon">
     <link rel="icon" href="img/Logo-removebg-preview (1).png" type="image/x-icon">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     
-    
+    <style>
+        /* Modal Styles */
+.modal {
+    display: none; /* مخفي بشكل افتراضي */
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* خلفية شفافة */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+}
+
+.modal-content p {
+    margin-bottom: 20px;
+}
+
+.theme-btn {
+    background-color: #f94a29;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.theme-btn:hover {
+    background-color: #f94a29;
+}
+
+    </style>
 
     </head>
 <body>
@@ -191,60 +245,62 @@
 <div class="container pb-70">
 <div class="row">
 <div class="col-lg-6 col-xl-6">
-<div class="bxslider">
-<div class="slider-content">
-<figure class="image-box"><a href="img/product/Built-in Ceramic Washbasin/1.jpg" class="lightbox-image" data-fancybox="gallery"><img src="img/product/Built-in Ceramic Washbasin/1.jpg" alt></a></figure>
-<div class="slider-pager">
-<ul class="thumb-box">
-<li> <a class="active" data-slide-index="0" href="#">
-<figure><img src="img/product/Built-in Ceramic Washbasin/1.jpg" alt></figure>
-</a> </li>
-<li> <a data-slide-index="1" href="#">
-<figure><img src="img/product/Built-in Ceramic Washbasin/B2.jpg" alt></figure>
-</a> </li>
-<li> <a data-slide-index="2" href="#">
-<figure><img src="img/product/Built-in Ceramic Washbasin/new.jpg" alt></figure>
-</a> </li>
-</ul>
-</div>
-</div>
-<div class="slider-content">
-<figure class="image-box"><a href="img/product/Built-in Ceramic Washbasin/B2.jpg" class="lightbox-image" data-fancybox="gallery"><img src="img/product/Built-in Ceramic Washbasin/B2.jpg" alt></a></figure>
-<div class="slider-pager">
-<ul class="thumb-box">
-<li> <a class="active" data-slide-index="0" href="#">
-<figure><img src="img/product/Built-in Ceramic Washbasin/1.jpg" alt></figure>
-</a> </li>
-<li> <a data-slide-index="1" href="#">
-<figure><img src="img/product/Built-in Ceramic Washbasin/B2.jpg" alt></figure>
-</a> </li>
-<li> <a data-slide-index="2" href="#">
-<figure><img src="img/product/Built-in Ceramic Washbasin/new.jpg" alt></figure>
-</a> </li>
-</ul>
-</div>
-</div>
-<div class="slider-content">
-<figure class="image-box"><a href="img/product/Built-in Ceramic Washbasin/new.jpg" class="lightbox-image" data-fancybox="gallery"><img src="img/product/Built-in Ceramic Washbasin/new.jpg" alt></a></figure>
-<div class="slider-pager">
-<ul class="thumb-box">
-<li> <a class="active" data-slide-index="0" href="#">
-<figure><img src="img/product/Built-in Ceramic Washbasin/1.jpg" alt></figure>
-</a> </li>
-<li> <a data-slide-index="1" href="#">
-<figure><img src="img/product/Built-in Ceramic Washbasin/B2.jpg" alt></figure>
-</a> </li>
-<li> <a data-slide-index="2" href="#">
-<figure><img src="img/product/Built-in Ceramic Washbasin/new.jpg" alt></figure>
-</a> </li>
-</ul>
-</div>
-</div>
+<div class="bxslider" id="ImageToPro">
+
+    <!-- <div class="slider-content">
+        <figure class="image-box"><a href="img/Washbasin1.jpg" class="lightbox-image" data-fancybox="gallery"><img src="img/Washbasin1.jpg" alt></a></figure>
+        <div class="slider-pager">
+        <ul class="thumb-box">
+        <li> <a class="active" data-slide-index="0" href="#">
+        <figure><img src="img/Washbasin1.jpg" alt></figure>
+        </a> </li>
+        <li> <a data-slide-index="1" href="#">
+        <figure><img src="img/Washbasin2.jpg" alt></figure>
+        </a> </li>
+        <li> <a data-slide-index="2" href="#">
+        <figure><img src="img/Washbasin3.jpg" alt></figure>
+        </a> </li>
+        </ul>
+        </div>
+        </div>
+        <div class="slider-content">
+        <figure class="image-box"><a href="img/Washbasin2.jpg" class="lightbox-image" data-fancybox="gallery"><img src="img/Washbasin2.jpg" alt></a></figure>
+        <div class="slider-pager">
+        <ul class="thumb-box">
+        <li> <a class="active" data-slide-index="0" href="#">
+        <figure><img src="img/Washbasin1.jpg" alt></figure>
+        </a> </li>
+        <li> <a data-slide-index="1" href="#">
+        <figure><img src="img/Washbasin2.jpg" alt></figure>
+        </a> </li>
+        <li> <a data-slide-index="2" href="#">
+        <figure><img src="img/Washbasin3.jpg" alt></figure>
+        </a> </li>
+        </ul>
+        </div>
+        </div>
+        <div class="slider-content">
+        <figure class="image-box"><a href="img/Washbasin3.jpg" class="lightbox-image" data-fancybox="gallery"><img src="img/Washbasin3.jpg" alt></a></figure>
+        <div class="slider-pager">
+        <ul class="thumb-box">
+        <li> <a class="active" data-slide-index="0" href="#">
+        <figure><img src="img/Washbasin1.jpg" alt></figure>
+        </a> </li>
+        <li> <a data-slide-index="1" href="#">
+        <figure><img src="img/Washbasin2.jpg" alt></figure>
+        </a> </li>
+        <li> <a data-slide-index="2" href="#">
+        <figure><img src="img/Washbasin3.jpg" alt></figure>
+        </a> </li>
+        </ul>
+        </div>
+        </div> -->
+
 </div>
 </div>
 <div class="col-lg-6 col-xl-6 product-info">
-<div class="product-details__top">
-<h3 class="product-details__title">مغسلة سيراميك <span>JOD 300.00</span> </h3>
+<div class="product-details__top" id="priceAndTtle">
+
 </div>
 <div class="product-details__reveiw">
     <i class="fa fa-star"></i>
@@ -254,28 +310,21 @@
     <i class="fa fa-star-half-alt"></i>
 <span>80 Customer Reviews</span>
 </div>
+<div class="product-details__content" id="Disc">
+
+</div>
 <div class="product-details__content">
-<p class="product-details__content-text1">تُعد المغسلة السيراميكية خياراً ممتازاً لمن يبحثون عن مزيج مثالي من الجمال والأناقة والمتانة، بالإضافة إلى التكلفة المعقولة، في تصميم الحمام أو المطبخ. توفر هذه المغاسل توازنًا ممتازًا بين الأداء العملي واللمسة الجمالية، مما يجعلها الخيار المثالي لتحسين أي مساحة</p>
 <p class="product-details__content-text2">
-    <strong>REF.</strong> 4231/406 <span style="color: orange;">قارب على الإنتهاء</span>
+    <span style="color: orange;">قارب على الإنتهاء</span>
 </p>
 
 </div>
-<div class="product-details__quantity">
-<h3 class="product-details__quantity-title">Choose quantity</h3>
-<div class="quantity-box">
-<button type="button" class="sub"><i class="fa fa-minus"></i></button>
-<input type="number" id="1" value="1" />
-<button type="button" class="add"><i class="fa fa-plus"></i></button>
+<div id="AddingToCart">
+
+    <!-- in JS -->
+
 </div>
-</div>
-<div class="product-details__buttons">
-<div class="product-details__buttons-1">
-<a href="shop-cart.html" class="theme-btn btn-style-one">Add to Cart</a>
-</div>
-<div class="product-details__buttons-2">
-</div>
-</div>
+
 <div class="product-details__social">
 <div class="title mt-10">
 <h3>شارك مع الأصدقاء</h3>
@@ -305,33 +354,8 @@
 </div>
 <div class="tabs-content">
 <div class="tab active-tab" id="tab-1">
-<div class="text">
-<h3 class="product-description__title">Description</h3>
-<p class="product-description__text1">Lorem ipsum dolor sit amet, cibo mundi ea duo, vim exerci
-phaedrum. There are many variations of passages of Lorem Ipsum available, but the majority have
-alteration in some injected or words which don't look even slightly believable. If you are going to
-use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrang hidden in the
-middle of text.
-</p>
-<div class="product-description__list">
-<ul class="list-unstyled">
-<li>
-<p><span class="fa fa-arrow-right"></span> Nam at elit nec neque suscipit gravida.</p>
-</li>
-<li>
-<p><span class="fa fa-arrow-right"></span> Aenean egestas orci eu maximus tincidunt.</p>
-</li>
-<li>
-<p><span class="fa fa-arrow-right"></span> Curabitur vel turpis id tellus cursus laoreet.
-</p>
-</li>
-</ul>
-</div>
-<p class="product-description__tex2">All the Lorem Ipsum generators on the Internet tend to repeat
-predefined chunks as necessary, making this the first true generator on the Internet. It uses a
-dictionary of over 200 Latin words, combined with a handful of model sentence structures, to
-generate Lorem Ipsum which looks reasonable.
-</p>
+<div class="text" id="ProductDescriptions">
+
 </div>
 </div>
 <div class="tab" id="tab-2">
@@ -376,52 +400,62 @@ generate Lorem Ipsum which looks reasonable.
 </div>
 </div>
 <div class="comment-box">
-<h3>Add Your Comments</h3>
-<form id="contact_form" name="contact_form" class action="https://html.kodesolution.com/2024/tilepro-html/includes/sendmail.php" method="post">
-<div class="mb-3">
-<textarea name="form_message" class="form-control required" rows="7" placeholder="Enter Message"></textarea>
+    <h3>!شارك تجربتك معنا</h3>
+    <form id="contact_form" name="contact_form" action="https://html.kodesolution.com/2024/tilepro-html/includes/sendmail.php" method="post" onsubmit="return validateForm()">
+        <div class="mb-3">
+            <textarea name="form_message" class="form-control required" rows="7" placeholder="Enter Message"></textarea>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="mb-3">
+                    <input name="form_name" class="form-control" type="text" placeholder="Enter Name">
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="mb-3">
+                    <input name="form_email" class="form-control required email" type="email" placeholder="Enter Email">
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 column">
+            <div class="review-box clearfix">
+                <p>تقييمك</p>
+                <ul class="rating clearfix" id="user-rating">
+                    <li data-value="1"><i class="far fa-star"></i></li>
+                    <li data-value="2"><i class="far fa-star"></i></li>
+                    <li data-value="3"><i class="far fa-star"></i></li>
+                    <li data-value="4"><i class="far fa-star"></i></li>
+                    <li data-value="5"><i class="far fa-star"></i></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 column">
+            <div class="form-group clearfix">
+                <div class="custom-controls-stacked">
+                    <label class="custom-control material-checkbox">
+                        <input type="checkbox" class="material-control-input" id="saveInfoCheckbox">
+                        <span class="material-control-indicator"></span>
+                        <span class="description">احفظ اسمي وبريدي الإلكتروني في هذا المتصفح للمرة التالية التي أعلق فيها</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="mb-3">
+            <input name="form_botcheck" class="form-control" type="hidden" value />
+            <button type="submit" class="theme-btn btn-style-one" data-loading-text="Please wait...">Submit Comment</button>
+        </div>
+    </form>
 </div>
-<div class="row">
-<div class="col-sm-6">
-<div class="mb-3">
-<input name="form_name" class="form-control" type="text" placeholder="Enter Name">
+
+<!-- Modal -->
+<div id="popupModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <p>يجب الموافقة على حفظ الاسم والبريد الإلكتروني قبل تأكيد التعليق.</p>
+        <button class="theme-btn btn-style-one" onclick="closePopup()">موافق</button>
+    </div>
 </div>
-</div>
-<div class="col-sm-6">
-<div class="mb-3">
-<input name="form_email" class="form-control required email" type="email" placeholder="Enter Email">
-</div>
-</div>
-</div>
-<div class="col-lg-12 col-md-12 col-sm-12 column">
-<div class="review-box clearfix">
-<p>Your Review</p>
-<ul class="rating clearfix">
-<li><i class="far fa-star"></i></li>
-<li><i class="far fa-star"></i></li>
-<li><i class="far fa-star"></i></li>
-<li><i class="far fa-star"></i></li>
-<li><i class="far fa-star"></i></li>
-</ul>
-</div>
-</div>
-<div class="col-lg-12 col-md-12 col-sm-12 column">
-<div class="form-group clearfix">
-<div class="custom-controls-stacked">
-<label class="custom-control material-checkbox">
-<input type="checkbox" class="material-control-input">
-<span class="material-control-indicator"></span>
-<span class="description">Save my name, email, and website in this browser for the next time I comment.</span>
-</label>
-</div>
-</div>
-</div>
-<div class="mb-3">
-<input name="form_botcheck" class="form-control" type="hidden" value />
-<button type="submit" class="theme-btn btn-style-one" data-loading-text="Please wait...">Submit Comment</button>
-</div>
-</form>
-</div>
+
 </div>
 </div>
 </div>
@@ -431,72 +465,15 @@ generate Lorem Ipsum which looks reasonable.
 
 <section class="related-product">
 <div class="container pt-0 pb-90">
-<h3>Related Products</h3>
+<h3>منتجات متشابهة</h3>
 <div class="row clearfix">
 <div class="col">
 
 <div class="mixitup-gallery">
-<div class="filter-list row">
+<div class="filter-list row" id="related">
 
-<div class="product-block all mix pantry fruit col-lg-3 col-md-6 col-sm-12">
-<div class="inner-box">
-<div class="image"><a href="shop-product-details.html"><img src="img/product/Wall Tiles/6.jpg" alt /></a></div>
-<div class="content">
-<h4><a href="shop-product-details.html">بلاط جدران</a></h4>
-<span class="price">JOD 32.00</span>
-<span class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>
-</div>
-<div class="icon-box">
-<a href="shop-product-details.html" class="ui-btn like-btn"><i class="fa fa-heart"></i></a>
-<a href="shop-cart.html" class="ui-btn add-to-cart"><i class="fa fa-shopping-cart"></i></a>
-</div>
-</div>
-</div>
 
-<div class="product-block all mix dairy meat fruit col-lg-3 col-md-6 col-sm-12">
-<div class="inner-box">
-<div class="image"><a href="shop-product-details.html"><img src="img/product/Masafi/5.jpg" alt /></a></div>
-<div class="content">
-<h4><a href="shop-product-details.html">مصافي</a></h4>
-<span class="price">JOD 15.00</span>
-<span class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>
-</div>
-<div class="icon-box">
-<a href="shop-product-details.html" class="ui-btn like-btn"><i class="fa fa-heart"></i></a>
-<a href="shop-cart.html" class="ui-btn add-to-cart"><i class="fa fa-shopping-cart"></i></a>
-</div>
-</div>
-</div>
 
-<div class="product-block all mix pantry fruit vagetables col-lg-3 col-md-6 col-sm-12">
-<div class="inner-box">
-<div class="image"><a href="shop-product-details.html"><img src="img/product/Shawer/WhatsApp Image 2024-07-26 at 17.28.00_ac35508a.jpg" alt /></a></div>
-<div class="content">
-<h4><a href="shop-product-details.html">غرفة بخار</a></h4>
-<span class="price">JOD 1150.00</span>
-<span class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>
-</div>
-<div class="icon-box">
-<a href="shop-product-details.html" class="ui-btn like-btn"><i class="fa fa-heart"></i></a>
-<a href="shop-cart.html" class="ui-btn add-to-cart"><i class="fa fa-shopping-cart"></i></a>
-</div>
-</div>
-</div>
-
-<div class="product-block all mix dairy pantry meat vagetables col-lg-3 col-md-6 col-sm-12">
-<div class="inner-box">
-<div class="image"><a href="shop-product-details.html"><img src="img/product/Accessories/5x.jpg" alt /></a></div>
-<div class="content">
-<h4><a href="shop-product-details.html">ستاند</a></h4>
-<span class="price">JOD 9.00</span>
-<span class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>
-</div>
-<div class="icon-box">
-<a href="shop-product-details.html" class="ui-btn like-btn"><i class="fa fa-heart"></i></a>
-<a href="shop-cart.html" class="ui-btn add-to-cart"><i class="fa fa-shopping-cart"></i></a>
-</div>
-</div>
-</div>
 </div>
 </div>
 </div>
@@ -600,6 +577,335 @@ generate Lorem Ipsum which looks reasonable.
 </div>
 
 <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></div>
+
+<script>
+
+
+
+
+
+
+
+
+
+async function ShowDetails() {
+    localStorage.setItem("productId", 1);
+    var id = localStorage.getItem("productId");
+
+    let url = `https://localhost:44327/api/Product/GetProductByID/${id}`;
+
+    try {
+        let response = await fetch(url);
+        if (!response.ok) {
+            throw new Error("Network response was not ok");
+        }
+        let data = await response.json();
+        console.log("API response:", data);
+        
+        let AddItemToCart = document.getElementById("AddingToCart");
+        AddItemToCart.innerHTML = `
+            <form id="addToCart">
+                <div class="product-details__quantity">
+                    <h3 class="product-details__quantity-title">Choose quantity</h3>
+                    <div class="quantity-box">
+                        <button type="button" class="sub"> <i class="fa fa-minus"></i></button>
+                        <input type="number" id="quantityInput" value="1" min="1" />
+                        <button type="button" class="add"> <i class="fa fa-plus"></i></button>
+                    </div>
+                </div>
+                <div class="product-details__buttons">
+                    <div class="product-details__buttons-1">
+                        <button type="button" onclick="addToCart(event)" class="theme-btn btn-style-one">Add to Cart</button>
+                    </div>
+                </div>
+            </form>
+        `;
+
+        // إضافة مستمعات الأحداث للأزرار بعد إضافة النموذج
+        addEventListeners();
+    } catch (error) {
+        console.error("Error fetching data:", error);
+    }
+}
+
+function addToCart(event) {
+    event.preventDefault();  // منع إعادة تحميل الصفحة عند الضغط على الزر
+
+    // تخزين معرف المنتج في localStorage
+    localStorage.setItem("productId", 1);
+    var id = localStorage.getItem("productId");
+
+    // الحصول على الكمية من حقل الإدخال
+    let quantityInput = document.getElementById("quantityInput").value;
+
+    // التحقق من أن الكمية صحيحة وغير صفرية
+    if (quantityInput <= 0) {
+        alert("الرجاء إدخال كمية صحيحة");
+        return;
+    }
+
+    // إنشاء FormData
+    var formData = new FormData();
+    formData.append("Quantity", quantityInput);  // إضافة الكمية إلى formData
+
+    // إرسال الطلب إلى API
+    fetch(`https://localhost:44327/api/Product/AddQuantityToProductByID/${id}`, {
+        method: "POST",
+        body: formData
+    })
+    .then(response => {
+        if (response.ok) {
+            alert("تمت الإضافة بنجاح!");
+        } else {
+            alert("حدث خطأ أثناء الإضافة.");
+        }
+    })
+    .catch(error => {
+        console.error("Error:", error);
+        alert("حدث خطأ أثناء الإضافة.");
+    });
+}
+
+function addEventListeners() {
+    const addButton = document.querySelector(".add");
+    const subButton = document.querySelector(".sub");
+    const quantityInput = document.getElementById("quantityInput");
+
+    // إزالة أي مستمعات أحداث سابقة
+    addButton.removeEventListener("click", increaseQuantity);
+    subButton.removeEventListener("click", decreaseQuantity);
+
+    // وظيفة لزيادة الكمية
+    function increaseQuantity(event) {
+        event.preventDefault(); // منع السلوك الافتراضي
+        let currentQuantity = parseInt(quantityInput.value);
+        quantityInput.value = currentQuantity + 1;
+    }
+
+    // وظيفة لتقليل الكمية
+    function decreaseQuantity(event) {
+        event.preventDefault(); // منع السلوك الافتراضي
+        let currentQuantity = parseInt(quantityInput.value);
+        // التأكد من أن الكمية لا تقل عن 1
+        if (currentQuantity > 1) {
+            quantityInput.value = currentQuantity - 1;
+        }
+    }
+
+    // إضافة مستمع حدث لزر الزيادة
+    addButton.addEventListener("click", increaseQuantity);
+
+    // إضافة مستمع حدث لزر النقصان
+    subButton.addEventListener("click", decreaseQuantity);
+}
+
+// استدعاء الدالة عند تحميل الصفحة
+ShowDetails();
+//////////////////////////////////////////////////////////////////
+async function DescriptionP() {
+localStorage.setItem("productId", 1);
+var id = localStorage.getItem("productId");
+let url = `https://localhost:44327/api/Product/GetProductByID/${id}`;
+let response = await fetch(url);
+let data = await response.json();
+console.log(data)
+let priceItem = document.getElementById("Disc");
+priceItem.innerHTML += `
+<p class="product-details__content-text1"> ${data.productDescription} </p>
+    `;
+  console.log(data);
+}
+DescriptionP();
+
+
+        async function TitleAndPrice() {
+localStorage.setItem("productId", 1);
+var id = localStorage.getItem("productId");
+let url = `https://localhost:44327/api/Product/GetProductByID/${id}`;
+let response = await fetch(url);
+let data = await response.json();
+console.log(data)
+let priceItem = document.getElementById("priceAndTtle");
+priceItem.innerHTML += `
+    <h3 class="product-details__title">${data.productName} <span>JOD ${data.price}</span> </h3>
+    `;
+  console.log(data);
+}
+TitleAndPrice();
+
+
+
+
+
+    async function ProductDescription() {
+localStorage.setItem("productId", 1);
+var id = localStorage.getItem("productId");
+let url = `https://localhost:44327/api/Product/GetProductByID/${id}`;
+let response = await fetch(url);
+let data = await response.json();
+console.log(data)
+let priceItem = document.getElementById("ProductDescriptions");
+priceItem.innerHTML += `
+                <h3 class="product-description__title">Description</h3>
+<p class="product-description__text1">
+${data.productDescription}
+</p>
+<div class="product-description__list">
+<ul class="list-unstyled">
+<li>
+<p><span class="fa fa-arrow-right">${data.productDescriptionList1}</span> </p>
+</li>
+<li>
+<p><span class="fa fa-arrow-right">${data.productDescriptionList2}</span> </p>
+</li>
+<li>
+<p><span class="fa fa-arrow-right">${data.productDescriptionList3}</span> </p>
+</li>
+</ul>
+</div>
+    `;
+  console.log(data);
+}
+ProductDescription();
+    
+async function Pro() {
+localStorage.setItem("productId", 1);
+var id = localStorage.getItem("productId");
+let url = `https://localhost:44327/api/Product/GetProductByID/${id}`;
+let response = await fetch(url);
+let data = await response.json();
+console.log(data)
+let priceItem = document.getElementById("ImageToPro");
+priceItem.innerHTML += `
+        <div class="slider-content">
+            <figure class="image-box"><a href="${data.productImage}" class="lightbox-image" data-fancybox="gallery"><img src="${data.productImage}" alt></a></figure>
+            <div class="slider-pager">
+            <ul class="thumb-box">
+            <li> <a class="active" data-slide-index="0" href="#">
+            <figure><img src="${data.productImage}" alt></figure>
+            </a> </li>
+            <li> <a data-slide-index="1" href="#">
+            <figure><img src="${data.productImage2}" alt></figure>
+            </a> </li>
+            <li> <a data-slide-index="2" href="#">
+            <figure><img src="${data.productImage3}" alt></figure>
+            </a> </li>
+            </ul>
+            </div>
+            </div>
+            <div class="slider-content" style="display: none;">
+            <figure class="image-box"><a href="${data.productImage2}" class="lightbox-image" data-fancybox="gallery"><img src="${data.productImage2}" alt></a></figure>
+            <div class="slider-pager">
+            <ul class="thumb-box">
+            <li> <a class="active" data-slide-index="0" href="#">
+            <figure><img src="${data.productImage}" alt></figure>
+            </a> </li>
+            <li> <a data-slide-index="1" href="#">
+            <figure><img src="${data.productImage2}" alt></figure>
+            </a> </li>
+            <li> <a data-slide-index="2" href="#">
+            <figure><img src="${data.productImage3}" alt></figure>
+            </a> </li>
+            </ul>
+            </div>
+            </div>
+            <div class="slider-content" style="display: none;">
+            <figure class="image-box"><a href="${data.productImage3}" class="lightbox-image" data-fancybox="gallery"><img src="${data.productImage3}" alt></a></figure>
+            <div class="slider-pager">
+            <ul class="thumb-box">
+            <li> <a class="active" data-slide-index="0" href="#">
+            <figure><img src="${data.productImage}" alt></figure>
+            </a> </li>
+            <li> <a data-slide-index="1" href="#">
+            <figure><img src="${data.productImage2}" alt></figure>
+            </a> </li>
+            <li> <a data-slide-index="2" href="#">
+            <figure><img src="${data.productImage3}" alt></figure>
+            </a> </li>
+            </ul>
+            </div>
+        </div>
+    `;
+console.log(data);
+}
+
+Pro();
+
+async function relate() {
+    localStorage.setItem("productId", 1);
+    var id = localStorage.getItem("productId");
+    let url = `https://localhost:44327/api/Product/GetAllProductsForOneCategory/${id}`;
+    let response = await fetch(url);
+    let data = await response.json();
+    let priceItem = document.getElementById("related");
+    
+    data.forEach((relate) => {
+        // توليد النجوم بناءً على productRate
+        let stars = '';
+        const productRate = relate.productRate; // استخدام productRate من البيانات المسترجعة
+        const fullStars = Math.floor(productRate); // عدد النجوم الكاملة
+        const halfStar = productRate % 1 >= 0.5; // تحديد إذا كان هناك نجمة نصفية
+
+        // إضافة النجوم الكاملة
+        for (let i = 0; i < fullStars; i++) {
+            stars += '<i class="fa-solid fa-star"></i>'; // نجمة مملوءة
+        }
+
+        // إضافة النجمة النصفية إذا كانت موجودة
+        if (halfStar) {
+            stars += '<i class="fa-solid fa-star-half-stroke"></i>'; // نجمة نصف
+        }
+
+        // إضافة النجوم الفارغة
+        const emptyStars = 5 - fullStars - (halfStar ? 1 : 0);
+        for (let i = 0; i < emptyStars; i++) {
+            stars += '<i class="fa-regular fa-star"></i>'; // نجمة فارغة
+        }
+
+        priceItem.innerHTML += `
+        <div class="product-block all mix dairy pantry meat vagetables col-lg-3 col-md-6 col-sm-12">
+            <div class="inner-box">
+                <div class="image"><a href="shop-product-details.html"><img src="${relate.productImage ? relate.productImage : 'default-image.jpg'}" alt="${relate.productName} (the image for product not found)" /></a></div>
+                <div class="content">
+                    <h4><a href="shop-product-details.html">${relate.productName}</a></h4>
+                    <span class="price">JOD ${relate.price}</span>
+                    <span class="rating">${stars}</span> <!-- هنا يتم عرض النجوم -->
+                </div>
+                <div class="icon-box">
+                    <a href="shop-product-details.html" class="ui-btn like-btn"><i class="fa fa-heart"></i></a>
+                    <a href="shop-cart.html" class="ui-btn add-to-cart"><i class="fa fa-shopping-cart"></i></a>
+                </div>
+            </div>
+        </div>
+        `;
+    });
+    console.log(data);
+}
+relate();
+
+</script>
+
+
+<script>
+    function validateForm() {
+    var checkbox = document.getElementById('saveInfoCheckbox');
+    if (!checkbox.checked) {
+        // إظهار النافذة المنبثقة
+        var modal = document.getElementById('popupModal');
+        modal.style.display = "flex"; // عرض النافذة بطريقة flex
+        return false; // منع إرسال النموذج
+    }
+    return true; // السماح بإرسال النموذج
+}
+
+function closePopup() {
+    var modal = document.getElementById('popupModal');
+    modal.style.display = "none"; // إخفاء النافذة المنبثقة
+}
+
+</script>
+
+
 <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/jquery.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
@@ -638,6 +944,36 @@ generate Lorem Ipsum which looks reasonable.
 			}
 		});
 	})(jQuery);
+</script>
+<script>
+    // الحصول على عناصر النجوم
+    const stars = document.querySelectorAll('#user-rating li');
+
+    // إضافة حدث click لكل نجمة
+    stars.forEach(star => {
+        star.addEventListener('click', function() {
+            // الحصول على قيمة النجمة التي تم النقر عليها
+            const ratingValue = this.getAttribute('data-value');
+
+            // تحديث النجوم المعروضة
+            updateStars(ratingValue);
+        });
+    });
+
+    // دالة لتحديث النجوم
+    function updateStars(rating) {
+        stars.forEach(star => {
+            const starValue = star.getAttribute('data-value');
+            if (starValue <= rating) {
+                star.innerHTML = '<i class="fas fa-star"></i>'; // نجمة مملوءة
+            } else {
+                star.innerHTML = '<i class="far fa-star"></i>'; // نجمة فارغة
+            }
+        });
+
+        // يمكنك هنا حفظ التقييم في متغير أو إرسال البيانات إلى الخادم
+        console.log('تم تقييم المنتج بـ ' + rating + ' نجوم');
+    }
 </script>
 </body>
 

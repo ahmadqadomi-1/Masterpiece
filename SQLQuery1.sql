@@ -41,6 +41,7 @@ VALUES
 ( N'مرايا' , 3.9, 'img/Mirrors12.jpg');
 Select * from Categories;
 ------------------------------------------------------Break------------------------------------------------------!
+-- 4. Products Table
 CREATE TABLE Products (
     ProductID INT PRIMARY KEY IDENTITY(1,1),
     ProductName NVARCHAR(100),
@@ -55,6 +56,7 @@ CREATE TABLE Products (
     ProductImage NVARCHAR(MAX),
     ProductRate DECIMAL(2,1) DEFAULT 0 CHECK (ProductRate BETWEEN 0 AND 5)
 );
+
 INSERT INTO Products (ProductName, ProductDescription, ProductDescriptionList1, ProductDescriptionList2, ProductDescriptionList3, Price, Stock, CategoryID, ProductImage)
 VALUES 
     (N'سيراميك جدران حجاري', 
@@ -215,8 +217,50 @@ VALUES
      5, 
      'img/Mirrors13.jpg');
 
+--Edit Table:
+ALTER TABLE Products
+ADD ProductImage2 NVARCHAR(MAX);
+
+ALTER TABLE Products
+ADD ProductImage3 NVARCHAR(MAX);
+
+UPDATE Products
+SET ProductImage2 = 'img/Stone ceramics3.jpg',
+    ProductImage3 = 'img/Stone ceramics3.jpg'
+WHERE ProductName = N'سيراميك جدران حجاري';
+
+UPDATE Products
+SET ProductImage2 = 'img/Stone ceramics1.jpg',
+    ProductImage3 = 'img/Stone ceramics1.jpg'
+WHERE ProductName = N'سيراميك حجاري';
+
+UPDATE Products
+SET ProductImage2 = 'img/Stone ceramics2.jpg',
+    ProductImage3 = 'img/Stone ceramics2.jpg'
+WHERE ProductName = N'جدران حجاري';
+
+UPDATE Products
+SET ProductImage2 = 'img/Wall Tiles13.jpg',
+    ProductImage3 = 'img/Wall Tiles13.jpg'
+WHERE ProductName = N'سيراميك جدران';
+
+UPDATE Products
+SET ProductImage2 = 'img/Wall Tiles9.jpg',
+    ProductImage3 = 'img/Wall Tiles9.jpg'
+WHERE ProductName = N'سيراميك جدران حمامات';
+
+UPDATE Products
+SET ProductImage2 = 'img/Wall Tiles1.jpg',
+    ProductImage3 = 'img/Wall Tiles1.jpg'
+WHERE ProductName = N'جدران رسمات';
+
+
+
+
+--Select
 Select * from Products;
 ------------------------------------------------------Break------------------------------------------------------!
+-- 5. UserRoles Table
 DROP TABLE IF EXISTS UserRoles;
 
 CREATE TABLE UserRoles (
@@ -233,7 +277,7 @@ VALUES
 SELECT * FROM UserRoles;
 
 ------------------------------------------------------Break------------------------------------------------------!
--- . Feedback Table
+-- 6. Feedback Table
 CREATE TABLE Feedback (
     FeedbackID INT PRIMARY KEY IDENTITY(1,1),
     Name NVARCHAR(100),
@@ -241,8 +285,26 @@ CREATE TABLE Feedback (
     PhoneNumber NVARCHAR(255),
     Message NVARCHAR(1000),
     SentDate DATETIME DEFAULT GETDATE(),
+	ALTER TABLE Feedback
+		ADD Profession NVARCHAR(MAX);
+	ALTER TABLE Feedback
+		ADD UserFeedbackImage NVARCHAR(MAX);
 );
+INSERT INTO Feedback (Name, Message, Profession, UserFeedbackImage)
+VALUES 
+(N'محمد فريحات', N'خدمة استثنائية لا مثيل لها. أسعار وجودة لا مثيل لها! كانت الاحتراف والاهتمام بالتفاصيل رائعة حقا. القيمة المعروضة رائعة ، والبلاط ليس أقل من رائع. تم التعامل مع كل جانب بامتياز. موصى به بشدة لأي شخص يبحث عن منتجات وخدمات فائقة', N'مهندس', 'img/Client-Mohammed Frehat.png'),
+(N'عامر أبو اليجاء', N'من البداية إلى النهاية ، كانت الجودة والخدمة استثنائية. قدم الفريق دعما حاسما وحافظ على كل الوعود التي قطعها. بلاطها ذو جودة ممتازة ، والأسعار لا مثيل لها. أنا راض تماما عن التجربة الشاملة. أوصي بها بشدة لأي شخص يبحث عن منتجات وخدمات من الدرجة الأولى ', N'أستاذ', 'img/Client-Amer.png'),
+(N'محمد أحمد', N'من البداية إلى النهاية ، كانت الجودة والخدمة استثنائية. قدم الفريق دعما حاسما وحافظ على كل الوعود التي قطعها. بلاطها ذو جودة ممتازة ، والأسعار لا مثيل لها. أنا راض تماما عن التجربة الشاملة. أوصي بها بشدة لأي شخص يبحث عن منتجات وخدمات من الدرجة الأولى', N'أستاذ', 'img/Client-Amer.png'),
+(N' أيمن جرادات', N'جودة وخدمة استثنائية من البداية إلى النهاية. قدم الفريق مساعدة لا تقدر بثمن وفى بكل وعد. بلاطها ذو جودة عالية ، والأسعار لا تقبل المنافسة. أنا راض تماما عن التجربة بأكملها. موصى به للغاية لأي شخص يبحث عن منتجات وخدمات من الدرجة الأولى ', N'مهندس ', ' img/Client-Ayman Al-Jaradat.png '),
+(N' بتول الدلكي', N' تجربة رائعة من البداية إلى النهاية بجودة وخدمة استثنائية. كان الفريق مفيدا بشكل لا يصدق وحقق كل التزام. بلاطهم من الدرجة الأولى ، والتسعير لا يهزم. أنا سعيد للغاية بالعملية برمتها. نوصي بشدة لأي شخص يبحث عن منتجات وخدمات متفوقة ', N'مهندس ', 'img/Client-Batool Al Dalki.png '),
+(N' أحمد يعقوب ', N' من البداية إلى النهاية، كانت الجودة والخدمة استثنائية. قدم الفريق دعماً حاسماً ووفوا بكل وعد. بلاطهم ممتاز والأسعار لا مثيل لها. أنا راضٍ تماماً عن التجربة بالكامل. أوصي بهم بشدة لأي شخص يبحث عن منتجات وخدمات عالية الجودة. ', N'مهندس ', ' img/Client-Eng Ahmad Al-Yacoub.png '),
+(N' سلام المومني', N' من البداية إلى النهاية ، كانت الجودة والخدمة رائعة. قدم الفريق مساعدة حيوية واحترم كل التزام. بلاطهم من الدرجة الأولى ، والتسعير لا يهزم. أنا سعيد تماما بالتجربة الشاملة. أقترحها بشدة على أي شخص يبحث عن منتجات وخدمات متميزة ', N'مهندس ', ' img/Client-Salam Al-Momani.png '),
+(N' مالك إبداح', N' كانت الجودة والخدمة فوق الممتازة. قدم الفريق دعماً حاسماً ووفوا بكل تعهداتهم. البلاط الذي قدموه كان ممتازاً والأسعار لا تضاهى. أنا راضٍ تماماً عن التجربة برمتها وأوصي بشدة بكل من يبحث عن منتجات وخدمات عالية الجودة ', N'مهندس ', 'img/Client-Eng-Malik Al-Ibdah.png '),
+(N' رهف دهميش', N' من البداية إلى النهاية ، كانت الجودة والخدمة استثنائية. قدم الفريق دعما حاسما وحافظ على كل الوعود التي قطعها. بلاطها ذو جودة ممتازة ، والأسعار لا مثيل لها. أنا سعيد بالتجربة الشاملة. أوصي بها بشدة لأي شخص يبحث عن منتجات وخدمات من الدرجة الأولى ', N'مهندس ', ' img/Client-Rahaf.png ');
+SELECT * FROM Feedback;
+
 ------------------------------------------------------Break------------------------------------------------------!
+-- 7. Review Table
 CREATE TABLE Review (
 	ReviewID INT PRIMARY KEY IDENTITY(1,1),
 	ProductID INT,
@@ -256,11 +318,74 @@ CREATE TABLE Review (
 	ReviewTime DATETIME DEFAULT GETDATE()
 	);
 ------------------------------------------------------Break------------------------------------------------------!
+-- 8. Tiler Table
+CREATE TABLE Tiler (
+    TilerID INT PRIMARY KEY IDENTITY(1,1),
+    TilerName NVARCHAR(100),
+    TilerImg NVARCHAR(MAX),
+    profession NVARCHAR(100),
+    TilerPhoneNum NVARCHAR(150)
+);
+INSERT INTO Tiler (TilerName, TilerImg, profession, TilerPhoneNum)
+VALUES 
+(N'أحمد سالم', 'img/TilerِAhmad.jpg', N'بليط', '0798453244'),
+(N'خالد هاني', 'img/TilerKhaled.jpg', N'بليط', '0798453243'),
+(N'سالم الأحمد', 'img/TilerSalem.jpg', N'بليط', '0798453242'),
+(N'محمد العبدالله', 'img/TilerMoh.jpg', N'بليط', '0798453241');
+UPDATE Tiler
+SET TilerImg = REPLACE(TilerImg, 'img/', '')
+WHERE TilerImg LIKE 'img/%';
+UPDATE Tiler
+SET TilerImg = 'TilerAhmad.jpg'
+WHERE TilerName = N'أحمد سالم';
+
+
+Select * from Tiler;
 
 ------------------------------------------------------Break------------------------------------------------------!
+-- 9. Team Table
+CREATE TABLE Team (
+    TilerID INT PRIMARY KEY IDENTITY(1,1),
+    TeamName NVARCHAR(100),
+    TeamImg NVARCHAR(MAX),
+    profession NVARCHAR(100),
+    TeamPhoneNum NVARCHAR(150)
+);
+INSERT INTO Team (TeamName, TeamImg, profession, TeamPhoneNum)
+VALUES 
+(N'عامر القدومي', 'Team-Amer Qadomy.jpg', N'إدارة', '0798453244'),
+(N'حمزة القدومي', 'Team-Hamza Qadomy.jpg', N'إدارة', '0798453243'),
+(N'حسام القدومي', 'Team-Hosam.jpg', N'إدارة', '0798453242'),
+(N'محمد القدومي', 'Team-Mohammad Omar.jpg', N'إدارة', '0798453241'),
+(N'عصام الزبدة', 'Team-Abo Ahmad StandUp.jpg', N'رجل مبيعات', '0798453244'),
+(N'حمزة الشبلي', 'Team-Hamza Shebli.jpg', N'رجل مبيعات', '0798453243'),
+(N'محمد القدومي', 'Team-Mohammad Qadome.jpg', N'رجل مبيعات', '0798453242'),
+(N'عبدالرحمن السوري', 'Team-Abd.jpg', N'رجل مبيعات', '0798453241');
+EXEC sp_rename 'Team.TilerID', 'TeamId', 'COLUMN';
 
+
+Select * from Team;
 ------------------------------------------------------Break------------------------------------------------------!
+-- 10. Project Table
+CREATE TABLE Project(
+ProjectID INT PRIMARY KEY IDENTITY(1,1),
+ProjectName NVARCHAR(200),
+ProjectType NVARCHAR(100),
+ProjectDate DATETIME DEFAULT GETDATE(),
+ProjectImage NVARCHAR(MAX)
+);
+INSERT INTO Project (ProjectName, ProjectType, ProjectDate, ProjectImage)
+VALUES 
+(N' مزرعة علي بابا ', N' مزرعة ', N' 2024-01-27 ', ' img/projectsprojectsFarm.jpg '),
+(N' بلايستيشن فايبر الفرع الثالث ', N' صالة ألعاب ', N' 2024-05-22 ', ' img/projectsViber.jpg '),
+(N' منزل المهندس محمد فريحات ', N' فيلا ', N' 2024-06-11 ', ' img/projectsHouse.jpg ');
 
+
+
+--Edit Table
+
+
+Select * from Project;
 ------------------------------------------------------Break------------------------------------------------------!
 
 ------------------------------------------------------Break------------------------------------------------------!

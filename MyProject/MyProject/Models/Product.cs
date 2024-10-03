@@ -27,6 +27,12 @@ public partial class Product
 
     public decimal? ProductRate { get; set; }
 
+    public string? ProductImage2 { get; set; }
+
+    public string? ProductImage3 { get; set; }
+
+    public virtual ICollection<CartItem> CartItems { get; set; } = new List<CartItem>();
+
     public virtual Category? Category { get; set; }
 
     public virtual ICollection<Review> Reviews { get; set; } = new List<Review>();

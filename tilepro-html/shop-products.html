@@ -12,7 +12,8 @@
     <link href="css/style.css" rel="stylesheet">
     <link rel="shortcut icon" href="img/Logo-removebg-preview (1).png" type="image/x-icon">
     <link rel="icon" href="img/Logo-removebg-preview (1).png" type="image/x-icon">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     
@@ -187,12 +188,19 @@
 </section>
 
 
+<div class="d-flex align-items-center">
+    <input id="CarPlateNumber" class="form-control me-2 ms-3 ps-2 border" type="search"
+    placeholder="Search by Name or Product Price" aria-label="Search" style="width: 300px;">
+    <button class="btn btn-success mt-3" onclick="filterUserByCarPlateNumber()" type="submit" style="background-color: #f94a29; border-color: #f94a29;">Search</button>
+</div>
+
+
 <section class="featured-products">
 <div class="auto-container">
 
 <div class="mixitup-gallery">
 
-<div class="filters clearfix">
+<!-- <div class="filters clearfix">
 <ul class="filter-tabs filter-btns clearfix">
 <li class="active filter" data-role="button" data-filter="all">جميع الفئات</li>
 <li class="filter" data-role="button" data-filter=".Wall">جدران</li>
@@ -203,132 +211,14 @@
 <li class="filter" data-role="button" data-filter=".Accessories">أكسسوارات</li>
 <li class="filter" data-role="button" data-filter=".Shawer">شور بوكس</li>
 <li class="filter" data-role="button" data-filter=".Washbasin">مغاسل البورسلان</li>
+
 </ul>
-</div>
-<div class="filter-list row">
+</div> -->
+<div class="filter-list row" id="all">
 
 
-<div class="product-block all mix stone  col-lg-3 col-md-6 col-sm-12">
-<div class="inner-box">
-<div class="image"><a href="shop-product-details.html"><img src="img/product/Stone ceramics/4.jpg" alt /></a></div>
-<div class="content">
-<h4><a href="shop-product-details.html">Show Piece</a></h4>
-<span class="price">$32.00</span>
-<span class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>
-</div>
-<div class="icon-box">
-<a href="shop-product-details.html" class="ui-btn like-btn"><i class="fa fa-heart"></i></a>
-<a href="shop-cart.html" class="ui-btn add-to-cart"><i class="fa fa-shopping-cart"></i></a>
-</div>
-</div>
-</div>
-
-<div class="product-block all mix Wall   col-lg-3 col-md-6 col-sm-12">
-<div class="inner-box">
-<div class="image"><a href="shop-product-details.html"><img src="img/product/Wall Tiles/11.jpg" alt /></a></div>
-<div class="content">
-<h4><a href="shop-product-details.html">Leather Belt</a></h4>
-<span class="price">$52.00</span>
-<span class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>
-</div>
-<div class="icon-box">
-<a href="shop-product-details.html" class="ui-btn like-btn"><i class="fa fa-heart"></i></a>
-<a href="shop-cart.html" class="ui-btn add-to-cart"><i class="fa fa-shopping-cart"></i></a>
-</div>
-</div>
-</div>
-
-<div class="product-block all mix Mirrors col-lg-3 col-md-6 col-sm-12">
-<div class="inner-box">
-<div class="image"><a href="shop-product-details.html"><img src="img/product/Mirrors/11.jpg" alt /></a></div>
-<div class="content">
-<h4><a href="shop-product-details.html">Sunglasses</a></h4>
-<span class="price">$42.00</span>
-<span class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>
-</div>
-<div class="icon-box">
-<a href="shop-product-details.html" class="ui-btn like-btn"><i class="fa fa-heart"></i></a>
-<a href="shop-cart.html" class="ui-btn add-to-cart"><i class="fa fa-shopping-cart"></i></a>
-</div>
-</div>
-</div>
-
-<div class="product-block all mix   Accessories col-lg-3 col-md-6 col-sm-12">
-<div class="inner-box">
-<div class="image"><a href="shop-product-details.html"><img src="img/product/Accessories/4x.jpg" alt /></a></div>
-<div class="content">
-<h4><a href="shop-product-details.html">Backpack</a></h4>
-<span class="price">$22.00</span>
-<span class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>
-</div>
-<div class="icon-box">
-<a href="shop-product-details.html" class="ui-btn like-btn"><i class="fa fa-heart"></i></a>
-<a href="shop-cart.html" class="ui-btn add-to-cart"><i class="fa fa-shopping-cart"></i></a>
-</div>
-</div>
-</div>
-
-<div class="product-block all mix  Shawer  col-lg-3 col-md-6 col-sm-12">
-<div class="inner-box">
-<div class="image"><a href="shop-product-details.html"><img src="img/product/Shawer/3.jpg" alt /></a></div>
-<div class="content">
-<h4><a href="shop-product-details.html">Hand Watch</a></h4>
-<span class="price">$34.00</span>
-<span class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>
-</div>
-<div class="icon-box">
-<a href="shop-product-details.html" class="ui-btn like-btn"><i class="fa fa-heart"></i></a>
-<a href="shop-cart.html" class="ui-btn add-to-cart"><i class="fa fa-shopping-cart"></i></a>
-</div>
-</div>
-</div>
-
-<div class="product-block all mix  Washbasin col-lg-3 col-md-6 col-sm-12">
-<div class="inner-box">
-<div class="image"><a href="shop-product-details.html"><img src="img/product/Built-in Ceramic Washbasin/One.jpg" alt /></a></div>
-<div class="content">
-<h4><a href="shop-product-details.html">Party Bag</a></h4>
-<span class="price">$25.00</span>
-<span class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>
-</div>
-<div class="icon-box">
-<a href="shop-product-details.html" class="ui-btn like-btn"><i class="fa fa-heart"></i></a>
-<a href="shop-cart.html" class="ui-btn add-to-cart"><i class="fa fa-shopping-cart"></i></a>
-</div>
-</div>
-</div>
 
 
-<div class="product-block all mix Masafi  col-lg-3 col-md-6 col-sm-12">
-<div class="inner-box">
-<div class="image"><a href="shop-product-details.html"><img src="img/product/Masafi/5.jpg" alt /></a></div>
-<div class="content">
-<h4><a href="shop-product-details.html">Coffee Mug</a></h4>
-<span class="price">$20.00</span>
-<span class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>
-</div>
-<div class="icon-box">
-<a href="shop-product-details.html" class="ui-btn like-btn"><i class="fa fa-heart"></i></a>
-<a href="shop-cart.html" class="ui-btn add-to-cart"><i class="fa fa-shopping-cart"></i></a>
-</div>
-</div>
-</div>
-
-
-<div class="product-block all mix   floor  col-lg-3 col-md-6 col-sm-12">
-<div class="inner-box">
-<div class="image"><a href="shop-product-details.html"><img src="img/product/Floor tiles/3.jpg" alt /></a></div>
-<div class="content">
-<h4><a href="shop-product-details.html">Smart Watch</a></h4>
-<span class="price">$40.00</span>
-<span class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>
-</div>
-<div class="icon-box">
-<a href="shop-product-details.html" class="ui-btn like-btn"><i class="fa fa-heart"></i></a>
-<a href="shop-cart.html" class="ui-btn add-to-cart"><i class="fa fa-shopping-cart"></i></a>
-</div>
-</div>
-</div>
 </div>
 </div>
 </div>
@@ -431,6 +321,64 @@
 </div>
 
 <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></div>
+<script>
+async function GetAllCategory() {
+    let url = `https://localhost:44327/api/Product/GetAllProducts`;
+    let response = await fetch(url);
+    let data = await response.json();
+
+    // Sort the products by rating in ascending order
+    data.sort((a, b) => b.price - a.price );
+
+    let cate = document.getElementById("all");
+
+    data.forEach((Productts) => {
+        // توليد النجوم
+        let stars = '';
+        const fullStars = Math.floor(Productts.productRate); // عدد النجوم الكاملة
+        const halfStar = Productts.productRate % 1 >= 0.5; // تحديد إذا كان هناك نجمة نصفية
+
+        // إضافة النجوم الكاملة
+        for (let i = 0; i < fullStars; i++) {
+            stars += '<i class="fa-solid fa-star"></i>'; // نجمة مملوءة
+        }
+
+        // إضافة النجمة النصفية إذا كانت موجودة
+        if (halfStar) {
+            stars += '<i class="fa-solid fa-star-half-stroke"></i>'; // نجمة نصف
+        }
+
+        // إضافة النجوم الفارغة
+        const emptyStars = 5 - fullStars - (halfStar ? 1 : 0);
+        for (let i = 0; i < emptyStars; i++) {
+            stars += '<i class="fa-regular fa-star"></i>'; // نجمة فارغة
+        }
+
+        cate.innerHTML += `
+        <div class="product-block all col-lg-3 col-md-6 col-sm-12">
+            <div class="inner-box">
+                <div class="image"><a href="shop-product-details.html"><img src="${Productts.productImage}" style="width: 271.3px; height: 271.3px;" alt="${Productts.productImage} (image for Product not found)" /></a></div>
+                <div class="content">
+                    <h4><a href="shop-product-details.html">${Productts.productName}</a></h4>
+                    <span class="price">JOD ${Productts.price}</span>
+                    <span class="rating">${stars}</span> <!-- هنا يتم عرض النجوم -->
+                </div>
+                <div class="icon-box">
+                    <a href="shop-product-details.html" class="ui-btn like-btn"><i class="fa fa-heart"></i></a>
+                    <a href="shop-cart.html" class="ui-btn add-to-cart"><i class="fa fa-shopping-cart"></i></a>
+                </div>
+            </div>
+        </div>
+        `;
+    });
+
+    console.log(data);
+}
+
+GetAllCategory();
+
+
+</script>
 <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/jquery.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
@@ -442,5 +390,4 @@
 <script src="js/script.js"></script>
 </body>
 
-<!-- Mirrored from html.kodesolution.com/2024/tilepro-html/shop-products.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Sep 2024 20:37:30 GMT -->
 </html>

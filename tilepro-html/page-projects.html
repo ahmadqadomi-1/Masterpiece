@@ -189,59 +189,10 @@
 
 <section class="project-section-two">
 <div class="auto-container">
-<div class="row">
+<div class="row" id="Project">
 
-<div class="project-block-two col-lg-6 col-md-6 wow fadeInUp">
-<div class="inner-box">
-<div class="image-box">
-<figure class="image overlay-anim"><a href="page-project-details.html" tabindex="-1"><img src="img/projects/House.jpg" style="width: 573px; height: 545.75px;" alt></a></figure>
-<div class="content-box">
-<span>فيلا</span>
-<h4 class="title"><a href="page-project-details.html">منزل المهندس محمد فريحات</a></h4>
-<a href="page-project-details.html" class="btn"><img src="images/resource/arrow-btn.png" alt></a>
-</div>
-</div>
-</div>
-</div>
 
-<div class="project-block-two col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
-<div class="inner-box">
-<div class="image-box">
-<figure class="image overlay-anim"><a href="page-project-details.html" tabindex="-1"><img src="img/projects/Hydrogen gym.jpg" style="width: 573px; height: 545.75px" alt></a></figure>
-<div class="content-box">
-<span>نادي رياضي</span>
-<h4 class="title"><a href="page-project-details.html">هيدروجين جيم</a></h4>
-<a href="page-project-details.html" class="btn"><img src="images/resource/arrow-btn.png" alt></a>
-</div>
-</div>
-</div>
-</div>
 
-<div class="project-block-two col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="600ms">
-<div class="inner-box">
-<div class="image-box">
-<figure class="image overlay-anim"><a href="page-project-details.html" tabindex="-1"><img src="img/projects/Hos.jpg" style="width: 573px; height: 545.75px" alt></a></figure>
-<div class="content-box">
-<span>مستشفى</span>
-<h4 class="title"><a href="page-project-details.html">مستشفى الأميرة بسمة</a></h4>
-<a href="page-project-details.html" class="btn"><img src="images/resource/arrow-btn.png" alt></a>
-</div>
-</div>
-</div>
-</div>
-
-<div class="project-block-two col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="800ms">
-<div class="inner-box">
-<div class="image-box">
-<figure class="image overlay-anim"><a href="page-project-details.html" tabindex="-1"><img src="img/projects/Farm.jpg" style="width: 573px; height: 545.75px" alt></a></figure>
-<div class="content-box">
-<span>مزرعة</span>
-<h4 class="title"><a href="page-project-details.html">المزرعة السعيدة</a></h4>
-<a href="page-project-details.html" class="btn"><img src="images/resource/arrow-btn.png" alt></a>
-</div>
-</div>
-</div>
-</div>
 </div>
 </div>
 </section>
@@ -343,6 +294,35 @@
 </div>
 
 <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></div>
+
+<script>
+    async function Projected() {
+    debugger
+    let url = `https://localhost:44327/api/Project/GetAllProject`;
+    let response = await fetch(url);
+    let data = await response.json();
+    let priceItem = document.getElementById("Project");
+    data.forEach((Pro) => {
+    priceItem.innerHTML += `
+<div class="project-block-two col-lg-6 col-md-6 wow fadeInUp">
+<div class="inner-box">
+<div class="image-box">
+<figure class="image overlay-anim"><a href="page-project-details.html" tabindex="-1"><img src="${Pro.projectImage}" style="width: 573px; height: 545.75px;" alt="${Pro.projectImage} (Image not found)"></a></figure>
+<div class="content-box">
+<span>${Pro.projectType}</span>
+<h4 class="title"><a href="page-project-details.html"> ${Pro.projectName} </a></h4>
+<a href="page-project-details.html" class="btn"><img src="images/resource/arrow-btn.png" alt></a>
+</div>
+</div>
+</div>
+</div>
+    `;
+});
+    console.log(data);
+}
+Projected();
+</script>
+
 <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/jquery.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
@@ -353,5 +333,4 @@
 <script src="js/script.js"></script>
 </body>
 
-<!-- Mirrored from html.kodesolution.com/2024/tilepro-html/page-projects.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Sep 2024 20:37:24 GMT -->
 </html>

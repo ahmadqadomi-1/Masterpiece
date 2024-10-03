@@ -1,0 +1,68 @@
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using MyProject.DTOs;
+using MyProject.Models;
+
+namespace MyProject.Controllers
+{
+    [Route("api/[controller]")]
+    [ApiController]
+    public class ProjectController : ControllerBase
+    {
+        private readonly MyDbContext _db;
+        public ProjectController(MyDbContext db)
+        {
+            _db = db;
+        }
+
+        [HttpGet("GetAllProject")]
+        public IActionResult Ti()
+        {
+            var PP = _db.Projects.ToList();
+            return Ok(PP);
+        }
+
+        [HttpGet("GetProjectByID/{id}")]
+        public IActionResult ProjectID(int id)
+        {
+            var Ta = _db.Projects.Find(id);
+            return Ok(Ta);
+        }
+
+        [HttpGet("GetLatestProjects")]
+        public IActionResult GetLatestProjects()
+        {
+            var latestProjects = _db.Projects
+                .OrderByDescending(p => p.ProjectDate) 
+                .Take(3)                               
+                .ToList();
+
+            return Ok(latestProjects);
+        }
+
+        [HttpPost("AddProject")]
+        public IActionResult AddProject([FromBody] Project newProject)
+        {
+            if (newProject == null)
+            {
+                return BadRequest("Invalid project data.");
+            }
+            _db.Projects.Add(newProject);
+            _db.SaveChanges();
+            return Ok(newProject);
+        }
+
+        [HttpPut("UpdateProjectByID/{id}")]
+        public IActionResult UpdateProject(int id, [FromForm] DTOsProject Proo)
+        {
+            var upProject = _db.Projects.FirstOrDefault(t => t.ProjectId == id);
+            upProject.ProjectName = Proo.ProjectName;
+            upProject.ProjectType = Proo.ProjectType;
+            upProject.ProjectImage = Proo.ProjectImage;
+
+            _db.Projects.Update(upProject);
+            _db.SaveChanges();
+            return Ok();
+        }
+    }
+}

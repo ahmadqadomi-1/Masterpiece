@@ -16,4 +16,8 @@ public partial class Feedback
     public string? Message { get; set; }
 
     public DateTime? SentDate { get; set; }
+
+    public string? Profession { get; set; }
+
+    public string? UserFeedbackImage { get; set; }
 }

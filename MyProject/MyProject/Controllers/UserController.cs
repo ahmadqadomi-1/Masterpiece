@@ -115,6 +115,7 @@ namespace MyProject.Controllers
             {
                 UserName = user.UserName,
                 Email = user.Email,
+                Password = user.Password,
                 PasswordHash = hash,
                 PasswordSalt = salt
             };

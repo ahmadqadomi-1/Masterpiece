@@ -15,13 +15,23 @@ public partial class MyDbContext : DbContext
     {
     }
 
+    public virtual DbSet<Cart> Carts { get; set; }
+
+    public virtual DbSet<CartItem> CartItems { get; set; }
+
     public virtual DbSet<Category> Categories { get; set; }
 
     public virtual DbSet<Feedback> Feedbacks { get; set; }
 
     public virtual DbSet<Product> Products { get; set; }
 
+    public virtual DbSet<Project> Projects { get; set; }
+
     public virtual DbSet<Review> Reviews { get; set; }
+
+    public virtual DbSet<Team> Teams { get; set; }
+
+    public virtual DbSet<Tiler> Tilers { get; set; }
 
     public virtual DbSet<User> Users { get; set; }
 
@@ -31,10 +41,47 @@ public partial class MyDbContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Server=DESKTOP-3O6RHJJ;Database=Masterpiece;Trusted_Connection=True;TrustServerCertificate=True;");
+        => optionsBuilder.UseSqlServer("Server= DESKTOP-3O6RHJJ;Database= Masterpiece;Trusted_Connection=True;TrustServerCertificate=True;");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        modelBuilder.Entity<Cart>(entity =>
+        {
+            entity.HasKey(e => e.CartId).HasName("PK__Cart__51BCD797A1B46BE8");
+
+            entity.ToTable("Cart");
+
+            entity.Property(e => e.CartId).HasColumnName("CartID");
+            entity.Property(e => e.TotalAmount).HasColumnType("decimal(10, 2)");
+            entity.Property(e => e.UserId).HasColumnName("UserID");
+
+            entity.HasOne(d => d.User).WithMany(p => p.Carts)
+                .HasForeignKey(d => d.UserId)
+                .HasConstraintName("FK__Cart__UserID__656C112C");
+        });
+
+        modelBuilder.Entity<CartItem>(entity =>
+        {
+            entity.HasKey(e => e.CartItemId).HasName("PK__CartItem__488B0B2A17AB9A81");
+
+            entity.Property(e => e.CartItemId).HasColumnName("CartItemID");
+            entity.Property(e => e.CartId).HasColumnName("CartID");
+            entity.Property(e => e.ProductId).HasColumnName("ProductID");
+            entity.Property(e => e.UserId).HasColumnName("UserID");
+
+            entity.HasOne(d => d.Cart).WithMany(p => p.CartItems)
+                .HasForeignKey(d => d.CartId)
+                .HasConstraintName("FK__CartItems__CartI__68487DD7");
+
+            entity.HasOne(d => d.Product).WithMany(p => p.CartItems)
+                .HasForeignKey(d => d.ProductId)
+                .HasConstraintName("FK__CartItems__Produ__693CA210");
+
+            entity.HasOne(d => d.User).WithMany(p => p.CartItems)
+                .HasForeignKey(d => d.UserId)
+                .HasConstraintName("FK_CartItems_Users");
+        });
+
         modelBuilder.Entity<Category>(entity =>
         {
             entity.HasKey(e => e.CategoryId).HasName("PK__Categori__19093A2B010915BB");
@@ -79,6 +126,21 @@ public partial class MyDbContext : DbContext
                 .HasConstraintName("FK__Products__Catego__4222D4EF");
         });
 
+        modelBuilder.Entity<Project>(entity =>
+        {
+            entity.HasKey(e => e.ProjectId).HasName("PK__Project__761ABED06D385DA6");
+
+            entity.ToTable("Project");
+
+            entity.Property(e => e.ProjectId).HasColumnName("ProjectID");
+            entity.Property(e => e.Location).HasMaxLength(200);
+            entity.Property(e => e.ProjectDate)
+                .HasDefaultValueSql("(getdate())")
+                .HasColumnType("datetime");
+            entity.Property(e => e.ProjectName).HasMaxLength(200);
+            entity.Property(e => e.ProjectType).HasMaxLength(100);
+        });
+
         modelBuilder.Entity<Review>(entity =>
         {
             entity.HasKey(e => e.ReviewId).HasName("PK__Review__74BC79AEA0E022B6");
@@ -101,6 +163,33 @@ public partial class MyDbContext : DbContext
             entity.HasOne(d => d.User).WithMany(p => p.Reviews)
                 .HasForeignKey(d => d.UserId)
                 .HasConstraintName("FK__Review__UserID__4D94879B");
+        });
+
+        modelBuilder.Entity<Team>(entity =>
+        {
+            entity.HasKey(e => e.TeamId).HasName("PK__Team__8087DF2B7149A4DF");
+
+            entity.ToTable("Team");
+
+            entity.Property(e => e.Profession)
+                .HasMaxLength(100)
+                .HasColumnName("profession");
+            entity.Property(e => e.TeamName).HasMaxLength(100);
+            entity.Property(e => e.TeamPhoneNum).HasMaxLength(150);
+        });
+
+        modelBuilder.Entity<Tiler>(entity =>
+        {
+            entity.HasKey(e => e.TilerId).HasName("PK__Tiler__8087DF2B80C03008");
+
+            entity.ToTable("Tiler");
+
+            entity.Property(e => e.TilerId).HasColumnName("TilerID");
+            entity.Property(e => e.Profession)
+                .HasMaxLength(100)
+                .HasColumnName("profession");
+            entity.Property(e => e.TilerName).HasMaxLength(100);
+            entity.Property(e => e.TilerPhoneNum).HasMaxLength(150);
         });
 
         modelBuilder.Entity<User>(entity =>

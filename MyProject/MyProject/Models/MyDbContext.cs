@@ -23,6 +23,8 @@ public partial class MyDbContext : DbContext
 
     public virtual DbSet<Feedback> Feedbacks { get; set; }
 
+    public virtual DbSet<News> News { get; set; }
+
     public virtual DbSet<Product> Products { get; set; }
 
     public virtual DbSet<Project> Projects { get; set; }
@@ -107,6 +109,19 @@ public partial class MyDbContext : DbContext
             entity.Property(e => e.SentDate)
                 .HasDefaultValueSql("(getdate())")
                 .HasColumnType("datetime");
+        });
+
+        modelBuilder.Entity<News>(entity =>
+        {
+            entity.HasKey(e => e.NewsId).HasName("PK__News__954EBDD382C30DDC");
+
+            entity.Property(e => e.NewsId).HasColumnName("NewsID");
+            entity.Property(e => e.NewsDate).HasDefaultValueSql("(getdate())");
+            entity.Property(e => e.NewsDescription).HasMaxLength(500);
+            entity.Property(e => e.NewsName).HasMaxLength(200);
+            entity.Property(e => e.YoutubeUrl)
+                .HasMaxLength(500)
+                .HasColumnName("YoutubeURL");
         });
 
         modelBuilder.Entity<Product>(entity =>

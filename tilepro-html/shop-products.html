@@ -82,7 +82,7 @@
                         </a>
                     </div>
                     <div class="btn">
-                        <a href="Regis.html" class="theme-btn" style="position: relative; left: 5em;">تسجيل</a>
+                        <a href="Login.html" id="auth-btn" class="theme-btn" style="position: relative; left: 5em;">تسجيل</a>
                     </div>
                     <div class="mobile-nav-toggler">
                         <i class="fa fa-bars"></i>
@@ -322,12 +322,33 @@
 
 <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></div>
 <script>
+    // الوصول إلى زر التسجيل
+    let authBtn = document.getElementById("auth-btn");
+
+// التحقق من حالة تسجيل الدخول عند تحميل الصفحة
+window.onload = function() {
+    if (localStorage.getItem('jwtToken')) {
+        authBtn.textContent = "خروج"; // تغيير النص إلى خروج إذا كان المستخدم مسجل الدخول
+        authBtn.href = "#"; // منع الانتقال إلى صفحة تسجيل الدخول
+    }
+};
+
+// تسجيل الخروج عند الضغط على زر "خروج"
+authBtn.addEventListener("click", function(event) {
+    if (authBtn.textContent === "خروج") {
+        localStorage.removeItem('jwtToken'); // حذف رمز JWT من LocalStorage
+        authBtn.textContent = "تسجيل"; // إعادة النص إلى تسجيل
+        authBtn.href = "index.html"; // إعادة الرابط إلى صفحة تسجيل الدخول
+        alert("تم تسجيل الخروج بنجاح");
+        window.location.href = "index.html"; // إعادة توجيه إلى الصفحة الرئيسية
+    }
+});
+
 async function GetAllCategory() {
     let url = `https://localhost:44327/api/Product/GetAllProducts`;
     let response = await fetch(url);
     let data = await response.json();
 
-    // Sort the products by rating in ascending order
     data.sort((a, b) => b.price - a.price );
 
     let cate = document.getElementById("all");
@@ -353,18 +374,17 @@ async function GetAllCategory() {
         for (let i = 0; i < emptyStars; i++) {
             stars += '<i class="fa-regular fa-star"></i>'; // نجمة فارغة
         }
-
         cate.innerHTML += `
         <div class="product-block all col-lg-3 col-md-6 col-sm-12">
             <div class="inner-box">
-                <div class="image"><a href="shop-product-details.html"><img src="${Productts.productImage}" style="width: 271.3px; height: 271.3px;" alt="${Productts.productImage} (image for Product not found)" /></a></div>
+                <div class="image"><a href="#" onclick="save(${Productts.productId});"><img src="${Productts.productImage}" style="width: 271.3px; height: 271.3px;" alt="${Productts.productImage} (image for Product not found)" /></a></div>
                 <div class="content">
-                    <h4><a href="shop-product-details.html">${Productts.productName}</a></h4>
+                    <h4><a href="#" onclick="save(${Productts.productId});">${Productts.productName}</a></h4>
                     <span class="price">JOD ${Productts.price}</span>
                     <span class="rating">${stars}</span> <!-- هنا يتم عرض النجوم -->
                 </div>
                 <div class="icon-box">
-                    <a href="shop-product-details.html" class="ui-btn like-btn"><i class="fa fa-heart"></i></a>
+                    <a href="#" onclick="save(${Productts.productId});" class="ui-btn like-btn"><i class="fa fa-heart"></i></a>
                     <a href="shop-cart.html" class="ui-btn add-to-cart"><i class="fa fa-shopping-cart"></i></a>
                 </div>
             </div>
@@ -372,7 +392,15 @@ async function GetAllCategory() {
         `;
     });
 
+
+
     console.log(data);
+}
+
+
+function save(productId) {
+    localStorage.setItem("productId", productId);
+    window.location.href = "shop-product-details.html";
 }
 
 GetAllCategory();

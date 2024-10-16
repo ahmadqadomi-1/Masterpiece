@@ -387,7 +387,18 @@ VALUES
 
 Select * from Project;
 ------------------------------------------------------Break------------------------------------------------------!
-
+-- 11. Orders Table
+CREATE TABLE Orders (
+    OrderID INT PRIMARY KEY IDENTITY(1,1),
+    UserID INT,
+    FOREIGN KEY (UserID) REFERENCES Users(UserID),
+    TotalAmount DECIMAL(10, 2),
+    PaymentMethod NVARCHAR(50), -- Credit Card, PayPal, cash
+    OrderStatus NVARCHAR(50), -- Pending, Completed, Cancelled
+    OrderDate DATE DEFAULT GETDATE() -- إضافة دالة لتحديد التاريخ الافتراضي
+);
+ALTER TABLE Orders
+ADD Comment  NVARCHAR(MAX);
 ------------------------------------------------------Break------------------------------------------------------!
 
 ------------------------------------------------------Break------------------------------------------------------!

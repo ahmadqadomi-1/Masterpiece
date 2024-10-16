@@ -1,28 +1,4 @@
-async function Category() {
-    debugger
-    let url = `https://localhost:44327/api/Category/GetAllCategories`;
-    let response = await fetch(url);
-    let data = await response.json();
-    let priceItem = document.getElementById("Batool");
-    data.forEach((Categories) => {
-    priceItem.innerHTML += `
-<div class="project-block col-lg-3 col-md-6">
-    <div class="inner-box">
-    <div class="image-box">
-    <figure class="image overlay-anim"><a href="shop-products.html"><img src="${Categories.categoryImage}" width="575px" height="575px" alt="${Categories.categoryImage} (Image not found) "></a></figure>
-    <figure class="image-2"><a href="shop-products.html"><img src="images/resource/projec1-2.png" alt></a></figure>
-    </div>
-    <div class="content-box">
-    <span>${Categories.categoryName}</span>
-    <h6 class="title"><a href="shop-products.html">المزيد</a></h6>
-    </div>
-    </div>
-    </div>
-    `;
-});
-    console.log(data);
-}
-Category();
+
 
 
 
@@ -146,55 +122,73 @@ async function GetAllNews() {
 GetAllNews();
 
 
+// الوصول إلى زر التسجيل
+let authBtn = document.getElementById("auth-btn");
 
-async function relate() {
-    localStorage.setItem("productId", 1);
-    var id = localStorage.getItem("productId");
-    let url = `https://localhost:44327/api/Product/GetAllProductsForOneCategory/${id}`;
+// التحقق من حالة تسجيل الدخول عند تحميل الصفحة
+window.onload = function() {
+    if (localStorage.getItem('jwtToken')) {
+        authBtn.textContent = "خروج"; // تغيير النص إلى خروج إذا كان المستخدم مسجل الدخول
+        authBtn.href = "#"; // منع الانتقال إلى صفحة تسجيل الدخول
+    }
+};
+
+// تسجيل الخروج عند الضغط على زر "خروج"
+authBtn.addEventListener("click", function(event) {
+    if (authBtn.textContent === "خروج") {
+        localStorage.removeItem('jwtToken'); // حذف رمز JWT من LocalStorage
+        authBtn.textContent = "تسجيل"; // إعادة النص إلى تسجيل
+        authBtn.href = "Login.html"; // إعادة الرابط إلى صفحة تسجيل الدخول
+        alert("تم تسجيل الخروج بنجاح");
+        window.location.href = "index.html"; // إعادة توجيه إلى الصفحة الرئيسية
+    }
+});
+
+
+
+async function Category() {
+    debugger
+    let url = `https://localhost:44327/api/Category/GetAllCategories`;
     let response = await fetch(url);
     let data = await response.json();
-    let priceItem = document.getElementById("related");
-    
-    data.forEach((relate) => {
-        // توليد النجوم بناءً على productRate
-        let stars = '';
-        const productRate = relate.productRate; // استخدام productRate من البيانات المسترجعة
-        const fullStars = Math.floor(productRate); // عدد النجوم الكاملة
-        const halfStar = productRate % 1 >= 0.5; // تحديد إذا كان هناك نجمة نصفية
+    let priceItem = document.getElementById("Batool");
 
-        // إضافة النجوم الكاملة
-        for (let i = 0; i < fullStars; i++) {
-            stars += '<i class="fa-solid fa-star"></i>'; // نجمة مملوءة
-        }
-
-        // إضافة النجمة النصفية إذا كانت موجودة
-        if (halfStar) {
-            stars += '<i class="fa-solid fa-star-half-stroke"></i>'; // نجمة نصف
-        }
-
-        // إضافة النجوم الفارغة
-        const emptyStars = 5 - fullStars - (halfStar ? 1 : 0);
-        for (let i = 0; i < emptyStars; i++) {
-            stars += '<i class="fa-regular fa-star"></i>'; // نجمة فارغة
-        }
-
+    data.forEach((category) => {
         priceItem.innerHTML += `
-        <div class="product-block all mix dairy pantry meat vagetables col-lg-3 col-md-6 col-sm-12">
-            <div class="inner-box">
-                <div class="image"><a href="shop-product-details.html"><img src="${relate.productImage ? relate.productImage : 'default-image.jpg'}" alt="${relate.productName} (the image for product not found)" /></a></div>
-                <div class="content">
-                    <h4><a href="shop-product-details.html">${relate.productName}</a></h4>
-                    <span class="price">JOD ${relate.price}</span>
-                    <span class="rating">${stars}</span> <!-- هنا يتم عرض النجوم -->
-                </div>
-                <div class="icon-box">
-                    <a href="shop-product-details.html" class="ui-btn like-btn"><i class="fa fa-heart"></i></a>
-                    <a href="shop-cart.html" class="ui-btn add-to-cart"><i class="fa fa-shopping-cart"></i></a>
-                </div>
-            </div>
-        </div>
-        `;
+<div class="project-block col-lg-3 col-md-6">
+    <div class="inner-box">
+    <div class="image-box">
+    <figure class="image overlay-anim">
+        <a href="#" onclick="save(${category.categoryId});">
+            <img src="${category.categoryImage}" width="575px" height="575px" alt="${category.categoryName} (Image not found)">
+        </a>
+    </figure>
+    <figure class="image-2">
+        <a href="#" onclick="save(${category.categoryId});">
+            <img src="images/resource/projec1-2.png" alt="Alternative Image">
+        </a>
+    </figure>
+    </div>
+    <div class="content-box">
+    <span>${category.categoryName}</span>
+    <h6 class="title"><a href="#" onclick="save(${category.categoryId});">المزيد</a></h6>
+    </div>
+    </div>
+    </div>
+    `;
     });
+
     console.log(data);
 }
-relate();
+
+function save(categoryId) {
+    localStorage.setItem("categoryId", categoryId);
+    window.location.href = "shop-products2.html";
+}
+
+Category();
+
+
+    document.getElementById("moreLink").addEventListener("click", function(event) {
+        event.preventDefault(); 
+    });

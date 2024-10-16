@@ -81,7 +81,7 @@
                         </a>
                     </div>
                     <div class="btn">
-                        <a href="Regis.html" class="theme-btn" style="position: relative; left: 5em;">تسجيل</a>
+                        <a href="Login.html" id="auth-btn" class="theme-btn" style="position: relative; left: 5em;">تسجيل</a>
                     </div>
                     <div class="mobile-nav-toggler">
                         <i class="fa fa-bars"></i>
@@ -304,6 +304,28 @@
 <script src="js/script.js"></script>
 
 <script>
+    // الوصول إلى زر التسجيل
+    let authBtn = document.getElementById("auth-btn");
+
+// التحقق من حالة تسجيل الدخول عند تحميل الصفحة
+window.onload = function() {
+    if (localStorage.getItem('jwtToken')) {
+        authBtn.textContent = "خروج"; // تغيير النص إلى خروج إذا كان المستخدم مسجل الدخول
+        authBtn.href = "#"; // منع الانتقال إلى صفحة تسجيل الدخول
+    }
+};
+
+// تسجيل الخروج عند الضغط على زر "خروج"
+authBtn.addEventListener("click", function(event) {
+    if (authBtn.textContent === "خروج") {
+        localStorage.removeItem('jwtToken'); // حذف رمز JWT من LocalStorage
+        authBtn.textContent = "تسجيل"; // إعادة النص إلى تسجيل
+        authBtn.href = "index.html"; // إعادة الرابط إلى صفحة تسجيل الدخول
+        alert("تم تسجيل الخروج بنجاح");
+        window.location.href = "index.html"; // إعادة توجيه إلى الصفحة الرئيسية
+    }
+});
+
     async function Tilers() {
 
   let url = `https://localhost:44327/api/Tiler/GetAllTilers`;

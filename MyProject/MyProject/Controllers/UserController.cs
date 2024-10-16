@@ -80,6 +80,8 @@ namespace MyProject.Controllers
             return Ok(data);
         }
 
+
+
         [HttpDelete("Delete/{id}")]
         public IActionResult Delete(int id)
         {
@@ -101,11 +103,16 @@ namespace MyProject.Controllers
                 return BadRequest("User data is null");
             }
 
-            // التحقق من قوة كلمة المرور
+            var existingUser = _db.Users.FirstOrDefault(u => u.Email == user.Email);
+            if (existingUser != null)
+            {
+                return BadRequest("This email is already registered.");
+            }
+
             var passwordValidationResult = ValidatePassword(user.Password);
             if (passwordValidationResult != null)
             {
-                return BadRequest(passwordValidationResult); // إرجاع رسالة الخطأ المتعلقة بكلمة المرور
+                return BadRequest(passwordValidationResult);
             }
 
             byte[] hash, salt;
@@ -124,6 +131,18 @@ namespace MyProject.Controllers
             _db.SaveChanges();
             return Ok(newUser);
         }
+
+        [HttpGet("CheckEmail")]
+        public IActionResult CheckEmail(string email)
+        {
+            var existingUser = _db.Users.FirstOrDefault(u => u.Email == email);
+            if (existingUser != null)
+            {
+                return Ok(true);  // البريد الإلكتروني موجود
+            }
+            return Ok(false);  // البريد الإلكتروني غير موجود
+        }
+
 
         [HttpPost("Login")]
         public IActionResult Login([FromBody] DTOsUser user)

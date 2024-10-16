@@ -104,7 +104,7 @@ background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244
                             </a>
                         </div>
                         <div class="btn">
-                            <a href="Regis.html" class="theme-btn" style="position: relative; left: 5em;">تسجيل</a>
+                            <a href="Login.html" id="auth-btn" class="theme-btn" style="position: relative; left: 5em;">تسجيل</a>
                         </div>
                         <div class="mobile-nav-toggler">
                             <i class="fa fa-bars"></i>
@@ -177,7 +177,7 @@ background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244
             <div class="auto-container">
                 <div class="inner-container">
                     <div class="logo">
-                        <a href="index.html" title><img src="img/Logo-removebg-preview (1).png" alt="شعار القادمي" title="الصفحة الرئيسية"></a>
+                        <a href="index.html" title><img src="img/Logo-removebg-preview (1).png" alt="شعار القدومي" title="الصفحة الرئيسية"></a>
                     </div>
     
                     <div class="nav-outer">
@@ -196,7 +196,7 @@ background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244
         </div>
     </header>
 
-<section class="vh-100 bg-image"
+<section class="vh-40 bg-image"
 style="background-image: url('img/form-bg.jpg'); background-size: cover; background-repeat: no-repeat; size: 100%;">
 <div class="mask d-flex align-items-center h-100 gradient-custom-3">
     <div class="container h-100">
@@ -206,43 +206,43 @@ style="background-image: url('img/form-bg.jpg'); background-size: cover; backgro
             <div class="card-body p-5">
             <h2 class="text-uppercase text-center mb-5">إنشاء حساب</h2>
 
+
             <form id="form">
-
+            
                 <div data-mdb-input-init class="form-outline mb-4">
-                <input type="text" name="UserName" id="form3Example1cg" class="form-control form-control-lg" />
-                <label class="form-label" for="form3Example1cg">أسمك</label>
+                    <input type="text" name="UserName" id="form3Example1cg" class="form-control form-control-lg" />
+                    <label class="form-label" for="form3Example1cg">أسمك</label>
                 </div>
-
+            
                 <div data-mdb-input-init class="form-outline mb-4">
-                <input type="email" id="form3Example3cg" name="Email" class="form-control form-control-lg" />
-                <label class="form-label" for="form3Example3cg">البريد الإلكتروني</label>
+                    <input type="email" id="form3Example3cg" name="Email" class="form-control form-control-lg" />
+                    <label class="form-label" for="form3Example3cg">البريد الإلكتروني</label>
                 </div>
-
+            
                 <div data-mdb-input-init class="form-outline mb-4">
-                <input type="password" id="password" name="Password" class="form-control form-control-lg" />
-                <label class="form-label" for="form3Example4cg">كلمة السر</label>
+                    <input type="password" id="password" name="Password" class="form-control form-control-lg" />
+                    <label class="form-label" for="form3Example4cg">كلمة السر</label>
                 </div>
-
+            
                 <div data-mdb-input-init class="form-outline mb-4">
-                <input type="password" id="repeatPass" name="ConfirmPassword" class="form-control form-control-lg" />
-                <label class="form-label" for="form3Example4cdg">تأكيد كلمة السر</label>
+                    <input type="password" id="repeatPass" name="ConfirmPassword" class="form-control form-control-lg" />
+                    <label class="form-label" for="form3Example4cdg">تأكيد كلمة السر</label>
                 </div>
-
+            
                 <div class="form-check d-flex justify-content-center mb-5">
-                <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3cg" />
-                <label class="form-check-label" for="form2Example3g">
-                    أوافق على جميع البيانات في <a href="#!" class="text-body"><u>الشروط والأحكام</u></a>
-                </label>
+                    <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3cg" />
+                    <label class="form-check-label" for="form2Example3g">
+                        أوافق على جميع البيانات في <a href="#!" class="text-body"><u>الشروط والأحكام</u></a>
+                    </label>
                 </div>
-
+            
                 <div class="d-flex justify-content-center">
-                <button onclick="register()"  type="button" data-mdb-button-init
-                    data-mdb-ripple-init class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">إنشاء حساب</button>
+                    <button onclick="register()" type="button" data-mdb-button-init data-mdb-ripple-init 
+                    class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">إنشاء حساب</button>
                 </div>
-
-                <p class="text-center text-muted mt-5 mb-0">هل لديك حساب بالفعل؟ <a href="Login.html"
-                    class="fw-bold text-body"><u>تسجيل الدخول هنا</u></a></p>
-
+            
+                <p class="text-center text-muted mt-5 mb-0">هل لديك حساب بالفعل؟ <a href="Login.html" class="fw-bold text-body"><u>تسجيل الدخول هنا</u></a></p>
+            
             </form>
 
             </div>
@@ -254,86 +254,9 @@ style="background-image: url('img/form-bg.jpg'); background-size: cover; backgro
 </section>
     
 
-    <!-- <footer class="main-footer footer-style-one">
+    <footer class="main-footer footer-style-one">
 
-        <div class="widgets-section" style="padding-bottom: 0px;">
-        <div class="auto-container">
-        <div class="row">
-        
-        <div class="footer-column col-lg-3 col-sm-6">
-        <div class="footer-widget contact-widget">
-        <div class="logo-box">
-        <div class="logo"><a href="index.html"><img src="img/Logo-removebg-preview (1).png" style="width: 200px; height: 200px;" alt title="Tronis"></a></div>
-        </div>
-        <div class="widget-content">
-        <div class="content-box">
-        <div class="icon-box">
-        <i class="flaticon-envelope"></i>
-        </div>
-        <span>البريد الإلكتروني</span>
-        <h6 class="title"><a href="https://mail.google.com/mail/?view=cm&fs=1&to=qadomya14@gmail.com" class="__cf_email__" data-cfemail="355c5b535a754c5a404758545c591b565a58">Qadomya14@gmail.com</a></h6>
-        </div>
-        <div class="content-box">
-        <div class="icon-box">
-        <i class="flaticon-clock-3"></i>
-        </div>
-        <span>Open Time</span>
-        <h6 class="title">9:00 Am - 7:30 Pm, Sat - thu </h6>
-        </div>
-        <ul class="social-icons">
-            <li><a href="https://x.com/ceramicnetwork?lang=en" target="_blank"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="https://www.facebook.com/QADOMY0" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-            <li><a href="https://www.instagram.com/qadomyforceramics?igsh=MzRlODBiNWFlZA==" target="_blank"><i class="fab fa-instagram"></i></a></li>    
-        </ul>
-        </div>
-        </div>
-        </div>
-        
-        <div class="footer-column col-lg-3 col-sm-6">
-        <div class="footer-widget links-widget pl-lg-30 pl-md--0">
-        <h4 class="widget-title">تعرف على خدماتنا الفريدة</h4>
-        <div class="widget-content">
-        <ul class="user-links style-two">
-        <li><a href="#">Flooring Service</a></li>
-        <li><a href="#">Wooden Services</a></li>
-        <li><a href="#">Corporate Tiles</a></li>
-        <li><a href="#">Carpet Setup</a></li>
-        <li><a href="#">Tiles Setup</a></li>
-        </ul>
-        </div>
-        </div>
-        </div>
-        
-        <div class="footer-column col-lg-3 col-sm-6">
-        <div class="footer-widget links-widget two pl-lg-30 pl-md--0">
-        <h4 class="widget-title">تعرف علينا</h4>
-        <div class="widget-content">
-        <ul class="user-links style-two">
-        <li><a href="#">Company History</a></li>
-        <li><a href="#">Latest Services</a></li>
-        <li><a href="#">Meet The Team</a></li>
-        <li><a href="#">Our Team</a></li>
-        <li><a href="#">Tiles Toilet Stones</a></li>
-        </ul>
-        </div>
-        </div>
-        </div>
-        
-        <div class="footer-column col-lg-3 col-sm-6">
-            <div class="footer-widget about-widget">
-                <h4 class="widget-title">موقعنا</h4>
-                <div class="text">نرحب بكم في معرض القدومي للسيراميك، حيث نعرض أحدث منتجاتنا</div>
-                <div class="map-container">
-                    <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3362.445816896865!2d35.867312999999996!3d32.567632599999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151c7432370fff93%3A0x1ccde88792caaf9!2z2KfZhNmC2K_ZiNmF2Yog2YTZhNiz2YrYsdin2YXZitmD!5e0!3m2!1sar!2sjo!4v1722115683791!5m2!1sar!2sjo"
-                        width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-            </div>
-        </div>
-        
-        </div>
-        </div>
-        </div>
+
         
         <div class="footer-bottom">
         <div class="auto-container">
@@ -345,40 +268,96 @@ style="background-image: url('img/form-bg.jpg'); background-size: cover; backgro
         </div>
         </div>
         <div class="scroll-to-top scroll-to-target arrow-btn" data-target="html" style><i class="fa-sharp fa-solid fa-arrow-up"></i></div>
-        </footer> -->
+        </footer>
 
         <script>
-            const url = "https://localhost:44327/api/User/Register";
-let form = document.getElementById("form");
-event.preventDefault();
-async function register() {
-    let formData = new FormData (form);
+            // الوصول إلى زر التسجيل
+let authBtn = document.getElementById("auth-btn");
 
-    let repeatPass=document.getElementById("repeatPass").value;
-    let password=document.getElementById("password").value
-    if(repeatPass!=password){
-        alert("the password doesn't match")
-        return;
+// التحقق من حالة تسجيل الدخول عند تحميل الصفحة
+window.onload = function() {
+    if (localStorage.getItem('jwtToken')) {
+        authBtn.textContent = "خروج"; // تغيير النص إلى خروج إذا كان المستخدم مسجل الدخول
+        authBtn.href = "#"; // منع الانتقال إلى صفحة تسجيل الدخول
     }
+};
 
-    let response = await fetch(url, 
-        {
-            method: "POST",
-            body:formData,
-        }
-    );
-    if(!response.ok){
-        alert("this email is already exist");
+// تسجيل الخروج عند الضغط على زر "خروج"
+authBtn.addEventListener("click", function(event) {
+    if (authBtn.textContent === "خروج") {
+        localStorage.removeItem('jwtToken'); // حذف رمز JWT من LocalStorage
+        authBtn.textContent = "تسجيل"; // إعادة النص إلى تسجيل
+        authBtn.href = "Login.html"; // إعادة الرابط إلى صفحة تسجيل الدخول
+        alert("تم تسجيل الخروج بنجاح");
+        window.location.href = "index.html"; // إعادة توجيه إلى الصفحة الرئيسية
+    }
+});
+
+
+            const registerUrl = "https://localhost:44327/api/User/Register";
+            const checkEmailUrl = "https://localhost:44327/api/User/CheckEmail";
+            let form = document.getElementById("form");
+        
+            async function checkEmail(email) {
+                try {
+                    let response = await fetch(`${checkEmailUrl}?email=${email}`);
+                    let emailExists = await response.json();
+                    return emailExists; // إرجاع true إذا كان البريد الإلكتروني موجودًا
+                } catch (error) {
+                    console.error("حدث خطأ أثناء التحقق من البريد الإلكتروني:", error);
+                    return false; // في حالة وجود خطأ، التعامل كما لو أن البريد الإلكتروني غير موجود
+                }
             }
-            let data=await response.json();
-
-            location.href = "Login.html";
-
-            alert("you are register ");
-}
-
-register();
+        
+            async function register() {
+                let formData = new FormData(form);
+                let email = document.getElementById("form3Example3cg").value;
+                let repeatPass = document.getElementById("repeatPass").value;
+                let password = document.getElementById("password").value;
+                let termsAccepted = document.getElementById("form2Example3cg").checked; // تحقق من حالة خانة الموافقة
+        
+                // تحقق من قبول الشروط والأحكام
+                if (!termsAccepted) {
+                    alert("يجب الموافقة على الشروط والأحكام للتسجيل.");
+                    return; // منع متابعة التسجيل إذا لم يتم قبول الشروط
+                }
+        
+                // التحقق من تطابق كلمة المرور
+                if (repeatPass !== password) {
+                    alert("كلمتا المرور غير متطابقتين. يُرجى التأكد من إدخال نفس كلمة المرور.");
+                    return;
+                }
+        
+                // التحقق من البريد الإلكتروني قبل إرسال الطلب
+                let emailExists = await checkEmail(email);
+                if (emailExists) {
+                    alert("البريد الإلكتروني الذي أدخلته مُسجل بالفعل. يُرجى استخدام بريد إلكتروني آخر.");
+                    return; // منع إرسال الطلب إذا كان البريد الإلكتروني مسجلًا
+                }
+        
+                // إذا كان البريد الإلكتروني غير موجود، استمر في التسجيل
+                try {
+                    let response = await fetch(registerUrl, {
+                        method: "POST",
+                        body: formData,
+                    });
+        
+                    if (!response.ok) {
+                        alert("حدث خطأ أثناء إنشاء الحساب. يُرجى المحاولة مرة أخرى.");
+                        return;
+                    }
+        
+                    let data = await response.json();
+                    alert("تم تسجيل الحساب بنجاح!");
+                    location.href = "Login.html";
+        
+                } catch (error) {
+                    console.error("حدث خطأ أثناء عملية التسجيل:", error);
+                    alert("حدث خطأ غير متوقع. يُرجى المحاولة مرة أخرى لاحقاً.");
+                }
+            }
         </script>
+        
         
 </body>
 </html>

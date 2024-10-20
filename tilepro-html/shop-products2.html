@@ -190,8 +190,8 @@
 
 <div class="d-flex align-items-center">
     <input id="CarPlateNumber" class="form-control me-2 ms-3 ps-2 border" type="search"
-    placeholder="Search by Name or Product Price" aria-label="Search" style="width: 300px;">
-    <button class="btn btn-success mt-3" onclick="filterUserByCarPlateNumber()" type="submit" style="background-color: #f94a29; border-color: #f94a29;">Search</button>
+    placeholder="أبحث من خلال إسم المنتج" aria-label="Search" style="width: 300px;">
+    <button class="btn btn-success mt-3" onclick="filterProductByNameAndPrice()" type="submit" style="background-color: #f94a29; border-color: #f94a29;">Search</button>
 </div>
 
 
@@ -250,94 +250,126 @@
     // الوصول إلى زر التسجيل
     let authBtn = document.getElementById("auth-btn");
 
-// التحقق من حالة تسجيل الدخول عند تحميل الصفحة
-window.onload = function() {
-    if (localStorage.getItem('jwtToken')) {
-        authBtn.textContent = "خروج"; // تغيير النص إلى خروج إذا كان المستخدم مسجل الدخول
-        authBtn.href = "#"; // منع الانتقال إلى صفحة تسجيل الدخول
-    }
-};
-
-// تسجيل الخروج عند الضغط على زر "خروج"
-authBtn.addEventListener("click", function(event) {
-    if (authBtn.textContent === "خروج") {
-        localStorage.removeItem('jwtToken'); // حذف رمز JWT من LocalStorage
-        authBtn.textContent = "تسجيل"; // إعادة النص إلى تسجيل
-        authBtn.href = "index.html"; // إعادة الرابط إلى صفحة تسجيل الدخول
-        alert("تم تسجيل الخروج بنجاح");
-        window.location.href = "index.html"; // إعادة توجيه إلى الصفحة الرئيسية
-    }
-});
-
-async function GetAllProductsForOneCategory() {
-    var id = localStorage.getItem("categoryId");
-    let url = `https://localhost:44327/api/Product/GetAllProductsForOneCategory/${id}`;
-    let response = await fetch(url);
-    if (!response.ok) {
-      throw new Error("Network response was not ok");
-    }
-    let data = await response.json();
-
-    // Sort the products by rating in ascending order
-    data.sort((a, b) => b.price - a.price );
-
-    let cate = document.getElementById("all");
-
-    data.forEach((Productts) => {
-        // توليد النجوم
-        let stars = '';
-        const fullStars = Math.floor(Productts.productRate); // عدد النجوم الكاملة
-        const halfStar = Productts.productRate % 1 >= 0.5; // تحديد إذا كان هناك نجمة نصفية
-
-        // إضافة النجوم الكاملة
-        for (let i = 0; i < fullStars; i++) {
-            stars += '<i class="fa-solid fa-star"></i>'; // نجمة مملوءة
+    // التحقق من حالة تسجيل الدخول عند تحميل الصفحة
+    window.onload = function() {
+        if (localStorage.getItem('jwtToken')) {
+            authBtn.textContent = "خروج"; // تغيير النص إلى خروج إذا كان المستخدم مسجل الدخول
+            authBtn.href = "#"; // منع الانتقال إلى صفحة تسجيل الدخول
         }
+        GetAllProductsForOneCategory(); // جلب جميع المنتجات عند تحميل الصفحة
+    };
 
-        // إضافة النجمة النصفية إذا كانت موجودة
-        if (halfStar) {
-            stars += '<i class="fa-solid fa-star-half-stroke"></i>'; // نجمة نصف
+    // تسجيل الخروج عند الضغط على زر "خروج"
+    authBtn.addEventListener("click", function(event) {
+        if (authBtn.textContent === "خروج") {
+            localStorage.removeItem('jwtToken'); // حذف رمز JWT من LocalStorage
+            authBtn.textContent = "تسجيل"; // إعادة النص إلى تسجيل
+            authBtn.href = "index.html"; // إعادة الرابط إلى صفحة تسجيل الدخول
+            alert("تم تسجيل الخروج بنجاح");
+            window.location.href = "index.html"; // إعادة توجيه إلى الصفحة الرئيسية
         }
-
-        // إضافة النجوم الفارغة
-        const emptyStars = 5 - fullStars - (halfStar ? 1 : 0);
-        for (let i = 0; i < emptyStars; i++) {
-            stars += '<i class="fa-regular fa-star"></i>'; // نجمة فارغة
-        }
-
-        cate.innerHTML += `
-        <div class="product-block all col-lg-3 col-md-6 col-sm-12">
-            <div class="inner-box">
-                <div class="image"><a href="#" onclick="save(${Productts.productId});"><img src="${Productts.productImage}" style="width: 271.3px; height: 271.3px;" alt="${Productts.productImage} (image for Product not found)" /></a></div>
-                <div class="content">
-                    <h4><a href="#" onclick="save(${Productts.productId});">${Productts.productName}</a></h4>
-                    <span class="price">JOD ${Productts.price}</span>
-                    <span class="rating">${stars}</span> <!-- هنا يتم عرض النجوم -->
-                </div>
-                <div class="icon-box">
-                    <a href="#" onclick="save(${Productts.productId});" class="ui-btn like-btn"><i class="fa fa-heart"></i></a>
-                    <a href="shop-cart.html" class="ui-btn add-to-cart"><i class="fa fa-shopping-cart"></i></a>
-                </div>
-            </div>
-        </div>
-        `;
     });
 
+    async function GetAllProductsForOneCategory() {
+        var id = localStorage.getItem("categoryId");
+        let url = `https://localhost:44327/api/Product/GetAllProductsForOneCategory/${id}`;
+        let response = await fetch(url);
+        if (!response.ok) {
+            throw new Error("Network response was not ok");
+        }
+        let data = await response.json();
 
+        // Sort the products by rating in ascending order
+        data.sort((a, b) => b.price - a.price );
 
-    console.log(data);
-}
+        let cate = document.getElementById("all");
+        cate.innerHTML = ""; // تفريغ المنتجات القديمة
 
+        renderProducts(data); // استخدام الدالة لعرض المنتجات
+    }
 
-function save(productId) {
-    localStorage.setItem("productId", productId);
-    window.location.href = "shop-product-details.html";
-}
+    function save(productId) {
+        localStorage.setItem("productId", productId);
+        window.location.href = "shop-product-details.html";
+    }
 
-GetAllProductsForOneCategory();
+    async function filterProductByNameAndPrice() {
+        const searchTerm = document.getElementById('CarPlateNumber').value.trim();
+        const categoryId = localStorage.getItem("categoryId"); // الحصول على معرف الفئة
 
+        // إذا كان مربع البحث فارغًا، استرجع جميع المنتجات
+        if (searchTerm === '') {
+            await GetAllProductsForOneCategory(); // استرجاع جميع المنتجات
+            return; // إنهاء الدالة
+        }
+        
+        // فصل الاسم والسعر
+        const name = isNaN(searchTerm) ? searchTerm : ''; // إذا لم يكن عددًا فهو اسم
+        const price = !isNaN(searchTerm) ? parseFloat(searchTerm) : null; // إذا كان عددًا فهو سعر
 
+        // إنشاء رابط البحث مع كل من الاسم والسعر ومعرف الفئة
+        let url = `https://localhost:44327/api/Product/SearchProducts?name=${name}&price=${price !== null ? price : ''}&categoryId=${categoryId}`;
+
+        try {
+            let response = await fetch(url);
+            let data = await response.json();
+            renderProducts(data); // عرض النتائج المفلترة
+        } catch (error) {
+            console.error('Error fetching products:', error);
+        }
+    }
+
+    // دالة لعرض المنتجات
+    function renderProducts(data) {
+        let cate = document.getElementById("all");
+        cate.innerHTML = ""; // تفريغ المنتجات القديمة
+
+        data.forEach((Productts) => {
+            // توليد النجوم
+            let stars = '';
+            const fullStars = Math.floor(Productts.productRate); // عدد النجوم الكاملة
+            const halfStar = Productts.productRate % 1 >= 0.5; // تحديد إذا كان هناك نجمة نصفية
+
+            // إضافة النجوم الكاملة
+            for (let i = 0; i < fullStars; i++) {
+                stars += '<i class="fa-solid fa-star"></i>'; // نجمة مملوءة
+            }
+
+            // إضافة النجمة النصفية إذا كانت موجودة
+            if (halfStar) {
+                stars += '<i class="fa-solid fa-star-half-stroke"></i>'; // نجمة نصف
+            }
+
+            // إضافة النجوم الفارغة
+            const emptyStars = 5 - fullStars - (halfStar ? 1 : 0);
+            for (let i = 0; i < emptyStars; i++) {
+                stars += '<i class="fa-regular fa-star"></i>'; // نجمة فارغة
+            }
+
+            cate.innerHTML += `
+            <div class="product-block all col-lg-3 col-md-6 col-sm-12">
+                <div class="inner-box">
+                    <div class="image"><a href="#" onclick="save(${Productts.productId});"><img src="${Productts.productImage}" style="width: 271.3px; height: 271.3px;" alt="${Productts.productImage} (image for Product not found)" /></a></div>
+                    <div class="content">
+                        <h4><a href="#" onclick="save(${Productts.productId});">${Productts.productName}</a></h4>
+                        <span class="price">JOD ${Productts.price}</span>
+                        <span class="rating">${stars}</span> <!-- هنا يتم عرض النجوم -->
+                    </div>
+                    <div class="icon-box">
+                        <a href="#" onclick="save(${Productts.productId});" class="ui-btn like-btn"><i class="fa fa-heart"></i></a>
+                        <a href="shop-cart.html" class="ui-btn add-to-cart"><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </div>
+            `;
+        });
+    }
+
+    // إضافة حدث الاستماع للتغيير في مربع الإدخال لفلترة المنتجات تلقائيًا
+    document.getElementById('CarPlateNumber').addEventListener('input', filterProductByNameAndPrice);
 </script>
+
+
 <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/jquery.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>

@@ -78,5 +78,85 @@ namespace MyProject.Controllers
             _db.SaveChanges();
             return Ok();
         }
+
+        [HttpGet("SearchProducts")]
+        public IActionResult SearchProducts([FromQuery] string name, [FromQuery] decimal? price, [FromQuery] int? categoryId)
+        {
+            var query = _db.Products.AsQueryable();
+
+            if (!string.IsNullOrEmpty(name))
+            {
+                query = query.Where(p => p.ProductName.Contains(name));
+            }
+
+            if (price.HasValue)
+            {
+                query = query.Where(p => p.Price == price.Value);
+            }
+
+            if (categoryId.HasValue)
+            {
+                query = query.Where(p => p.CategoryId == categoryId.Value);
+            }
+
+            var products = query.ToList();
+            return Ok(products);
+        }
+
+        [HttpPost("AddNewProduct")]
+        public IActionResult AddProduct([FromForm] ProductRequest req)
+        {
+            var data = new Product
+            {
+                ProductName = req.ProductName,
+                ProductDescription = req.ProductDescription,
+                Price = req.Price,
+                Stock = req.Stock,
+                ProductRate = req.ProductRate,
+                CategoryId = req.CategoryId,
+                ProductImage = req.ProductImage
+            };
+            _db.Products.Add(data);
+            _db.SaveChanges();
+            return Ok();
+        }
+
+        [HttpPut("UpdateTheProductByID/{id}")]
+        public IActionResult UpdateProduct(int id, [FromForm] ProductRequest request)
+        {
+            var upproduct = _db.Products.FirstOrDefault(t => t.ProductId == id);
+
+            upproduct.ProductName = request.ProductName;
+            upproduct.ProductDescription = request.ProductDescription;
+            upproduct.Price = request.Price;
+            upproduct.Stock = request.Stock;
+            upproduct.ProductRate = request.ProductRate;
+            upproduct.ProductImage = request.ProductImage;
+            upproduct.CategoryId = request.CategoryId;
+
+            _db.Products.Update(upproduct);
+            _db.SaveChanges();
+            return Ok();
+        }
+
+        [HttpDelete("DeleteProduct/{id}")]
+        public IActionResult DeleteProduct(int id)
+        {
+            if (id <= 0)
+            {
+                return BadRequest();
+            }
+            var cate = _db.Products.FirstOrDefault(cc => cc.ProductId == id);
+
+            if (cate == null)
+            {
+                return NotFound();
+            }
+            _db.Products.Remove(cate);
+            _db.SaveChanges();
+            return NoContent();
+        }
+
+
     }
 }

@@ -190,8 +190,8 @@
 
 <div class="d-flex align-items-center">
     <input id="CarPlateNumber" class="form-control me-2 ms-3 ps-2 border" type="search"
-    placeholder="Search by Name or Product Price" aria-label="Search" style="width: 300px;">
-    <button class="btn btn-success mt-3" onclick="filterUserByCarPlateNumber()" type="submit" style="background-color: #f94a29; border-color: #f94a29;">Search</button>
+    placeholder="أبحث من خلال إسم المنتج" aria-label="Search" style="width: 300px;">
+    <button class="btn btn-success mt-3" onclick="filterProductByNameOrId()" type="submit" style="background-color: #f94a29; border-color: #f94a29;">Search</button>
 </div>
 
 
@@ -227,84 +227,7 @@
 
 <footer class="main-footer footer-style-one">
 
-    <div class="widgets-section" style="padding-bottom: 0px;">
-    <div class="auto-container">
-    <div class="row">
-    
-    <div class="footer-column col-lg-3 col-sm-6">
-    <div class="footer-widget contact-widget">
-    <div class="logo-box">
-    <div class="logo"><a href="index.html"><img src="img/Logo-removebg-preview (1).png" style="width: 200px; height: 200px;" alt title="Tronis"></a></div>
-    </div>
-    <div class="widget-content">
-    <div class="content-box">
-    <div class="icon-box">
-    <i class="flaticon-envelope"></i>
-    </div>
-    <span>البريد الإلكتروني</span>
-    <h6 class="title"><a href="https://mail.google.com/mail/?view=cm&fs=1&to=qadomya14@gmail.com" class="__cf_email__" data-cfemail="355c5b535a754c5a404758545c591b565a58">Qadomya14@gmail.com</a></h6>
-    </div>
-    <div class="content-box">
-    <div class="icon-box">
-    <i class="flaticon-clock-3"></i>
-    </div>
-    <span>Open Time</span>
-    <h6 class="title">9:00 Am - 7:30 Pm, Sat - thu </h6>
-    </div>
-    <ul class="social-icons">
-        <li><a href="https://x.com/ceramicnetwork?lang=en" target="_blank"><i class="fab fa-twitter"></i></a></li>
-        <li><a href="https://www.facebook.com/QADOMY0" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-        <li><a href="https://www.instagram.com/qadomyforceramics?igsh=MzRlODBiNWFlZA==" target="_blank"><i class="fab fa-instagram"></i></a></li>    
-    </ul>
-    </div>
-    </div>
-    </div>
-    
-    <div class="footer-column col-lg-3 col-sm-6">
-    <div class="footer-widget links-widget pl-lg-30 pl-md--0">
-    <h4 class="widget-title">تعرف على خدماتنا الفريدة</h4>
-    <div class="widget-content">
-    <ul class="user-links style-two">
-    <li><a href="#">Flooring Service</a></li>
-    <li><a href="#">Wooden Services</a></li>
-    <li><a href="#">Corporate Tiles</a></li>
-    <li><a href="#">Carpet Setup</a></li>
-    <li><a href="#">Tiles Setup</a></li>
-    </ul>
-    </div>
-    </div>
-    </div>
-    
-    <div class="footer-column col-lg-3 col-sm-6">
-    <div class="footer-widget links-widget two pl-lg-30 pl-md--0">
-    <h4 class="widget-title">تعرف علينا</h4>
-    <div class="widget-content">
-    <ul class="user-links style-two">
-    <li><a href="#">Company History</a></li>
-    <li><a href="#">Latest Services</a></li>
-    <li><a href="#">Meet The Team</a></li>
-    <li><a href="#">Our Team</a></li>
-    <li><a href="#">Tiles Toilet Stones</a></li>
-    </ul>
-    </div>
-    </div>
-    </div>
-    
-    <div class="footer-column col-lg-3 col-sm-6">
-        <div class="footer-widget about-widget">
-            <h4 class="widget-title">موقعنا</h4>
-            <div class="text">نرحب بكم في معرض القدومي للسيراميك، حيث نعرض أحدث منتجاتنا</div>
-            <div class="map-container">
-                <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3362.445816896865!2d35.867312999999996!3d32.567632599999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151c7432370fff93%3A0x1ccde88792caaf9!2z2KfZhNmC2K_ZiNmF2Yog2YTZhNiz2YrYsdin2YXZitmD!5e0!3m2!1sar!2sjo!4v1722115683791!5m2!1sar!2sjo"
-                    width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-        </div>
-    </div>
-    
-    </div>
-    </div>
-    </div>
+
     
     <div class="footer-bottom">
     <div class="auto-container">
@@ -325,86 +248,117 @@
     // الوصول إلى زر التسجيل
     let authBtn = document.getElementById("auth-btn");
 
-// التحقق من حالة تسجيل الدخول عند تحميل الصفحة
-window.onload = function() {
-    if (localStorage.getItem('jwtToken')) {
-        authBtn.textContent = "خروج"; // تغيير النص إلى خروج إذا كان المستخدم مسجل الدخول
-        authBtn.href = "#"; // منع الانتقال إلى صفحة تسجيل الدخول
-    }
-};
-
-// تسجيل الخروج عند الضغط على زر "خروج"
-authBtn.addEventListener("click", function(event) {
-    if (authBtn.textContent === "خروج") {
-        localStorage.removeItem('jwtToken'); // حذف رمز JWT من LocalStorage
-        authBtn.textContent = "تسجيل"; // إعادة النص إلى تسجيل
-        authBtn.href = "index.html"; // إعادة الرابط إلى صفحة تسجيل الدخول
-        alert("تم تسجيل الخروج بنجاح");
-        window.location.href = "index.html"; // إعادة توجيه إلى الصفحة الرئيسية
-    }
-});
-
-async function GetAllCategory() {
-    let url = `https://localhost:44327/api/Product/GetAllProducts`;
-    let response = await fetch(url);
-    let data = await response.json();
-
-    data.sort((a, b) => b.price - a.price );
-
-    let cate = document.getElementById("all");
-
-    data.forEach((Productts) => {
-        // توليد النجوم
-        let stars = '';
-        const fullStars = Math.floor(Productts.productRate); // عدد النجوم الكاملة
-        const halfStar = Productts.productRate % 1 >= 0.5; // تحديد إذا كان هناك نجمة نصفية
-
-        // إضافة النجوم الكاملة
-        for (let i = 0; i < fullStars; i++) {
-            stars += '<i class="fa-solid fa-star"></i>'; // نجمة مملوءة
+    // التحقق من حالة تسجيل الدخول عند تحميل الصفحة
+    window.onload = function() {
+        if (localStorage.getItem('jwtToken')) {
+            authBtn.textContent = "خروج"; // تغيير النص إلى خروج إذا كان المستخدم مسجل الدخول
+            authBtn.href = "#"; // منع الانتقال إلى صفحة تسجيل الدخول
         }
+        GetAllCategory(); // جلب جميع المنتجات عند تحميل الصفحة
+    };
 
-        // إضافة النجمة النصفية إذا كانت موجودة
-        if (halfStar) {
-            stars += '<i class="fa-solid fa-star-half-stroke"></i>'; // نجمة نصف
+    // تسجيل الخروج عند الضغط على زر "خروج"
+    authBtn.addEventListener("click", function(event) {
+        if (authBtn.textContent === "خروج") {
+            localStorage.removeItem('jwtToken'); // حذف رمز JWT من LocalStorage
+            authBtn.textContent = "تسجيل"; // إعادة النص إلى تسجيل
+            authBtn.href = "index.html"; // إعادة الرابط إلى صفحة تسجيل الدخول
+            alert("تم تسجيل الخروج بنجاح");
+            window.location.href = "index.html"; // إعادة توجيه إلى الصفحة الرئيسية
         }
-
-        // إضافة النجوم الفارغة
-        const emptyStars = 5 - fullStars - (halfStar ? 1 : 0);
-        for (let i = 0; i < emptyStars; i++) {
-            stars += '<i class="fa-regular fa-star"></i>'; // نجمة فارغة
-        }
-        cate.innerHTML += `
-        <div class="product-block all col-lg-3 col-md-6 col-sm-12">
-            <div class="inner-box">
-                <div class="image"><a href="#" onclick="save(${Productts.productId});"><img src="${Productts.productImage}" style="width: 271.3px; height: 271.3px;" alt="${Productts.productImage} (image for Product not found)" /></a></div>
-                <div class="content">
-                    <h4><a href="#" onclick="save(${Productts.productId});">${Productts.productName}</a></h4>
-                    <span class="price">JOD ${Productts.price}</span>
-                    <span class="rating">${stars}</span> <!-- هنا يتم عرض النجوم -->
-                </div>
-                <div class="icon-box">
-                    <a href="#" onclick="save(${Productts.productId});" class="ui-btn like-btn"><i class="fa fa-heart"></i></a>
-                    <a href="shop-cart.html" class="ui-btn add-to-cart"><i class="fa fa-shopping-cart"></i></a>
-                </div>
-            </div>
-        </div>
-        `;
     });
 
+    async function GetAllCategory() {
+        let url = `https://localhost:44327/api/Product/GetAllProducts`;
+        let response = await fetch(url);
+        let data = await response.json();
 
+        // فرز البيانات حسب السعر
+        data.sort((a, b) => b.price - a.price);
 
-    console.log(data);
+        renderProducts(data); // عرض المنتجات
+    }
+
+    // دالة لعرض المنتجات في الصفحة
+    function renderProducts(data) {
+        let cate = document.getElementById("all");
+        cate.innerHTML = ""; // تفريغ المنتجات القديمة
+
+        data.forEach((Productts) => {
+            let stars = generateStars(Productts.productRate); // توليد النجوم
+            cate.innerHTML += `
+            <div class="product-block all col-lg-3 col-md-6 col-sm-12">
+                <div class="inner-box">
+                    <div class="image"><a href="#" onclick="save(${Productts.productId});"><img src="${Productts.productImage}" style="width: 271.3px; height: 271.3px;" alt="${Productts.productImage} (image for Product not found)" /></a></div>
+                    <div class="content">
+                        <h4><a href="#" onclick="save(${Productts.productId});">${Productts.productName}</a></h4>
+                        <span class="price">JOD ${Productts.price}</span>
+                        <span class="rating">${stars}</span>
+                    </div>
+                    <div class="icon-box">
+                        <a href="#" onclick="save(${Productts.productId});" class="ui-btn like-btn"><i class="fa fa-heart"></i></a>
+                        <a href="shop-cart.html" class="ui-btn add-to-cart"><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </div>
+            `;
+        });
+    }
+
+    // دالة لتوليد النجوم بناءً على تقييم المنتج
+    function generateStars(rate) {
+        let stars = '';
+        const fullStars = Math.floor(rate);
+        const halfStar = rate % 1 >= 0.5;
+
+        for (let i = 0; i < fullStars; i++) {
+            stars += '<i class="fa-solid fa-star"></i>';
+        }
+
+        if (halfStar) {
+            stars += '<i class="fa-solid fa-star-half-stroke"></i>';
+        }
+
+        const emptyStars = 5 - fullStars - (halfStar ? 1 : 0);
+        for (let i = 0; i < emptyStars; i++) {
+            stars += '<i class="fa-regular fa-star"></i>';
+        }
+
+        return stars;
+    }
+
+    function save(productId) {
+        localStorage.setItem("productId", productId);
+        window.location.href = "shop-product-details.html";
+    }
+
+    async function filterProductByNameAndPrice() {
+    const searchTerm = document.getElementById('CarPlateNumber').value.trim();
+    
+    // إذا كان مربع البحث فارغًا، استرجع جميع المنتجات
+    if (searchTerm === '') {
+        await GetAllCategory(); // استرجاع جميع المنتجات
+        return; // إنهاء الدالة
+    }
+    
+    // فصل الاسم والسعر
+    const name = isNaN(searchTerm) ? searchTerm : ''; // إذا لم يكن عددًا فهو اسم
+    const price = !isNaN(searchTerm) ? parseFloat(searchTerm) : null; // إذا كان عددًا فهو سعر
+
+    // إنشاء رابط البحث مع كل من الاسم والسعر
+    let url = `https://localhost:44327/api/Product/SearchProducts?name=${name}&price=${price !== null ? price : ''}`;
+
+    try {
+        let response = await fetch(url);
+        let data = await response.json();
+        renderProducts(data); // عرض النتائج المفلترة
+    } catch (error) {
+        console.error('Error fetching products:', error);
+    }
 }
 
-
-function save(productId) {
-    localStorage.setItem("productId", productId);
-    window.location.href = "shop-product-details.html";
-}
-
-GetAllCategory();
-
+// إضافة حدث الاستماع للتغيير في مربع الإدخال لفلترة المنتجات تلقائيًا
+document.getElementById('CarPlateNumber').addEventListener('input', filterProductByNameAndPrice);
 
 </script>
 <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/jquery.js"></script>

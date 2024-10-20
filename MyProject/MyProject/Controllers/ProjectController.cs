@@ -64,5 +64,23 @@ namespace MyProject.Controllers
             _db.SaveChanges();
             return Ok();
         }
+
+        [HttpDelete("DeleteProject/{id}")]
+        public IActionResult DeleteProject(int id)
+        {
+            if (id <= 0)
+            {
+                return BadRequest();
+            }
+            var cate = _db.Projects.FirstOrDefault(cc => cc.ProjectId== id);
+
+            if (cate == null)
+            {
+                return NotFound();
+            }
+            _db.Projects.Remove(cate);
+            _db.SaveChanges();
+            return Ok(cate);
+        }
     }
 }

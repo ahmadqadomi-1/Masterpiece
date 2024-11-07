@@ -5,7 +5,7 @@
 
 
 async function FeedBack() {
-    debugger
+    
     let url = `https://localhost:44327/api/FeedBack/GetAllFeedback`;
     let response = await fetch(url);
     let data = await response.json();
@@ -83,7 +83,7 @@ async function ProjectData() {
 ProjectData();
 ///////////
 async function GetAllNews() {
-    debugger
+    // debugger
     let url = `https://localhost:44327/api/News/GetLatestNews`;
     let response = await fetch(url);
     let data = await response.json();
@@ -147,7 +147,7 @@ authBtn.addEventListener("click", function(event) {
 
 
 async function Category() {
-    debugger
+    // debugger
     let url = `https://localhost:44327/api/Category/GetAllCategories`;
     let response = await fetch(url);
     let data = await response.json();

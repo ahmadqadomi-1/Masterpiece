@@ -1,0 +1,10 @@
+{
+"SpaProxyServer": {
+"ServerUrl": "https://localhost:4200",
+"RedirectUrl": "",
+"LaunchCommand": "npm start",
+"WorkingDirectory": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\..\\masterpiecedashboard.client",
+"MaxTimeoutInSeconds": "120",
+"KeepRunning": "false"
+}
+}

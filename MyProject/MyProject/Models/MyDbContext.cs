@@ -15,6 +15,8 @@ public partial class MyDbContext : DbContext
     {
     }
 
+    public virtual DbSet<Admin> Admins { get; set; }
+
     public virtual DbSet<Cart> Carts { get; set; }
 
     public virtual DbSet<CartItem> CartItems { get; set; }
@@ -49,6 +51,29 @@ public partial class MyDbContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        modelBuilder.Entity<Admin>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PK__Admins__3213E83F0E6117EF");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.CreatedAt)
+                .HasDefaultValueSql("(getdate())")
+                .HasColumnType("datetime")
+                .HasColumnName("createdAt");
+            entity.Property(e => e.Email)
+                .HasMaxLength(255)
+                .HasColumnName("email");
+            entity.Property(e => e.PasswordHash).HasColumnName("passwordHash");
+            entity.Property(e => e.PasswordSalt).HasColumnName("passwordSalt");
+            entity.Property(e => e.Role)
+                .HasMaxLength(50)
+                .HasDefaultValue("Admin")
+                .HasColumnName("role");
+            entity.Property(e => e.Username)
+                .HasMaxLength(255)
+                .HasColumnName("username");
+        });
+
         modelBuilder.Entity<Cart>(entity =>
         {
             entity.HasKey(e => e.CartId).HasName("PK__Cart__51BCD797A1B46BE8");

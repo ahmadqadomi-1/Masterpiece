@@ -1,0 +1,2 @@
+C:\Users\Orange\source\repos\masterpieceDashboard\masterpiecedashboard.client\obj\Debug\masterpiecedashboard.client.esproj.CoreCompileInputs.cache
+C:\Users\Orange\Desktop\My Web Sites\Masterpiece\masterpieceDashboard\masterpiecedashboard.client\obj\Debug\masterpiecedashboard.client.esproj.CoreCompileInputs.cache

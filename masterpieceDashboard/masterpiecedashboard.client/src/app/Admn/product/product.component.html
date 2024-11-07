@@ -1,0 +1,47 @@
+<h2 class="text-center my-4 d-flex flex-column align-items-center">
+  <!--<a routerLink="/adminDashboard" class="header-logo-box d-flex flex-column align-items-center">-->
+  <!--<img src="assets/media/logo.png" alt="logo" class="header-logo mb-3">-->
+  <span>Product</span>
+  <!--</a>-->
+</h2>
+
+
+
+<hr />
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Product Id</th>
+      <th scope="col">Product Name</th>
+      <th scope="col">Product Image</th>
+      <th scope="col">Product Description</th>
+      <th scope="col">Product Price</th>
+      <th scope="col">Stock</th>
+      <th scope="col">Product productRate</th>
+      <!--<th scope="col">Add</th>-->
+      <!--<th scope="col">Edit</th>-->
+      <th scope="col">Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let Products of ProductArray">
+      <td>{{ Products.productId }}</td>
+      <td>{{ Products.productName }}</td>
+      <td>{{ Products.productImage }}</td>
+      <td>{{ Products.productDescription }}</td>
+      <td>{{ Products.price }} JOD</td>
+      <td>{{ Products.stock }} Meters</td>
+      <td>{{ Products.productRate }} Stars</td>
+      <!--<td>
+    <button class="btn btn-primary" (click)="AddCategory(Category.categoryId)">Add</button>
+  </td>
+  <td>
+    <button class="btn btn-success" (click)="EditCategory(Category.categoryId)">Edit</button>
+  </td>-->
+      <td>
+        <button class="btn btn-danger" (click)="deleteProductById(Products.productId)">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

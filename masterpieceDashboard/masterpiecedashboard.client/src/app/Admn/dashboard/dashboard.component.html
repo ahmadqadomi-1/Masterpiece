@@ -1,0 +1,79 @@
+<ng-container>
+  <div class="container-fluid">
+    <div class="row flex-nowrap">
+      <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
+        <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+          <a routerLink="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            <img src="../../../assets/img/Logo-removebg-preview (1).png" alt="logo" class="header-logo" style="width: 100px; height: 100px;">
+          </a>
+          <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+
+            <!-- Categories -->
+            <li class="nav-item">
+              <a routerLink="/dashboard/catgory" class="nav-link text-white align-middle px-0">
+                <i class="fs-4 bi-house users-icon"></i>
+                <span class="ms-1 d-none d-sm-inline">Categories</span>
+              </a>
+            </li>
+
+            <!-- Products -->
+            <li class="nav-item">
+              <a routerLink="/dashboard/Product" class="nav-link text-white align-middle px-0">
+                <i class="fs-4 bi-house users-icon"></i>
+                <span class="ms-1 d-none d-sm-inline">Product</span>
+              </a>
+            </li>
+
+            <!-- Projects -->
+            <li class="nav-item">
+              <a routerLink="/dashboard/Project" class="nav-link text-white align-middle px-0">
+                <i class="fs-4 bi-house users-icon"></i>
+                <span class="ms-1 d-none d-sm-inline">Project</span>
+              </a>
+            </li>
+
+            <!-- Team -->
+            <li class="nav-item">
+              <a routerLink="/dashboard/Team" class="nav-link text-white align-middle px-0">
+                <i class="fs-4 bi-house users-icon"></i>
+                <span class="ms-1 d-none d-sm-inline">Our Team</span>
+              </a>
+            </li>
+
+            <!-- Tiler -->
+            <li class="nav-item">
+              <a routerLink="/dashboard/Tiler" class="nav-link text-white align-middle px-0">
+                <i class="fs-4 bi-house users-icon"></i>
+                <span class="ms-1 d-none d-sm-inline">Tiler</span>
+              </a>
+            </li>
+
+            <!-- Contact -->
+            <li class="nav-item">
+              <a routerLink="/adminDashboard/ContactAdmin" class="nav-link text-white px-0 align-middle">
+                <i class="fs-4 bi-envelope contact-icon"></i>
+                <span class="ms-1 d-none d-sm-inline">Contact</span>
+              </a>
+            </li>
+
+            <!-- Logout -->
+            <li class="nav-item">
+              <!--<a class="nav-link text-white px-0 align-middle" (click)="logout()">-->
+              <a class="nav-link text-white px-0 align-middle">
+                <i class="fs-4 bi-box-arrow-right"></i>
+                <span class="ms-1 d-none d-sm-inline">Log out</span>
+              </a>
+            </li>
+
+          </ul>
+          <hr>
+        </div>
+      </div>
+
+      <!-- Main Content -->
+      <div class="col py-3">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</ng-container>

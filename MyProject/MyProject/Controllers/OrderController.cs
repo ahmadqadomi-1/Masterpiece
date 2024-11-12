@@ -16,6 +16,13 @@ namespace MyProject.Controllers
             _db = db;
         }
 
+        [HttpGet("GetAllOrders")]
+        public IActionResult Order()
+        {
+            var OO = _db.Orders.ToList();
+            return Ok(OO);
+        }
+
         [HttpPost]
         public IActionResult CreateOrder([FromBody] CreateOrderDTO newOrder)
         {
@@ -38,6 +45,37 @@ namespace MyProject.Controllers
             _db.SaveChanges();
 
             return Ok(order);
+        }
+
+        [HttpPut("SetPaymentMethod/{orderId}")]
+        public async Task<IActionResult> SetPaymentMethod(int orderId, [FromBody] string paymentMethod)
+        {
+            
+            if (paymentMethod != "Paypal" && paymentMethod != "الدفع عند الإستلام")
+            {
+                return BadRequest("طريقة الدفع غير صحيحة.");
+            }
+
+            
+            var order = await _db.Orders.FindAsync(orderId);
+            if (order == null)
+            {
+                return NotFound("لم يتم العثور على الطلب.");
+            }
+
+            
+            order.PaymentMethod = paymentMethod;
+
+            
+            try
+            {
+                await _db.SaveChangesAsync();
+                return Ok(new { message = "تم تحديث طريقة الدفع بنجاح." });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, new { message = "حدث خطأ أثناء تحديث طريقة الدفع.", error = ex.Message });
+            }
         }
     }
 }

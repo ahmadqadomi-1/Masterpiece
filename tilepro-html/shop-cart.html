@@ -1,530 +1,452 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- Mirrored from html.kodesolution.com/2024/tilepro-html/shop-cart.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Sep 2024 20:37:33 GMT -->
-  <head>
+<head>
     <meta charset="utf-8" />
     <title>Al-Qadomy | Tiling & Flooring Services |</title>
-
     <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
-    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link rel="stylesheet" href="css/slick-theme.css" />
+    <link rel="stylesheet" href="css/slick.css" />
     <link href="css/style.css" rel="stylesheet" />
-    <link
-      rel="shortcut icon"
-      href="img/Logo-removebg-preview (1).png"
-      type="image/x-icon"
-    />
-    <link
-      rel="icon"
-      href="img/Logo-removebg-preview (1).png"
-      type="image/x-icon"
-    />
-
+    <link rel="shortcut icon" href="img/Logo-removebg-preview (1).png" type="image/x-icon" />
+    <link rel="icon" href="img/Logo-removebg-preview (1).png" type="image/x-icon" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 
     <style>
-      .product-quantity {
-        display: flex; 
-        justify-content: center; 
-        align-items: center; 
-      }
-      table.tbl-shopping-cart th,
-      table.tbl-shopping-cart td,
-      table.cart-total th,
-      table.cart-total td {
-        height: 132px;
-      }
-      span.quantity {
-    position: relative;
-    top: -0.5em;
-}
+        .product-quantity {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        table.tbl-shopping-cart th,
+        table.tbl-shopping-cart td,
+        table.cart-total th,
+        table.cart-total td {
+            height: 132px;
+        }
+        span.quantity {
+            position: relative;
+            top: -0.5em;
+        }
     </style>
-  </head>
-  <body>
+</head>
+<body>
     <div class="page-wrapper">
-      <div class="preloader"></div>
+        <div class="preloader"></div>
 
-      <header class="main-header header-style-one">
-        <div class="header-lower">
-          <div class="auto-container">
-            <div class="main-box">
-              <div class="logo-box">
-                <div class="logo">
-                  <a href="index.html">
-                    <img
-                      src="img/Logo-removebg-preview (1).png"
-                      style="height: 100px"
-                      alt="شعار القادمي"
-                      title="الصفحة الرئيسية"
-                    />
-                  </a>
-                </div>
-              </div>
-
-              <div class="nav-outer">
-                <nav class="nav main-menu">
-                  <ul class="navigation">
-                    <li><a href="index.html">الرئيسية</a></li>
-                    <li class=""><a href="shop-products.html">الفئات</a></li>
-                    <li><a href="page-services.html">الخدمات</a></li>
-                    <li><a href="news-grid.html">الأخبار</a></li>
-                    <li class="dropdown">
-                      <a href="#">الصفحات</a>
-                      <ul>
-                        <li><a href="page-about.html">عن الشركة</a></li>
-                        <li><a href="page-projects.html">المشاريع</a></li>
-                        <li><a href="page-team.html">الفريق</a></li>
-                        <li><a href="page-faq.html">الأسئلة الشائعة</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
-
-              <div class="outer-box">
-                <div class="search-btn">
-                  <a
-                    href="#"
-                    class="search"
-                    style="font-size: 20px; color: #333"
-                    ><i class="flaticon-search-3"></i
-                  ></a>
-                </div>
-                <!-- أيقونة عربة التسوق -->
-                <div
-                  class="cart-btn"
-                  style="
-                    display: inline-flex;
-                    align-items: center;
-                    margin-left: 15px;
-                  "
-                >
-                  <a
-                    href="shop-cart.html"
-                    class="cart-icon"
-                    style="
-                      display: inline-flex;
-                      align-items: center;
-                      position: relative;
-                      text-decoration: none;
-                      color: #333;
-                    "
-                  >
-                    <i
-                      class="fa fa-shopping-cart"
-                      style="font-size: 24px; position: relative; right: 25px"
-                    ></i>
-                    <span
-                      class="badge"
-                      style="
-                        background-color: #f94a29; /* لون خلفية الرقم */
-                        color: #fff; /* لون نص الرقم */
-                        border-radius: 50%; /* شكل دائري */
-                        height: 24px; /* ارتفاع الرقم */
-                        width: 24px; /* عرض الرقم */
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        font-size: 12px; /* حجم نص الرقم */
-                        position: absolute; /* موضع الرقم */
-                        top: -10px; /* موضع الرقم أعلى قليلاً */
-                        right: 15px; /* موضع الرقم لليمين قليلاً */
-                      "
-                      >3</span
-                    >
-                  </a>
-                </div>
-                <div class="btn">
-                  <a
-                    href="Login.html"
-                    id="auth-btn"
-                    class="theme-btn"
-                    style="position: relative; left: 5em"
-                    >تسجيل</a
-                  >
-                </div>
-                <div class="mobile-nav-toggler">
-                  <i class="fa fa-bars"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- الجزء الخاص بالنافذة المتنقلة -->
-        <div class="mobile-menu">
-          <div class="menu-backdrop"></div>
-          <nav class="menu-box">
-            <div class="upper-box">
-              <div class="nav-logo">
-                <a href="index.html">
-                  <img
-                    src="img/Logo-removebg-preview (1).png"
-                    alt="شعار القادمي"
-                    title="الصفحة الرئيسية"
-                  />
-                </a>
-              </div>
-              <div class="close-btn"><i class="icon fa fa-times"></i></div>
-            </div>
-            <ul class="navigation clearfix"></ul>
-            <ul class="contact-list-one">
-              <li>
-                <div class="contact-info-box">
-                  <i class="icon lnr-icon-phone-handset"></i>
-                  <span class="title">اتصل الآن</span>
-                  <a href="tel:+962-79-184-0140">+962-79-184-0140</a>
-                </div>
-              </li>
-              <li>
-                <div class="contact-info-box">
-                  <span class="icon lnr-icon-envelope1"></span>
-                  <span class="title">أرسل بريدًا إلكترونيًا</span>
-                  <a
-                    href="https://mail.google.com/mail/?view=cm&fs=1&to=qadomya14@gmail.com"
-                  >
-                    <span
-                      class="__cf_email__"
-                      data-cfemail="462e232a360625292b3627283f6825292b"
-                      >Qadomya14@gmail.com</span
-                    >
-                  </a>
-                </div>
-              </li>
-              <li>
-                <div class="contact-info-box">
-                  <span class="icon lnr-icon-clock"></span>
-                  <span class="title">ساعات العمل</span>
-                  من السبت إلى الخميس 9:00 - 7:30، الجمعة - مغلق
-                </div>
-              </li>
-            </ul>
-            <ul class="social-links">
-              <li>
-                <a href="https://x.com/ceramicnetwork?lang=en" target="_blank"
-                  ><i class="fab fa-twitter"></i
-                ></a>
-              </li>
-              <li>
-                <a href="https://www.facebook.com/QADOMY0" target="_blank"
-                  ><i class="fab fa-facebook-f"></i
-                ></a>
-              </li>
-              <li>
-                <a
-                  href="https://www.instagram.com/qadomyforceramics?igsh=MzRlODBiNWFlZA=="
-                  target="_blank"
-                  ><i class="fab fa-instagram"></i
-                ></a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-
-        <div class="search-popup">
-          <span class="search-back-drop"></span>
-          <button class="close-search">
-            <span class="fa fa-times"></span>
-          </button>
-          <div class="search-inner">
-            <form
-              method="post"
-              action="https://html.kodesolution.com/2024/tilepro-html/index.html"
-            >
-              <div class="form-group">
-                <input
-                  type="search"
-                  name="search-field"
-                  placeholder="ابحث..."
-                  required
-                />
-                <button type="submit"><i class="fa fa-search"></i></button>
-              </div>
-            </form>
-          </div>
-        </div>
-
-        <div class="sticky-header">
-          <div class="auto-container">
-            <div class="inner-container">
-              <div class="logo">
-                <a href="index.html" title
-                  ><img
-                    src="img/Logo-removebg-preview (1).png"
-                    alt="شعار القادمي"
-                    title="الصفحة الرئيسية"
-                /></a>
-              </div>
-
-              <div class="nav-outer">
-                <nav class="main-menu">
-                  <div class="navbar-collapse show collapse clearfix">
-                    <ul class="navigation clearfix"></ul>
+        <header  class="main-header header-style-one">
+          <div class="header-lower">
+              <div class="auto-container">
+                  <div class="main-box">
+                      <div class="logo-box">
+                          <div class="logo">
+                              <a href="index.html">
+                                  <img src="img/Logo-removebg-preview (1).png" style="height: 100px;" alt="شعار القادمي" title="الصفحة الرئيسية">
+                              </a>
+                          </div>
+                      </div>
+      
+                      <div class="nav-outer">
+                          <nav class="nav main-menu">
+                              <ul class="navigation">
+                                  <li><a href="index.html">الرئيسية</a></li>
+                                  <li class=""><a href="shop-products.html">الفئات</a></li>
+                                  <li><a href="page-services.html">الخدمات</a></li>
+                                  <li><a href="news-grid.html">الأخبار</a></li>
+                                  <li class="dropdown">
+                                      <a href="#">من نحن</a>
+                                      <ul>
+                                          <li><a href="page-about.html">عن الشركة</a></li>
+                                          <li><a href="page-projects.html">المشاريع</a></li>
+                                          <li><a href="page-team.html">الفريق</a></li>
+                                          <li><a href="page-faq.html">الأسئلة الشائعة</a></li>
+                                      </ul>
+                                  </li>
+                              </ul>
+                          </nav>
+                      </div>
+      
+                      <div class="outer-box">
+      
+                          <!-- أيقونة عربة التسوق -->
+                          <div class="cart-btn" style="display: inline-flex; align-items: center; margin-left: 15px; ">
+                              <a href="shop-cart.html" class="cart-icon" style="display: inline-flex; align-items: center; position: relative; text-decoration: none; color: #333;">
+                                  <i class="fa fa-shopping-cart" style="font-size: 24px; position: relative; right: 25px;"></i>
+                                  <span class="badge" style="
+                                      background-color: #f94a29; 
+                                      color: #fff; 
+                                      border-radius: 50%; 
+                                      height: 24px; 
+                                      width: 24px; 
+                                      display: flex;
+                                      align-items: center;
+                                      justify-content: center;
+                                      font-size: 12px; 
+                                      position: absolute; 
+                                      top: -10px; 
+                                      right: 15px; 
+                                  ">3</span>
+                              </a>
+                          </div>
+                          <div class="btn">
+                              <a href="Login.html" id="auth-btn" class="theme-btn" style="position: relative; left: 5em;">تسجيل</a>
+                          </div>
+                          
+                          <div class="mobile-nav-toggler">
+                              <i class="fa fa-bars"></i>
+                          </div>
+                      </div>
                   </div>
-                </nav>
-
-                <div class="mobile-nav-toggler">
-                  <i class="fa fa-bars"></i>
-                </div>
               </div>
-            </div>
           </div>
-        </div>
+      
+          <!-- الجزء الخاص بالنافذة المتنقلة -->
+          <div class="mobile-menu">
+              <div class="menu-backdrop"></div>
+              <nav class="menu-box">
+                  <div class="upper-box">
+                      <div class="nav-logo">
+                          <a href="index.html">
+                              <img src="img/Logo-removebg-preview (1).png" alt="شعار القادمي" title="الصفحة الرئيسية">
+                          </a>
+                      </div>
+                      <div class="close-btn"><i class="icon fa fa-times"></i></div>
+                  </div>
+                  <ul class="navigation clearfix"></ul>
+                  <ul class="contact-list-one">
+                      <li>
+                          <div class="contact-info-box">
+                              <i class="icon lnr-icon-phone-handset"></i>
+                              <span class="title">اتصل الآن</span>
+                              <a href="tel:+962-79-184-0140">+962-79-184-0140</a>
+                          </div>
+                      </li>
+                      <li>
+                          <div class="contact-info-box">
+                              <span class="icon lnr-icon-envelope1"></span>
+                              <span class="title">أرسل بريدًا إلكترونيًا</span>
+                              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=qadomya14@gmail.com">
+                                  <span class="__cf_email__" data-cfemail="462e232a360625292b3627283f6825292b">Qadomya14@gmail.com</span>
+                              </a>
+                          </div>
+                      </li>
+                      <li>
+                          <div class="contact-info-box">
+                              <span class="icon lnr-icon-clock"></span>
+                              <span class="title">ساعات العمل</span>
+                              من السبت إلى الخميس 9:00 - 7:30، الجمعة - مغلق
+                          </div>
+                      </li>
+                  </ul>
+                  <ul class="social-links">
+                      <li><a href="https://x.com/ceramicnetwork?lang=en" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                      <li><a href="https://www.facebook.com/QADOMY0" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                      <li><a href="https://www.instagram.com/qadomyforceramics?igsh=MzRlODBiNWFlZA==" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                  </ul>
+              </nav>
+          </div>
+      
+          <div class="search-popup">
+              <span class="search-back-drop"></span>
+              <button class="close-search"><span class="fa fa-times"></span></button>
+              <div class="search-inner">
+                  <form method="post" action="https://html.kodesolution.com/2024/tilepro-html/index.html">
+                      <div class="form-group">
+                          <input type="search" name="search-field" placeholder="ابحث..." required>
+                          <button type="submit"><i class="fa fa-search"></i></button>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      
+          <div class="sticky-header">
+              <div class="auto-container">
+                  <div class="inner-container">
+                      <div class="logo">
+                          <a href="index.html" title><img src="img/Logo-removebg-preview (1).png" alt="شعار القدومي" title="الصفحة الرئيسية"></a>
+                      </div>
+      
+                      <div class="nav-outer">
+                          <nav class="main-menu">
+                              <div class="navbar-collapse show collapse clearfix">
+                                  <ul class="navigation clearfix"></ul>
+                              </div>
+                          </nav>
+      
+                          <div class="mobile-nav-toggler">
+                              <i class="fa fa-bars"></i>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
       </header>
 
-      <section
-        class="page-title"
-        style="background-image: url(images/background/page-title-bg.png)"
-      >
-        <div class="auto-container">
-          <div class="title-outer">
-            <h1 class="title">Cart</h1>
-            <ul class="page-breadcrumb">
-              <li><a href="index.html">Home</a></li>
-              <li>Cart</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <div class="container pb-100">
-          <div class="section-content">
-            <div class="row">
-              <!-- جدول العربة -->
-              <div class="col-md-12">
-                <div class="table-responsive">
-                  <table class="table table-striped table-bordered tbl-shopping-cart">
-                    <thead>
-                      <tr>
-                        <th></th>
-                        <th>الصورة</th>
-                        <th>اسم المنتج</th>
-                        <th>السعر</th>
-                        <th>الكمية</th>
-                        <th>الإجمالي</th>
-                      </tr>
-                    </thead>
-                    <tbody id="CartTableBody">
-                      <!-- سيتم إضافة المحتويات هنا بواسطة JavaScript -->
-                    </tbody>
-                  </table>
+        <section class="page-title" style="background-image: url(images/background/page-title-bg.png)">
+            <div class="auto-container">
+                <div class="title-outer">
+                    <h1 class="title">Cart</h1>
+                    <ul class="page-breadcrumb">
+                        <li><a href="index.html">Home</a></li>
+                        <li>Cart</li>
+                    </ul>
                 </div>
-              </div>
-      
-              <div class="col-md-5">
-                <h4>حساب الشحن</h4>
-                <form class="form" action="#">
-                  <div class="mb-10">
-                    <label for="province">اختر المنطقة:</label>
-                    <select id="province" class="form-control" onchange="updateShipping()">
-                      <option value="">اختر المنطقة</option>
-                      <option value="10">إربد</option>
-                      <option value="25">عمان</option>
-                      <option value="20">الزرقاء</option>
-                      <option value="15">جرش</option>
-                      <option value="18">عجلون</option>
-                      <option value="22">المفرق</option>
-                    </select>
-                  </div>
-                  <!-- الرسالة التوجيهية -->
-                  <span id="shippingMessage" style="color: red; font-size: small; display: none;">
-                    يرجى اختيار منطقة شحن الطلب الخاص بك.
-                  </span>
-                </form>
-              </div>
-              
-                  <!-- المساحة الفارغة بين الأعمدة -->
-                  <div class="col-md-2"></div>
-                  <!-- ملخص الطلب -->
-                  <div class="col-md-5">
-                    <h4>إجمالي السلة</h4>
-                    <table class="table table-bordered cart-total">
-                      <tbody>
-                        <tr>
-                          <td>المجموع الفرعي للسلة</td>
-                          <td id="cartSubtotal">0 JOD</td>
-                        </tr>
-                        <tr>
-                          <td>الشحن والتسليم</td>
-                          <td id="shippingFee">0 JOD</td>
-                        </tr>
-                        <tr>
-                          <td>إجمالي الطلب</td>
-                          <td id="orderTotal">0 JOD</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <a class="theme-btn btn-style-one" href="Paypal.html">الانتقال إلى الدفع</a>
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <footer class="main-footer footer-style-one">
-        <div class="footer-bottom">
-          <div class="auto-container">
-            <div class="inner-container">
-              <div class="copyright-text">
-                © Copyright reserved by kodesolution
-              </div>
+        <section style="direction: rtl;">
+            <div class="container pb-100">
+                <div class="section-content">
+                    <div class="row">
+                        <!-- جدول العربة -->
+                        <div class="col-md-12">
+                            <div class="table-responsive">
+                                <table class="table table-striped table-bordered tbl-shopping-cart">
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>الصورة</th>
+                                            <th>اسم المنتج</th>
+                                            <th>السعر</th>
+                                            <th>الكمية</th>
+                                            <th>الإجمالي</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="CartTableBody">
+                                        <!-- سيتم إضافة المحتويات هنا بواسطة JavaScript -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="col-md-5">
+                          <h4>حساب الشحن</h4>
+                          <form class="form">
+                              <div class="mb-10">
+                                  <label for="province">اختر المنطقة:</label>
+                                  <select id="province" class="form-control" onchange="updateShipping()">
+                                      <option value="">اختر المنطقة</option>
+                                      <option value="10">إربد</option>
+                                      <option value="25">عمان</option>
+                                      <option value="20">الزرقاء</option>
+                                      <option value="15">جرش</option>
+                                      <option value="18">عجلون</option>
+                                      <option value="22">المفرق</option>
+                                  </select>
+                              </div>
+                              <span id="shippingMessage" style="color: red; font-size: small; display: none;">
+                                  يرجى اختيار منطقة شحن الطلب الخاص بك.
+                              </span>
+                              <div class="mb-10">
+                                  <label for="paymentMethod">اختر طريقة الدفع:</label>
+                                  <select id="paymentMethod" class="form-control">
+                                      <option value="Paypal" selected>Paypal</option>
+                                      <option value="الدفع عند الإستلام">الدفع عند الإستلام</option>
+                                  </select>
+                              </div>
+                              <div class="mb-10">
+                                <label for="orderNotes">ملاحظات الطلب:</label>
+                                <textarea id="orderNotes" class="form-control" rows="4" placeholder="أضف ملاحظات إضافية هنا..."></textarea>
+                            </div>
+                            
+                          </form>
+                      </div>
+                      
+
+                        <!-- ملخص الطلب -->
+                        <div class="col-md-5">
+                            <h4>إجمالي السلة</h4>
+                            <table class="table table-bordered cart-total">
+                                <tbody>
+                                    <tr>
+                                        <td>المجموع الفرعي للسلة</td>
+                                        <td id="cartSubtotal">0 JOD</td>
+                                    </tr>
+                                    <tr>
+                                        <td>الشحن والتسليم</td>
+                                        <td id="shippingFee">0 JOD</td>
+                                    </tr>
+                                    <tr>
+                                        <td>إجمالي الطلب</td>
+                                        <td id="orderTotal">0 JOD</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <a class="theme-btn btn-style-one" href="#" id="proceedToPayment">الانتقال إلى الدفع</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </footer>
+        </section>
+
+        <!-- Footer and Scripts -->
+        <footer class="main-footer footer-style-one">
+            <div class="footer-bottom">
+                <div class="auto-container">
+                    <div class="inner-container">
+                        <div class="copyright-text">
+                            <p>&copy; <span class="current-year"></span> Al-Qadomy CO. All Rights Reserved | Design by
+                                <a href="https://ahmadqadomi-1.github.io/Portfolio-Project/" target="_blank">Orange Coding Academy Member</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-to-top scroll-to-target arrow-btn" data-target="html">
+                <i class="fa-sharp fa-solid fa-arrow-up"></i>
+            </div>
+        </footer>
     </div>
 
     <div class="scroll-to-top scroll-to-target" data-target="html">
-      <span class="fa fa-angle-up"></span>
+        <span class="fa fa-angle-up"></span>
     </div>
 
+    <!-- JavaScript -->
     <script>
-      function updateShipping() {
-          let cartSubtotal = parseFloat(document.getElementById("cartSubtotal").innerText.replace("JOD", "")) || 0;
-          
-          let provinceElement = document.getElementById("province");
-          let shippingFee = parseFloat(provinceElement.value) || 0;
-          let shippingMessage = document.getElementById("shippingMessage");
-      
-          if (provinceElement.value === "") {
-              document.getElementById("shippingFee").innerText = "0.00 JOD";
-              document.getElementById("orderTotal").innerText = (cartSubtotal).toFixed(2) + " JOD";
-              shippingMessage.style.display = "inline";
-              localStorage.setItem("amount", cartSubtotal.toFixed(2)); // حفظ القيمة بدون شحن
-          } else {
-              shippingMessage.style.display = "none";
-              document.getElementById("shippingFee").innerText = shippingFee.toFixed(2) + " JOD";
-              let orderTotal = cartSubtotal + shippingFee;
-              document.getElementById("orderTotal").innerText = orderTotal.toFixed(2) + " JOD";
-              localStorage.setItem("amount", orderTotal.toFixed(2)); // حفظ القيمة مع شحن
-          }
-      }
-  
-      // استدعاء updateShipping عند تحميل الصفحة
-      window.onload = function() {
-          document.getElementById("shippingMessage").style.display = "inline"; // عرض الرسالة عند التحميل
-          updateShipping(); // تحديث الشحن
-          getAllProductInCart(); // استدعاء دالة عرض المنتجات في العربة
-      };
-  </script>
-  
-  <script>
-      // الوصول إلى زر التسجيل
-      let authBtn = document.getElementById("auth-btn");
-  
-      // التحقق من حالة تسجيل الدخول عند تحميل الصفحة
-      window.onload = function () {
-          if (localStorage.getItem("jwtToken")) {
-              authBtn.textContent = "خروج"; // تغيير النص إلى خروج إذا كان المستخدم مسجل الدخول
-              authBtn.href = "#"; // منع الانتقال إلى صفحة تسجيل الدخول
-              if (cartItems.length != 0) {
-                  array.forEach((productData) => {
-                      let row = document.createElement("tr");
-                      row.innerHTML = `
-                          <tr class="cart_item">
-                              <td class="product-remove"><a title="Remove this item" class="remove" href="#">×</a></td>
-                              <td class="product-thumbnail"><a href="#"><img alt="product" src="${productData.productImage}"></a></td>
-                              <td class="product-name"><a href="shop-product-details.html">${productData.productName}</a></td>
-                              <td class="product-price"><span class="amount">JOD ${productData.price.toFixed(2)}</span></td>
-                              <td class="product-quantity">
-                                  <div class="product-details__quantity" style="text-align: center;">
-                                      <span class="quantity">${item.quantity}</span> 
-                                  </div>
-                              </td>
-                              <td class="product-subtotal"><span class="amount">JOD ${subtotal.toFixed(2)}</span></td>
-                          </tr>
-                      `;
-  
-                      tableBody.appendChild(row);
-                  });
-              }
-          }
-      };
-  
-      // تسجيل الخروج عند الضغط على زر "خروج"
-      authBtn.addEventListener("click", function (event) {
-          if (authBtn.textContent === "خروج") {
-              localStorage.removeItem("jwtToken"); // حذف رمز JWT من LocalStorage
-              authBtn.textContent = "تسجيل"; // إعادة النص إلى تسجيل
-              authBtn.href = "Login.html"; // إعادة الرابط إلى صفحة تسجيل الدخول
-              alert("تم تسجيل الخروج بنجاح");
-              window.location.href = "index.html"; // إعادة توجيه إلى الصفحة الرئيسية
-          }
-      });
-  
-      async function getAllProductInCart() {
-          // الحصول على محتويات العربة من localStorage
-          let tableBody = document.getElementById("CartTableBody");
-          let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
-  
-          // التأكد من وجود بيانات في العربة
-          if (cartItems.length === 0) {
-              alert("لا توجد منتجات في العربة!");
-              return;
-          }
-          
-          // Clear the table body before appending new rows
-          tableBody.innerHTML = "";
-  
-          let cartSubtotal = 0; // لحساب المجموع الفرعي للمنتجات
-          let shippingFees = 0.00; // قيمة رسوم الشحن الثابتة
-  
-          for (let item of cartItems) {
-              let url = `https://localhost:44327/api/Product/GetProductByID/${item.id}`;
-              try {
-                  let response = await fetch(url);
-                  if (!response.ok) {
-                      throw new Error("Network response was not ok");
-                  }
-  
-                  let productData = await response.json();
-                  let subtotal = productData.price * item.quantity; // حساب إجمالي السعر للمنتج الواحد
-                  cartSubtotal += subtotal; // إضافة سعر المنتج إلى المجموع الفرعي
-  
-                  let row = document.createElement("tr");
-                  row.innerHTML = `
-                      <tr class="cart_item">
-                          <td class="product-remove"><a title="Remove this item" class="remove" href="#">×</a></td>
-                          <td class="product-thumbnail"><a href="#"><img alt="product" src="${productData.productImage}"></a></td>
-                          <td class="product-name"><a href="shop-product-details.html">${productData.productName}</a></td>
-                          <td class="product-price"><span class="amount">JOD ${productData.price.toFixed(2)}</span></td>
-                          <td class="product-quantity">
-                              <div class="product-details__quantity" style="text-align: center;">
-                                  <span class="quantity">${item.quantity}</span> 
-                              </div>
-                          </td>
-                          <td class="product-subtotal"><span class="amount">JOD ${subtotal.toFixed(2)}</span></td>
-                      </tr>`;
-  
-                  tableBody.appendChild(row);
-              } catch (error) {
-                  console.error("Error fetching product data:", error);
-              }
-          }
-  
-          // تحديث الحقول في الجدول مع المجموع الفرعي والرسوم الإجمالية
-          document.querySelector(".cart-total tr:nth-child(1) td:nth-child(2)").textContent = `JOD ${cartSubtotal.toFixed(2)}`;
-          document.querySelector(".cart-total tr:nth-child(2) td:nth-child(2)").textContent = `JOD ${shippingFees.toFixed(2)}`;
-          document.querySelector(".cart-total tr:nth-child(3) td:nth-child(2)").textContent = `JOD ${(cartSubtotal + shippingFees).toFixed(2)}`;
-          
-          // حفظ المبلغ النهائي في localStorage
-          localStorage.setItem("amount", (cartSubtotal + shippingFees).toFixed(2));
-      }
-  
-      getAllProductInCart(); // استدعاء الدالة لعرض المنتجات في العربة
-  </script>
-  
-    <script
-      data-cfasync="false"
-      src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
-    ></script>
+document.getElementById("proceedToPayment").addEventListener("click", async function(event) {
+    event.preventDefault();
+
+    let paymentMethod = document.getElementById("paymentMethod").value;
+    let orderNotes = document.getElementById("orderNotes").value; // الحصول على ملاحظات الطلب
+
+    if (paymentMethod === "الدفع عند الإستلام") {
+        alert("orderStatus: تم تقديم الطلب بنجاح");
+
+        let userId = localStorage.getItem("userId");
+        let totalAmount = parseFloat(localStorage.getItem("amount"));
+
+        let orderData = {
+            userId: userId,
+            totalAmount: totalAmount,
+            paymentMethod: "الدفع عند الإستلام",
+            orderStatus: "تم تقديم الطلب بنجاح",
+            comment: orderNotes // إضافة الملاحظات إلى بيانات الطلب
+        };
+
+        try {
+            let response = await fetch("https://localhost:44327/api/Order", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(orderData)
+            });
+
+            if (response.ok) {
+                localStorage.removeItem("cartItems");
+                window.location.href = "index.html";
+            } else {
+                alert("حدث خطأ أثناء حفظ الطلب.");
+            }
+        } catch (error) {
+            console.error("Error:", error);
+            alert("فشل الاتصال بالخادم.");
+        }
+    } else if (paymentMethod === "Paypal") {
+        window.location.href = "Paypal.html";
+    }
+});
+
+        function updateShipping() {
+            let cartSubtotal = parseFloat(document.getElementById("cartSubtotal").innerText.replace("JOD", "")) || 0;
+            let provinceElement = document.getElementById("province");
+            let shippingFee = parseFloat(provinceElement.value) || 0;
+            let shippingMessage = document.getElementById("shippingMessage");
+
+            if (provinceElement.value === "") {
+                document.getElementById("shippingFee").innerText = "0.00 JOD";
+                document.getElementById("orderTotal").innerText = cartSubtotal.toFixed(2) + " JOD";
+                shippingMessage.style.display = "inline";
+                localStorage.setItem("amount", cartSubtotal.toFixed(2));
+            } else {
+                shippingMessage.style.display = "none";
+                document.getElementById("shippingFee").innerText = shippingFee.toFixed(2) + " JOD";
+                let orderTotal = cartSubtotal + shippingFee;
+                document.getElementById("orderTotal").innerText = orderTotal.toFixed(2) + " JOD";
+                localStorage.setItem("amount", orderTotal.toFixed(2));
+            }
+        }
+
+        window.onload = function() {
+            document.getElementById("shippingMessage").style.display = "inline";
+            updateShipping();
+            getAllProductInCart();
+        };
+    </script>
+
+    <script>
+        let authBtn = document.getElementById("auth-btn");
+
+        window.onload = function () {
+            if (localStorage.getItem("jwtToken")) {
+                authBtn.textContent = "خروج";
+                authBtn.href = "#";
+            }
+        };
+
+        authBtn.addEventListener("click", function () {
+            if (authBtn.textContent === "خروج") {
+                localStorage.removeItem("jwtToken");
+                authBtn.textContent = "تسجيل";
+                authBtn.href = "Login.html";
+                alert("تم تسجيل الخروج بنجاح");
+                window.location.href = "index.html";
+            }
+        });
+
+        async function getAllProductInCart() {
+            let tableBody = document.getElementById("CartTableBody");
+            let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+
+            if (cartItems.length === 0) {
+                alert("لا توجد منتجات في العربة!");
+                return;
+            }
+
+            tableBody.innerHTML = "";
+            let cartSubtotal = 0;
+            let shippingFees = 0.00;
+
+            for (let item of cartItems) {
+                let url = `https://localhost:44327/api/Product/GetProductByID/${item.id}`;
+                try {
+                    let response = await fetch(url);
+                    if (!response.ok) throw new Error("Network response was not ok");
+
+                    let productData = await response.json();
+                    let subtotal = productData.price * item.quantity;
+                    cartSubtotal += subtotal;
+
+                    let row = document.createElement("tr");
+                    row.innerHTML = `
+                        <tr class="cart_item">
+                            <td class="product-remove"><a title="Remove this item" class="remove" href="#">×</a></td>
+                            <td class="product-thumbnail"><a href="#"><img alt="product" src="${productData.productImage}"></a></td>
+                            <td class="product-name"><a href="shop-product-details.html">${productData.productName}</a></td>
+                            <td class="product-price"><span class="amount">JOD ${productData.price.toFixed(2)}</span></td>
+                            <td class="product-quantity">
+                                <div class="product-details__quantity">
+                                    <span class="quantity">${item.quantity}</span>
+                                </div>
+                            </td>
+                            <td class="product-subtotal"><span class="amount">JOD ${subtotal.toFixed(2)}</span></td>
+                        </tr>`;
+                    tableBody.appendChild(row);
+                } catch (error) {
+                    console.error("Error fetching product data:", error);
+                }
+            }
+
+            document.querySelector(".cart-total tr:nth-child(1) td:nth-child(2)").textContent = `JOD ${cartSubtotal.toFixed(2)}`;
+            document.querySelector(".cart-total tr:nth-child(2) td:nth-child(2)").textContent = `JOD ${shippingFees.toFixed(2)}`;
+            document.querySelector(".cart-total tr:nth-child(3) td:nth-child(2)").textContent = `JOD ${(cartSubtotal + shippingFees).toFixed(2)}`;
+            localStorage.setItem("amount", (cartSubtotal + shippingFees).toFixed(2));
+        }
+
+        getAllProductInCart();
+    </script>
+
     <script src="js/jquery.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -535,7 +457,5 @@
     <script src="js/appear.js"></script>
     <script src="js/select2.min.js"></script>
     <script src="js/script.js"></script>
-  </body>
-
-  <!-- Mirrored from html.kodesolution.com/2024/tilepro-html/shop-cart.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Sep 2024 20:37:33 GMT -->
+</body>
 </html>

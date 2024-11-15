@@ -1,8 +1,78 @@
+async function Category() {
+    // debugger
+    let url = `https://localhost:44327/api/Category/GetAllCategories`;
+    let response = await fetch(url);
+    let data = await response.json();
+    let priceItem = document.getElementById("Batool");
 
+    data.forEach((category) => {
+        priceItem.innerHTML += `
+<div class="project-block col-lg-3 col-md-6">
+    <div class="inner-box">
+    <div class="image-box">
+    <figure class="image overlay-anim">
+        <a href="#" onclick="save(${category.categoryId});">
+            <img src="${category.categoryImage}" width="575px" height="575px" alt="${category.categoryName} (Image not found)">
+        </a>
+    </figure>
+    <figure class="image-2">
+        <a href="#" onclick="save(${category.categoryId});">
+            <img src="images/resource/projec1-2.png" alt="Alternative Image">
+        </a>
+    </figure>
+    </div>
+    <div class="content-box">
+    <span>${category.categoryName}</span>
+    <h6 class="title"><a href="#" onclick="save(${category.categoryId});">المزيد</a></h6>
+    </div>
+    </div>
+    </div>
+    `;
+    });
 
+    console.log(data);
+}
 
+function save(categoryId) {
+    localStorage.setItem("categoryId", categoryId);
+    window.location.href = "shop-products2.html";
+}
 
+Category();
 
+// Contact Us
+document.addEventListener("DOMContentLoaded", function() {
+    const form = document.getElementById("contact-form");
+
+    form.addEventListener("submit", async function(event) {
+        event.preventDefault(); // منع إعادة تحميل الصفحة
+
+        const formData = new FormData(form);
+        const data = {};
+        formData.forEach((value, key) => {
+            data[key] = value;
+        });
+
+        try {
+            const response = await fetch("https://localhost:44327/api/ContactUs/AddContact", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(data)
+            });
+
+            if (response.ok) {
+                alert("تم إرسال رسالتك بنجاح، سوف يتم التواصل معك عبر البريد الإلكتروني أو عبر رقم الهاتف");
+            } else {
+                alert("يوجد خطأ في أرسال رسالتك، يرجى التأكد من بياناتك قبل الإرسال");
+            }
+        } catch (error) {
+            console.error("Error:", error);
+            alert("يوجد خطأ في إرسال البيانات. يرجى المحاولة مرة أخرى لاحقًا.");
+        }
+    });
+});
 
 async function FeedBack() {
     
@@ -146,49 +216,11 @@ authBtn.addEventListener("click", function(event) {
 
 
 
-async function Category() {
-    // debugger
-    let url = `https://localhost:44327/api/Category/GetAllCategories`;
-    let response = await fetch(url);
-    let data = await response.json();
-    let priceItem = document.getElementById("Batool");
-
-    data.forEach((category) => {
-        priceItem.innerHTML += `
-<div class="project-block col-lg-3 col-md-6">
-    <div class="inner-box">
-    <div class="image-box">
-    <figure class="image overlay-anim">
-        <a href="#" onclick="save(${category.categoryId});">
-            <img src="${category.categoryImage}" width="575px" height="575px" alt="${category.categoryName} (Image not found)">
-        </a>
-    </figure>
-    <figure class="image-2">
-        <a href="#" onclick="save(${category.categoryId});">
-            <img src="images/resource/projec1-2.png" alt="Alternative Image">
-        </a>
-    </figure>
-    </div>
-    <div class="content-box">
-    <span>${category.categoryName}</span>
-    <h6 class="title"><a href="#" onclick="save(${category.categoryId});">المزيد</a></h6>
-    </div>
-    </div>
-    </div>
-    `;
-    });
-
-    console.log(data);
-}
-
-function save(categoryId) {
-    localStorage.setItem("categoryId", categoryId);
-    window.location.href = "shop-products2.html";
-}
-
-Category();
 
 
-    document.getElementById("moreLink").addEventListener("click", function(event) {
-        event.preventDefault(); 
-    });
+
+    // document.getElementById("moreLink").addEventListener("click", function(event) {
+    //     event.preventDefault(); 
+    // });
+
+

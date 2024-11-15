@@ -3,6 +3,26 @@
   "WorkspaceRootPath": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\MyProject\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E324C85A-D884-4788-BE77-517B781E72EE}|MyProject\\MyProject.csproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\myproject\\myproject\\controllers\\contactuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E324C85A-D884-4788-BE77-517B781E72EE}|MyProject\\MyProject.csproj|solutionrelative:myproject\\controllers\\contactuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E324C85A-D884-4788-BE77-517B781E72EE}|MyProject\\MyProject.csproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\myproject\\myproject\\dtos\\contactrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E324C85A-D884-4788-BE77-517B781E72EE}|MyProject\\MyProject.csproj|solutionrelative:myproject\\dtos\\contactrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E324C85A-D884-4788-BE77-517B781E72EE}|MyProject\\MyProject.csproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\myproject\\myproject\\dtos\\changepassworddtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E324C85A-D884-4788-BE77-517B781E72EE}|MyProject\\MyProject.csproj|solutionrelative:myproject\\dtos\\changepassworddtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E324C85A-D884-4788-BE77-517B781E72EE}|MyProject\\MyProject.csproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\myproject\\myproject\\models\\contactu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E324C85A-D884-4788-BE77-517B781E72EE}|MyProject\\MyProject.csproj|solutionrelative:myproject\\models\\contactu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E324C85A-D884-4788-BE77-517B781E72EE}|MyProject\\MyProject.csproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\myproject\\myproject\\models\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E324C85A-D884-4788-BE77-517B781E72EE}|MyProject\\MyProject.csproj|solutionrelative:myproject\\models\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E324C85A-D884-4788-BE77-517B781E72EE}|MyProject\\MyProject.csproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\myproject\\myproject\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E324C85A-D884-4788-BE77-517B781E72EE}|MyProject\\MyProject.csproj|solutionrelative:myproject\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -83,10 +103,6 @@
       "RelativeMoniker": "D:0:0:{E324C85A-D884-4788-BE77-517B781E72EE}|MyProject\\MyProject.csproj|solutionrelative:myproject\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E324C85A-D884-4788-BE77-517B781E72EE}|MyProject\\MyProject.csproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\myproject\\myproject\\models\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E324C85A-D884-4788-BE77-517B781E72EE}|MyProject\\MyProject.csproj|solutionrelative:myproject\\models\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E324C85A-D884-4788-BE77-517B781E72EE}|MyProject\\MyProject.csproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\myproject\\myproject\\models\\tiler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E324C85A-D884-4788-BE77-517B781E72EE}|MyProject\\MyProject.csproj|solutionrelative:myproject\\models\\tiler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -162,10 +178,6 @@
       "RelativeMoniker": "D:0:0:{E324C85A-D884-4788-BE77-517B781E72EE}|MyProject\\MyProject.csproj|solutionrelative:myproject\\dtos\\dtoslogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E324C85A-D884-4788-BE77-517B781E72EE}|MyProject\\MyProject.csproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\myproject\\myproject\\dtos\\changepassworddtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E324C85A-D884-4788-BE77-517B781E72EE}|MyProject\\MyProject.csproj|solutionrelative:myproject\\dtos\\changepassworddtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E324C85A-D884-4788-BE77-517B781E72EE}|MyProject\\MyProject.csproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\myproject\\myproject\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E324C85A-D884-4788-BE77-517B781E72EE}|MyProject\\MyProject.csproj|solutionrelative:myproject\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -186,43 +198,58 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ContactUsController.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\MyProject\\MyProject\\Controllers\\ContactUsController.cs",
+              "RelativeDocumentMoniker": "MyProject\\Controllers\\ContactUsController.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\MyProject\\MyProject\\Controllers\\ContactUsController.cs",
+              "RelativeToolTip": "MyProject\\Controllers\\ContactUsController.cs",
+              "ViewState": "AQIAADQAAAAAAAAAAAAIwFAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T08:16:48.542Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ContactU.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\MyProject\\MyProject\\Models\\ContactU.cs",
+              "RelativeDocumentMoniker": "MyProject\\Models\\ContactU.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\MyProject\\MyProject\\Models\\ContactU.cs",
+              "RelativeToolTip": "MyProject\\Models\\ContactU.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T08:13:59.084Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ContactRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\MyProject\\MyProject\\DTOs\\ContactRequest.cs",
+              "RelativeDocumentMoniker": "MyProject\\DTOs\\ContactRequest.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\MyProject\\MyProject\\DTOs\\ContactRequest.cs",
+              "RelativeToolTip": "MyProject\\DTOs\\ContactRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T08:13:29.812Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "OrderController.cs",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\MyProject\\MyProject\\Controllers\\OrderController.cs",
               "RelativeDocumentMoniker": "MyProject\\Controllers\\OrderController.cs",
               "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\MyProject\\MyProject\\Controllers\\OrderController.cs",
               "RelativeToolTip": "MyProject\\Controllers\\OrderController.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAAAUwBoAAABCAAAA",
+              "ViewState": "AQIAABkAAAAAAAAAAAAUwCAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-16T19:46:13.155Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ProjectController.cs",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\MyProject\\MyProject\\Controllers\\ProjectController.cs",
-              "RelativeDocumentMoniker": "MyProject\\Controllers\\ProjectController.cs",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\MyProject\\MyProject\\Controllers\\ProjectController.cs",
-              "RelativeToolTip": "MyProject\\Controllers\\ProjectController.cs",
-              "ViewState": "AQIAAEIAAAAAAAAAAAAAAFMAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-27T23:27:53.115Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "TeamsController.cs",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\MyProject\\MyProject\\Controllers\\TeamsController.cs",
-              "RelativeDocumentMoniker": "MyProject\\Controllers\\TeamsController.cs",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\MyProject\\MyProject\\Controllers\\TeamsController.cs",
-              "RelativeToolTip": "MyProject\\Controllers\\TeamsController.cs",
-              "ViewState": "AQIAAFcAAAAAAAAAAAAAAGQAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T05:11:39.503Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "TilerController.cs",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\MyProject\\MyProject\\Controllers\\TilerController.cs",
               "RelativeDocumentMoniker": "MyProject\\Controllers\\TilerController.cs",
@@ -234,7 +261,44 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
+              "Title": "ChangePasswordDTOs.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\MyProject\\MyProject\\DTOs\\ChangePasswordDTOs.cs",
+              "RelativeDocumentMoniker": "MyProject\\DTOs\\ChangePasswordDTOs.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\MyProject\\MyProject\\DTOs\\ChangePasswordDTOs.cs",
+              "RelativeToolTip": "MyProject\\DTOs\\ChangePasswordDTOs.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T03:05:12.022Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "TeamsController.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\MyProject\\MyProject\\Controllers\\TeamsController.cs",
+              "RelativeDocumentMoniker": "MyProject\\Controllers\\TeamsController.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\MyProject\\MyProject\\Controllers\\TeamsController.cs",
+              "RelativeToolTip": "MyProject\\Controllers\\TeamsController.cs",
+              "ViewState": "AQIAAFcAAAAAAAAAAAAAAGQAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T05:11:39.503Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ProjectController.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\MyProject\\MyProject\\Controllers\\ProjectController.cs",
+              "RelativeDocumentMoniker": "MyProject\\Controllers\\ProjectController.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\MyProject\\MyProject\\Controllers\\ProjectController.cs",
+              "RelativeToolTip": "MyProject\\Controllers\\ProjectController.cs",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAAAFMAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T23:27:53.115Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\MyProject\\MyProject\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "MyProject\\Controllers\\UserController.cs",
@@ -242,12 +306,11 @@
               "RelativeToolTip": "MyProject\\Controllers\\UserController.cs",
               "ViewState": "AQIAAI8AAAAAAAAAAAAcwKUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-22T12:29:38.89Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-22T12:29:38.89Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "Order.cs",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\MyProject\\MyProject\\Models\\Order.cs",
               "RelativeDocumentMoniker": "MyProject\\Models\\Order.cs",
@@ -255,12 +318,24 @@
               "RelativeToolTip": "MyProject\\Models\\Order.cs",
               "ViewState": "AQIAAAUAAAAAAAAAAAAiwBcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T19:51:44.422Z",
+              "WhenOpened": "2024-10-16T19:51:44.422Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MyDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\MyProject\\MyProject\\Models\\MyDbContext.cs",
+              "RelativeDocumentMoniker": "MyProject\\Models\\MyDbContext.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\MyProject\\MyProject\\Models\\MyDbContext.cs",
+              "RelativeToolTip": "MyProject\\Models\\MyDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T11:13:36.728Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "CategoryController.cs",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\MyProject\\MyProject\\Controllers\\CategoryController.cs",
               "RelativeDocumentMoniker": "MyProject\\Controllers\\CategoryController.cs",
@@ -268,12 +343,11 @@
               "RelativeToolTip": "MyProject\\Controllers\\CategoryController.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAABEAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-23T13:51:40.434Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-23T13:51:40.434Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 12,
               "Title": "ProductController.cs",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\MyProject\\MyProject\\Controllers\\ProductController.cs",
               "RelativeDocumentMoniker": "MyProject\\Controllers\\ProductController.cs",
@@ -285,7 +359,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 13,
               "Title": "NewsController.cs",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\MyProject\\MyProject\\Controllers\\NewsController.cs",
               "RelativeDocumentMoniker": "MyProject\\Controllers\\NewsController.cs",
@@ -297,7 +371,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 14,
               "Title": "FeedBackController.cs",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\MyProject\\MyProject\\Controllers\\FeedBackController.cs",
               "RelativeDocumentMoniker": "MyProject\\Controllers\\FeedBackController.cs",
@@ -309,7 +383,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 15,
               "Title": "CartItemController.cs",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\MyProject\\MyProject\\Controllers\\CartItemController.cs",
               "RelativeDocumentMoniker": "MyProject\\Controllers\\CartItemController.cs",
@@ -322,7 +396,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 20,
               "Title": "ProductRequest.cs",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\MyProject\\MyProject\\DTOs\\ProductRequest.cs",
               "RelativeDocumentMoniker": "MyProject\\DTOs\\ProductRequest.cs",
@@ -334,7 +408,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 16,
               "Title": "TilerDTOs.cs",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\MyProject\\MyProject\\DTOs\\TilerDTOs.cs",
               "RelativeDocumentMoniker": "MyProject\\DTOs\\TilerDTOs.cs",
@@ -346,7 +420,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 17,
               "Title": "TokenGenerator.cs",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\MyProject\\MyProject\\DTOs\\TokenGenerator.cs",
               "RelativeDocumentMoniker": "MyProject\\DTOs\\TokenGenerator.cs",
@@ -358,7 +432,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 18,
               "Title": "TeamDTOs.cs",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\MyProject\\MyProject\\DTOs\\TeamDTOs.cs",
               "RelativeDocumentMoniker": "MyProject\\DTOs\\TeamDTOs.cs",
@@ -370,7 +444,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 19,
               "Title": "DTOsProject.cs",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\MyProject\\MyProject\\DTOs\\DTOsProject.cs",
               "RelativeDocumentMoniker": "MyProject\\DTOs\\DTOsProject.cs",
@@ -382,7 +456,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 21,
               "Title": "ProductMainRequest.cs",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\MyProject\\MyProject\\DTOs\\ProductMainRequest.cs",
               "RelativeDocumentMoniker": "MyProject\\DTOs\\ProductMainRequest.cs",
@@ -394,7 +468,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 22,
               "Title": "CategoriesDTO.cs",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\MyProject\\MyProject\\DTOs\\CategoriesDTO.cs",
               "RelativeDocumentMoniker": "MyProject\\DTOs\\CategoriesDTO.cs",
@@ -406,7 +480,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 23,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\MyProject\\MyProject\\Program.cs",
               "RelativeDocumentMoniker": "MyProject\\Program.cs",
@@ -418,7 +492,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 24,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\MyProject\\MyProject\\appsettings.json",
               "RelativeDocumentMoniker": "MyProject\\appsettings.json",
@@ -430,19 +504,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "MyDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\MyProject\\MyProject\\Models\\MyDbContext.cs",
-              "RelativeDocumentMoniker": "MyProject\\Models\\MyDbContext.cs",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\MyProject\\MyProject\\Models\\MyDbContext.cs",
-              "RelativeToolTip": "MyProject\\Models\\MyDbContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-22T11:13:36.728Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 25,
               "Title": "Tiler.cs",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\MyProject\\MyProject\\Models\\Tiler.cs",
               "RelativeDocumentMoniker": "MyProject\\Models\\Tiler.cs",
@@ -454,7 +516,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 27,
               "Title": "Product.cs",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\MyProject\\MyProject\\Models\\Product.cs",
               "RelativeDocumentMoniker": "MyProject\\Models\\Product.cs",
@@ -466,7 +528,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 28,
               "Title": "Project.cs",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\MyProject\\MyProject\\Models\\Project.cs",
               "RelativeDocumentMoniker": "MyProject\\Models\\Project.cs",
@@ -478,7 +540,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 26,
               "Title": "Team.cs",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\MyProject\\MyProject\\Models\\Team.cs",
               "RelativeDocumentMoniker": "MyProject\\Models\\Team.cs",
@@ -490,7 +552,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 32,
               "Title": "cartItemResponseDTO.cs",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\MyProject\\MyProject\\DTOs\\cartItemResponseDTO.cs",
               "RelativeDocumentMoniker": "MyProject\\DTOs\\cartItemResponseDTO.cs",
@@ -502,7 +564,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 29,
               "Title": "Category.cs",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\MyProject\\MyProject\\Models\\Category.cs",
               "RelativeDocumentMoniker": "MyProject\\Models\\Category.cs",
@@ -514,7 +576,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 30,
               "Title": "CreateOrderDTO.cs",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\MyProject\\MyProject\\DTOs\\CreateOrderDTO.cs",
               "RelativeDocumentMoniker": "MyProject\\DTOs\\CreateOrderDTO.cs",
@@ -526,7 +588,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 31,
               "Title": "CartItemRequest.cs",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\MyProject\\MyProject\\DTOs\\CartItemRequest.cs",
               "RelativeDocumentMoniker": "MyProject\\DTOs\\CartItemRequest.cs",
@@ -538,7 +600,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 36,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\Orange\\AppData\\Local\\SourceServer\\a9a5eb3369a65439f0f5e31994388200cd39cee5564b3dc84d287aa954e96e95\\MyProject\\MyProject\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\SourceServer\\a9a5eb3369a65439f0f5e31994388200cd39cee5564b3dc84d287aa954e96e95\\MyProject\\MyProject\\Controllers\\UserController.cs",
@@ -551,7 +613,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 34,
               "Title": "Cart.cs",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\MyProject\\MyProject\\Models\\Cart.cs",
               "RelativeDocumentMoniker": "MyProject\\Models\\Cart.cs",
@@ -563,7 +625,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 33,
               "Title": "CartItemDTo.cs",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\MyProject\\MyProject\\DTOs\\CartItemDTo.cs",
               "RelativeDocumentMoniker": "MyProject\\DTOs\\CartItemDTo.cs",
@@ -575,7 +637,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 35,
               "Title": "CartItem.cs",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\MyProject\\MyProject\\Models\\CartItem.cs",
               "RelativeDocumentMoniker": "MyProject\\Models\\CartItem.cs",
@@ -587,7 +649,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 39,
               "Title": "QuantityDTOs.cs",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\MyProject\\MyProject\\DTOs\\QuantityDTOs.cs",
               "RelativeDocumentMoniker": "MyProject\\DTOs\\QuantityDTOs.cs",
@@ -599,7 +661,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 37,
               "Title": "DTOsNews.cs",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\MyProject\\MyProject\\DTOs\\DTOsNews.cs",
               "RelativeDocumentMoniker": "MyProject\\DTOs\\DTOsNews.cs",
@@ -611,7 +673,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 38,
               "Title": "News.cs",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\MyProject\\MyProject\\Models\\News.cs",
               "RelativeDocumentMoniker": "MyProject\\Models\\News.cs",
@@ -623,7 +685,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 40,
               "Title": "MyProject.http",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\MyProject\\MyProject\\MyProject.http",
               "RelativeDocumentMoniker": "MyProject\\MyProject.http",
@@ -635,7 +697,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 41,
               "Title": "Review.cs",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\MyProject\\MyProject\\Models\\Review.cs",
               "RelativeDocumentMoniker": "MyProject\\Models\\Review.cs",
@@ -647,7 +709,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 42,
               "Title": "DTOsUser.cs",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\MyProject\\MyProject\\DTOs\\DTOsUser.cs",
               "RelativeDocumentMoniker": "MyProject\\DTOs\\DTOsUser.cs",
@@ -659,7 +721,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 44,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\MyProject\\MyProject\\Models\\User.cs",
               "RelativeDocumentMoniker": "MyProject\\Models\\User.cs",
@@ -671,7 +733,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 43,
               "Title": "DTOsLogin.cs",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\MyProject\\MyProject\\DTOs\\DTOsLogin.cs",
               "RelativeDocumentMoniker": "MyProject\\DTOs\\DTOsLogin.cs",
@@ -683,7 +745,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 45,
               "Title": "passwordhash.cs",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\MyProject\\MyProject\\DTOs\\passwordhash.cs",
               "RelativeDocumentMoniker": "MyProject\\DTOs\\passwordhash.cs",
@@ -692,18 +754,6 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-22T12:26:59.579Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "ChangePasswordDTOs.cs",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\MyProject\\MyProject\\DTOs\\ChangePasswordDTOs.cs",
-              "RelativeDocumentMoniker": "MyProject\\DTOs\\ChangePasswordDTOs.cs",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\MyProject\\MyProject\\DTOs\\ChangePasswordDTOs.cs",
-              "RelativeToolTip": "MyProject\\DTOs\\ChangePasswordDTOs.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAxAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-23T03:05:12.022Z"
             }
           ]
         }

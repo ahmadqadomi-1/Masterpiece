@@ -14,40 +14,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     
-    
     <style>
-.gradient-custom-3 {
-/* fallback for old browsers */
-background: #84fab0;
-
-/* Chrome 10-25, Safari 5.1-6 */
-background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5));
-
-/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-background: linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5))
-}
-.gradient-custom-4 {
-/* fallback for old browsers */
-background: #84fab0;
-
-/* Chrome 10-25, Safari 5.1-6 */
-background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1));
-
-/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1))
-}
-.mask.d-flex.align-items-center.h-100.gradient-custom-3 {
-    padding-top: 10em;
-}
+        .gradient-custom-3 {
+            background: #84fab0;
+            background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5));
+            background: linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5));
+        }
+        .gradient-custom-4 {
+            background: #84fab0;
+            background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1));
+            background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1));
+        }
+        .mask.d-flex.align-items-center.h-100.gradient-custom-3 {
+            padding-top: 10em;
+        }
     </style>
-
-    </head>
-
-
-
+</head>
 
 <body>
-    <header  class="main-header header-style-one">
+    <header class="main-header header-style-one">
         <div class="header-lower">
             <div class="auto-container">
                 <div class="main-box">
@@ -63,7 +48,7 @@ background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244
                         <nav class="nav main-menu">
                             <ul class="navigation">
                                 <li><a href="index.html">الرئيسية</a></li>
-                                <li class=""><a href="shop-products.html">الفئات</a></li>
+                                <li><a href="shop-products.html">الفئات</a></li>
                                 <li><a href="page-services.html">الخدمات</a></li>
                                 <li><a href="news-grid.html">الأخبار</a></li>
                                 <li class="dropdown">
@@ -80,9 +65,7 @@ background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244
                     </div>
     
                     <div class="outer-box">
-    
-                        <!-- أيقونة عربة التسوق -->
-                        <div class="cart-btn" style="display: inline-flex; align-items: center; margin-left: 15px; ">
+                        <div class="cart-btn" style="display: inline-flex; align-items: center; margin-left: 15px;">
                             <a href="shop-cart.html" class="cart-icon" style="display: inline-flex; align-items: center; position: relative; text-decoration: none; color: #333;">
                                 <i class="fa fa-shopping-cart" style="font-size: 24px; position: relative; right: 25px;"></i>
                                 <span class="badge" style="
@@ -97,7 +80,7 @@ background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244
                                     font-size: 12px; 
                                     position: absolute; 
                                     top: -10px; 
-                                    right: 15px; 
+                                    right: 15px;
                                 ">3</span>
                             </a>
                         </div>
@@ -113,7 +96,6 @@ background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244
             </div>
         </div>
     
-        <!-- الجزء الخاص بالنافذة المتنقلة -->
         <div class="mobile-menu">
             <div class="menu-backdrop"></div>
             <nav class="menu-box">
@@ -195,168 +177,158 @@ background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244
         </div>
     </header>
 
-<section class="vh-40 bg-image"
-style="background-image: url('img/form-bg.jpg'); background-size: cover; background-repeat: no-repeat; size: 100%;">
-<div class="mask d-flex align-items-center h-100 gradient-custom-3">
-    <div class="container h-100">
-    <div class="row d-flex justify-content-center align-items-center h-100">
-        <div class="col-12 col-md-9 col-lg-7 col-xl-6">
-        <div class="card" style="border-radius: 15px;">
-            <div class="card-body p-5">
-            <h2 class="text-uppercase text-center mb-5">إنشاء حساب</h2>
+    <section class="vh-40 bg-image" style="background-image: url('img/form-bg.jpg'); background-size: cover; background-repeat: no-repeat; size: 100%;">
+        <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+            <div class="container h-100">
+                <div class="row d-flex justify-content-center align-items-center h-100">
+                    <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                        <div class="card" style="border-radius: 15px;">
+                            <div class="card-body p-5">
+                                <h2 class="text-uppercase text-center mb-5">إنشاء حساب</h2>
 
-
-            <form id="form">
-            
-                <div data-mdb-input-init class="form-outline mb-4">
-                    <input type="text" name="UserName" id="form3Example1cg" class="form-control form-control-lg" />
-                    <label class="form-label" for="form3Example1cg">أسمك</label>
+                                <form id="form">
+                                    <div data-mdb-input-init class="form-outline mb-4">
+                                        <input type="text" name="UserName" id="form3Example1cg" class="form-control form-control-lg" />
+                                        <label class="form-label" for="form3Example1cg">أسمك</label>
+                                    </div>
+                                
+                                    <div data-mdb-input-init class="form-outline mb-4">
+                                        <input type="email" id="form3Example3cg" name="Email" class="form-control form-control-lg" />
+                                        <label class="form-label" for="form3Example3cg">البريد الإلكتروني</label>
+                                    </div>
+                                
+                                    <div data-mdb-input-init class="form-outline mb-4">
+                                        <input type="password" id="password" name="Password" class="form-control form-control-lg" />
+                                        <label class="form-label" for="form3Example4cg">كلمة السر</label>
+                                    </div>
+                                
+                                    <div data-mdb-input-init class="form-outline mb-4">
+                                        <input type="password" id="repeatPass" name="ConfirmPassword" class="form-control form-control-lg" />
+                                        <label class="form-label" for="form3Example4cdg">تأكيد كلمة السر</label>
+                                    </div>
+                                
+                                    <div class="form-check d-flex justify-content-center mb-5">
+                                        <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3cg" />
+                                        <label class="form-check-label" for="form2Example3g">
+                                            أوافق على جميع البيانات في <a href="#!" class="text-body"><u>الشروط والأحكام</u></a>
+                                        </label>
+                                    </div>
+                                
+                                    <div class="d-flex justify-content-center">
+                                        <button onclick="register()" type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">إنشاء حساب</button>
+                                    </div>
+                                
+                                    <p class="text-center text-muted mt-5 mb-0">هل لديك حساب بالفعل؟ <a href="Login.html" class="fw-bold text-body"><u>تسجيل الدخول هنا</u></a></p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            
-                <div data-mdb-input-init class="form-outline mb-4">
-                    <input type="email" id="form3Example3cg" name="Email" class="form-control form-control-lg" />
-                    <label class="form-label" for="form3Example3cg">البريد الإلكتروني</label>
-                </div>
-            
-                <div data-mdb-input-init class="form-outline mb-4">
-                    <input type="password" id="password" name="Password" class="form-control form-control-lg" />
-                    <label class="form-label" for="form3Example4cg">كلمة السر</label>
-                </div>
-            
-                <div data-mdb-input-init class="form-outline mb-4">
-                    <input type="password" id="repeatPass" name="ConfirmPassword" class="form-control form-control-lg" />
-                    <label class="form-label" for="form3Example4cdg">تأكيد كلمة السر</label>
-                </div>
-            
-                <div class="form-check d-flex justify-content-center mb-5">
-                    <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3cg" />
-                    <label class="form-check-label" for="form2Example3g">
-                        أوافق على جميع البيانات في <a href="#!" class="text-body"><u>الشروط والأحكام</u></a>
-                    </label>
-                </div>
-            
-                <div class="d-flex justify-content-center">
-                    <button onclick="register()" type="button" data-mdb-button-init data-mdb-ripple-init 
-                    class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">إنشاء حساب</button>
-                </div>
-            
-                <p class="text-center text-muted mt-5 mb-0">هل لديك حساب بالفعل؟ <a href="Login.html" class="fw-bold text-body"><u>تسجيل الدخول هنا</u></a></p>
-            
-            </form>
-
             </div>
         </div>
-        </div>
-    </div>
-    </div>
-</div>
-</section>
+    </section>
     
-
     <footer class="main-footer footer-style-one">
-
-
-        
         <div class="footer-bottom">
-        <div class="auto-container">
-        <div class="inner-container">
-        <div class="copyright-text"><p>&copy; <span class="current-year"></span>  Al-Qadomy CO. All Rights Reserved | Design by
-            <a href="https://ahmadqadomi-1.github.io/Portfolio-Project/" target="_blank">Orange Coding Academy Member</a></p>
+            <div class="auto-container">
+                <div class="inner-container">
+                    <div class="copyright-text">
+                        <p>&copy; <span class="current-year"></span> Al-Qadomy CO. All Rights Reserved | Design by
+                            <a href="https://ahmadqadomi-1.github.io/Portfolio-Project/" target="_blank">Orange Coding Academy Member</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-        </div>
-        </div>
-        </div>
-        <div class="scroll-to-top scroll-to-target arrow-btn" data-target="html" style><i class="fa-sharp fa-solid fa-arrow-up"></i></div>
-        </footer>
+        <div class="scroll-to-top scroll-to-target arrow-btn" data-target="html"><i class="fa-sharp fa-solid fa-arrow-up"></i></div>
+    </footer>
 
-        <script>
-            // الوصول إلى زر التسجيل
-let authBtn = document.getElementById("auth-btn");
+    <!-- إضافة مكتبة SweetAlert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
-// التحقق من حالة تسجيل الدخول عند تحميل الصفحة
-window.onload = function() {
-    if (localStorage.getItem('jwtToken')) {
-        authBtn.textContent = "خروج"; // تغيير النص إلى خروج إذا كان المستخدم مسجل الدخول
-        authBtn.href = "#"; // منع الانتقال إلى صفحة تسجيل الدخول
-    }
-};
+    <script>
+        // الوصول إلى زر التسجيل
+        let authBtn = document.getElementById("auth-btn");
 
-// تسجيل الخروج عند الضغط على زر "خروج"
-authBtn.addEventListener("click", function(event) {
-    if (authBtn.textContent === "خروج") {
-        localStorage.removeItem('jwtToken'); // حذف رمز JWT من LocalStorage
-        authBtn.textContent = "تسجيل"; // إعادة النص إلى تسجيل
-        authBtn.href = "Login.html"; // إعادة الرابط إلى صفحة تسجيل الدخول
-        alert("تم تسجيل الخروج بنجاح");
-        window.location.href = "index.html"; // إعادة توجيه إلى الصفحة الرئيسية
-    }
-});
-
-
-            const registerUrl = "https://localhost:44327/api/User/Register";
-            const checkEmailUrl = "https://localhost:44327/api/User/CheckEmail";
-            let form = document.getElementById("form");
-        
-            async function checkEmail(email) {
-                try {
-                    let response = await fetch(`${checkEmailUrl}?email=${email}`);
-                    let emailExists = await response.json();
-                    return emailExists; // إرجاع true إذا كان البريد الإلكتروني موجودًا
-                } catch (error) {
-                    console.error("حدث خطأ أثناء التحقق من البريد الإلكتروني:", error);
-                    return false; // في حالة وجود خطأ، التعامل كما لو أن البريد الإلكتروني غير موجود
-                }
+        // التحقق من حالة تسجيل الدخول عند تحميل الصفحة
+        window.onload = function() {
+            if (localStorage.getItem('jwtToken')) {
+                authBtn.textContent = "خروج";
+                authBtn.href = "#";
             }
-        
-            async function register() {
-                let formData = new FormData(form);
-                let email = document.getElementById("form3Example3cg").value;
-                let repeatPass = document.getElementById("repeatPass").value;
-                let password = document.getElementById("password").value;
-                let termsAccepted = document.getElementById("form2Example3cg").checked; // تحقق من حالة خانة الموافقة
-        
-                // تحقق من قبول الشروط والأحكام
-                if (!termsAccepted) {
-                    alert("يجب الموافقة على الشروط والأحكام للتسجيل.");
-                    return; // منع متابعة التسجيل إذا لم يتم قبول الشروط
-                }
-        
-                // التحقق من تطابق كلمة المرور
-                if (repeatPass !== password) {
-                    alert("كلمتا المرور غير متطابقتين. يُرجى التأكد من إدخال نفس كلمة المرور.");
+        };
+
+        // تسجيل الخروج عند الضغط على زر "خروج"
+        authBtn.addEventListener("click", function(event) {
+            if (authBtn.textContent === "خروج") {
+                localStorage.removeItem('jwtToken');
+                authBtn.textContent = "تسجيل";
+                authBtn.href = "Login.html";
+                swal("تم تسجيل الخروج بنجاح!", "", "success").then(() => {
+                    window.location.href = "index.html";
+                });
+            }
+        });
+
+        const registerUrl = "https://localhost:44327/api/User/Register";
+        const checkEmailUrl = "https://localhost:44327/api/User/CheckEmail";
+        let form = document.getElementById("form");
+
+        async function checkEmail(email) {
+            try {
+                let response = await fetch(`${checkEmailUrl}?email=${email}`);
+                let emailExists = await response.json();
+                return emailExists;
+            } catch (error) {
+                console.error("حدث خطأ أثناء التحقق من البريد الإلكتروني:", error);
+                return false;
+            }
+        }
+
+        async function register() {
+            let formData = new FormData(form);
+            let email = document.getElementById("form3Example3cg").value;
+            let repeatPass = document.getElementById("repeatPass").value;
+            let password = document.getElementById("password").value;
+            let termsAccepted = document.getElementById("form2Example3cg").checked;
+
+            if (!termsAccepted) {
+                swal("تنبيه", "يجب الموافقة على الشروط والأحكام للتسجيل.", "warning");
+                return;
+            }
+
+            if (repeatPass !== password) {
+                swal("خطأ", "كلمتا المرور غير متطابقتين. يُرجى التأكد من إدخال نفس كلمة المرور.", "error");
+                return;
+            }
+
+            let emailExists = await checkEmail(email);
+            if (emailExists) {
+                swal("خطأ", "البريد الإلكتروني الذي أدخلته مُسجل بالفعل. يُرجى استخدام بريد إلكتروني آخر.", "error");
+                return;
+            }
+
+            try {
+                let response = await fetch(registerUrl, {
+                    method: "POST",
+                    body: formData,
+                });
+
+                if (!response.ok) {
+                    swal("خطأ", "حدث خطأ أثناء إنشاء الحساب. يُرجى المحاولة مرة أخرى.", "error");
                     return;
                 }
-        
-                // التحقق من البريد الإلكتروني قبل إرسال الطلب
-                let emailExists = await checkEmail(email);
-                if (emailExists) {
-                    alert("البريد الإلكتروني الذي أدخلته مُسجل بالفعل. يُرجى استخدام بريد إلكتروني آخر.");
-                    return; // منع إرسال الطلب إذا كان البريد الإلكتروني مسجلًا
-                }
-        
-                // إذا كان البريد الإلكتروني غير موجود، استمر في التسجيل
-                try {
-                    let response = await fetch(registerUrl, {
-                        method: "POST",
-                        body: formData,
-                    });
-        
-                    if (!response.ok) {
-                        alert("حدث خطأ أثناء إنشاء الحساب. يُرجى المحاولة مرة أخرى.");
-                        return;
-                    }
-        
-                    let data = await response.json();
-                    alert("تم تسجيل الحساب بنجاح!");
+
+                let data = await response.json();
+                swal("نجاح", "تم تسجيل الحساب بنجاح!", "success").then(() => {
                     location.href = "Login.html";
-        
-                } catch (error) {
-                    console.error("حدث خطأ أثناء عملية التسجيل:", error);
-                    alert("حدث خطأ غير متوقع. يُرجى المحاولة مرة أخرى لاحقاً.");
-                }
+                });
+
+            } catch (error) {
+                console.error("حدث خطأ أثناء عملية التسجيل:", error);
+                swal("خطأ", "حدث خطأ غير متوقع. يُرجى المحاولة مرة أخرى لاحقاً.", "error");
             }
-        </script>
-        
-        
+        }
+    </script>
 </body>
 </html>

@@ -11,6 +11,7 @@ import { ProductComponent } from './Admn/product/product.component';
 import { ProjectComponent } from './Admn/project/project.component';
 import { TeamComponent } from './Admn/team/team.component';
 import { TilerComponent } from './Admn/tiler/tiler.component';
+import { ContactUsComponent } from './Admn/contact-us/contact-us.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { TilerComponent } from './Admn/tiler/tiler.component';
     ProductComponent,
     ProjectComponent,
     TeamComponent,
-    TilerComponent
+    TilerComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule, HttpClientModule,
@@ -36,6 +38,7 @@ import { TilerComponent } from './Admn/tiler/tiler.component';
             { path: "Project", component: ProjectComponent },
             { path: "Team", component: TeamComponent },
             { path: "Tiler", component: TilerComponent },
+            { path: "ContactUs", component: ContactUsComponent },
           ]
         }
       ]

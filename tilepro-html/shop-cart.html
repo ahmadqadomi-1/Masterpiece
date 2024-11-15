@@ -29,158 +29,141 @@
             top: -0.5em;
         }
     </style>
+
+    <!-- إضافة مكتبة SweetAlert2 -->
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
     <div class="page-wrapper">
         <div class="preloader"></div>
 
-        <header  class="main-header header-style-one">
-          <div class="header-lower">
-              <div class="auto-container">
-                  <div class="main-box">
-                      <div class="logo-box">
-                          <div class="logo">
-                              <a href="index.html">
-                                  <img src="img/Logo-removebg-preview (1).png" style="height: 100px;" alt="شعار القادمي" title="الصفحة الرئيسية">
-                              </a>
-                          </div>
-                      </div>
-      
-                      <div class="nav-outer">
-                          <nav class="nav main-menu">
-                              <ul class="navigation">
-                                  <li><a href="index.html">الرئيسية</a></li>
-                                  <li class=""><a href="shop-products.html">الفئات</a></li>
-                                  <li><a href="page-services.html">الخدمات</a></li>
-                                  <li><a href="news-grid.html">الأخبار</a></li>
-                                  <li class="dropdown">
-                                      <a href="#">من نحن</a>
-                                      <ul>
-                                          <li><a href="page-about.html">عن الشركة</a></li>
-                                          <li><a href="page-projects.html">المشاريع</a></li>
-                                          <li><a href="page-team.html">الفريق</a></li>
-                                          <li><a href="page-faq.html">الأسئلة الشائعة</a></li>
-                                      </ul>
-                                  </li>
-                              </ul>
-                          </nav>
-                      </div>
-      
-                      <div class="outer-box">
-      
-                          <!-- أيقونة عربة التسوق -->
-                          <div class="cart-btn" style="display: inline-flex; align-items: center; margin-left: 15px; ">
-                              <a href="shop-cart.html" class="cart-icon" style="display: inline-flex; align-items: center; position: relative; text-decoration: none; color: #333;">
-                                  <i class="fa fa-shopping-cart" style="font-size: 24px; position: relative; right: 25px;"></i>
-                                  <span class="badge" style="
-                                      background-color: #f94a29; 
-                                      color: #fff; 
-                                      border-radius: 50%; 
-                                      height: 24px; 
-                                      width: 24px; 
-                                      display: flex;
-                                      align-items: center;
-                                      justify-content: center;
-                                      font-size: 12px; 
-                                      position: absolute; 
-                                      top: -10px; 
-                                      right: 15px; 
-                                  ">3</span>
-                              </a>
-                          </div>
-                          <div class="btn">
-                              <a href="Login.html" id="auth-btn" class="theme-btn" style="position: relative; left: 5em;">تسجيل</a>
-                          </div>
-                          
-                          <div class="mobile-nav-toggler">
-                              <i class="fa fa-bars"></i>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      
-          <!-- الجزء الخاص بالنافذة المتنقلة -->
-          <div class="mobile-menu">
-              <div class="menu-backdrop"></div>
-              <nav class="menu-box">
-                  <div class="upper-box">
-                      <div class="nav-logo">
-                          <a href="index.html">
-                              <img src="img/Logo-removebg-preview (1).png" alt="شعار القادمي" title="الصفحة الرئيسية">
-                          </a>
-                      </div>
-                      <div class="close-btn"><i class="icon fa fa-times"></i></div>
-                  </div>
-                  <ul class="navigation clearfix"></ul>
-                  <ul class="contact-list-one">
-                      <li>
-                          <div class="contact-info-box">
-                              <i class="icon lnr-icon-phone-handset"></i>
-                              <span class="title">اتصل الآن</span>
-                              <a href="tel:+962-79-184-0140">+962-79-184-0140</a>
-                          </div>
-                      </li>
-                      <li>
-                          <div class="contact-info-box">
-                              <span class="icon lnr-icon-envelope1"></span>
-                              <span class="title">أرسل بريدًا إلكترونيًا</span>
-                              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=qadomya14@gmail.com">
-                                  <span class="__cf_email__" data-cfemail="462e232a360625292b3627283f6825292b">Qadomya14@gmail.com</span>
-                              </a>
-                          </div>
-                      </li>
-                      <li>
-                          <div class="contact-info-box">
-                              <span class="icon lnr-icon-clock"></span>
-                              <span class="title">ساعات العمل</span>
-                              من السبت إلى الخميس 9:00 - 7:30، الجمعة - مغلق
-                          </div>
-                      </li>
-                  </ul>
-                  <ul class="social-links">
-                      <li><a href="https://x.com/ceramicnetwork?lang=en" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                      <li><a href="https://www.facebook.com/QADOMY0" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                      <li><a href="https://www.instagram.com/qadomyforceramics?igsh=MzRlODBiNWFlZA==" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                  </ul>
-              </nav>
-          </div>
-      
-          <div class="search-popup">
-              <span class="search-back-drop"></span>
-              <button class="close-search"><span class="fa fa-times"></span></button>
-              <div class="search-inner">
-                  <form method="post" action="https://html.kodesolution.com/2024/tilepro-html/index.html">
-                      <div class="form-group">
-                          <input type="search" name="search-field" placeholder="ابحث..." required>
-                          <button type="submit"><i class="fa fa-search"></i></button>
-                      </div>
-                  </form>
-              </div>
-          </div>
-      
-          <div class="sticky-header">
-              <div class="auto-container">
-                  <div class="inner-container">
-                      <div class="logo">
-                          <a href="index.html" title><img src="img/Logo-removebg-preview (1).png" alt="شعار القدومي" title="الصفحة الرئيسية"></a>
-                      </div>
-      
-                      <div class="nav-outer">
-                          <nav class="main-menu">
-                              <div class="navbar-collapse show collapse clearfix">
-                                  <ul class="navigation clearfix"></ul>
-                              </div>
-                          </nav>
-      
-                          <div class="mobile-nav-toggler">
-                              <i class="fa fa-bars"></i>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </header>
+        <header class="main-header header-style-one">
+            <div class="header-lower">
+                <div class="auto-container">
+                    <div class="main-box">
+                        <div class="logo-box">
+                            <div class="logo">
+                                <a href="index.html">
+                                    <img src="img/Logo-removebg-preview (1).png" style="height: 100px;" alt="شعار القادمي" title="الصفحة الرئيسية">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="nav-outer">
+                            <nav class="nav main-menu">
+                                <ul class="navigation">
+                                    <li><a href="index.html">الرئيسية</a></li>
+                                    <li><a href="shop-products.html">الفئات</a></li>
+                                    <li><a href="page-services.html">الخدمات</a></li>
+                                    <li><a href="news-grid.html">الأخبار</a></li>
+                                    <li class="dropdown">
+                                        <a href="#">من نحن</a>
+                                        <ul>
+                                            <li><a href="page-about.html">عن الشركة</a></li>
+                                            <li><a href="page-projects.html">المشاريع</a></li>
+                                            <li><a href="page-team.html">الفريق</a></li>
+                                            <li><a href="page-faq.html">الأسئلة الشائعة</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <div class="outer-box">
+                            <div class="cart-btn" style="display: inline-flex; align-items: center; margin-left: 15px;">
+                                <a href="shop-cart.html" class="cart-icon" style="display: inline-flex; align-items: center; position: relative; text-decoration: none; color: #333;">
+                                    <i class="fa fa-shopping-cart" style="font-size: 24px; position: relative; right: 25px;"></i>
+                                    <span class="badge" style="background-color: #f94a29; color: #fff; border-radius: 50%; height: 24px; width: 24px; display: flex; align-items: center; justify-content: center; font-size: 12px; position: absolute; top: -10px; right: 15px;">3</span>
+                                </a>
+                            </div>
+                            <div class="btn">
+                                <a href="Login.html" id="auth-btn" class="theme-btn" style="position: relative; left: 5em;">تسجيل</a>
+                            </div>
+                            <div class="mobile-nav-toggler">
+                                <i class="fa fa-bars"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mobile-menu">
+                <div class="menu-backdrop"></div>
+                <nav class="menu-box">
+                    <div class="upper-box">
+                        <div class="nav-logo">
+                            <a href="index.html">
+                                <img src="img/Logo-removebg-preview (1).png" alt="شعار القادمي" title="الصفحة الرئيسية">
+                            </a>
+                        </div>
+                        <div class="close-btn"><i class="icon fa fa-times"></i></div>
+                    </div>
+                    <ul class="navigation clearfix"></ul>
+                    <ul class="contact-list-one">
+                        <li>
+                            <div class="contact-info-box">
+                                <i class="icon lnr-icon-phone-handset"></i>
+                                <span class="title">اتصل الآن</span>
+                                <a href="tel:+962-79-184-0140">+962-79-184-0140</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="contact-info-box">
+                                <span class="icon lnr-icon-envelope1"></span>
+                                <span class="title">أرسل بريدًا إلكترونيًا</span>
+                                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=qadomya14@gmail.com">Qadomya14@gmail.com</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="contact-info-box">
+                                <span class="icon lnr-icon-clock"></span>
+                                <span class="title">ساعات العمل</span>
+                                من السبت إلى الخميس 9:00 - 7:30، الجمعة - مغلق
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="social-links">
+                        <li><a href="https://x.com/ceramicnetwork?lang=en" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.facebook.com/QADOMY0" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://www.instagram.com/qadomyforceramics?igsh=MzRlODBiNWFlZA==" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="search-popup">
+                <span class="search-back-drop"></span>
+                <button class="close-search"><span class="fa fa-times"></span></button>
+                <div class="search-inner">
+                    <form method="post" action="https://html.kodesolution.com/2024/tilepro-html/index.html">
+                        <div class="form-group">
+                            <input type="search" name="search-field" placeholder="ابحث..." required>
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="sticky-header">
+                <div class="auto-container">
+                    <div class="inner-container">
+                        <div class="logo">
+                            <a href="index.html"><img src="img/Logo-removebg-preview (1).png" alt="شعار القدومي"></a>
+                        </div>
+                        <div class="nav-outer">
+                            <nav class="main-menu">
+                                <div class="navbar-collapse show collapse clearfix">
+                                    <ul class="navigation clearfix"></ul>
+                                </div>
+                            </nav>
+                            <div class="mobile-nav-toggler">
+                                <i class="fa fa-bars"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
 
         <section class="page-title" style="background-image: url(images/background/page-title-bg.png)">
             <div class="auto-container">
@@ -198,7 +181,6 @@
             <div class="container pb-100">
                 <div class="section-content">
                     <div class="row">
-                        <!-- جدول العربة -->
                         <div class="col-md-12">
                             <div class="table-responsive">
                                 <table class="table table-striped table-bordered tbl-shopping-cart">
@@ -212,48 +194,43 @@
                                             <th>الإجمالي</th>
                                         </tr>
                                     </thead>
-                                    <tbody id="CartTableBody">
-                                        <!-- سيتم إضافة المحتويات هنا بواسطة JavaScript -->
-                                    </tbody>
+                                    <tbody id="CartTableBody"></tbody>
                                 </table>
                             </div>
                         </div>
 
                         <div class="col-md-5">
-                          <h4>حساب الشحن</h4>
-                          <form class="form">
-                              <div class="mb-10">
-                                  <label for="province">اختر المنطقة:</label>
-                                  <select id="province" class="form-control" onchange="updateShipping()">
-                                      <option value="">اختر المنطقة</option>
-                                      <option value="10">إربد</option>
-                                      <option value="25">عمان</option>
-                                      <option value="20">الزرقاء</option>
-                                      <option value="15">جرش</option>
-                                      <option value="18">عجلون</option>
-                                      <option value="22">المفرق</option>
-                                  </select>
-                              </div>
-                              <span id="shippingMessage" style="color: red; font-size: small; display: none;">
-                                  يرجى اختيار منطقة شحن الطلب الخاص بك.
-                              </span>
-                              <div class="mb-10">
-                                  <label for="paymentMethod">اختر طريقة الدفع:</label>
-                                  <select id="paymentMethod" class="form-control">
-                                      <option value="Paypal" selected>Paypal</option>
-                                      <option value="الدفع عند الإستلام">الدفع عند الإستلام</option>
-                                  </select>
-                              </div>
-                              <div class="mb-10">
-                                <label for="orderNotes">ملاحظات الطلب:</label>
-                                <textarea id="orderNotes" class="form-control" rows="4" placeholder="أضف ملاحظات إضافية هنا..."></textarea>
-                            </div>
-                            
-                          </form>
-                      </div>
-                      
+                            <h4>حساب الشحن</h4>
+                            <form class="form">
+                                <div class="mb-10">
+                                    <label for="province">اختر المنطقة:</label>
+                                    <select id="province" class="form-control" onchange="updateShipping()">
+                                        <option value="">اختر المنطقة</option>
+                                        <option value="10">إربد</option>
+                                        <option value="25">عمان</option>
+                                        <option value="20">الزرقاء</option>
+                                        <option value="15">جرش</option>
+                                        <option value="18">عجلون</option>
+                                        <option value="22">المفرق</option>
+                                    </select>
+                                </div>
+                                <span id="shippingMessage" style="color: red; font-size: small; display: none;">
+                                    يرجى اختيار منطقة شحن الطلب الخاص بك.
+                                </span>
+                                <div class="mb-10">
+                                    <label for="paymentMethod">اختر طريقة الدفع:</label>
+                                    <select id="paymentMethod" class="form-control">
+                                        <option value="Paypal" selected>Paypal</option>
+                                        <option value="الدفع عند الإستلام">الدفع عند الإستلام</option>
+                                    </select>
+                                </div>
+                                <div class="mb-10">
+                                    <label for="orderNotes">ملاحظات الطلب:</label>
+                                    <textarea id="orderNotes" class="form-control" rows="4" placeholder="أضف ملاحظات إضافية هنا..."></textarea>
+                                </div>
+                            </form>
+                        </div>
 
-                        <!-- ملخص الطلب -->
                         <div class="col-md-5">
                             <h4>إجمالي السلة</h4>
                             <table class="table table-bordered cart-total">
@@ -279,7 +256,6 @@
             </div>
         </section>
 
-        <!-- Footer and Scripts -->
         <footer class="main-footer footer-style-one">
             <div class="footer-bottom">
                 <div class="auto-container">
@@ -304,49 +280,64 @@
 
     <!-- JavaScript -->
     <script>
-document.getElementById("proceedToPayment").addEventListener("click", async function(event) {
-    event.preventDefault();
+        document.getElementById("proceedToPayment").addEventListener("click", async function(event) {
+            event.preventDefault();
+            let paymentMethod = document.getElementById("paymentMethod").value;
+            let orderNotes = document.getElementById("orderNotes").value;
 
-    let paymentMethod = document.getElementById("paymentMethod").value;
-    let orderNotes = document.getElementById("orderNotes").value; // الحصول على ملاحظات الطلب
+            if (paymentMethod === "الدفع عند الإستلام") {
+                Swal.fire({
+                    text: "تم تقديم الطلب بنجاح",
+                    icon: "success",
+                    showConfirmButton: true,
+                    confirmButtonText: "حسنًا"
+                });
 
-    if (paymentMethod === "الدفع عند الإستلام") {
-        alert("orderStatus: تم تقديم الطلب بنجاح");
 
-        let userId = localStorage.getItem("userId");
-        let totalAmount = parseFloat(localStorage.getItem("amount"));
+                let userId = localStorage.getItem("userId");
+                let totalAmount = parseFloat(localStorage.getItem("amount"));
 
-        let orderData = {
-            userId: userId,
-            totalAmount: totalAmount,
-            paymentMethod: "الدفع عند الإستلام",
-            orderStatus: "تم تقديم الطلب بنجاح",
-            comment: orderNotes // إضافة الملاحظات إلى بيانات الطلب
-        };
+                let orderData = {
+                    userId: userId,
+                    totalAmount: totalAmount,
+                    paymentMethod: "الدفع عند الإستلام",
+                    orderStatus: "تم تقديم الطلب بنجاح",
+                    comment: orderNotes
+                };
 
-        try {
-            let response = await fetch("https://localhost:44327/api/Order", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json"
-                },
-                body: JSON.stringify(orderData)
-            });
+                try {
+                    let response = await fetch("https://localhost:44327/api/Order", {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json"
+                        },
+                        body: JSON.stringify(orderData)
+                    });
 
-            if (response.ok) {
-                localStorage.removeItem("cartItems");
-                window.location.href = "index.html";
-            } else {
-                alert("حدث خطأ أثناء حفظ الطلب.");
+                    if (response.ok) {
+                        localStorage.removeItem("cartItems");
+                        window.location.href = "index.html";
+                    } else {
+                        Swal.fire({
+                            text: "حدث خطأ أثناء حفظ الطلب.",
+                            icon: "error",
+                            timer: 3000,
+                            showConfirmButton: false
+                        });
+                    }
+                } catch (error) {
+                    console.error("Error:", error);
+                    Swal.fire({
+                        text: "فشل الاتصال بالخادم.",
+                        icon: "error",
+                        timer: 3000,
+                        showConfirmButton: false
+                    });
+                }
+            } else if (paymentMethod === "Paypal") {
+                window.location.href = "Paypal.html";
             }
-        } catch (error) {
-            console.error("Error:", error);
-            alert("فشل الاتصال بالخادم.");
-        }
-    } else if (paymentMethod === "Paypal") {
-        window.location.href = "Paypal.html";
-    }
-});
+        });
 
         function updateShipping() {
             let cartSubtotal = parseFloat(document.getElementById("cartSubtotal").innerText.replace("JOD", "")) || 0;
@@ -377,7 +368,6 @@ document.getElementById("proceedToPayment").addEventListener("click", async func
 
     <script>
         let authBtn = document.getElementById("auth-btn");
-
         window.onload = function () {
             if (localStorage.getItem("jwtToken")) {
                 authBtn.textContent = "خروج";
@@ -390,8 +380,14 @@ document.getElementById("proceedToPayment").addEventListener("click", async func
                 localStorage.removeItem("jwtToken");
                 authBtn.textContent = "تسجيل";
                 authBtn.href = "Login.html";
-                alert("تم تسجيل الخروج بنجاح");
-                window.location.href = "index.html";
+                Swal.fire({
+                    text: "تم تسجيل الخروج بنجاح",
+                    icon: "success",
+                    timer: 3000,
+                    showConfirmButton: false
+                }).then(() => {
+                    window.location.href = "index.html";
+                });
             }
         });
 
@@ -400,7 +396,12 @@ document.getElementById("proceedToPayment").addEventListener("click", async func
             let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
 
             if (cartItems.length === 0) {
-                alert("لا توجد منتجات في العربة!");
+                Swal.fire({
+                    text: "لا توجد منتجات في العربة!",
+                    icon: "warning",
+                    timer: 3000,
+                    showConfirmButton: false
+                });
                 return;
             }
 

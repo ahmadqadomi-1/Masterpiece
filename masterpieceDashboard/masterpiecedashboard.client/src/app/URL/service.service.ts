@@ -63,4 +63,16 @@ export class ServiceService {
 
     return this.http.delete<any>(`${this.staticData}/Tiler/DeleteTiler/${id}`)
   }
+
+  getContact(): Observable<any> {
+    return this.http.get<any>(`${this.staticData}/ContactUs/GetByDesc`);
+
+  }
+
+  deletContact(id: any): Observable<any> {
+
+    return this.http.delete<any>(`${this.staticData}/ContactUs/DeleteContact/${id}`)
+  }
+
+
 }

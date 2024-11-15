@@ -23,6 +23,8 @@ public partial class MyDbContext : DbContext
 
     public virtual DbSet<Category> Categories { get; set; }
 
+    public virtual DbSet<ContactU> ContactUs { get; set; }
+
     public virtual DbSet<Feedback> Feedbacks { get; set; }
 
     public virtual DbSet<News> News { get; set; }
@@ -47,7 +49,7 @@ public partial class MyDbContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Server=DESKTOP-3O6RHJJ;Database=Masterpiece;Trusted_Connection=True;TrustServerCertificate=True;");
+        => optionsBuilder.UseSqlServer("Server= DESKTOP-3O6RHJJ;Database= Masterpiece;Trusted_Connection=True;TrustServerCertificate=True;");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -120,6 +122,19 @@ public partial class MyDbContext : DbContext
             entity.Property(e => e.CategoryRate)
                 .HasDefaultValue(0m)
                 .HasColumnType("decimal(2, 1)");
+        });
+
+        modelBuilder.Entity<ContactU>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PK__ContactU__3214EC27B2B5FEE7");
+
+            entity.Property(e => e.Id).HasColumnName("ID");
+            entity.Property(e => e.CreatedAt)
+                .HasDefaultValueSql("(getdate())")
+                .HasColumnType("datetime");
+            entity.Property(e => e.Email).HasMaxLength(255);
+            entity.Property(e => e.Name).HasMaxLength(255);
+            entity.Property(e => e.PhoneNumber).HasMaxLength(20);
         });
 
         modelBuilder.Entity<Feedback>(entity =>

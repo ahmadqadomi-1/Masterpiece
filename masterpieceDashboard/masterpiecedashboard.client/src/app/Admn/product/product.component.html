@@ -14,35 +14,35 @@
   <thead>
     <tr>
       <!--<th scope="col">Product Id</th>-->
-      <th scope="col">Product Name</th>
-      <th scope="col">Product Image</th>
-      <th scope="col">Product Description</th>
-      <th scope="col">Product feature1</th>
-      <th scope="col">Product feature2</th>
-      <th scope="col">Product feature3</th>
-      <th scope="col">Product Price</th>
-      <th scope="col">Stock</th>
-      <th scope="col">Product Rate</th>
-      <th scope="col">Edit</th>
-      <th scope="col">Delete</th>
+      <th scope="col" style="text-align: center;">Product Name</th>
+      <th scope="col" style="text-align: center;">Product Image</th>
+      <th scope="col" style="text-align: center;">Product Description</th>
+      <th scope="col" style="text-align: center;">Product feature1</th>
+      <th scope="col" style="text-align: center;">Product feature2</th>
+      <th scope="col" style="text-align: center;">Product feature3</th>
+      <th scope="col" style="text-align: center;">Product Price</th>
+      <th scope="col" style="text-align: center;">Stock</th>
+      <th scope="col" style="text-align: center;">Product Rate</th>
+      <th scope="col" style="text-align: center;">Edit</th>
+      <th scope="col" style="text-align: center;">Delete</th>
     </tr>
   </thead>
   <tbody>
     <tr *ngFor="let Products of ProductArray">
       <!--<td>{{ Products.productId }}</td>-->
-      <td>{{ Products.productName }}</td>
-      <td>{{ Products.productImage }}</td>
-      <td>{{ Products.productDescription }}</td>
-      <td>{{ Products.productDescriptionList1 }} </td>
-      <td>{{ Products.productDescriptionList2 }} </td>
-      <td>{{ Products.productDescriptionList3 }} </td>
-      <td>{{ Products.price }} JOD</td>
-      <td>{{ Products.stock }} Meters</td>
-      <td>{{ Products.productRate }} Stars</td>
-      <td>
+      <td style="text-align: center;">{{ Products.productName }}</td>
+      <td style="text-align: center;">{{ Products.productImage }}</td>
+      <td style="text-align: center;">{{ Products.productDescription }}</td>
+      <td style="text-align: center;">{{ Products.productDescriptionList1 }} </td>
+      <td style="text-align: center;">{{ Products.productDescriptionList2 }} </td>
+      <td style="text-align: center;">{{ Products.productDescriptionList3 }} </td>
+      <td style="text-align: center;">{{ Products.price }} JOD</td>
+      <td style="text-align: center;">{{ Products.stock }} Meters</td>
+      <td style="text-align: center;">{{ Products.productRate }} Stars</td>
+      <td style="text-align: center;">
         <button class="btn btn-success" [routerLink]="['/dashboard/UpdateProduct', Products.productId]">Edit</button>
       </td>
-      <td>
+      <td style="text-align: center;">
         <button class="btn btn-danger" (click)="deleteProductById(Products.productId)">Delete</button>
       </td>
     </tr>

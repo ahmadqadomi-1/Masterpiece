@@ -17,7 +17,7 @@
       <th scope="col" style="text-align: center;">Order Date</th>
       <th scope="col" style="text-align: center;">Comment</th>
       <th scope="col" style="text-align: center;">Total Amount</th>
-      <th scope="col">Update Status</th>
+      <th scope="col" style="text-align: center;">Update Status</th>
       <th scope="col" style="text-align: center;">Delete</th>
     </tr>
   </thead>
@@ -31,8 +31,8 @@
       <td style="text-align: center;">{{ UserOrder.orderDate }}</td>
       <td style="text-align: center;">{{ UserOrder.comment }}</td>
       <td style="text-align: center;">{{ UserOrder.totalAmount }} JOD</td>
-      <td>
-        <button class="btn btn-success" [routerLink]="['/dashboard/UpdateOrder', UserOrder.orderId]">Edit</button>
+      <td style="text-align: center;">
+        <button  class="btn btn-success" [routerLink]="['/dashboard/UpdateOrder', UserOrder.orderId]">Edit</button>
       </td>
       <td style="text-align: center;">
         <button class="btn btn-danger" (click)="deleteOrderById(UserOrder.orderId)">Delete</button>

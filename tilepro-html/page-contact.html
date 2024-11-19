@@ -40,7 +40,7 @@
                     <nav class="nav main-menu">
                         <ul class="navigation">
                             <li><a href="index.html">الرئيسية</a></li>
-                            <li class=""><a href="shop-products.html">الفئات</a></li>
+                            <li class=""><a href="shop-products.html">المنتجات</a></li>
                             <li><a href="page-services.html">الخدمات</a></li>
                             <li><a href="news-grid.html">الأخبار</a></li>
                             <li class="dropdown">
@@ -50,6 +50,7 @@
                                     <li><a href="page-projects.html">المشاريع</a></li>
                                     <li><a href="page-team.html">الفريق</a></li>
                                     <li><a href="page-faq.html">الأسئلة الشائعة</a></li>
+                                    <li><a href="Terms.html">الشروط والأحكام</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -59,6 +60,7 @@
                 <div class="outer-box">
 
                     <!-- أيقونة عربة التسوق -->
+                    
                     <div class="cart-btn" style="display: inline-flex; align-items: center; margin-left: 15px;">
                         <a href="shop-cart.html" class="cart-icon" style="display: inline-flex; align-items: center; position: relative; text-decoration: none; color: #333;">
                             <i class="fa fa-shopping-cart" style="font-size: 24px; position: relative; right: 25px;"></i>
@@ -194,33 +196,31 @@
 <h2>لا تتردد في الكتابة</h2>
 </div>
 
-<form id="contact_form" name="contact_form" class action="https://html.kodesolution.com/2024/tilepro-html/includes/sendmail.php" method="post">
+<form id="contact-form" name="contact_form" class action="https://html.kodesolution.com/2024/tilepro-html/includes/sendmail.php" method="post">
 <div class="row">
+
+    <div class="col-sm-6">
+<div class="mb-3">
+<input name="Name" class="form-control" type="text" placeholder="إسمك">
+</div>
+</div>
+
 <div class="col-sm-6">
 <div class="mb-3">
-<input name="form_name" class="form-control" type="text" placeholder="أسمك">
-</div>
-</div>
-<div class="col-sm-6">
-<div class="mb-3">
-<input name="form_email" class="form-control required email" type="email" placeholder="بريدك الإلكتروني">
+<input name="Email" class="form-control required email" type="email" placeholder="بريدك الإلكتروني">
 </div>
 </div>
 </div>
+
 <div class="row">
-<div class="col-sm-6">
+<div class="col-sm-12">
 <div class="mb-3">
-    <input name="fileUpload" class="form-control required" type="file" accept=".jpg,.jpeg,.png,.pdf" placeholder="رفع الملف">
-</div>
-</div>
-<div class="col-sm-6">
-<div class="mb-3">
-<input name="form_phone" class="form-control" type="text" placeholder="رقم هاتفك">
+<input name="PhoneNumber" class="form-control" type="text" placeholder="رقم هاتفك">
 </div>
 </div>
 </div>
 <div class="mb-3">
-<textarea name="form_message" class="form-control required" rows="7" placeholder="ماهي رسالتك لنا؟"></textarea>
+<textarea name="Message" class="form-control required" rows="7" placeholder="ماهي رسالتك لنا؟"></textarea>
 </div>
 <div class="mb-5">
 <input name="form_botcheck" class="form-control" type="hidden" value />
@@ -375,6 +375,53 @@ authBtn.addEventListener("click", function(event) {
     // Call the function to update the cart item count on page load
     updateCartItemCount();
 </script>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+    // Contact Us
+    document.addEventListener("DOMContentLoaded", function() {
+        const form = document.getElementById("contact-form");
+
+        form.addEventListener("submit", async function(event) {
+            event.preventDefault();
+
+            const formData = new FormData(form); // Use FormData directly
+
+            try {
+                const response = await fetch("https://localhost:44327/api/ContactUs/AddContact", {
+                    method: "POST",
+                    body: formData // Send FormData object directly
+                });
+
+                if (response.ok) {
+                    Swal.fire({
+                        title: "تم الإرسال!",
+                        text: "تم إرسال رسالتك بنجاح، سوف يتم التواصل معك عبر البريد الإلكتروني أو عبر رقم الهاتف.",
+                        icon: "success",
+                        confirmButtonText: "حسنًا"
+                    });
+                    form.reset(); // Reset the form after successful submission
+                } else {
+                    Swal.fire({
+                        title: "خطأ!",
+                        text: "يوجد خطأ في إرسال رسالتك، يرجى التأكد من بياناتك قبل الإرسال.",
+                        icon: "error",
+                        confirmButtonText: "إغلاق"
+                    });
+                }
+            } catch (error) {
+                console.error("Error:", error);
+                Swal.fire({
+                    title: "خطأ!",
+                    text: "يوجد خطأ في إرسال البيانات. يرجى المحاولة مرة أخرى لاحقًا.",
+                    icon: "error",
+                    confirmButtonText: "إغلاق"
+                });
+            }
+        });
+    });
+</script>
+
 </body>
 
 <!-- Mirrored from html.kodesolution.com/2024/tilepro-html/page-contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Sep 2024 20:37:34 GMT -->

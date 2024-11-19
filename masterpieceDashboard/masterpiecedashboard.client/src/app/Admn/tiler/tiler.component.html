@@ -14,26 +14,26 @@
   <thead>
     <tr>
       <!--<th scope="col">Tiler Id</th>-->
-      <th scope="col">Tiler Name</th>
-      <th scope="col">Tiler Image</th>
-      <th scope="col">profession</th>
-      <th scope="col">Phone Number</th>
+      <th scope="col" style="text-align: center;">Tiler Name</th>
+      <th scope="col" style="text-align: center;">Tiler Image</th>
+      <th scope="col" style="text-align: center;">profession</th>
+      <th scope="col" style="text-align: center;">Phone Number</th>
       <!--<th scope="col">Add</th>-->
-      <th scope="col">Edit</th>
-      <th scope="col">Delete</th>
+      <th scope="col" style="text-align: center;">Edit</th>
+      <th scope="col" style="text-align: center;">Delete</th>
     </tr>
   </thead>
   <tbody>
     <tr *ngFor="let Tiler of TilerArray">
       <!--<td>{{ Tiler.tilerId }}</td>-->
-      <td>{{ Tiler.tilerName }}</td>
-      <td>{{ Tiler.tilerImg }}</td>
-      <td>{{ Tiler.profession }}</td>
-      <td>{{ Tiler.tilerPhoneNum }} </td>
-      <td>
+      <td style="text-align: center;">{{ Tiler.tilerName }}</td>
+      <td style="text-align: center;">{{ Tiler.tilerImg }}</td>
+      <td style="text-align: center;">{{ Tiler.profession }}</td>
+      <td style="text-align: center;">{{ Tiler.tilerPhoneNum }} </td>
+      <td style="text-align: center;">
         <button class="btn btn-success" [routerLink]="['/dashboard/UpdateTiler', Tiler.tilerId]">Edit</button>
       </td>
-      <td>
+      <td style="text-align: center;">
         <button class="btn btn-danger" (click)="deleteTilerById(Tiler.tilerId)">Delete</button>
       </td>
     </tr>

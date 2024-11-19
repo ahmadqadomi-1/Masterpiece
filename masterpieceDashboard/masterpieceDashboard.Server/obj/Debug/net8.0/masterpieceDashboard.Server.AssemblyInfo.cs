@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("masterpieceDashboard.Server")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cbadd9a526c8ad43a42256337ec060b91d621df3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4b1a13ddabef191721f194e9e0c7eaf7cd60c46f")]
 [assembly: System.Reflection.AssemblyProductAttribute("masterpieceDashboard.Server")]
 [assembly: System.Reflection.AssemblyTitleAttribute("masterpieceDashboard.Server")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

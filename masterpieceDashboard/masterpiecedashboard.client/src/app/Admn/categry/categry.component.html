@@ -11,20 +11,20 @@
 <table class="table table-striped">
   <thead>
     <tr>
-      <th scope="col">Category Name</th>
-      <th scope="col">Category Image</th>
-      <th scope="col">Edit</th>
-      <th scope="col">Delete</th>
+      <th scope="col" style="text-align: center;">Category Name</th>
+      <th scope="col" style="text-align: center;">Category Image</th>
+      <th scope="col" style="text-align: center;">Edit</th>
+      <th scope="col" style="text-align: center;">Delete</th>
     </tr>
   </thead>
   <tbody>
     <tr *ngFor="let Category of CategoryArray">
-      <td>{{ Category.categoryName }}</td>
-      <td>{{ Category.categoryImage }}</td>
-      <td>
+      <td style="text-align: center;">{{ Category.categoryName }}</td>
+      <td style="text-align: center;">{{ Category.categoryImage }}</td>
+      <td style="text-align: center;">
         <button class="btn btn-success" [routerLink]="['/dashboard/UpdateCategory', Category.categoryId]">Edit</button>
       </td>
-      <td>
+      <td style="text-align: center;">
         <button class="btn btn-danger" (click)="deleteCategoryById(Category.categoryId)">Delete</button>
       </td>
     </tr>

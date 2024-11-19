@@ -12,7 +12,7 @@ async function Category() {
     <div class="image-box">
     <figure class="image overlay-anim">
         <a href="#" onclick="save(${category.categoryId});">
-            <img src="${category.categoryImage}" width="575px" height="575px" alt="${category.categoryName} (Image not found)">
+            <img src="img/${category.categoryImage}" width="575px" height="575px" alt="${category.categoryName} (Image not found)">
         </a>
     </figure>
     <figure class="image-2">
@@ -45,21 +45,14 @@ document.addEventListener("DOMContentLoaded", function() {
     const form = document.getElementById("contact-form");
 
     form.addEventListener("submit", async function(event) {
-        event.preventDefault(); // منع إعادة تحميل الصفحة
+        event.preventDefault();
 
-        const formData = new FormData(form);
-        const data = {};
-        formData.forEach((value, key) => {
-            data[key] = value;
-        });
+        const formData = new FormData(form); // Use FormData directly
 
         try {
             const response = await fetch("https://localhost:44327/api/ContactUs/AddContact", {
                 method: "POST",
-                headers: {
-                    "Content-Type": "application/json"
-                },
-                body: JSON.stringify(data)
+                body: formData // Send FormData object directly
             });
 
             if (response.ok) {
@@ -73,6 +66,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
 
 async function FeedBack() {
     
@@ -224,3 +218,18 @@ authBtn.addEventListener("click", function(event) {
     // });
 
 
+
+    // Function to update the cart item count
+    function updateCartItemCount() {
+        // Retrieve cart items from localStorage
+        let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+        
+        // Get the cart item count
+        let itemCount = cartItems.length;
+
+        // Update the cart item count in the badge
+        document.querySelector(".cart-btn .badge").textContent = itemCount;
+    }
+
+    // Call the function to update the cart item count on page load
+    updateCartItemCount();

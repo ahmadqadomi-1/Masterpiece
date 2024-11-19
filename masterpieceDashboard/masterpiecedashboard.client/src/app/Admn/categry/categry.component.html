@@ -1,36 +1,29 @@
 <h2 class="text-center my-4 d-flex flex-column align-items-center">
-  <!--<a routerLink="/adminDashboard" class="header-logo-box d-flex flex-column align-items-center">-->
-    <!--<img src="assets/media/logo.png" alt="logo" class="header-logo mb-3">-->
-    <span>Category</span>
-  <!--</a>-->
+  <span>Category</span>
 </h2>
 
-
-
 <hr />
+
+<div class="d-flex justify-content-center align-items-center mb-4">
+  <button class="btn btn-primary" (click)="navigateToAddCategory()">Add New Category</button>
+</div>
 
 <table class="table table-striped">
   <thead>
     <tr>
-      <th scope="col">Category Id</th>
       <th scope="col">Category Name</th>
       <th scope="col">Category Image</th>
-      <!--<th scope="col">Add</th>-->
-      <!--<th scope="col">Edit</th>-->
+      <th scope="col">Edit</th>
       <th scope="col">Delete</th>
     </tr>
   </thead>
   <tbody>
     <tr *ngFor="let Category of CategoryArray">
-      <td>{{ Category.categoryId }}</td>
       <td>{{ Category.categoryName }}</td>
       <td>{{ Category.categoryImage }}</td>
-      <!--<td>
-        <button class="btn btn-primary" (click)="AddCategory(Category.categoryId)">Add</button>
-      </td>
       <td>
-        <button class="btn btn-success" (click)="EditCategory(Category.categoryId)">Edit</button>
-      </td>-->
+        <button class="btn btn-success" [routerLink]="['/dashboard/UpdateCategory', Category.categoryId]">Edit</button>
+      </td>
       <td>
         <button class="btn btn-danger" (click)="deleteCategoryById(Category.categoryId)">Delete</button>
       </td>

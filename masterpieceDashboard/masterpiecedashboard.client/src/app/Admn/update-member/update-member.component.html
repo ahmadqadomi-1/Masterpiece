@@ -1,0 +1,29 @@
+<h2 class="text-center my-4 d-flex flex-column align-items-center">
+  <span>Update the Member</span>
+</h2>
+
+<hr />
+
+<form #EditTheMember="ngForm" (ngSubmit)="UpdateMember()">
+  <div class="mb-3">
+    <label for="memberName" class="form-label">Member Name:</label>
+    <input type="text" name="teamName" class="form-control" id="memberName" aria-describedby="nameHelp" required [(ngModel)]="memberData.teamName">
+  </div>
+
+  <div class="mb-3">
+    <label for="memberImage" class="form-label">Member Image:</label>
+    <input type="text" name="teamImg" class="form-control" id="memberImage" aria-describedby="imageHelp" required [(ngModel)]="memberData.teamImg">
+  </div>
+
+  <div class="mb-3">
+    <label for="profession" class="form-label">Profession:</label>
+    <input type="text" name="profession" class="form-control" id="profession" aria-describedby="imageHelp" required [(ngModel)]="memberData.profession">
+  </div>
+
+  <div class="mb-3">
+    <label for="PhoneNumber" class="form-label">Phone Number:</label>
+    <input type="text" name="teamPhoneNum" class="form-control" id="PhoneNumber" aria-describedby="imageHelp" required [(ngModel)]="memberData.teamPhoneNum">
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>

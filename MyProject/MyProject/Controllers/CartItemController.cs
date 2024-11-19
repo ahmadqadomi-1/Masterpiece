@@ -255,5 +255,32 @@ namespace MyProject.Controllers
 
             return Ok(cartItem);
         }
+
+
+        [HttpGet("GetAllCategories")]
+        public IActionResult Cat()
+        {
+            var CC = _db.Carts.ToList();
+            return Ok(CC);
+        }
+
+        [HttpDelete("{id}")]
+        public IActionResult DeleteCategory(int id)
+        {
+            if (id < 1)
+            {
+                return BadRequest("ID must be greater than 0");
+            }
+
+            var category = _db.Carts.FirstOrDefault(c => c.CartId == id);
+            if (category == null)
+            {
+                return NotFound();
+            }
+
+            _db.Carts.Remove(category);
+            _db.SaveChanges();
+            return NoContent();
+        }
     }
 }

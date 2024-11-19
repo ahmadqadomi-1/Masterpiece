@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import Swal from 'sweetalert2';
 import { ServiceService } from '../../URL/service.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-categry',
@@ -12,7 +13,7 @@ export class CategryComponent {
     this.getAllCategory()
   }
 
-  constructor(private _ser: ServiceService) {
+  constructor(private _ser: ServiceService, private router: Router) {
 
   }
 
@@ -47,4 +48,8 @@ export class CategryComponent {
     });
   }
 
+
+  navigateToAddCategory() {
+    this.router.navigate(['/dashboard/AddCategory']);
+  }
 }

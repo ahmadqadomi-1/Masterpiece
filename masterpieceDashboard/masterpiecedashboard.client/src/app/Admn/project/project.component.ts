@@ -1,26 +1,32 @@
 import { Component } from '@angular/core';
 import Swal from 'sweetalert2';
 import { ServiceService } from '../../URL/service.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-project',
   templateUrl: './project.component.html',
-  styleUrl: './project.component.css'
+  styleUrls: ['./project.component.css'] 
 })
 export class ProjectComponent {
+  ProjectArray: any;
+
+  constructor(private _ser: ServiceService, private router: Router) { }
+
   ngOnInit() {
-    this.getAllProject()
-  }
-  constructor(private _ser: ServiceService) {
-
+    this.getAllProject();
   }
 
-  ProjectArray: any
   getAllProject() {
     this._ser.getProject().subscribe((data) => {
-      this.ProjectArray = data
-      console.log(this.ProjectArray, "this.ProjectArray")
-    })
+      
+      this.ProjectArray = data.map((project: any) => {
+        const date = new Date(project.projectDate);
+        project.projectDate = `${date.getMonth() + 1}/${date.getDate()}/${date.getFullYear()}, ${date.getHours().toString().padStart(2, '0')}:${date.getMinutes().toString().padStart(2, '0')}`;
+        return project;
+      });
+      console.log(this.ProjectArray, "this.ProjectArray");
+    });
   }
 
   deleteProjectById(id: any) {
@@ -46,4 +52,7 @@ export class ProjectComponent {
     });
   }
 
+  navigateToAddProject() {
+    this.router.navigate(['/dashboard/AddProject']);
+  }
 }

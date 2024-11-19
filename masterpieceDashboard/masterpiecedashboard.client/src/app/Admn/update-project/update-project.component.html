@@ -1,0 +1,34 @@
+<h2 class="text-center my-4 d-flex flex-column align-items-center">
+  <span>Update the Project</span>
+</h2>
+
+<hr />
+
+<form #EditTheProject="ngForm" (ngSubmit)="UpdateProject(EditTheProject.value)">
+  <div class="mb-3">
+    <label for="memberName" class="form-label">Project Name:</label>
+    <input type="text" name="projectName" class="form-control" id="memberName" aria-describedby="nameHelp" required [(ngModel)]="ProjectData.projectName">
+  </div>
+
+  <div class="mb-3">
+    <label for="memberImage" class="form-label">Project Image:</label>
+    <input type="text" name="projectImage" class="form-control" id="memberImage" aria-describedby="imageHelp" required [(ngModel)]="ProjectData.projectImage">
+  </div>
+
+  <div class="mb-3">
+    <label for="memberImage" class="form-label">Project Type:</label>
+    <input type="text" name="projectType" class="form-control" id="memberImage" aria-describedby="imageHelp" required [(ngModel)]="ProjectData.projectType">
+  </div>
+
+  <div class="mb-3">
+    <label for="memberImage" class="form-label">Project Location:</label>
+    <input type="text" name="location" class="form-control" id="memberImage" aria-describedby="imageHelp" required [(ngModel)]="ProjectData.location">
+  </div>
+
+  <div class="mb-3">
+    <label for="memberImage" class="form-label">Project Description:</label>
+    <input type="text" name="description" class="form-control" id="memberImage" aria-describedby="imageHelp" required [(ngModel)]="ProjectData.description">
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>

@@ -1,0 +1,16 @@
+<div class="login-container">
+  <img src="https://scontent.famm13-1.fna.fbcdn.net/v/t39.30808-6/361960115_738743128257283_8285202530469049195_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGC50SFg3szxx6boYd0F1hak08GtGeiiQuTTwa0Z6KJC2G4PHqGUekcpaCQDvSULtXSebEqKPp3anJFivIgPmwL&_nc_ohc=3kxuQwFq6dUQ7kNvgGJhfRt&_nc_zt=23&_nc_ht=scontent.famm13-1.fna&_nc_gid=A9ZM5AIPj3R9bMWocLjvUx6&oh=00_AYA6yrmKpd6XP-AbNK5G4TwLztYaHezP1n7a2KbqGot3BA&oe=6741ED37"
+       alt="Logo"
+       class="login-logo" />
+  <h2>Admin Login</h2>
+
+  <form #LoginForm="ngForm" (ngSubmit)="Login(LoginForm.value)">
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" [(ngModel)]="email" required (blur)="saveCredentials()" />
+
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" [(ngModel)]="password" required (blur)="saveCredentials()" />
+
+    <button type="submit">Login</button>
+  </form>
+</div>

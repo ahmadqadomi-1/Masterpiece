@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import Swal from 'sweetalert2';
 import { ServiceService } from '../../URL/service.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-product',
@@ -12,7 +13,7 @@ export class ProductComponent {
     this.getAllProduct()
   }
 
-  constructor(private _ser: ServiceService) {
+  constructor(private _ser: ServiceService, private router: Router) {
 
   }
 
@@ -45,5 +46,9 @@ export class ProductComponent {
         });
       }
     });
+  }
+
+  navigateToAddProduct() {
+    this.router.navigate(['/dashboard/AddProduct']);
   }
 }

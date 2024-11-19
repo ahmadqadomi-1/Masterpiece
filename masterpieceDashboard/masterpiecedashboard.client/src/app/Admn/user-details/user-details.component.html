@@ -1,0 +1,38 @@
+<h2 class="text-center my-4 d-flex flex-column align-items-center">
+  <span>
+    User Details
+  </span>
+</h2>
+
+<hr />
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col" style="text-align: center;">User Name</th>
+      <th scope="col" style="text-align: center;">Phone Number</th>
+      <th scope="col" style="text-align: center;">Order Status</th>
+      <th scope="col" style="text-align: center;">Payment Method</th>
+      <th scope="col" style="text-align: center;">Order Date</th>
+      <th scope="col" style="text-align: center;">Comment</th>
+      <th scope="col" style="text-align: center;">Total Amount</th>
+      <th scope="col" style="text-align: center;">Order Id</th>
+      <!--<th scope="col">Order Details</th>-->
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let UserOrder of UserOrderArray; let i = index">
+      <td style="text-align: center;">{{ i + 1 }}</td> 
+      <td style="text-align: center;">{{ UserOrder.userName }}</td>
+      <td style="text-align: center;">{{ UserOrder.phone }}</td>
+      <td style="text-align: center;">{{ UserOrder.orderStatus }}</td>
+      <td style="text-align: center;">{{ UserOrder.paymentMethod }}</td>
+      <td style="text-align: center;">{{ UserOrder.orderDate }}</td>
+      <td style="text-align: center;">{{ UserOrder.comment }}</td>
+      <td style="text-align: center;">{{ UserOrder.totalAmount }} JOD</td>
+      <!--<td>
+        <button class="btn btn-success" [routerLink]="['/dashboard/UpdateCategory', UserOrder.orderId]">Order Details</button>
+      </td>-->
+    </tr>
+  </tbody>
+</table>

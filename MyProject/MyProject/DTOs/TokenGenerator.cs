@@ -14,13 +14,13 @@ namespace MyProject.DTOs
             _configuration = configuration;
         }
 
-        public string GenerateToken(string username, IList<string> roles)
+        public string GenerateToken(string email, IList<string> roles)
         {
             var jwtSettings = _configuration.GetSection("Jwt");
             var key = jwtSettings.GetValue<string>("Key");
             var claims = new List<Claim>
         {
-            new Claim(ClaimTypes.Name, username)
+            new Claim(ClaimTypes.Name, email)
         };
 
             claims.AddRange(roles.Select(role => new Claim(ClaimTypes.Role, role)));

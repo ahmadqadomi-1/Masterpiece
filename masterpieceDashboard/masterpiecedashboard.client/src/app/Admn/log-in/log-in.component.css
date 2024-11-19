@@ -1,0 +1,53 @@
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom, #555, #222);
+}
+
+.login-container {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  width: 447px;
+  text-align: center;
+}
+
+.login-logo {
+  width: 120px;
+  height: 120px;
+  object-fit: cover; /* تأكد من أن الصورة تظهر بشكل جميل داخل الحاوية */
+  border-radius: 50%; /* جعل الصورة دائرية */
+  margin-bottom: 15px; /* مسافة بين الصورة والنص */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* إضافة ظل للصورة */
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #e9292e;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+  button:hover {
+    background-color: #990b0f;
+  }

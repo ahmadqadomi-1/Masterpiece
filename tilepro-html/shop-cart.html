@@ -38,7 +38,7 @@
     <div class="page-wrapper">
         <div class="preloader"></div>
 
-        <header class="main-header header-style-one">
+        <header  class="main-header header-style-one">
             <div class="header-lower">
                 <div class="auto-container">
                     <div class="main-box">
@@ -49,12 +49,12 @@
                                 </a>
                             </div>
                         </div>
-
+        
                         <div class="nav-outer">
                             <nav class="nav main-menu">
                                 <ul class="navigation">
                                     <li><a href="index.html">الرئيسية</a></li>
-                                    <li><a href="shop-products.html">الفئات</a></li>
+                                    <li class=""><a href="shop-products.html">المنتجات</a></li>
                                     <li><a href="page-services.html">الخدمات</a></li>
                                     <li><a href="news-grid.html">الأخبار</a></li>
                                     <li class="dropdown">
@@ -64,22 +64,39 @@
                                             <li><a href="page-projects.html">المشاريع</a></li>
                                             <li><a href="page-team.html">الفريق</a></li>
                                             <li><a href="page-faq.html">الأسئلة الشائعة</a></li>
+                                            <li><a href="Terms.html">الشروط والأحكام</a></li>
                                         </ul>
                                     </li>
                                 </ul>
                             </nav>
                         </div>
-
+        
                         <div class="outer-box">
+        
+                            <!-- أيقونة عربة التسوق -->
+                            
                             <div class="cart-btn" style="display: inline-flex; align-items: center; margin-left: 15px;">
                                 <a href="shop-cart.html" class="cart-icon" style="display: inline-flex; align-items: center; position: relative; text-decoration: none; color: #333;">
                                     <i class="fa fa-shopping-cart" style="font-size: 24px; position: relative; right: 25px;"></i>
-                                    <span class="badge" style="background-color: #f94a29; color: #fff; border-radius: 50%; height: 24px; width: 24px; display: flex; align-items: center; justify-content: center; font-size: 12px; position: absolute; top: -10px; right: 15px;">3</span>
+                                    <span class="badge" style="
+                                        background-color: #f94a29; 
+                                        color: #fff; 
+                                        border-radius: 50%; 
+                                        height: 24px; 
+                                        width: 24px; 
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        font-size: 12px; 
+                                        position: absolute; 
+                                        top: -10px; 
+                                        right: 15px;">0</span> <!-- Default count set to 0 -->
                                 </a>
                             </div>
                             <div class="btn">
                                 <a href="Login.html" id="auth-btn" class="theme-btn" style="position: relative; left: 5em;">تسجيل</a>
                             </div>
+                            
                             <div class="mobile-nav-toggler">
                                 <i class="fa fa-bars"></i>
                             </div>
@@ -87,7 +104,8 @@
                     </div>
                 </div>
             </div>
-
+        
+            <!-- الجزء الخاص بالنافذة المتنقلة -->
             <div class="mobile-menu">
                 <div class="menu-backdrop"></div>
                 <nav class="menu-box">
@@ -112,7 +130,9 @@
                             <div class="contact-info-box">
                                 <span class="icon lnr-icon-envelope1"></span>
                                 <span class="title">أرسل بريدًا إلكترونيًا</span>
-                                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=qadomya14@gmail.com">Qadomya14@gmail.com</a>
+                                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=qadomya14@gmail.com">
+                                    <span class="__cf_email__" data-cfemail="462e232a360625292b3627283f6825292b">Qadomya14@gmail.com</span>
+                                </a>
                             </div>
                         </li>
                         <li>
@@ -130,7 +150,7 @@
                     </ul>
                 </nav>
             </div>
-
+        
             <div class="search-popup">
                 <span class="search-back-drop"></span>
                 <button class="close-search"><span class="fa fa-times"></span></button>
@@ -143,19 +163,21 @@
                     </form>
                 </div>
             </div>
-
+        
             <div class="sticky-header">
                 <div class="auto-container">
                     <div class="inner-container">
                         <div class="logo">
-                            <a href="index.html"><img src="img/Logo-removebg-preview (1).png" alt="شعار القدومي"></a>
+                            <a href="index.html" title><img src="img/Logo-removebg-preview (1).png" alt="شعار القدومي" title="الصفحة الرئيسية"></a>
                         </div>
+        
                         <div class="nav-outer">
                             <nav class="main-menu">
                                 <div class="navbar-collapse show collapse clearfix">
                                     <ul class="navigation clearfix"></ul>
                                 </div>
                             </nav>
+        
                             <div class="mobile-nav-toggler">
                                 <i class="fa fa-bars"></i>
                             </div>
@@ -284,19 +306,19 @@
             event.preventDefault();
             let paymentMethod = document.getElementById("paymentMethod").value;
             let orderNotes = document.getElementById("orderNotes").value;
-
+    
             if (paymentMethod === "الدفع عند الإستلام") {
+                // عرض رسالة نجاح للدفع عند الاستلام
                 Swal.fire({
                     text: "تم تقديم الطلب بنجاح",
                     icon: "success",
                     showConfirmButton: true,
                     confirmButtonText: "حسنًا"
                 });
-
-
+    
                 let userId = localStorage.getItem("userId");
                 let totalAmount = parseFloat(localStorage.getItem("amount"));
-
+    
                 let orderData = {
                     userId: userId,
                     totalAmount: totalAmount,
@@ -304,8 +326,12 @@
                     orderStatus: "تم تقديم الطلب بنجاح",
                     comment: orderNotes
                 };
-
+    
+                // التحقق من البيانات المرسلة
+                console.log("Order data to be sent:", orderData);
+    
                 try {
+                    // إرسال بيانات الطلب إلى API لقاعدة البيانات
                     let response = await fetch("https://localhost:44327/api/Order", {
                         method: "POST",
                         headers: {
@@ -313,11 +339,13 @@
                         },
                         body: JSON.stringify(orderData)
                     });
-
+    
                     if (response.ok) {
+                        // إذا تم حفظ الطلب بنجاح في قاعدة البيانات
                         localStorage.removeItem("cartItems");
-                        window.location.href = "index.html";
+                        window.location.href = "index.html"; // إعادة توجيه المستخدم إلى الصفحة الرئيسية
                     } else {
+                        // في حالة حدوث خطأ في الحفظ
                         Swal.fire({
                             text: "حدث خطأ أثناء حفظ الطلب.",
                             icon: "error",
@@ -327,6 +355,7 @@
                     }
                 } catch (error) {
                     console.error("Error:", error);
+                    // في حالة فشل الاتصال بالخادم
                     Swal.fire({
                         text: "فشل الاتصال بالخادم.",
                         icon: "error",
@@ -335,16 +364,17 @@
                     });
                 }
             } else if (paymentMethod === "Paypal") {
+                // توجيه المستخدم إلى صفحة الدفع عبر PayPal
                 window.location.href = "Paypal.html";
             }
         });
-
+    
         function updateShipping() {
             let cartSubtotal = parseFloat(document.getElementById("cartSubtotal").innerText.replace("JOD", "")) || 0;
             let provinceElement = document.getElementById("province");
             let shippingFee = parseFloat(provinceElement.value) || 0;
             let shippingMessage = document.getElementById("shippingMessage");
-
+    
             if (provinceElement.value === "") {
                 document.getElementById("shippingFee").innerText = "0.00 JOD";
                 document.getElementById("orderTotal").innerText = cartSubtotal.toFixed(2) + " JOD";
@@ -358,43 +388,17 @@
                 localStorage.setItem("amount", orderTotal.toFixed(2));
             }
         }
-
+    
         window.onload = function() {
             document.getElementById("shippingMessage").style.display = "inline";
             updateShipping();
             getAllProductInCart();
         };
-    </script>
-
-    <script>
-        let authBtn = document.getElementById("auth-btn");
-        window.onload = function () {
-            if (localStorage.getItem("jwtToken")) {
-                authBtn.textContent = "خروج";
-                authBtn.href = "#";
-            }
-        };
-
-        authBtn.addEventListener("click", function () {
-            if (authBtn.textContent === "خروج") {
-                localStorage.removeItem("jwtToken");
-                authBtn.textContent = "تسجيل";
-                authBtn.href = "Login.html";
-                Swal.fire({
-                    text: "تم تسجيل الخروج بنجاح",
-                    icon: "success",
-                    timer: 3000,
-                    showConfirmButton: false
-                }).then(() => {
-                    window.location.href = "index.html";
-                });
-            }
-        });
-
+    
         async function getAllProductInCart() {
             let tableBody = document.getElementById("CartTableBody");
             let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
-
+    
             if (cartItems.length === 0) {
                 Swal.fire({
                     text: "لا توجد منتجات في العربة!",
@@ -404,48 +408,117 @@
                 });
                 return;
             }
-
+    
             tableBody.innerHTML = "";
             let cartSubtotal = 0;
             let shippingFees = 0.00;
-
+    
+            // لتسجيل الأخطاء والأشياء التي قد تكون مفقودة
+            console.log("Cart items in localStorage:", cartItems);
+    
             for (let item of cartItems) {
                 let url = `https://localhost:44327/api/Product/GetProductByID/${item.id}`;
                 try {
                     let response = await fetch(url);
+    
                     if (!response.ok) throw new Error("Network response was not ok");
-
+    
                     let productData = await response.json();
+    
+                    // تحقق من شكل البيانات المستلمة
+                    console.log("Product data:", productData);
+    
                     let subtotal = productData.price * item.quantity;
                     cartSubtotal += subtotal;
-
+    
                     let row = document.createElement("tr");
+                    row.classList.add("cart_item");
                     row.innerHTML = `
-                        <tr class="cart_item">
-                            <td class="product-remove"><a title="Remove this item" class="remove" href="#">×</a></td>
-                            <td class="product-thumbnail"><a href="#"><img alt="product" src="${productData.productImage}"></a></td>
-                            <td class="product-name"><a href="shop-product-details.html">${productData.productName}</a></td>
-                            <td class="product-price"><span class="amount">JOD ${productData.price.toFixed(2)}</span></td>
-                            <td class="product-quantity">
-                                <div class="product-details__quantity">
-                                    <span class="quantity">${item.quantity}</span>
-                                </div>
-                            </td>
-                            <td class="product-subtotal"><span class="amount">JOD ${subtotal.toFixed(2)}</span></td>
-                        </tr>`;
+                        <td class="product-remove"><a title="Remove this item" class="remove" href="#">×</a></td>
+                        <td class="product-thumbnail"><a href="#"><img alt="product" src="img/${productData.productImage}"></a></td>
+                        <td class="product-name"><a href="shop-product-details.html">${productData.productName}</a></td>
+                        <td class="product-price"><span class="amount">JOD ${productData.price.toFixed(2)}</span></td>
+                        <td class="product-quantity">
+                            <div class="product-details__quantity">
+                                <span class="quantity">${item.quantity}</span>
+                            </div>
+                        </td>
+                        <td class="product-subtotal"><span class="amount">JOD ${subtotal.toFixed(2)}</span></td>
+                    `;
+    
+                    // Add event listener to the "Remove" button
+                    row.querySelector(".remove").addEventListener("click", function(event) {
+                        event.preventDefault();
+                        // Show confirmation alert
+                        Swal.fire({
+                            title: "هل ترغب في حذف المنتج من العربة؟",
+                            icon: "warning",
+                            showCancelButton: true,
+                            confirmButtonText: "نعم، احذف",
+                            cancelButtonText: "إلغاء"
+                        }).then((result) => {
+                            if (result.isConfirmed) {
+                                // Remove the item and show success message
+                                removeItemFromCart(item.id);
+                                Swal.fire({
+                                    text: "تم الحذف بنجاح!",
+                                    icon: "success",
+                                    timer: 2000,
+                                    showConfirmButton: false
+                                });
+                            }
+                        });
+                    });
+    
                     tableBody.appendChild(row);
                 } catch (error) {
                     console.error("Error fetching product data:", error);
+                    Swal.fire({
+                        text: "حدث خطأ أثناء جلب بيانات المنتجات.",
+                        icon: "error",
+                        timer: 3000,
+                        showConfirmButton: false
+                    });
                 }
             }
-
+    
             document.querySelector(".cart-total tr:nth-child(1) td:nth-child(2)").textContent = `JOD ${cartSubtotal.toFixed(2)}`;
             document.querySelector(".cart-total tr:nth-child(2) td:nth-child(2)").textContent = `JOD ${shippingFees.toFixed(2)}`;
             document.querySelector(".cart-total tr:nth-child(3) td:nth-child(2)").textContent = `JOD ${(cartSubtotal + shippingFees).toFixed(2)}`;
             localStorage.setItem("amount", (cartSubtotal + shippingFees).toFixed(2));
         }
-
+    
+        // Function to remove an item from the cart
+        function removeItemFromCart(itemId) {
+            let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+            // Filter out the item with the matching ID
+            cartItems = cartItems.filter(item => item.id !== itemId);
+            // Update localStorage with the new cart items
+            localStorage.setItem("cartItems", JSON.stringify(cartItems));
+            // Re-render the cart
+            getAllProductInCart();
+        }
+    
         getAllProductInCart();
+    </script>
+    
+    
+    
+    <script>
+        // Function to update the cart item count
+        function updateCartItemCount() {
+            // Retrieve cart items from localStorage
+            let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+            
+            // Get the cart item count
+            let itemCount = cartItems.length;
+    
+            // Update the cart item count in the badge
+            document.querySelector(".cart-btn .badge").textContent = itemCount;
+        }
+    
+        // Call the function to update the cart item count on page load
+        updateCartItemCount();
     </script>
 
     <script src="js/jquery.js"></script>

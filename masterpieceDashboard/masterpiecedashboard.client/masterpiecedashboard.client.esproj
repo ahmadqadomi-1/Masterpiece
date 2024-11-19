@@ -8,7 +8,7 @@
     <BuildOutputFolder>$(MSBuildProjectDirectory)\dist\masterpiecedashboard.client\browser\</BuildOutputFolder>
   </PropertyGroup>
   <ItemGroup>
-    <Folder Include="src\app\Admn\" />
+    <Folder Include="src\app\Admn\BehaviorSubject\" />
     <Folder Include="src\app\URL\" />
   </ItemGroup>
 </Project>

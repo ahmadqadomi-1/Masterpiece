@@ -67,7 +67,7 @@
                 <div class="outer-box">
 
                     <!-- أيقونة عربة التسوق -->
-                    <div class="cart-btn" style="display: inline-flex; align-items: center; margin-left: 15px; ">
+                    <div class="cart-btn" style="display: inline-flex; align-items: center; margin-left: 15px;">
                         <a href="shop-cart.html" class="cart-icon" style="display: inline-flex; align-items: center; position: relative; text-decoration: none; color: #333;">
                             <i class="fa fa-shopping-cart" style="font-size: 24px; position: relative; right: 25px;"></i>
                             <span class="badge" style="
@@ -82,8 +82,7 @@
                                 font-size: 12px; 
                                 position: absolute; 
                                 top: -10px; 
-                                right: 15px; 
-                            ">3</span>
+                                right: 15px;">0</span> <!-- Default count set to 0 -->
                         </a>
                     </div>
                     <div class="btn">
@@ -294,7 +293,7 @@
             cate.innerHTML += `
             <div class="product-block all col-lg-3 col-md-6 col-sm-12">
                 <div class="inner-box">
-                    <div class="image"><a href="#" onclick="save(${Productts.productId});"><img src="${Productts.productImage}" style="width: 271.3px; height: 271.3px;" alt="${Productts.productImage} (image for Product not found)" /></a></div>
+                    <div class="image"><a href="#" onclick="save(${Productts.productId});"><img src="img/${Productts.productImage}" style="width: 271.3px; height: 271.3px;" alt="${Productts.productImage} (image for Product not found)" /></a></div>
                     <div class="content">
                         <h4><a href="#" onclick="save(${Productts.productId});">${Productts.productName}</a></h4>
                         <span class="price">JOD ${Productts.price}</span>
@@ -362,6 +361,23 @@
 // إضافة حدث الاستماع للتغيير في مربع الإدخال لفلترة المنتجات تلقائيًا
 document.getElementById('CarPlateNumber').addEventListener('input', filterProductByNameAndPrice);
 
+</script>
+
+<script>
+    // Function to update the cart item count
+    function updateCartItemCount() {
+        // Retrieve cart items from localStorage
+        let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+        
+        // Get the cart item count
+        let itemCount = cartItems.length;
+
+        // Update the cart item count in the badge
+        document.querySelector(".cart-btn .badge").textContent = itemCount;
+    }
+
+    // Call the function to update the cart item count on page load
+    updateCartItemCount();
 </script>
 <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/jquery.js"></script>
 <script src="js/popper.min.js"></script>

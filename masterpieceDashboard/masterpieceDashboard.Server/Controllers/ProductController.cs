@@ -96,7 +96,11 @@ namespace masterpieceDashboard.Server.Controllers
                 Stock = req.Stock,
                 ProductRate = req.ProductRate,
                 CategoryId = req.CategoryId,
-                ProductImage = req.ProductImage
+                ProductImage = req.ProductImage,
+                ProductDescriptionList1 = req.ProductDescriptionList1,
+                ProductDescriptionList2 = req.ProductDescriptionList2,
+                ProductDescriptionList3 = req.ProductDescriptionList3,
+                
             };
             _db.Products.Add(data);
             _db.SaveChanges();
@@ -104,15 +108,17 @@ namespace masterpieceDashboard.Server.Controllers
         }
 
         [HttpPut("UpdateTheProductByID/{id}")]
-        public IActionResult UpdateProduct(int id, [FromForm] ProductRequest request)
+        public IActionResult UpdateProduct(int id, [FromBody] ProductRequest request)
         {
             var upproduct = _db.Products.FirstOrDefault(t => t.ProductId == id);
 
             upproduct.ProductName = request.ProductName;
             upproduct.ProductDescription = request.ProductDescription;
+            upproduct.ProductDescriptionList1 = request.ProductDescriptionList1;
+            upproduct.ProductDescriptionList2 = request.ProductDescriptionList2;
+            upproduct.ProductDescriptionList3 = request.ProductDescriptionList3;
             upproduct.Price = request.Price;
             upproduct.Stock = request.Stock;
-            upproduct.ProductRate = request.ProductRate;
             upproduct.ProductImage = request.ProductImage;
             upproduct.CategoryId = request.CategoryId;
 

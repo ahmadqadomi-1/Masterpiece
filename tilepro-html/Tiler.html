@@ -59,7 +59,7 @@
                 <div class="outer-box">
 
                     <!-- أيقونة عربة التسوق -->
-                    <div class="cart-btn" style="display: inline-flex; align-items: center; margin-left: 15px; ">
+                    <div class="cart-btn" style="display: inline-flex; align-items: center; margin-left: 15px;">
                         <a href="shop-cart.html" class="cart-icon" style="display: inline-flex; align-items: center; position: relative; text-decoration: none; color: #333;">
                             <i class="fa fa-shopping-cart" style="font-size: 24px; position: relative; right: 25px;"></i>
                             <span class="badge" style="
@@ -74,8 +74,7 @@
                                 font-size: 12px; 
                                 position: absolute; 
                                 top: -10px; 
-                                right: 15px; 
-                            ">3</span>
+                                right: 15px;">0</span> <!-- Default count set to 0 -->
                         </a>
                     </div>
                     <div class="btn">
@@ -324,34 +323,137 @@ authBtn.addEventListener("click", function(event) {
         window.location.href = "index.html"; // إعادة توجيه إلى الصفحة الرئيسية
     }
 });
+</script>
 
+<script>
     async function Tilers() {
+        try {
+            const url = `https://localhost:44327/api/Tiler/GetAllTilers`;
+            const response = await fetch(url);
 
-  let url = `https://localhost:44327/api/Tiler/GetAllTilers`;
-  let response = await fetch(url);
-  let data = await response.json();
-  let priceItem = document.getElementById("Tiler");
-  data.forEach((Tiiler) => {
-  priceItem.innerHTML += `
-    <div class="team-block innerpage-style col-lg-3 col-md-6 wow fadeInUp">
-<div class="inner-box">
-<div class="image-box">
-<figure class="image"><img src="img/${Tiiler.tilerImg}" alt="${Tiiler.tilerImg}  (Image not found)"></figure>
-<ul class="social-links">
-    <li><a href="${Tiiler.tilerPhoneNum}"><i class="fa-solid fa-phone"></i></a></li>
-</ul>
-</div>
-<div class="content-box">
-<h4 class="title"><p>${Tiiler.profession}</p></h4>
-<span>${Tiiler.tilerImg}</span>
-</div>
-</div>
-</div>
-    `;
-});
-  console.log(data);
+            if (!response.ok) {
+                throw new Error("Failed to fetch data from the API");
+            }
+
+            const data = await response.json();
+            const priceItem = document.getElementById("Tiler");
+
+            data.forEach((tiiler) => {
+                const tiilerHTML = `
+                    <div class="team-block innerpage-style col-lg-3 col-md-6 wow fadeInUp">
+                        <div class="inner-box">
+                            <div class="image-box">
+                                <figure class="image">
+                                    <img src="img/${tiiler.tilerImg}" alt="${tiiler.tilerImg} (Image not found)">
+                                </figure>
+                                <ul class="social-links">
+                                    <li>
+                                        <a href="#" onclick="showContactOptions('${tiiler.tilerPhoneNum}', '${tiiler.tilerName}')">
+                                            <i class="fa-solid fa-phone"></i> <!-- فقط رمز الهاتف -->
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="content-box">
+                                <h4 class="title"><p>${tiiler.profession}</p></h4>
+                                <span>${tiiler.tilerName}</span>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                priceItem.innerHTML += tiilerHTML;
+            });
+
+            console.log(data);
+        } catch (error) {
+            console.error("Error fetching data:", error);
+        }
+    }
+
+    // استدعاء الدالة لعرض البيانات عند تحميل الصفحة
+    Tilers();
+</script>
+
+<!-- إضافة مكتبة SweetAlert -->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+<script>
+    function showContactOptions(phoneNumber, tilerName) {
+    const whatsappUrl = `https://wa.me/${phoneNumber.replace(/\s+/g, '')}`; // تعديل الرقم ليتناسب مع رابط WhatsApp
+
+    swal({
+        title: `هل ترغب بالحجز عند ${tilerName}؟`,
+        text: `اختر كيف تريد التواصل مع ${tilerName} (${phoneNumber})`,
+        icon: "info",
+        buttons: {
+            call: {
+                text: "الاتصال",
+                value: "call",
+                className: "btn-call" // إضافة فئة مخصصة
+            },
+            whatsapp: {
+                text: "واتس أب",
+                value: "whatsapp",
+                className: "btn-whatsapp" // إضافة فئة مخصصة
+            },
+            cancel: {
+                text: "إلغاء",
+                value: null,
+                visible: true,
+                className: "btn-cancel" // إضافة فئة مخصصة
+            }
+        }
+    }).then((value) => {
+        switch (value) {
+            case "call":
+                // فتح تطبيق الاتصال
+                window.location.href = `tel:${phoneNumber}`;
+                break;
+            case "whatsapp":
+                // فتح تطبيق واتساب
+                window.location.href = whatsappUrl;
+                break;
+            default:
+                // لا تفعل شيئًا عند الإلغاء
+                break;
+        }
+    });
 }
-Tilers();
+
+// إضافة أنماط CSS للألوان المخصصة
+const style = document.createElement('style');
+style.innerHTML = `
+    .btn-call {
+        background-color: #007bff !important; /* أزرق */
+        color: white !important;
+    }
+    .btn-whatsapp {
+        background-color: #25D366 !important; /* أخضر لون واتساب */
+        color: white !important;
+    }
+    .btn-cancel {
+        background-color: #dc3545 !important; /* أحمر */
+        color: white !important;
+    }
+`;
+document.head.appendChild(style);
+
+</script>
+<script>
+    // Function to update the cart item count
+    function updateCartItemCount() {
+        // Retrieve cart items from localStorage
+        let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+        
+        // Get the cart item count
+        let itemCount = cartItems.length;
+
+        // Update the cart item count in the badge
+        document.querySelector(".cart-btn .badge").textContent = itemCount;
+    }
+
+    // Call the function to update the cart item count on page load
+    updateCartItemCount();
 </script>
 </body>
 

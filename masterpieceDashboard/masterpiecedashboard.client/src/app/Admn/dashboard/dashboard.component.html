@@ -1,4 +1,4 @@
-<ng-container>
+<ng-container *ngIf="isLoggedIn;">
   <div class="container-fluid">
     <div class="row flex-nowrap">
       <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
@@ -21,6 +21,22 @@
               <a routerLink="/dashboard/Product" class="nav-link text-white align-middle px-0">
                 <i class="fs-4 bi-house users-icon"></i>
                 <span class="ms-1 d-none d-sm-inline">Product</span>
+              </a>
+            </li>
+
+            <!-- User -->
+            <li class="nav-item">
+              <a routerLink="/dashboard/User" class="nav-link text-white align-middle px-0">
+                <i class="fs-4 bi-house users-icon"></i>
+                <span class="ms-1 d-none d-sm-inline">Users</span>
+              </a>
+            </li>
+
+            <!-- Order -->
+            <li class="nav-item">
+              <a routerLink="/dashboard/Order" class="nav-link text-white align-middle px-0">
+                <i class="fs-4 bi-house users-icon"></i>
+                <span class="ms-1 d-none d-sm-inline">Orders</span>
               </a>
             </li>
 
@@ -58,10 +74,9 @@
 
             <!-- Logout -->
             <li class="nav-item">
-              <!--<a class="nav-link text-white px-0 align-middle" (click)="logout()">-->
               <a class="nav-link text-white px-0 align-middle">
                 <i class="fs-4 bi-box-arrow-right"></i>
-                <span class="ms-1 d-none d-sm-inline">Log out</span>
+                <span class="ms-1 d-none d-sm-inline" (click)="logout()">Log out</span>
               </a>
             </li>
 

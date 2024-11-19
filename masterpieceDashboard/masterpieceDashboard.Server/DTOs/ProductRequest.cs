@@ -6,6 +6,12 @@
 
         public string? ProductDescription { get; set; }
 
+        public string? ProductDescriptionList1 { get; set; }
+
+        public string? ProductDescriptionList2 { get; set; }
+
+        public string? ProductDescriptionList3 { get; set; }
+
         public decimal? Price { get; set; }
 
         public int? Stock { get; set; }

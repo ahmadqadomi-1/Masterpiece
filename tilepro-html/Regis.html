@@ -1,334 +1,554 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>Al-Qadomy | Tiling & Flooring Services | Home Page</title>
-    
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
-    <link rel="stylesheet" type="text/css" href="css/slick.css">
-    <link href="css/style.css" rel="stylesheet">
-    <link rel="shortcut icon" href="img/Logo-removebg-preview (1).png" type="image/x-icon">
-    <link rel="icon" href="img/Logo-removebg-preview (1).png" type="image/x-icon">
-    
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    
-    <style>
-        .gradient-custom-3 {
-            background: #84fab0;
-            background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5));
-            background: linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5));
-        }
-        .gradient-custom-4 {
-            background: #84fab0;
-            background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1));
-            background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1));
-        }
-        .mask.d-flex.align-items-center.h-100.gradient-custom-3 {
-            padding-top: 10em;
-        }
-    </style>
-</head>
 
-<body>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link
+      rel="shortcut icon"
+      href="img/Logo-removebg-preview (1).png"
+      type="image/x-icon"
+    />
+    <link
+      rel="icon"
+      href="img/Logo-removebg-preview (1).png"
+      type="image/x-icon"
+    />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+
+    <style>
+      .gradient-custom-3 {
+        background: #84fab0;
+        background: -webkit-linear-gradient(
+          to right,
+          rgba(132, 250, 176, 0.5),
+          rgba(143, 211, 244, 0.5)
+        );
+        background: linear-gradient(
+          to right,
+          rgba(132, 250, 176, 0.5),
+          rgba(143, 211, 244, 0.5)
+        );
+      }
+      .gradient-custom-4 {
+        background: #84fab0;
+        background: -webkit-linear-gradient(
+          to right,
+          rgba(132, 250, 176, 1),
+          rgba(143, 211, 244, 1)
+        );
+        background: linear-gradient(
+          to right,
+          rgba(132, 250, 176, 1),
+          rgba(143, 211, 244, 1)
+        );
+      }
+      .mask.d-flex.align-items-center.h-100.gradient-custom-3 {
+        padding-top: 10em;
+      }
+    </style>
+  </head>
+
+  <body>
     <header class="main-header header-style-one">
-        <div class="header-lower">
-            <div class="auto-container">
-                <div class="main-box">
-                    <div class="logo-box">
-                        <div class="logo">
-                            <a href="index.html">
-                                <img src="img/Logo-removebg-preview (1).png" style="height: 100px;" alt="شعار القادمي" title="الصفحة الرئيسية">
-                            </a>
-                        </div>
-                    </div>
-    
-                    <div class="nav-outer">
-                        <nav class="nav main-menu">
-                            <ul class="navigation">
-                                <li><a href="index.html">الرئيسية</a></li>
-                                <li><a href="shop-products.html">الفئات</a></li>
-                                <li><a href="page-services.html">الخدمات</a></li>
-                                <li><a href="news-grid.html">الأخبار</a></li>
-                                <li class="dropdown">
-                                    <a href="#">من نحن</a>
-                                    <ul>
-                                        <li><a href="page-about.html">عن الشركة</a></li>
-                                        <li><a href="page-projects.html">المشاريع</a></li>
-                                        <li><a href="page-team.html">الفريق</a></li>
-                                        <li><a href="page-faq.html">الأسئلة الشائعة</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-    
-                    <div class="outer-box">
-                        <div class="cart-btn" style="display: inline-flex; align-items: center; margin-left: 15px;">
-                            <a href="shop-cart.html" class="cart-icon" style="display: inline-flex; align-items: center; position: relative; text-decoration: none; color: #333;">
-                                <i class="fa fa-shopping-cart" style="font-size: 24px; position: relative; right: 25px;"></i>
-                                <span class="badge" style="
-                                    background-color: #f94a29; 
-                                    color: #fff; 
-                                    border-radius: 50%; 
-                                    height: 24px; 
-                                    width: 24px; 
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: center;
-                                    font-size: 12px; 
-                                    position: absolute; 
-                                    top: -10px; 
-                                    right: 15px;
-                                ">3</span>
-                            </a>
-                        </div>
-                        <div class="btn">
-                            <a href="Login.html" id="auth-btn" class="theme-btn" style="position: relative; left: 5em;">تسجيل</a>
-                        </div>
-                        
-                        <div class="mobile-nav-toggler">
-                            <i class="fa fa-bars"></i>
-                        </div>
-                    </div>
-                </div>
+      <div class="header-lower">
+        <div class="auto-container">
+          <div class="main-box">
+            <div class="logo-box">
+              <div class="logo">
+                <a href="index.html">
+                  <img
+                    src="img/Logo-removebg-preview (1).png"
+                    style="height: 100px"
+                    alt="شعار القادمي"
+                    title="الصفحة الرئيسية"
+                  />
+                </a>
+              </div>
             </div>
-        </div>
-    
-        <div class="mobile-menu">
-            <div class="menu-backdrop"></div>
-            <nav class="menu-box">
-                <div class="upper-box">
-                    <div class="nav-logo">
-                        <a href="index.html">
-                            <img src="img/Logo-removebg-preview (1).png" alt="شعار القادمي" title="الصفحة الرئيسية">
-                        </a>
-                    </div>
-                    <div class="close-btn"><i class="icon fa fa-times"></i></div>
-                </div>
-                <ul class="navigation clearfix"></ul>
-                <ul class="contact-list-one">
-                    <li>
-                        <div class="contact-info-box">
-                            <i class="icon lnr-icon-phone-handset"></i>
-                            <span class="title">اتصل الآن</span>
-                            <a href="tel:+962-79-184-0140">+962-79-184-0140</a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="contact-info-box">
-                            <span class="icon lnr-icon-envelope1"></span>
-                            <span class="title">أرسل بريدًا إلكترونيًا</span>
-                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=qadomya14@gmail.com">
-                                <span class="__cf_email__" data-cfemail="462e232a360625292b3627283f6825292b">Qadomya14@gmail.com</span>
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="contact-info-box">
-                            <span class="icon lnr-icon-clock"></span>
-                            <span class="title">ساعات العمل</span>
-                            من السبت إلى الخميس 9:00 - 7:30، الجمعة - مغلق
-                        </div>
-                    </li>
+
+            <div class="nav-outer">
+              <nav class="nav main-menu">
+                <ul class="navigation">
+                  <li><a href="index.html">الرئيسية</a></li>
+                  <li><a href="shop-products.html">الفئات</a></li>
+                  <li><a href="page-services.html">الخدمات</a></li>
+                  <li><a href="news-grid.html">الأخبار</a></li>
+                  <li class="dropdown">
+                    <a href="#">من نحن</a>
+                    <ul>
+                      <li><a href="page-about.html">عن الشركة</a></li>
+                      <li><a href="page-projects.html">المشاريع</a></li>
+                      <li><a href="page-team.html">الفريق</a></li>
+                      <li><a href="page-faq.html">الأسئلة الشائعة</a></li>
+                    </ul>
+                  </li>
                 </ul>
-                <ul class="social-links">
-                    <li><a href="https://x.com/ceramicnetwork?lang=en" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="https://www.facebook.com/QADOMY0" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="https://www.instagram.com/qadomyforceramics?igsh=MzRlODBiNWFlZA==" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                </ul>
-            </nav>
-        </div>
-    
-        <div class="search-popup">
-            <span class="search-back-drop"></span>
-            <button class="close-search"><span class="fa fa-times"></span></button>
-            <div class="search-inner">
-                <form method="post" action="https://html.kodesolution.com/2024/tilepro-html/index.html">
-                    <div class="form-group">
-                        <input type="search" name="search-field" placeholder="ابحث..." required>
-                        <button type="submit"><i class="fa fa-search"></i></button>
-                    </div>
-                </form>
+              </nav>
             </div>
+
+            <div class="outer-box">
+              <div
+                class="cart-btn"
+                style="
+                  display: inline-flex;
+                  align-items: center;
+                  margin-left: 15px;
+                "
+              >
+                <a
+                  href="shop-cart.html"
+                  class="cart-icon"
+                  style="
+                    display: inline-flex;
+                    align-items: center;
+                    position: relative;
+                    text-decoration: none;
+                    color: #333;
+                  "
+                >
+                  <i
+                    class="fa fa-shopping-cart"
+                    style="font-size: 24px; position: relative; right: 25px"
+                  ></i>
+                  <span
+                    class="badge"
+                    style="
+                      background-color: #f94a29;
+                      color: #fff;
+                      border-radius: 50%;
+                      height: 24px;
+                      width: 24px;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      font-size: 12px;
+                      position: absolute;
+                      top: -10px;
+                      right: 15px;
+                    "
+                    >0</span
+                  >
+                  <!-- Default count set to 0 -->
+                </a>
+              </div>
+              <div class="btn">
+                <a
+                  href="Login.html"
+                  id="auth-btn"
+                  class="theme-btn"
+                  style="position: relative; left: 5em"
+                  >تسجيل</a
+                >
+              </div>
+
+              <div class="mobile-nav-toggler">
+                <i class="fa fa-bars"></i>
+              </div>
+            </div>
+          </div>
         </div>
-    
-        <div class="sticky-header">
-            <div class="auto-container">
-                <div class="inner-container">
-                    <div class="logo">
-                        <a href="index.html" title><img src="img/Logo-removebg-preview (1).png" alt="شعار القدومي" title="الصفحة الرئيسية"></a>
-                    </div>
-    
-                    <div class="nav-outer">
-                        <nav class="main-menu">
-                            <div class="navbar-collapse show collapse clearfix">
-                                <ul class="navigation clearfix"></ul>
-                            </div>
-                        </nav>
-    
-                        <div class="mobile-nav-toggler">
-                            <i class="fa fa-bars"></i>
-                        </div>
-                    </div>
+      </div>
+
+      <div class="mobile-menu">
+        <div class="menu-backdrop"></div>
+        <nav class="menu-box">
+          <div class="upper-box">
+            <div class="nav-logo">
+              <a href="index.html">
+                <img
+                  src="img/Logo-removebg-preview (1).png"
+                  alt="شعار القادمي"
+                  title="الصفحة الرئيسية"
+                />
+              </a>
+            </div>
+            <div class="close-btn"><i class="icon fa fa-times"></i></div>
+          </div>
+          <ul class="navigation clearfix"></ul>
+          <ul class="contact-list-one">
+            <li>
+              <div class="contact-info-box">
+                <i class="icon lnr-icon-phone-handset"></i>
+                <span class="title">اتصل الآن</span>
+                <a href="tel:+962-79-184-0140">+962-79-184-0140</a>
+              </div>
+            </li>
+            <li>
+              <div class="contact-info-box">
+                <span class="icon lnr-icon-envelope1"></span>
+                <span class="title">أرسل بريدًا إلكترونيًا</span>
+                <a
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=qadomya14@gmail.com"
+                >
+                  <span
+                    class="__cf_email__"
+                    data-cfemail="462e232a360625292b3627283f6825292b"
+                    >Qadomya14@gmail.com</span
+                  >
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="contact-info-box">
+                <span class="icon lnr-icon-clock"></span>
+                <span class="title">ساعات العمل</span>
+                من السبت إلى الخميس 9:00 - 7:30، الجمعة - مغلق
+              </div>
+            </li>
+          </ul>
+          <ul class="social-links">
+            <li>
+              <a href="https://x.com/ceramicnetwork?lang=en" target="_blank"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/QADOMY0" target="_blank"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/qadomyforceramics?igsh=MzRlODBiNWFlZA=="
+                target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="search-popup">
+        <span class="search-back-drop"></span>
+        <button class="close-search"><span class="fa fa-times"></span></button>
+        <div class="search-inner">
+          <form
+            method="post"
+            action="https://html.kodesolution.com/2024/tilepro-html/index.html"
+          >
+            <div class="form-group">
+              <input
+                type="search"
+                name="search-field"
+                placeholder="ابحث..."
+                required
+              />
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="sticky-header">
+        <div class="auto-container">
+          <div class="inner-container">
+            <div class="logo">
+              <a href="index.html" title
+                ><img
+                  src="img/Logo-removebg-preview (1).png"
+                  alt="شعار القدومي"
+                  title="الصفحة الرئيسية"
+              /></a>
+            </div>
+
+            <div class="nav-outer">
+              <nav class="main-menu">
+                <div class="navbar-collapse show collapse clearfix">
+                  <ul class="navigation clearfix"></ul>
                 </div>
+              </nav>
+
+              <div class="mobile-nav-toggler">
+                <i class="fa fa-bars"></i>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </header>
 
-    <section class="vh-40 bg-image" style="background-image: url('img/form-bg.jpg'); background-size: cover; background-repeat: no-repeat; size: 100%;">
-        <div class="mask d-flex align-items-center h-100 gradient-custom-3">
-            <div class="container h-100">
-                <div class="row d-flex justify-content-center align-items-center h-100">
-                    <div class="col-12 col-md-9 col-lg-7 col-xl-6">
-                        <div class="card" style="border-radius: 15px;">
-                            <div class="card-body p-5">
-                                <h2 class="text-uppercase text-center mb-5">إنشاء حساب</h2>
+    <section
+      class="vh-40 bg-image"
+      style="
+        background-image: url('img/form-bg.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        size: 100%;
+      "
+    >
+      <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+        <div class="container h-100">
+          <div
+            class="row d-flex justify-content-center align-items-center h-100"
+          >
+            <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+              <div class="card" style="border-radius: 15px">
+                <div class="card-body p-5">
+                  <h2 class="text-uppercase text-center mb-5">إنشاء حساب</h2>
 
-                                <form id="form">
-                                    <div data-mdb-input-init class="form-outline mb-4">
-                                        <input type="text" name="UserName" id="form3Example1cg" class="form-control form-control-lg" />
-                                        <label class="form-label" for="form3Example1cg">أسمك</label>
-                                    </div>
-                                
-                                    <div data-mdb-input-init class="form-outline mb-4">
-                                        <input type="email" id="form3Example3cg" name="Email" class="form-control form-control-lg" />
-                                        <label class="form-label" for="form3Example3cg">البريد الإلكتروني</label>
-                                    </div>
-                                
-                                    <div data-mdb-input-init class="form-outline mb-4">
-                                        <input type="password" id="password" name="Password" class="form-control form-control-lg" />
-                                        <label class="form-label" for="form3Example4cg">كلمة السر</label>
-                                    </div>
-                                
-                                    <div data-mdb-input-init class="form-outline mb-4">
-                                        <input type="password" id="repeatPass" name="ConfirmPassword" class="form-control form-control-lg" />
-                                        <label class="form-label" for="form3Example4cdg">تأكيد كلمة السر</label>
-                                    </div>
-                                
-                                    <div class="form-check d-flex justify-content-center mb-5">
-                                        <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3cg" />
-                                        <label class="form-check-label" for="form2Example3g">
-                                            أوافق على جميع البيانات في <a href="#!" class="text-body"><u>الشروط والأحكام</u></a>
-                                        </label>
-                                    </div>
-                                
-                                    <div class="d-flex justify-content-center">
-                                        <button onclick="register()" type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">إنشاء حساب</button>
-                                    </div>
-                                
-                                    <p class="text-center text-muted mt-5 mb-0">هل لديك حساب بالفعل؟ <a href="Login.html" class="fw-bold text-body"><u>تسجيل الدخول هنا</u></a></p>
-                                </form>
-                            </div>
-                        </div>
+                  <form id="form">
+                    <div class="mb-3">
+                      <label for="form3Example1cg" class="form-label"
+                        >أسمك</label
+                      >
+                      <input
+                        type="text"
+                        name="UserName"
+                        id="form3Example1cg"
+                        class="form-control"
+                        required
+                      />
                     </div>
+
+                    <div class="mb-3">
+                      <label for="form3Example3cg" class="form-label"
+                        >البريد الإلكتروني</label
+                      >
+                      <input
+                        type="email"
+                        id="form3Example3cg"
+                        name="Email"
+                        class="form-control"
+                        required
+                      />
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="phoneNumber" class="form-label"
+                        >رقم الهاتف</label
+                      >
+                      <input
+                        type="text"
+                        id="phoneNumber"
+                        name="PhoneNumber"
+                        class="form-control"
+                        required
+                      />
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="password" class="form-label">كلمة السر</label>
+                      <input
+                        type="password"
+                        id="password"
+                        name="Password"
+                        class="form-control"
+                        required
+                      />
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="repeatPass" class="form-label"
+                        >تأكيد كلمة السر</label
+                      >
+                      <input
+                        type="password"
+                        id="repeatPass"
+                        name="ConfirmPassword"
+                        class="form-control"
+                        required
+                      />
+                    </div>
+
+                    <div class="form-check mb-3">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="form2Example3cg"
+                        required
+                      />
+                      <label class="form-check-label" for="form2Example3cg">
+                        أوافق على جميع البيانات في
+                        <a href="Terms.html" class="text-body"
+                          ><u>الشروط والأحكام</u></a
+                        >
+                      </label>
+                    </div>
+
+                    <div class="d-flex justify-content-center">
+                      <button
+                        onclick="register()"
+                        type="button"
+                        data-mdb-button-init
+                        data-mdb-ripple-init
+                        class="btn btn-success btn-block btn-lg gradient-custom-4 text-body"
+                      >
+                        إنشاء حساب
+                      </button>
+                    </div>
+
+                    <p class="text-center text-muted mt-3">
+                      هل لديك حساب بالفعل؟
+                      <a href="Login.html" class="text-body"
+                        ><u>تسجيل الدخول هنا</u></a
+                      >
+                    </p>
+                  </form>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
-    
+
     <footer class="main-footer footer-style-one">
-        <div class="footer-bottom">
-            <div class="auto-container">
-                <div class="inner-container">
-                    <div class="copyright-text">
-                        <p>&copy; <span class="current-year"></span> Al-Qadomy CO. All Rights Reserved | Design by
-                            <a href="https://ahmadqadomi-1.github.io/Portfolio-Project/" target="_blank">Orange Coding Academy Member</a>
-                        </p>
-                    </div>
-                </div>
+      <div class="footer-bottom">
+        <div class="auto-container">
+          <div class="inner-container">
+            <div class="copyright-text">
+              <p>
+                &copy; <span class="current-year"></span> Al-Qadomy CO. All
+                Rights Reserved | Design by
+                <a
+                  href="https://ahmadqadomi-1.github.io/Portfolio-Project/"
+                  target="_blank"
+                  >Orange Coding Academy Member</a
+                >
+              </p>
             </div>
+          </div>
         </div>
-        <div class="scroll-to-top scroll-to-target arrow-btn" data-target="html"><i class="fa-sharp fa-solid fa-arrow-up"></i></div>
+      </div>
+      <div class="scroll-to-top scroll-to-target arrow-btn" data-target="html">
+        <i class="fa-sharp fa-solid fa-arrow-up"></i>
+      </div>
     </footer>
 
     <!-- إضافة مكتبة SweetAlert -->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
     <script>
-        // الوصول إلى زر التسجيل
+      // التحقق من حالة تسجيل الدخول عند تحميل الصفحة وتحديث زر التسجيل
+      window.onload = function () {
         let authBtn = document.getElementById("auth-btn");
 
-        // التحقق من حالة تسجيل الدخول عند تحميل الصفحة
-        window.onload = function() {
-            if (localStorage.getItem('jwtToken')) {
-                authBtn.textContent = "خروج";
-                authBtn.href = "#";
-            }
-        };
+        // التحقق من وجود رمز المصادقة في localStorage
+        if (localStorage.getItem("jwtToken")) {
+          authBtn.textContent = "خروج";
+          authBtn.href = "#";
+        }
 
         // تسجيل الخروج عند الضغط على زر "خروج"
-        authBtn.addEventListener("click", function(event) {
-            if (authBtn.textContent === "خروج") {
-                localStorage.removeItem('jwtToken');
-                authBtn.textContent = "تسجيل";
-                authBtn.href = "Login.html";
-                swal("تم تسجيل الخروج بنجاح!", "", "success").then(() => {
-                    window.location.href = "index.html";
-                });
-            }
+        authBtn.addEventListener("click", function (event) {
+          if (authBtn.textContent === "خروج") {
+            localStorage.removeItem("jwtToken"); // إزالة رمز المصادقة
+            authBtn.textContent = "تسجيل";
+            authBtn.href = "Login.html";
+
+            swal("تم تسجيل الخروج بنجاح!", "", "success").then(() => {
+              window.location.href = "index.html"; // إعادة التوجيه إلى الصفحة الرئيسية
+            });
+          }
         });
+      };
 
-        const registerUrl = "https://localhost:44327/api/User/Register";
-        const checkEmailUrl = "https://localhost:44327/api/User/CheckEmail";
-        let form = document.getElementById("form");
+      // روابط API لتسجيل المستخدم والتحقق من البريد الإلكتروني
+      const registerUrl = "https://localhost:44327/api/User/Register";
+      const checkEmailUrl = "https://localhost:44327/api/User/CheckEmail";
+      let form = document.getElementById("form");
 
-        async function checkEmail(email) {
-            try {
-                let response = await fetch(`${checkEmailUrl}?email=${email}`);
-                let emailExists = await response.json();
-                return emailExists;
-            } catch (error) {
-                console.error("حدث خطأ أثناء التحقق من البريد الإلكتروني:", error);
-                return false;
-            }
+      // دالة للتحقق من وجود البريد الإلكتروني في قاعدة البيانات
+      async function checkEmail(email) {
+        try {
+          let response = await fetch(`${checkEmailUrl}?email=${email}`);
+          let emailExists = await response.json();
+          return emailExists;
+        } catch (error) {
+          console.error("حدث خطأ أثناء التحقق من البريد الإلكتروني:", error);
+          return false;
+        }
+      }
+
+      // دالة لتسجيل المستخدم
+      async function register() {
+        let formData = new FormData(form);
+        let email = document.getElementById("form3Example3cg").value;
+        let password = document.getElementById("password").value;
+        let repeatPass = document.getElementById("repeatPass").value;
+        let termsAccepted = document.getElementById("form2Example3cg").checked;
+
+        // التحقق من الموافقة على الشروط والأحكام
+        if (!termsAccepted) {
+          swal("تنبيه", "يجب الموافقة على الشروط والأحكام للتسجيل.", "warning");
+          return;
         }
 
-        async function register() {
-            let formData = new FormData(form);
-            let email = document.getElementById("form3Example3cg").value;
-            let repeatPass = document.getElementById("repeatPass").value;
-            let password = document.getElementById("password").value;
-            let termsAccepted = document.getElementById("form2Example3cg").checked;
-
-            if (!termsAccepted) {
-                swal("تنبيه", "يجب الموافقة على الشروط والأحكام للتسجيل.", "warning");
-                return;
-            }
-
-            if (repeatPass !== password) {
-                swal("خطأ", "كلمتا المرور غير متطابقتين. يُرجى التأكد من إدخال نفس كلمة المرور.", "error");
-                return;
-            }
-
-            let emailExists = await checkEmail(email);
-            if (emailExists) {
-                swal("خطأ", "البريد الإلكتروني الذي أدخلته مُسجل بالفعل. يُرجى استخدام بريد إلكتروني آخر.", "error");
-                return;
-            }
-
-            try {
-                let response = await fetch(registerUrl, {
-                    method: "POST",
-                    body: formData,
-                });
-
-                if (!response.ok) {
-                    swal("خطأ", "حدث خطأ أثناء إنشاء الحساب. يُرجى المحاولة مرة أخرى.", "error");
-                    return;
-                }
-
-                let data = await response.json();
-                swal("نجاح", "تم تسجيل الحساب بنجاح!", "success").then(() => {
-                    location.href = "Login.html";
-                });
-
-            } catch (error) {
-                console.error("حدث خطأ أثناء عملية التسجيل:", error);
-                swal("خطأ", "حدث خطأ غير متوقع. يُرجى المحاولة مرة أخرى لاحقاً.", "error");
-            }
+        // التحقق من تطابق كلمتي المرور
+        if (repeatPass !== password) {
+          swal(
+            "خطأ",
+            "كلمتا المرور غير متطابقتين. يُرجى التأكد من إدخال نفس كلمة المرور.",
+            "error"
+          );
+          return;
         }
+
+        // التحقق من وجود البريد الإلكتروني في قاعدة البيانات
+        let emailExists = await checkEmail(email);
+        if (emailExists) {
+          swal(
+            "خطأ",
+            "البريد الإلكتروني الذي أدخلته مُسجل بالفعل. يُرجى استخدام بريد إلكتروني آخر.",
+            "error"
+          );
+          return;
+        }
+
+        // إرسال بيانات التسجيل إلى API
+        try {
+          let response = await fetch(registerUrl, {
+            method: "POST",
+            body: formData,
+          });
+
+          if (!response.ok) {
+            swal(
+              "خطأ",
+              "حدث خطأ أثناء إنشاء الحساب. يُرجى المحاولة مرة أخرى.",
+              "error"
+            );
+            return;
+          }
+
+          let data = await response.json();
+          swal("نجاح", "تم تسجيل الحساب بنجاح!", "success").then(() => {
+            location.href = "Login.html"; // إعادة التوجيه إلى صفحة تسجيل الدخول
+          });
+        } catch (error) {
+          console.error("حدث خطأ أثناء عملية التسجيل:", error);
+          swal(
+            "خطأ",
+            "حدث خطأ غير متوقع. يُرجى المحاولة مرة أخرى لاحقاً.",
+            "error"
+          );
+        }
+      }
     </script>
-</body>
+
+    <script>
+      // دالة لتحديث عدد العناصر في عربة التسوق
+      function updateCartItemCount() {
+        let cartItems = JSON.parse(localStorage.getItem("cartItems")) || []; // جلب العناصر من localStorage
+        let itemCount = cartItems.length; // حساب عدد العناصر
+
+        // تحديث عدد العناصر في الشارة (badge)
+        document.querySelector(".cart-btn .badge").textContent = itemCount;
+      }
+
+      // استدعاء الدالة لتحديث عدد العناصر عند تحميل الصفحة
+      updateCartItemCount();
+    </script>
+  </body>
 </html>

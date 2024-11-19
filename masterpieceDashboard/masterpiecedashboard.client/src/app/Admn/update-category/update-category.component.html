@@ -1,0 +1,19 @@
+<h2 class="text-center my-4 d-flex flex-column align-items-center">
+  <span>Update the Category</span>
+</h2>
+
+<hr />
+
+<form #EditTheCategory="ngForm" (ngSubmit)="UpdateCategory(EditTheCategory.value)">
+  <div class="mb-3">
+    <label for="memberName" class="form-label">Category Name:</label>
+    <input type="text" name="categoryName" class="form-control" id="memberName" aria-describedby="nameHelp" required [(ngModel)]="categoryData.categoryName">
+  </div>
+
+  <div class="mb-3">
+    <label for="memberImage" class="form-label">Category Image:</label>
+    <input type="text" name="categoryImage" class="form-control" id="memberImage" aria-describedby="imageHelp" required [(ngModel)]="categoryData.categoryImage">
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>

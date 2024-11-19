@@ -1,0 +1,17 @@
+<h2 class="text-center my-4 d-flex flex-column align-items-center">
+  <span>Update the Status</span>
+</h2>
+
+<hr />
+
+<form #EditTheOrder="ngForm" (ngSubmit)="UpdateStatus(EditTheOrder.value)">
+  <div class="mb-3">
+    <label for="status" class="form-label">The Status:</label>
+    <select name="orderStatus" class="form-control" id="status" required [(ngModel)]="StatusData.orderStatus">
+      <option value="" disabled>Select Status</option>
+      <option *ngFor="let status of statusOptions" [value]="status">{{ status }}</option>
+    </select>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>

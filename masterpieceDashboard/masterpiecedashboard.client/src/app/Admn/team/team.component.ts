@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import Swal from 'sweetalert2';
 import { ServiceService } from '../../URL/service.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-team',
@@ -12,9 +13,7 @@ export class TeamComponent {
     this.getAllTeam()
   }
 
-  constructor(private _ser: ServiceService) {
-
-  }
+  constructor(private _ser: ServiceService, private router: Router) { }
 
   TeamArray: any
   getAllTeam() {
@@ -47,4 +46,7 @@ export class TeamComponent {
     });
   }
 
+  navigateToAddMember() {
+    this.router.navigate(['/dashboard/AddMember']);
+  }
 }

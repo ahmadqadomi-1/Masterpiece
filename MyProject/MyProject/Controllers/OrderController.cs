@@ -17,11 +17,82 @@ namespace MyProject.Controllers
         }
 
         [HttpGet("GetAllOrders")]
-        public IActionResult Order()
+        public IActionResult GetAllOrders()
         {
-            var OO = _db.Orders.ToList();
-            return Ok(OO);
+            var orders = _db.Orders
+                .Include(o => o.User)
+                .Select(o => new
+                {
+                    o.OrderId,
+                    o.TotalAmount,
+                    o.PaymentMethod,
+                    o.OrderStatus,
+                    o.OrderDate,
+                    o.Comment,
+                    UserID = o.User != null ? o.User.UserId : (int?)null, // Corrected syntax for UserID
+                    UserName = o.User != null ? o.User.UserName : null,
+                    UserEmail = o.User != null ? o.User.Email : null
+                })
+                .ToList();
+
+            return Ok(orders);
         }
+
+        [HttpGet("{orderId}")]
+        public IActionResult GetOrderById(int orderId)
+        {
+            var order = _db.Orders
+                .Include(o => o.User)
+                .Where(o => o.OrderId == orderId)
+                .Select(o => new
+                {
+                    o.OrderId,
+                    o.TotalAmount,
+                    o.PaymentMethod,
+                    o.OrderStatus,
+                    o.OrderDate,
+                    o.UserId, 
+                    o.Comment,
+                    UserName = o.User != null ? o.User.UserName : null, 
+                    UserEmail = o.User != null ? o.User.Email : null 
+                })
+                .FirstOrDefault();
+
+            if (order == null)
+            {
+                return NotFound("لم يتم العثور على الطلب.");
+            }
+
+            return Ok(order);
+        }
+
+        [HttpGet("GetOrdersByUserId/{userId}")]
+        public IActionResult GetOrdersByUserId(int userId)
+        {
+            var orders = _db.Orders
+                .Include(o => o.User)
+                .Where(o => o.UserId == userId)
+                .Select(o => new
+                {
+                    o.OrderId,
+                    o.TotalAmount,
+                    o.PaymentMethod,
+                    o.OrderStatus,
+                    o.OrderDate,
+                    o.Comment,
+                    UserName = o.User != null ? o.User.UserName : null,
+                    UserEmail = o.User != null ? o.User.Email : null
+                })
+                .ToList();
+
+            if (!orders.Any())
+            {
+                return NotFound("لم يتم العثور على طلبات لهذا المستخدم.");
+            }
+
+            return Ok(orders);
+        }
+
 
         [HttpPost]
         public IActionResult CreateOrder([FromBody] CreateOrderDTO newOrder)
@@ -77,5 +148,7 @@ namespace MyProject.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError, new { message = "حدث خطأ أثناء تحديث طريقة الدفع.", error = ex.Message });
             }
         }
+
+
     }
 }

@@ -63,7 +63,7 @@
                 <div class="outer-box">
 
                     <!-- أيقونة عربة التسوق -->
-                    <div class="cart-btn" style="display: inline-flex; align-items: center; margin-left: 15px; ">
+                    <div class="cart-btn" style="display: inline-flex; align-items: center; margin-left: 15px;">
                         <a href="shop-cart.html" class="cart-icon" style="display: inline-flex; align-items: center; position: relative; text-decoration: none; color: #333;">
                             <i class="fa fa-shopping-cart" style="font-size: 24px; position: relative; right: 25px;"></i>
                             <span class="badge" style="
@@ -78,8 +78,7 @@
                                 font-size: 12px; 
                                 position: absolute; 
                                 top: -10px; 
-                                right: 15px; 
-                            ">3</span>
+                                right: 15px;">0</span> <!-- Default count set to 0 -->
                         </a>
                     </div>
                     <div class="btn">
@@ -235,7 +234,7 @@
                         </div>
                     </div>
                     <div class="btn-box">
-                        <a href="page-about.html" class="theme-btn-v2">بدء الإستخدام <i class="btn-icon fa-sharp far fa-arrow-right ml-10 font-size-18"></i></a>
+                        <a href="Login.html" class="theme-btn-v2">بدء الإستخدام <i class="btn-icon fa-sharp far fa-arrow-right ml-10 font-size-18"></i></a>
                         <div class="contact-btn">
                             <i class="flaticon-telephone-1"></i>
                             <span>تواصل معنا</span>
@@ -326,104 +325,6 @@
 </section>
 
 
-<section class="project-section">
-    <div class="auto-container">
-    <div class="sec-title">
-    <h2>اكتشف المنتجات المتاحة لدينا</h2>
-    <div class="text">القدومي يقدم لك جميع الحلول اللازمة لبناء منزلك بطريقة عصرية ومتوافقة مع احتياجاتك</div>
-    </div>
-    <div class="slider-btn">
-    <button class="prev-btn"><span><i class="flaticon-arrow-pointing-to-right btn-icon"></i></span></button>
-    <button class="next-btn"><span><i class="flaticon-arrow-pointing-to-right btn-icon"></i></span></button>
-    </div>
-    </div>
-    <div class="row project-slider" id="Batool">
-    
-
-
-
-    </div>
-    </section>
-
-
-<!-- <section class="pricing-section">
-<div class="auto-container">
-<div class="sec-title text-center">
-<h2>Easy & Flexible Pricing <br/>Plans</h2>
-</div>
-<div class="row">
-
-<div class="pricing-block col-lg-4 col-md-6">
-<div class="inner-box">
-<div class="upper-box">
-<span>RESIDENTIAL</span>
-<div class="content-box">
-<h2 class="title">$59.99</h2>
-<div class="text">per user <br/>per month</div>
-</div>
-</div>
-<div class="text v2">What you'll get</div>
-<div class="list-sec">
-<ul class="list">
-<li><i class="fa-solid fa-circle-check"></i>Maintenance of fences</li>
-<li><i class="fa-solid fa-circle-check"></i>Gate maintenance</li>
-<li><i class="fa-solid fa-circle-check"></i>Checking electrical wiring</li>
-<li><i class="fa-solid fa-circle-check"></i>Maintenance of barriers</li>
-<li><i class="fa-solid fa-circle-check"></i>Configuring access systems</li>
-</ul>
-<a href="page-pricing.html" class="theme-btn-v2">Choose Package<i class="flaticon-arrow-pointing-to-right btn-icon ml-10"></i></a>
-</div>
-</div>
-</div>
-
-<div class="pricing-block col-lg-4 col-md-6">
-<div class="inner-box">
-<div class="upper-box">
-<span>COMMERCIAL</span>
-<div class="content-box">
-<h2 class="title">$89.99</h2>
-<div class="text">per user <br/>per month</div>
-</div>
-</div>
-<div class="text v2">What you'll get</div>
-<div class="list-sec">
-<ul class="list">
-<li><i class="fa-solid fa-circle-check"></i>Maintenance of fences</li>
-<li><i class="fa-solid fa-circle-check"></i>Gate maintenance</li>
-<li><i class="fa-solid fa-circle-check"></i>Checking electrical wiring</li>
-<li><i class="fa-solid fa-circle-check"></i>Maintenance of barriers</li>
-<li><i class="fa-solid fa-circle-check"></i>Configuring access systems</li>
-</ul>
-<a href="page-pricing.html" class="theme-btn-v2">Choose Package<i class="flaticon-arrow-pointing-to-right btn-icon ml-10"></i></a>
-</div>
-</div>
-</div>
-
-<div class="pricing-block col-lg-4 col-md-6">
-<div class="inner-box">
-<div class="upper-box">
-<span>INDUSTRIAL</span>
-<div class="content-box">
-<h2 class="title">$99.99</h2>
-<div class="text">per user <br/>per month</div>
-</div>
-</div>
-<div class="text v2">What you'll get</div>
-<div class="list-sec">
-<ul class="list">
-<li><i class="fa-solid fa-circle-check"></i>Maintenance of fences</li>
-<li><i class="fa-solid fa-circle-check"></i>Gate maintenance</li>
-<li><i class="fa-solid fa-circle-check"></i>Checking electrical wiring</li>
-<li><i class="fa-solid fa-circle-check"></i>Maintenance of barriers</li>
-<li><i class="fa-solid fa-circle-check"></i>Configuring access systems</li>
-</ul>
-<a href="page-pricing.html" class="theme-btn-v2">Choose Package<i class="flaticon-arrow-pointing-to-right btn-icon ml-10"></i></a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section> -->
 
 
 <footer class="main-footer footer-style-one">
@@ -449,49 +350,7 @@
 
 
 
-<script>
-    async function Category() {
-    debugger
-    let url = `https://localhost:44327/api/Category/GetAllCategories`;
-    let response = await fetch(url);
-    let data = await response.json();
-    let priceItem = document.getElementById("Batool");
 
-    data.forEach((category) => {
-        priceItem.innerHTML += `
-<div class="project-block col-lg-3 col-md-6">
-    <div class="inner-box">
-    <div class="image-box">
-    <figure class="image overlay-anim">
-        <a href="#" onclick="save(${category.categoryId});">
-            <img src="${category.categoryImage}" style="width: 342px; height: 342px;" alt="${category.categoryImage} (Image not found)">
-        </a>
-    </figure>
-    <figure class="image-2">
-        <a href="#" onclick="save(${category.categoryId});">
-            <img src="images/resource/projec1-2.png" alt="Alternative Image">
-        </a>
-    </figure>
-    </div>
-    <div class="content-box">
-    <span>${category.categoryName}</span>
-    <h6 class="title"><a href="#" onclick="save(${category.categoryId});">المزيد</a></h6>
-    </div>
-    </div>
-    </div>
-    `;
-    });
-
-    console.log(data);
-}
-
-function save(categoryId) {
-    localStorage.setItem("categoryId", categoryId);
-    window.location.href = "shop-products2.html";
-}
-
-Category();
-</script>
 
 
 <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/jquery.js"></script>
@@ -571,7 +430,22 @@ authBtn.addEventListener("click", function(event) {
     </script>
     
 
-
+    <script>
+        // Function to update the cart item count
+        function updateCartItemCount() {
+            // Retrieve cart items from localStorage
+            let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+            
+            // Get the cart item count
+            let itemCount = cartItems.length;
+    
+            // Update the cart item count in the badge
+            document.querySelector(".cart-btn .badge").textContent = itemCount;
+        }
+    
+        // Call the function to update the cart item count on page load
+        updateCartItemCount();
+    </script>
 
 </body>
 

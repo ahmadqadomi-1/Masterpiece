@@ -113,7 +113,7 @@
                 <div class="outer-box">
 
                     <!-- أيقونة عربة التسوق -->
-                    <div class="cart-btn" style="display: inline-flex; align-items: center; margin-left: 15px; ">
+                    <div class="cart-btn" style="display: inline-flex; align-items: center; margin-left: 15px;">
                         <a href="shop-cart.html" class="cart-icon" style="display: inline-flex; align-items: center; position: relative; text-decoration: none; color: #333;">
                             <i class="fa fa-shopping-cart" style="font-size: 24px; position: relative; right: 25px;"></i>
                             <span class="badge" style="
@@ -128,8 +128,7 @@
                                 font-size: 12px; 
                                 position: absolute; 
                                 top: -10px; 
-                                right: 15px; 
-                            ">3</span>
+                                right: 15px;">0</span> <!-- Default count set to 0 -->
                         </a>
                     </div>
                     <div class="btn">
@@ -694,53 +693,104 @@ console.log(data)
 let priceItem = document.getElementById("ImageToPro");
 priceItem.innerHTML += `
         <div class="slider-content">
-            <figure class="image-box"><a href="${data.productImage}" class="lightbox-image" data-fancybox="gallery"><img src="${data.productImage}" alt></a></figure>
-            <div class="slider-pager">
-            <ul class="thumb-box">
-            <li> <a class="active" data-slide-index="0" href="#">
-            <figure><img src="${data.productImage}" alt></figure>
-            </a> </li>
-            <li> <a data-slide-index="1" href="#">
-            <figure><img src="${data.productImage2}" alt></figure>
-            </a> </li>
-            <li> <a data-slide-index="2" href="#">
-            <figure><img src="${data.productImage3}" alt></figure>
-            </a> </li>
-            </ul>
-            </div>
-            </div>
-            <div class="slider-content" style="display: none;">
-            <figure class="image-box"><a href="${data.productImage2}" class="lightbox-image" data-fancybox="gallery"><img src="${data.productImage2}" alt></a></figure>
-            <div class="slider-pager">
-            <ul class="thumb-box">
-            <li> <a class="active" data-slide-index="0" href="#">
-            <figure><img src="${data.productImage}" alt></figure>
-            </a> </li>
-            <li> <a data-slide-index="1" href="#">
-            <figure><img src="${data.productImage2}" alt></figure>
-            </a> </li>
-            <li> <a data-slide-index="2" href="#">
-            <figure><img src="${data.productImage3}" alt></figure>
-            </a> </li>
-            </ul>
-            </div>
-            </div>
-            <div class="slider-content" style="display: none;">
-            <figure class="image-box"><a href="${data.productImage3}" class="lightbox-image" data-fancybox="gallery"><img src="${data.productImage3}" alt></a></figure>
-            <div class="slider-pager">
-            <ul class="thumb-box">
-            <li> <a class="active" data-slide-index="0" href="#">
-            <figure><img src="${data.productImage}" alt></figure>
-            </a> </li>
-            <li> <a data-slide-index="1" href="#">
-            <figure><img src="${data.productImage2}" alt></figure>
-            </a> </li>
-            <li> <a data-slide-index="2" href="#">
-            <figure><img src="${data.productImage3}" alt></figure>
-            </a> </li>
-            </ul>
-            </div>
-        </div>
+    <figure class="image-box">
+        <a href="img/${data.productImage}" class="lightbox-image" data-fancybox="gallery">
+            <img src="img/${data.productImage}" alt="${data.productImage3} (image not found)">
+        </a>
+    </figure>
+    <div class="slider-pager">
+        <ul class="thumb-box">
+            <li>
+                <a class="active" data-slide-index="0" href="#">
+                    <figure>
+                        <img src="img/${data.productImage}" alt="${data.productImage3} (image not found)">
+                    </figure>
+                </a>
+            </li>
+            <li>
+                <a data-slide-index="1" href="#">
+                    <figure>
+                        <img src="img/${data.productImage2}" alt="${data.productImage3} (image not found)">
+                    </figure>
+                </a>
+            </li>
+            <li>
+                <a data-slide-index="2" href="#">
+                    <figure>
+                        <img src="img/${data.productImage3}" alt="${data.productImage3} (image not found)">
+                    </figure>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="slider-content" style="display: none;">
+    <figure class="image-box">
+        <a href="img/${data.productImage2}" class="lightbox-image" data-fancybox="gallery">
+            <img src="img/${data.productImage2}" alt="${data.productImage3} (image not found)">
+        </a>
+    </figure>
+    <div class="slider-pager">
+        <ul class="thumb-box">
+            <li>
+                <a class="active" data-slide-index="0" href="#">
+                    <figure>
+                        <img src="img/${data.productImage}" alt="${data.productImage3} (image not found)">
+                    </figure>
+                </a>
+            </li>
+            <li>
+                <a data-slide-index="1" href="#">
+                    <figure>
+                        <img src="img/${data.productImage2}" alt="${data.productImage3} (image not found)">
+                    </figure>
+                </a>
+            </li>
+            <li>
+                <a data-slide-index="2" href="#">
+                    <figure>
+                        <img src="img/${data.productImage3}" alt="${data.productImage3} (image not found)">
+                    </figure>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="slider-content" style="display: none;">
+    <figure class="image-box">
+        <a href="img/${data.productImage3}" class="lightbox-image" data-fancybox="gallery">
+            <img src="img/${data.productImage3}" alt="${data.productImage3} (image not found)">
+        </a>
+    </figure>
+    <div class="slider-pager">
+        <ul class="thumb-box">
+            <li>
+                <a class="active" data-slide-index="0" href="#">
+                    <figure>
+                        <img src="img/${data.productImage}" alt="${data.productImage3} (image not found)">
+                    </figure>
+                </a>
+            </li>
+            <li>
+                <a data-slide-index="1" href="#">
+                    <figure>
+                        <img src="img/${data.productImage2}" alt="${data.productImage3} (image not found)">
+                    </figure>
+                </a>
+            </li>
+            <li>
+                <a data-slide-index="2" href="#">
+                    <figure>
+                        <img src="img/${data.productImage3}" alt="${data.productImage3} (image not found)">
+                    </figure>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
     `;
 console.log(data);
 }
@@ -862,6 +912,23 @@ function closePopup() {
         // يمكنك هنا حفظ التقييم في متغير أو إرسال البيانات إلى الخادم
         console.log('تم تقييم المنتج بـ ' + rating + ' نجوم');
     }
+</script>
+
+<script>
+    // Function to update the cart item count
+    function updateCartItemCount() {
+        // Retrieve cart items from localStorage
+        let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+        
+        // Get the cart item count
+        let itemCount = cartItems.length;
+
+        // Update the cart item count in the badge
+        document.querySelector(".cart-btn .badge").textContent = itemCount;
+    }
+
+    // Call the function to update the cart item count on page load
+    updateCartItemCount();
 </script>
 </body>
 

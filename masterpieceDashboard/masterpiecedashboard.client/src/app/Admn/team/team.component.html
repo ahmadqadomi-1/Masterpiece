@@ -4,37 +4,38 @@
   <span>Our Team</span>
   <!--</a>-->
 </h2>
-
-
-
 <hr />
+
+<div style="display: flex; justify-content: center; align-items: center;">
+  <button class="btn btn-primary" (click)="navigateToAddMember()">Add New Member</button>
+</div>
 
 <table class="table table-striped">
   <thead>
     <tr>
-      <th scope="col">Team Id</th>
+      <!--<th scope="col">Team Id</th>-->
       <th scope="col">Team Name</th>
       <th scope="col">Team Image</th>
       <th scope="col">profession</th>
       <th scope="col">Phone Number</th>
       <!--<th scope="col">Add</th>-->
-      <!--<th scope="col">Edit</th>-->
+      <th scope="col">Edit</th>
       <th scope="col">Delete</th>
     </tr>
   </thead>
   <tbody>
     <tr *ngFor="let Team of TeamArray">
-      <td>{{ Team.teamId }}</td>
+      <!--<td>{{ Team.teamId }}</td>-->
       <td>{{ Team.teamName }}</td>
       <td>{{ Team.teamImg }}</td>
       <td>{{ Team.profession }}</td>
       <td>{{ Team.teamPhoneNum }} </td>
       <!--<td>
     <button class="btn btn-primary" (click)="AddCategory(Category.categoryId)">Add</button>
-  </td>
-  <td>
-    <button class="btn btn-success" (click)="EditCategory(Category.categoryId)">Edit</button>
   </td>-->
+      <td>
+        <button class="btn btn-success" [routerLink]="['/dashboard/UpdateMember', Team.teamId]">Edit</button>
+      </td>
       <td>
         <button class="btn btn-danger" (click)="deleteTeamById(Team.teamId)">Delete</button>
       </td>

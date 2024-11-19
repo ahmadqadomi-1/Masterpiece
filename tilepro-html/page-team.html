@@ -59,7 +59,7 @@
                 <div class="outer-box">
 
                     <!-- أيقونة عربة التسوق -->
-                    <div class="cart-btn" style="display: inline-flex; align-items: center; margin-left: 15px; ">
+                    <div class="cart-btn" style="display: inline-flex; align-items: center; margin-left: 15px;">
                         <a href="shop-cart.html" class="cart-icon" style="display: inline-flex; align-items: center; position: relative; text-decoration: none; color: #333;">
                             <i class="fa fa-shopping-cart" style="font-size: 24px; position: relative; right: 25px;"></i>
                             <span class="badge" style="
@@ -74,10 +74,10 @@
                                 font-size: 12px; 
                                 position: absolute; 
                                 top: -10px; 
-                                right: 15px; 
-                            ">3</span>
+                                right: 15px;">0</span> <!-- Default count set to 0 -->
                         </a>
                     </div>
+                    
                     <div class="btn">
                         <a href="Login.html" id="auth-btn" class="theme-btn" style="position: relative; left: 5em;">تسجيل</a>
                     </div>
@@ -224,7 +224,8 @@
 <script src="js/wow.js"></script>
 <script src="js/appear.js"></script>
 <script src="js/script.js"></script>
-
+<!-- إضافة مكتبة SweetAlert -->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script>
     // الوصول إلى زر التسجيل
     let authBtn = document.getElementById("auth-btn");
@@ -249,42 +250,143 @@ authBtn.addEventListener("click", function(event) {
 });
 
 
+
 async function Tilers() {
-  let url = `https://localhost:44327/api/Teams/GetAllTeams`;
-  let response = await fetch(url);
-  let data = await response.json();
-  let priceItem = document.getElementById("CoTeam");
-  data.forEach((Teamss) => {
-    priceItem.innerHTML += `
-      <div class="team-block innerpage-style col-lg-3 col-md-6 wow fadeInUp">
-        <div class="inner-box">
-          <div class="image-box">
-            <figure class="image"><img src="img/${Teamss.teamImg}" alt="${Teamss.teamImg}  (Image not found)"></figure>
-            <ul class="social-links">
-              <li>
-                <a href="javascript:void(0);" onclick="showPhoneNumber('${Teamss.teamPhoneNum}')">
-                  <i class="fa-solid fa-phone"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="content-box">
-            <h4 class="title"><p>${Teamss.teamName}</p></h4>
-            <span>${Teamss.profession}</span>
-          </div>
-        </div>
-      </div>
-    `;
-  });
-  console.log(data);
+    try {
+        const url = `https://localhost:44327/api/Teams/GetAllTeams`;
+        const response = await fetch(url);
+
+        if (!response.ok) {
+            throw new Error("Failed to fetch data from the API");
+        }
+
+        const data = await response.json();
+        const priceItem = document.getElementById("CoTeam");
+
+        data.forEach((team) => {
+            const teamHTML = `
+                <div class="team-block innerpage-style col-lg-3 col-md-6 wow fadeInUp">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <figure class="image">
+                                <img src="img/${team.teamImg}" alt="${team.teamImg} (Image not found)">
+                            </figure>
+                            <ul class="social-links">
+                                <li>
+                                    <a href="javascript:void(0);" onclick="showPhoneNumber('${team.teamPhoneNum}', '${team.teamName}')">
+                                        <i class="fa-solid fa-phone"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="content-box">
+                            <h4 class="title"><p>${team.teamName}</p></h4>
+                            <span>${team.profession}</span>
+                        </div>
+                    </div>
+                </div>
+            `;
+            priceItem.innerHTML += teamHTML;
+        });
+
+        console.log(data);
+    } catch (error) {
+        console.error("Error:", error);
+    }
 }
 
-function showPhoneNumber(phoneNumber) {
-  alert(`رقم الهاتف: ${phoneNumber}`);
+function showPhoneNumber(phoneNumber, teamName) {
+    const whatsappUrl = `https://wa.me/${phoneNumber.replace(/\s+/g, '')}`; // تعديل الرقم ليتناسب مع رابط WhatsApp
+
+    swal({
+        title: `هل ترغب في الاتصال بـ ${teamName}؟`,
+        text: `رقم الهاتف: ${phoneNumber}`,
+        icon: "info",
+        buttons: {
+            call: {
+                text: "الاتصال",
+                value: "call",
+                className: "btn-call" // فئة مخصصة
+            },
+            whatsapp: {
+                text: "واتس أب",
+                value: "whatsapp",
+                className: "btn-whatsapp" // فئة مخصصة
+            },
+            cancel: {
+                text: "إلغاء",
+                value: null,
+                visible: true,
+                className: "btn-cancel" // فئة مخصصة
+            }
+        }
+    }).then((value) => {
+        switch (value) {
+            case "call":
+                window.location.href = `tel:${phoneNumber}`;
+                break;
+            case "whatsapp":
+                window.location.href = whatsappUrl;
+                break;
+            default:
+                break;
+        }
+    });
 }
 
+// إضافة أنماط CSS للألوان المخصصة
+const style = document.createElement('style');
+style.innerHTML = `
+    .btn-call {
+        background-color: #007bff !important; /* أزرق */
+        color: white !important;
+    }
+    .btn-whatsapp {
+        background-color: #25D366 !important; /* أخضر لون واتساب */
+        color: white !important;
+    }
+    .btn-cancel {
+        background-color: #dc3545 !important; /* أحمر */
+        color: white !important;
+    }
+`;
+document.head.appendChild(style);
+
+// استدعاء الدالة
 Tilers();
+</script>
+<script>
+    // Function to update the cart item count
+    function updateCartItemCount() {
+        // Retrieve cart items from localStorage
+        let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+        
+        // Get the cart item count
+        let itemCount = cartItems.length;
 
+        // Update the cart item count in the badge
+        document.querySelector(".cart-btn .badge").textContent = itemCount;
+    }
+
+    // Call the function to update the cart item count on page load
+    updateCartItemCount();
+</script>
+
+<script>
+    // Function to update the cart item count
+    function updateCartItemCount() {
+        // Retrieve cart items from localStorage
+        let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+        
+        // Get the cart item count
+        let itemCount = cartItems.length;
+
+        // Update the cart item count in the badge
+        document.querySelector(".cart-btn .badge").textContent = itemCount;
+    }
+
+    // Call the function to update the cart item count on page load
+    updateCartItemCount();
 </script>
 </body>
 

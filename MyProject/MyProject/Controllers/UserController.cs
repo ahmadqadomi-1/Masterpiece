@@ -18,7 +18,7 @@ namespace MyProject.Controllers
             _tokenGenerator = tokenGenerator;
         }
 
-        // التحقق من كلمة المرور وإرجاع رسالة تفصيلية في حال وجود خطأ
+        
         private string ValidatePassword(string password)
         {
             if (password.Length < 8 || password.Length > 20)
@@ -48,7 +48,7 @@ namespace MyProject.Controllers
             if (!password.Any(ch => !char.IsLetterOrDigit(ch)))
                 return "Password must contain at least one special character.";
 
-            return null; // تعني أن كلمة المرور صحيحة
+            return null; 
         }
 
         [HttpGet("GetAllUsers")]
@@ -72,7 +72,7 @@ namespace MyProject.Controllers
         [HttpGet("{name}")]
         public IActionResult Get(string name)
         {
-            var data = _db.Users.FirstOrDefault(c => c.UserName == name);
+            var data = _db.Users.FirstOrDefault(c => c.Email == name);
             if (data == null)
             {
                 return NotFound();
@@ -123,6 +123,7 @@ namespace MyProject.Controllers
                 UserName = user.UserName,
                 Email = user.Email,
                 Password = user.Password,
+                PhoneNumber = user.PhoneNumber,
                 PasswordHash = hash,
                 PasswordSalt = salt
             };
@@ -138,9 +139,9 @@ namespace MyProject.Controllers
             var existingUser = _db.Users.FirstOrDefault(u => u.Email == email);
             if (existingUser != null)
             {
-                return Ok(true);  // البريد الإلكتروني موجود
+                return Ok(true);  
             }
-            return Ok(false);  // البريد الإلكتروني غير موجود
+            return Ok(false);  
         }
 
 
@@ -152,17 +153,22 @@ namespace MyProject.Controllers
                 return BadRequest("User data is null");
             }
 
-            var storedUser = _db.Users.FirstOrDefault(u => u.UserName == user.UserName);
+            
+            var storedUser = _db.Users.FirstOrDefault(u => u.Email == user.Email);
             if (storedUser == null || !passwordhash.VerifyPasswordHash(user.Password, storedUser.PasswordHash, storedUser.PasswordSalt))
             {
-                return Unauthorized("Invalid username or password.");
+                return Unauthorized("Invalid email or password.");
             }
 
+            
             var roles = _db.UserRoles.Where(x => x.UserId == storedUser.UserId).Select(ur => ur.Role).ToList();
-            var token = _tokenGenerator.GenerateToken(user.UserName, roles);
+
+            
+            var token = _tokenGenerator.GenerateToken(user.Email, roles);
 
             return Ok(new { Token = token, storedUser.UserId });
         }
+
 
         [HttpGet("Login")]
         public IActionResult Login([FromQuery] DTOsLogin user)
@@ -172,7 +178,7 @@ namespace MyProject.Controllers
                 return BadRequest("User data is null");
             }
 
-            var record = _db.Users.FirstOrDefault(u => u.UserName == user.UserName);
+            var record = _db.Users.FirstOrDefault(u => u.Email == user.UserName);
             if (record != null && passwordhash.VerifyPasswordHash(user.Password, record.PasswordHash, record.PasswordSalt))
             {
                 return Ok("Login successful");
@@ -181,7 +187,7 @@ namespace MyProject.Controllers
             return Unauthorized("Username or password is wrong");
         }
 
-        // إضافة API لتغيير كلمة المرور
+        
         [HttpPost("ChangePassword")]
         public IActionResult ChangePassword([FromBody] ChangePasswordDTOs changePasswordDto)
         {
@@ -190,31 +196,31 @@ namespace MyProject.Controllers
                 return BadRequest("Invalid data.");
             }
 
-            // البحث عن المستخدم باستخدام معرف المستخدم أو الاسم
-            var user = _db.Users.FirstOrDefault(u => u.UserName == changePasswordDto.UserName);
+            
+            var user = _db.Users.FirstOrDefault(u => u.Email == changePasswordDto.Email);
             if (user == null)
             {
                 return NotFound("User not found.");
             }
 
-            // التحقق من كلمة المرور القديمة
+            
             if (!passwordhash.VerifyPasswordHash(changePasswordDto.OldPassword, user.PasswordHash, user.PasswordSalt))
             {
                 return Unauthorized("Old password is incorrect.");
             }
 
-            // التحقق من كلمة المرور الجديدة
+            
             var passwordValidationResult = ValidatePassword(changePasswordDto.NewPassword);
             if (passwordValidationResult != null)
             {
-                return BadRequest(passwordValidationResult); // إرجاع رسالة الخطأ المتعلقة بكلمة المرور
+                return BadRequest(passwordValidationResult); 
             }
 
-            // إنشاء كلمة مرور جديدة باستخدام التشفير
+            
             byte[] hash, salt;
             passwordhash.CreatePasswordHash(changePasswordDto.NewPassword, out hash, out salt);
 
-            // تحديث كلمة المرور في قاعدة البيانات
+            
             user.PasswordHash = hash;
             user.PasswordSalt = salt;
 

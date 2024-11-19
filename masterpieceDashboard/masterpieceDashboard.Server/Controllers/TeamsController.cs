@@ -21,7 +21,7 @@ namespace masterpieceDashboard.Server.Controllers
             var PP = _db.Teams
                 .OrderBy(team => team.Profession == "إدارة" ? 0 :
                                   team.Profession == "رجل مبيعات" ? 2 : 1)
-                .ThenBy(team => team.TeamName) // ترتيب تصاعدي حسب اسم الفريق (اختياري)
+                .ThenBy(team => team.TeamName) 
                 .ToList();
             return Ok(PP);
         }
@@ -32,9 +32,14 @@ namespace masterpieceDashboard.Server.Controllers
         [HttpGet("GetTeamByID/{id}")]
         public IActionResult TilerID(int id)
         {
-            var Ta = _db.Teams.Where(a => a.TeamId == id).ToList();
-            return Ok(Ta);
+            var team = _db.Teams.FirstOrDefault(a => a.TeamId == id); 
+            if (team == null)
+            {
+                return NotFound();
+            }
+            return Ok(team); 
         }
+
 
         [HttpPost("AddTeam")]
         public IActionResult AddTeam([FromBody] TeamDTOs newTeam)

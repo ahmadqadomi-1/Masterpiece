@@ -1,0 +1,23 @@
+<h2 class="text-center my-4 d-flex flex-column align-items-center">
+  <span>Add New Tiler</span>
+</h2>
+<hr />
+<form #CreateTiler="ngForm" (ngSubmit)="AddNewTiler(CreateTiler.value)">
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Tiler Name:</label>
+    <input type="text" name="tilerName" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required="" ngModel>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Tiler Image:</label>
+    <input type="text" name="tilerImg" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required="" ngModel>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">profession:</label>
+    <input type="text" name="profession" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required="" ngModel>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Phone Number:</label>
+    <input type="text" name="tilerPhoneNum" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required="" ngModel>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>

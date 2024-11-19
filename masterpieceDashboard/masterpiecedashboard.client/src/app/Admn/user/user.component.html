@@ -1,0 +1,30 @@
+<h2 class="text-center my-4 d-flex flex-column align-items-center">
+  <span>Users</span>
+</h2>
+
+<hr />
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col" style="text-align: center;">User Name</th>
+      <th scope="col" style="text-align: center;">User Email</th>
+      <th scope="col" style="text-align: center;">Phone Number</th>
+      <th scope="col" style="text-align: center;">Order</th>
+      <th scope="col" style="text-align: center;">Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let User of UserArray">
+      <td style="text-align: center;">{{ User.userName }}</td>
+      <td style="text-align: center;">{{ User.email }}</td>
+      <td style="text-align: center;">{{ User.phoneNumber }}</td>
+      <td style="text-align: center;">
+        <button class="btn btn-success" [routerLink]="['/dashboard/UserDetails', User.userId]">Show more</button>
+      </td>
+      <td style="text-align: center;">
+        <button class="btn btn-danger" (click)="deleteUserById(User.userId)">Block</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

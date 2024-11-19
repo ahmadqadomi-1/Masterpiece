@@ -53,12 +53,14 @@ namespace masterpieceDashboard.Server.Controllers
         }
 
         [HttpPut("UpdateProjectByID/{id}")]
-        public IActionResult UpdateProject(int id, [FromForm] DTOsProject Proo)
+        public IActionResult UpdateProject(int id, [FromBody] DTOsProject Proo)
         {
             var upProject = _db.Projects.FirstOrDefault(t => t.ProjectId == id);
             upProject.ProjectName = Proo.ProjectName;
             upProject.ProjectType = Proo.ProjectType;
             upProject.ProjectImage = Proo.ProjectImage;
+            upProject.Location = Proo.Location;
+            upProject.Description = Proo.Description;
 
             _db.Projects.Update(upProject);
             _db.SaveChanges();

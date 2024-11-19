@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import Swal from 'sweetalert2';
 import { ServiceService } from '../../URL/service.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-tiler',
@@ -12,9 +13,8 @@ export class TilerComponent {
     this.getAllTiler()
   }
 
-  constructor(private _ser: ServiceService) {
+  constructor(private _ser: ServiceService, private router: Router) { }
 
-  }
 
   TilerArray: any
   getAllTiler() {
@@ -47,6 +47,8 @@ export class TilerComponent {
     });
   }
 
-
+  navigateToAddTiler() {
+    this.router.navigate(['/dashboard/AddTiler']);
+  }
 
 }

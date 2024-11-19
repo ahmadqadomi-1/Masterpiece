@@ -27,7 +27,11 @@ namespace masterpieceDashboard.Server.Controllers
         [HttpGet("GetTilerByID/{id}")]
         public IActionResult TilerID(int id)
         {
-            var Ta = _db.Tilers.Where(a => a.TilerId == id).ToList();
+            var Ta = _db.Tilers.FirstOrDefault(a => a.TilerId == id);
+            if (Ta == null)
+            {
+                return NotFound();
+            }
             return Ok(Ta);
         }
 

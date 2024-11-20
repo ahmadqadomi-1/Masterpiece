@@ -13,6 +13,7 @@
     <tr>
       <th scope="col" style="text-align: center;">Category Name</th>
       <th scope="col" style="text-align: center;">Category Image</th>
+      <th scope="col" style="text-align: center;">Products</th>
       <th scope="col" style="text-align: center;">Edit</th>
       <th scope="col" style="text-align: center;">Delete</th>
     </tr>
@@ -20,7 +21,10 @@
   <tbody>
     <tr *ngFor="let Category of CategoryArray">
       <td style="text-align: center;">{{ Category.categoryName }}</td>
-      <td style="text-align: center;">{{ Category.categoryImage }}</td>
+      <td style="text-align: center;"> <img src="https://localhost:7118/api/Product/images/{{ Category.categoryImage }}" width="50" height="50" /> </td>
+      <td style="text-align: center;">
+        <button class="btn btn-success" [routerLink]="['/dashboard/ProductToOneCategory', Category.categoryId]">Show All</button>
+      </td>
       <td style="text-align: center;">
         <button class="btn btn-success" [routerLink]="['/dashboard/UpdateCategory', Category.categoryId]">Edit</button>
       </td>

@@ -5,49 +5,59 @@ import Swal from 'sweetalert2';
 @Component({
   selector: 'app-add-tiler',
   templateUrl: './add-tiler.component.html',
-  styleUrl: './add-tiler.component.css'
+  styleUrls: ['./add-tiler.component.css'],
 })
 export class AddTilerComponent {
-  ngOnInit() {
+  image: any;
+  isSubmitted = false;
+
+  constructor(private _ser: ServiceService) { }
+
+  ngOnInit() { }
+
+  imageChange(e: any) {
+    this.image = e.target.files[0];
   }
 
-  constructor(private _ser: ServiceService) {
+  AddNewTiler(form: any) {
+    this.isSubmitted = true;
 
-  }
+    // Validate form and image
+    if (!form.valid || !this.image) {
+      Swal.fire({
+        icon: 'error',
+        title: 'Form Error',
+        text: 'Please fill in all required fields and upload an image.',
+        confirmButtonColor: '#d33',
+      });
+      return;
+    }
 
-  AddNewTiler(data: any) {
-    this._ser.addTiler(data).subscribe(
+    const formData = new FormData();
+    for (let key in form.value) {
+      formData.append(key, form.value[key]);
+    }
+    formData.append('tilerImg', this.image);
+
+    this._ser.addTiler(formData).subscribe(
       () => {
         Swal.fire({
           icon: 'success',
           title: 'Success',
           text: 'The Tiler Added Successfully',
-          confirmButtonColor: '#3085d6'
+          confirmButtonColor: '#3085d6',
         });
+        this.isSubmitted = false;
+        form.reset();
+        this.image = null;
       },
       (error) => {
-        if (error.status === 400) {
-          Swal.fire({
-            icon: 'error',
-            title: 'Error',
-            text: 'There was an error in the data you submitted. Please check your inputs.',
-            confirmButtonColor: '#d33'
-          });
-        } else if (error.status === 500) {
-          Swal.fire({
-            icon: 'error',
-            title: 'Server Error',
-            text: 'An internal server error occurred. Please try again later.',
-            confirmButtonColor: '#d33'
-          });
-        } else {
-          Swal.fire({
-            icon: 'error',
-            title: 'Unexpected Error',
-            text: 'An unexpected error occurred: ' + error.message,
-            confirmButtonColor: '#d33'
-          });
-        }
+        Swal.fire({
+          icon: 'error',
+          title: 'Error',
+          text: 'An error occurred while adding the tiler.',
+          confirmButtonColor: '#d33',
+        });
       }
     );
   }

@@ -18,7 +18,11 @@
 
         public decimal? ProductRate { get; set; }
 
-        public string? ProductImage { get; set; }
+        public IFormFile? ProductImage { get; set; }
+
+        public IFormFile? ProductImage2 { get; set; }
+
+        public IFormFile? ProductImage3 { get; set; }
 
         public int? CategoryId { get; set; }
     }

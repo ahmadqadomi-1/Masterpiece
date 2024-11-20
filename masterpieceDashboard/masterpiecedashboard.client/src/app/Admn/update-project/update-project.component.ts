@@ -6,12 +6,28 @@ import Swal from 'sweetalert2';
 @Component({
   selector: 'app-update-project',
   templateUrl: './update-project.component.html',
-  styleUrl: './update-project.component.css'
+  styleUrls: ['./update-project.component.css']
 })
 export class UpdateProjectComponent {
 
   param: string | null = null;
   ProjectData: any = {};
+  image: any;
+  governorates: string[] = [
+    'الأردن-إربد',
+    'الأردن-عمان',
+    'الأردن-الزرقاء',
+    'الأردن-السلط',
+    'الأردن-العقبة',
+    'الأردن-معان',
+    'الأردن-الطفيلة',
+    'الأردن-الكرك',
+    'الأردن-مادبا',
+    'الأردن-جرش',
+    'الأردن-عجلون',
+    'الأردن-المفرق',
+    'الأردن-البحر الميت'
+  ];
 
   constructor(
     private _ser: ServiceService,
@@ -20,13 +36,9 @@ export class UpdateProjectComponent {
 
   ngOnInit() {
     this.param = this._active.snapshot.paramMap.get('id');
-    console.log('Project ID:', this.param);
-
-
     if (this.param) {
       this._ser.getProjectById(this.param).subscribe(
         (data) => {
-          console.log('Received Data from API:', data);
           this.ProjectData = data;
         },
         (error) => {
@@ -36,28 +48,39 @@ export class UpdateProjectComponent {
     }
   }
 
-  UpdateProject(data: any) {
-    console.log('Form Data:', data);
-
-    this._ser.EditProject(this.param, data).subscribe(
-      () => {
-        Swal.fire({
-          icon: 'success',
-          title: 'Success',
-          text: 'The project has been updated successfully!',
-          confirmButtonColor: '#3085d6'
-        });
-      },
-      (error) => {
-        console.error('Error:', error);
-        Swal.fire({
-          icon: 'error',
-          title: 'Error',
-          text: 'An error occurred while updating the project.',
-          confirmButtonColor: '#d33'
-        });
-      }
-    );
+  imageChange(e: any) {
+    this.image = e.target.files[0];
   }
 
+  UpdateProject(data: any) {
+    const formData = new FormData();
+    for (let key in data) {
+      formData.append(key, data[key]);
+    }
+
+    if (this.image) {
+      formData.append("projectImage", this.image);
+    }
+
+    if (this.param) {
+      this._ser.EditProject(this.param, formData).subscribe(
+        () => {
+          Swal.fire({
+            icon: 'success',
+            title: 'Success',
+            text: 'The project has been updated successfully!',
+            confirmButtonColor: '#3085d6'
+          });
+        },
+        (error) => {
+          Swal.fire({
+            icon: 'error',
+            title: 'Error',
+            text: 'An error occurred while updating the project.',
+            confirmButtonColor: '#d33'
+          });
+        }
+      );
+    }
+  }
 }

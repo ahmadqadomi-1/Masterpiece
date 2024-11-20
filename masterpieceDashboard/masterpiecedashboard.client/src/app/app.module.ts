@@ -28,6 +28,7 @@ import { UserDetailsComponent } from './Admn/user-details/user-details.component
 import { OrderComponent } from './Admn/order/order.component';
 import { UpdateOrderComponent } from './Admn/update-order/update-order.component';
 import { LogInComponent } from './Admn/log-in/log-in.component';
+import { ProductToOneCategoryComponent } from './Admn/product-to-one-category/product-to-one-category.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +54,8 @@ import { LogInComponent } from './Admn/log-in/log-in.component';
     UserDetailsComponent,
     OrderComponent,
     UpdateOrderComponent,
-    LogInComponent
+    LogInComponent,
+    ProductToOneCategoryComponent
   ],
   imports: [
     BrowserModule,
@@ -67,6 +69,7 @@ import { LogInComponent } from './Admn/log-in/log-in.component';
       {
         path: "dashboard", component: DashboardComponent, children: [
           { path: "catgory", component: CategryComponent },
+          { path: "ProductToOneCategory/:id", component: ProductToOneCategoryComponent },
           { path: "User", component: UserComponent },
           { path: "UserDetails/:id", component: UserDetailsComponent },
           { path: "Product", component: ProductComponent },
@@ -77,7 +80,7 @@ import { LogInComponent } from './Admn/log-in/log-in.component';
           { path: "Tiler", component: TilerComponent },
           { path: "ContactUs", component: ContactUsComponent },
           { path: "AddCategory", component: AddCategoryComponent },
-          { path: "AddProduct", component: AddProductComponent },
+          { path: 'AddProduct/:categoryId', component: AddProductComponent },
           { path: "AddProject", component: AddProjectComponent },
           { path: "AddMember", component: AddMemberComponent },
           { path: "AddTiler", component: AddTilerComponent },

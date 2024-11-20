@@ -7,22 +7,41 @@
 <form #EditTheTiler="ngForm" (ngSubmit)="UpdateTiler()">
   <div class="mb-3">
     <label for="memberName" class="form-label">Tiler Name:</label>
-    <input type="text" name="tilerName" class="form-control" id="memberName" aria-describedby="nameHelp" required [(ngModel)]="tilerData.tilerName">
+    <input type="text"
+           name="tilerName"
+           class="form-control"
+           id="memberName"
+           required
+           [(ngModel)]="tilerData.tilerName" />
   </div>
 
   <div class="mb-3">
     <label for="memberImage" class="form-label">Tiler Image:</label>
-    <input type="text" name="tilerImg" class="form-control" id="memberImage" aria-describedby="imageHelp" required [(ngModel)]="tilerData.tilerImg">
+    <input type="file"
+           name="tilerImg"
+           class="form-control"
+           id="memberImage"
+           (change)="onFileSelected($event)" />
   </div>
 
   <div class="mb-3">
     <label for="profession" class="form-label">Profession:</label>
-    <input type="text" name="profession" class="form-control" id="profession" aria-describedby="imageHelp" required [(ngModel)]="tilerData.profession">
+    <input type="text"
+           name="profession"
+           class="form-control"
+           id="profession"
+           required
+           [(ngModel)]="tilerData.profession" />
   </div>
 
   <div class="mb-3">
     <label for="PhoneNumber" class="form-label">Phone Number:</label>
-    <input type="text" name="tilerPhoneNum" class="form-control" id="PhoneNumber" aria-describedby="imageHelp" required [(ngModel)]="tilerData.tilerPhoneNum">
+    <input type="text"
+           name="tilerPhoneNum"
+           class="form-control"
+           id="PhoneNumber"
+           required
+           [(ngModel)]="tilerData.tilerPhoneNum" />
   </div>
 
   <button type="submit" class="btn btn-primary">Submit</button>

@@ -4,7 +4,7 @@
     {
         public string? TeamName { get; set; }
 
-        public string? TeamImg { get; set; }
+        public IFormFile? TeamImg { get; set; }
 
         public string? Profession { get; set; }
 

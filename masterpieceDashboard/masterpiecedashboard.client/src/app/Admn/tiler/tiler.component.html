@@ -27,7 +27,7 @@
     <tr *ngFor="let Tiler of TilerArray">
       <!--<td>{{ Tiler.tilerId }}</td>-->
       <td style="text-align: center;">{{ Tiler.tilerName }}</td>
-      <td style="text-align: center;">{{ Tiler.tilerImg }}</td>
+      <td style="text-align: center;"> <img src="https://localhost:7118/api/Product/images/{{Tiler.tilerImg}}" width="50" height="50" /> </td>
       <td style="text-align: center;">{{ Tiler.profession }}</td>
       <td style="text-align: center;">{{ Tiler.tilerPhoneNum }} </td>
       <td style="text-align: center;">

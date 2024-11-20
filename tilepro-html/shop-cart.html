@@ -435,7 +435,7 @@
                     row.classList.add("cart_item");
                     row.innerHTML = `
                         <td class="product-remove"><a title="Remove this item" class="remove" href="#">×</a></td>
-                        <td class="product-thumbnail"><a href="#"><img alt="product" src="img/${productData.productImage}"></a></td>
+                        <td class="product-thumbnail"><a href="#"><img alt="product" src="https://localhost:44327/api/Category/images/${productData.productImage}"></a></td>
                         <td class="product-name"><a href="shop-product-details.html">${productData.productName}</a></td>
                         <td class="product-price"><span class="amount">JOD ${productData.price.toFixed(2)}</span></td>
                         <td class="product-quantity">

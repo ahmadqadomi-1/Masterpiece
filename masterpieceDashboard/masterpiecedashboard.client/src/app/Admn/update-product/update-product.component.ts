@@ -26,17 +26,20 @@ export class UpdateProductComponent implements OnInit {
     private _active: ActivatedRoute
   ) { }
 
+  image: any
+  imageChange(e: any) {
+    this.image = e.target.files[0];
+  }
+
   ngOnInit() {
-    // Retrieve the product ID from the route
     this.param = this._active.snapshot.paramMap.get('id');
     console.log('Product ID:', this.param);
 
-    // Fetch the product data if the ID is available
     if (this.param) {
       this._ser.getProductById(this.param).subscribe(
         (data) => {
           console.log('Received Data from API:', data);
-          this.ProductData = { ...this.ProductData, ...data }; // Merge received data with default values
+          this.ProductData = { ...this.ProductData, ...data }; 
         },
         (error) => {
           console.error('Error fetching product data:', error);
@@ -45,11 +48,18 @@ export class UpdateProductComponent implements OnInit {
     }
   }
 
-  UpdateProduct() {
+  UpdateProduct(data: any) {
+    const formData = new FormData();
+    for (let key in data) {
+      formData.append(key, data[key]);
+    }
+    console.log(data, "data r ")
+    console.log(this.image , " this.image r ")
+    formData.append("ProductImage", this.image)
     console.log('Product Data:', this.ProductData);
 
     if (this.param) {
-      this._ser.EditProduct(this.param, this.ProductData).subscribe(
+      this._ser.EditProduct(this.param, formData).subscribe(
         () => {
           Swal.fire({
             icon: 'success',

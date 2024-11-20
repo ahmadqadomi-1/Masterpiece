@@ -41,31 +41,99 @@ namespace masterpieceDashboard.Server.Controllers
         }
 
         [HttpPost("AddProject")]
-        public IActionResult AddProject([FromBody] Project newProject)
+        public IActionResult AddProject([FromForm] DTOsProject req)
         {
-            if (newProject == null)
+            if (req == null)
             {
                 return BadRequest("Invalid project data.");
             }
+
+            var folderPath = Path.Combine(Directory.GetCurrentDirectory(), "img");
+            if (!Directory.Exists(folderPath))
+            {
+                Directory.CreateDirectory(folderPath);
+            }
+
+            string imageFileName = req.ProjectImage?.FileName ?? string.Empty;
+
+            if (!string.IsNullOrEmpty(imageFileName))
+            {
+                var imageURL = Path.Combine(folderPath, imageFileName);
+                if (!System.IO.File.Exists(imageURL))
+                {
+                    using (var stream = new FileStream(imageURL, FileMode.Create))
+                    {
+                        req.ProjectImage.CopyTo(stream);
+                    }
+                }
+            }
+
+            var newProject = new Project
+            {
+                ProjectName = req.ProjectName,
+                ProjectType = req.ProjectType,
+                ProjectDate = req.ProjectDate,
+                Location = req.Location,
+                Description = req.Description,
+                ProjectImage = imageFileName
+            };
+
             _db.Projects.Add(newProject);
             _db.SaveChanges();
             return Ok(newProject);
         }
 
+
         [HttpPut("UpdateProjectByID/{id}")]
-        public IActionResult UpdateProject(int id, [FromBody] DTOsProject Proo)
+        public async Task<IActionResult> UpdateProject(int id, [FromForm] DTOsProject Proo)
         {
             var upProject = _db.Projects.FirstOrDefault(t => t.ProjectId == id);
-            upProject.ProjectName = Proo.ProjectName;
-            upProject.ProjectType = Proo.ProjectType;
-            upProject.ProjectImage = Proo.ProjectImage;
-            upProject.Location = Proo.Location;
-            upProject.Description = Proo.Description;
+            if (upProject == null)
+            {
+                return NotFound("Project not found");
+            }
+
+            var folderPath = Path.Combine(Directory.GetCurrentDirectory(), "img");
+            if (!Directory.Exists(folderPath))
+            {
+                Directory.CreateDirectory(folderPath);
+            }
+
+            string? imageFileName = null;
+
+            if (Proo.ProjectImage != null)
+            {
+                imageFileName = Proo.ProjectImage.FileName;
+                var imageURL = Path.Combine(folderPath, imageFileName);
+                using (var stream = new FileStream(imageURL, FileMode.Create))
+                {
+                    await Proo.ProjectImage.CopyToAsync(stream);
+                }
+            }
+
+            if (!string.IsNullOrEmpty(Proo.ProjectName))
+                upProject.ProjectName = Proo.ProjectName;
+
+            if (!string.IsNullOrEmpty(Proo.ProjectType))
+                upProject.ProjectType = Proo.ProjectType;
+
+            if (Proo.ProjectDate.HasValue)
+                upProject.ProjectDate = Proo.ProjectDate.Value;
+
+            if (!string.IsNullOrEmpty(Proo.Location))
+                upProject.Location = Proo.Location;
+
+            if (!string.IsNullOrEmpty(Proo.Description))
+                upProject.Description = Proo.Description;
+
+            if (!string.IsNullOrEmpty(imageFileName))
+                upProject.ProjectImage = imageFileName;
 
             _db.Projects.Update(upProject);
             _db.SaveChanges();
-            return Ok();
+            return Ok(upProject);
         }
+
 
         [HttpDelete("DeleteProject/{id}")]
         public IActionResult DeleteProject(int id)

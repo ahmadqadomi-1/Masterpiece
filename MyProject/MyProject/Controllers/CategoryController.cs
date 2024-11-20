@@ -89,5 +89,19 @@ namespace MyProject.Controllers
             _db.SaveChanges();
             return NoContent();
         }
+
+
+        [HttpGet("images/{imageName}")]
+        public IActionResult GetImage(string imageName)
+        {
+            var imagePath = Path.Combine("C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\img", imageName);
+            if (System.IO.File.Exists(imagePath))
+            {
+                return PhysicalFile(imagePath, "image/jpeg");
+            }
+            return NotFound();
+        }
+
+
     }
-    }
+}

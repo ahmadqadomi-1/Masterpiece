@@ -1,223 +1,441 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>Al-Qadomy | Tiling & Flooring Services | Home Page</title>
 
-    
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/slick-theme.css">
-    <link rel="stylesheet" href="css/slick.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      rel="shortcut icon"
+      href="img/Logo-removebg-preview (1).png"
+      type="image/x-icon"
+    />
+    <link
+      rel="icon"
+      href="img/Logo-removebg-preview (1).png"
+      type="image/x-icon"
+    />
     <link href="css/style.css" rel="stylesheet">
-    <link rel="shortcut icon" href="img/Logo-removebg-preview (1).png" type="image/x-icon">
-    <link rel="icon" href="img/Logo-removebg-preview (1).png" type="image/x-icon">
 
-    
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
 
     <style>
-        
-        [type=button]:not(:disabled),
-        [type=reset]:not(:disabled),
-        [type=submit]:not(:disabled),
-        button:not(:disabled) {
-            cursor: pointer;
-            height: 43px;
-        }
+      [type="button"]:not(:disabled),
+      [type="reset"]:not(:disabled),
+      [type="submit"]:not(:disabled),
+      button:not(:disabled) {
+        cursor: pointer;
+        height: 43px;
+      }
 
-        
+      .gradient-custom-2 {
+        background: linear-gradient(
+          to right,
+          #ee7724,
+          #d8363a,
+          #dd3675,
+          #b44593
+        );
+      }
+
+      }
+
+      @media (min-width: 769px) {
         .gradient-custom-2 {
-            background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+          border-top-right-radius: 0.3rem;
+          border-bottom-right-radius: 0.3rem;
         }
+      }
 
-        
-        @media (min-width: 768px) {
-            .gradient-form {
-                height: 100vh !important;
-            }
-        }
+      section.h-100.gradient-form {
+        padding-top: 2em !important;
+        padding-bottom: 2em !important;
+      }
 
-        
-        @media (min-width: 769px) {
-            .gradient-custom-2 {
-                border-top-right-radius: .3rem;
-                border-bottom-right-radius: .3rem;
-            }
-        }
-
-        
-        section.h-100.gradient-form {
-            padding-top: 2em !important;
-            padding-bottom: 2em !important;
-        }
-
-        
-        img {
-            display: inline-block;
-            max-width: 45%;
-            height: auto;
-            background-color: #0000000f;
-        }
-        
+      img {
+        display: inline-block;
+        max-width: 45%;
+        height: auto;
+        background-color: #0000000f;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-    <section class="h-100 gradient-form" style="background-color: #eee;">
-        <div class="container py-5 h-100">
-            <div class="row d-flex justify-content-center align-items-center h-100">
-                <div class="col-xl-10">
-                    <div class="card rounded-3 text-black">
-                        <div class="row g-0">
-
-                            <!-- قسم تسجيل الدخول -->
-                            <div class="col-lg-6">
-                                <div class="card-body p-md-5 mx-md-4">
-                                    <div class="text-center">
-                                        <img src="img/Logo-removebg-preview (1).png" style="width: 185px;" alt="logo">
-                                        <h4 class="mt-1 mb-5 pb-1">القدومي للسيراميك والبورسلان</h4>
-                                    </div>
-
-                                    <form id="form">
-                                        <p>يرجى تسجيل الدخول إلى حسابك</p>
-
-                                        <div class="form-outline mb-4">
-                                            <input name="Username" type="text" id="email" class="form-control" placeholder="البريد الإلكتروني" />
-                                            <label class="form-label" for="email">البريد الإلكتروني</label>
-                                        </div>
-
-                                        <div class="form-outline mb-4">
-                                            <input name="Password" type="password" id="password" class="form-control" placeholder="كلمة المرور" />
-                                            <label class="form-label" for="password">كلمة المرور</label>
-                                        </div>
-
-                                        <div class="text-center pt-1 mb-5 pb-1">
-                                            <button class="btn btn-primary btn-block gradient-custom-2 mb-3" type="submit">تسجيل الدخول</button>
-                                            <!-- <a class="text-muted" href="#!">نسيت كلمة المرور؟</a> -->
-                                        </div>
-
-                                        <div class="d-flex align-items-center justify-content-center pb-4">
-                                            <p class="mb-0 me-2">ليس لديك حساب؟</p>
-                                            <button type="button" class="btn btn-outline-danger" onclick="window.location.href='Regis.html'">إنشاء حساب جديد</button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-
-                            <!-- قسم الترحيب -->
-                            <div class="col-lg-6 d-flex align-items-center gradient-custom-2" style="direction: rtl;">
-                                <div class="text-white px-3 py-4 p-md-5 mx-md-4">
-                                    <h4 class="mb-4">أهلاً بكم في معرض القدومي للسيراميك والبورسلان</h4>
-                                    <p class="small mb-0">
-                                        منذ انطلاقنا في عام 1967، نحن ملتزمون بتقديم أعلى معايير الجودة والابتكار في عالم السيراميك والبورسلان.
-                                        شعارنا هو البحث المستمر عن الرقي والتميز.
-                                    </p>
-                                </div>
-                            </div>
+  <body>
+    <header  class="main-header header-style-one">
+        <div class="header-lower">
+            <div class="auto-container">
+                <div class="main-box">
+                    <div class="logo-box">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="img/Logo-removebg-preview (1).png" style="height: 100px;" alt="شعار القادمي" title="الصفحة الرئيسية">
+                            </a>
+                        </div>
+                    </div>
+    
+                    <div class="nav-outer">
+                        <nav class="nav main-menu">
+                            <ul class="navigation">
+                                <li><a href="index.html">الرئيسية</a></li>
+                                <li class=""><a href="shop-products.html">المنتجات</a></li>
+                                <li><a href="page-services.html">الخدمات</a></li>
+                                <li><a href="news-grid.html">الأخبار</a></li>
+                                <li class="dropdown">
+                                    <a href="#">من نحن</a>
+                                    <ul>
+                                        <li><a href="page-about.html">عن الشركة</a></li>
+                                        <li><a href="page-projects.html">المشاريع</a></li>
+                                        <li><a href="page-team.html">الفريق</a></li>
+                                        <li><a href="page-faq.html">الأسئلة الشائعة</a></li>
+                                        <li><a href="Terms.html">الشروط والأحكام</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+    
+                    <div class="outer-box">
+    
+                        <!-- أيقونة عربة التسوق -->
+                        
+                        <div class="cart-btn" style="display: inline-flex; align-items: center; margin-left: 15px;">
+                            <a href="shop-cart.html" class="cart-icon" style="display: inline-flex; align-items: center; position: relative; text-decoration: none; color: #333;">
+                                <i class="fa fa-shopping-cart" style="font-size: 24px; position: relative; right: 25px;"></i>
+                                <span class="badge" style="
+                                    background-color: #f94a29; 
+                                    color: #fff; 
+                                    border-radius: 50%; 
+                                    height: 24px; 
+                                    width: 24px; 
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    font-size: 12px; 
+                                    position: absolute; 
+                                    top: -10px; 
+                                    right: 15px;">0</span> <!-- Default count set to 0 -->
+                            </a>
+                        </div>
+                        <div class="btn">
+                            <a href="Login.html" id="auth-btn" class="theme-btn" style="position: relative; left: 5em;">تسجيل</a>
+                        </div>
+                        
+                        <div class="mobile-nav-toggler">
+                            <i class="fa fa-bars"></i>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    
+        <!-- الجزء الخاص بالنافذة المتنقلة -->
+        <div class="mobile-menu">
+            <div class="menu-backdrop"></div>
+            <nav class="menu-box">
+                <div class="upper-box">
+                    <div class="nav-logo">
+                        <a href="index.html">
+                            <img src="img/Logo-removebg-preview (1).png" alt="شعار القادمي" title="الصفحة الرئيسية">
+                        </a>
+                    </div>
+                    <div class="close-btn"><i class="icon fa fa-times"></i></div>
+                </div>
+                <ul class="navigation clearfix"></ul>
+                <ul class="contact-list-one">
+                    <li>
+                        <div class="contact-info-box">
+                            <i class="icon lnr-icon-phone-handset"></i>
+                            <span class="title">اتصل الآن</span>
+                            <a href="tel:+962-79-184-0140">+962-79-184-0140</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="contact-info-box">
+                            <span class="icon lnr-icon-envelope1"></span>
+                            <span class="title">أرسل بريدًا إلكترونيًا</span>
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=qadomya14@gmail.com">
+                                <span class="__cf_email__" data-cfemail="462e232a360625292b3627283f6825292b">Qadomya14@gmail.com</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="contact-info-box">
+                            <span class="icon lnr-icon-clock"></span>
+                            <span class="title">ساعات العمل</span>
+                            من السبت إلى الخميس 9:00 - 7:30، الجمعة - مغلق
+                        </div>
+                    </li>
+                </ul>
+                <ul class="social-links">
+                    <li><a href="https://x.com/ceramicnetwork?lang=en" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.facebook.com/QADOMY0" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.instagram.com/qadomyforceramics?igsh=MzRlODBiNWFlZA==" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    
+        <div class="search-popup">
+            <span class="search-back-drop"></span>
+            <button class="close-search"><span class="fa fa-times"></span></button>
+            <div class="search-inner">
+                <form method="post" action="https://html.kodesolution.com/2024/tilepro-html/index.html">
+                    <div class="form-group">
+                        <input type="search" name="search-field" placeholder="ابحث..." required>
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    
+        <div class="sticky-header">
+            <div class="auto-container">
+                <div class="inner-container">
+                    <div class="logo">
+                        <a href="index.html" title><img src="img/Logo-removebg-preview (1).png" alt="شعار القدومي" title="الصفحة الرئيسية"></a>
+                    </div>
+    
+                    <div class="nav-outer">
+                        <nav class="main-menu">
+                            <div class="navbar-collapse show collapse clearfix">
+                                <ul class="navigation clearfix"></ul>
+                            </div>
+                        </nav>
+    
+                        <div class="mobile-nav-toggler">
+                            <i class="fa fa-bars"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="h-100 gradient-form" style="background-color: #eee; ">
+      <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100" style="margin-top: 6em;">
+          <div class="col-xl-10">
+            <div class="card rounded-3 text-black">
+              <div class="row g-0">
+                <!-- قسم تسجيل الدخول -->
+                <div class="col-lg-6">
+                  <div class="card-body p-md-5 mx-md-4">
+                    <div class="text-center">
+                      <img
+                        src="img/Logo-removebg-preview (1).png"
+                        style="width: 185px"
+                        alt="logo"
+                      />
+                      <h4 class="mt-1 mb-5 pb-1">
+                        القدومي للسيراميك والبورسلان
+                      </h4>
+                    </div>
+
+                    <form id="form">
+                      <p>يرجى تسجيل الدخول إلى حسابك</p>
+
+                      <div class="form-outline mb-4">
+                        <input
+                          name="Username"
+                          type="text"
+                          id="email"
+                          class="form-control"
+                          placeholder="البريد الإلكتروني"
+                        />
+                        <label class="form-label" for="email"
+                          >البريد الإلكتروني</label
+                        >
+                      </div>
+
+                      <div class="form-outline mb-4">
+                        <input
+                          name="Password"
+                          type="password"
+                          id="password"
+                          class="form-control"
+                          placeholder="كلمة المرور"
+                        />
+                        <label class="form-label" for="password"
+                          >كلمة المرور</label
+                        >
+                      </div>
+
+                      <div class="text-center pt-1 mb-5 pb-1">
+                        <button
+                          class="btn btn-primary btn-block gradient-custom-2 mb-3"
+                          type="submit"
+                        >
+                          تسجيل الدخول
+                        </button>
+                        <!-- <a class="text-muted" href="#!">نسيت كلمة المرور؟</a> -->
+                      </div>
+
+                      <div
+                        class="d-flex align-items-center justify-content-center pb-4"
+                      >
+                        <p class="mb-0 me-2">ليس لديك حساب؟</p>
+                        <button
+                          type="button"
+                          class="btn btn-outline-danger"
+                          onclick="window.location.href='Regis.html'"
+                        >
+                          إنشاء حساب جديد
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+
+                <!-- قسم الترحيب -->
+                <div
+                  class="col-lg-6 d-flex align-items-center gradient-custom-2"
+                  style="direction: rtl"
+                >
+                  <div class="text-white px-3 py-4 p-md-5 mx-md-4">
+                    <h4 class="mb-4">
+                      أهلاً بكم في معرض القدومي للسيراميك والبورسلان
+                    </h4>
+                    <p class="small mb-0">
+                      منذ انطلاقنا في عام 1967، نحن ملتزمون بتقديم أعلى معايير
+                      الجودة والابتكار في عالم السيراميك والبورسلان. شعارنا هو
+                      البحث المستمر عن الرقي والتميز.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
+
+    
+<footer class="main-footer footer-style-one">
+
+
+
+    <div class="footer-bottom">
+    <div class="auto-container">
+    <div class="inner-container">
+    <div class="copyright-text"><p>&copy; <span class="current-year"></span>  Al-Qadomy CO. All Rights Reserved | Design by
+        <a href="https://ahmadqadomi-1.github.io/Portfolio-Project/" target="_blank">Orange Coding Academy Member</a></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="scroll-to-top scroll-to-target arrow-btn" data-target="html" style><i class="fa-sharp fa-solid fa-arrow-up"></i></div>
+    </footer>
 
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
     <script>
-        const url = "https://localhost:44327/api/User/Login";
-        let form = document.getElementById("form");
+      const url = "https://localhost:44327/api/User/Login";
+      let form = document.getElementById("form");
 
-        document.addEventListener("DOMContentLoaded", function() {
-            form.addEventListener("submit", async function(event) {
-                event.preventDefault();
+      document.addEventListener("DOMContentLoaded", function () {
+        form.addEventListener("submit", async function (event) {
+          event.preventDefault();
 
-                let data = {
-                    email: document.getElementById("email").value,
-                    password: document.getElementById("password").value
-                };
+          let data = {
+            email: document.getElementById("email").value,
+            password: document.getElementById("password").value,
+          };
 
-                try {
-                    let response = await fetch(url, {
-                        method: "POST",
-                        body: JSON.stringify(data),
-                        headers: { "Content-Type": "application/json" }
-                    });
-
-                    if (!response.ok) {
-                        swal("خطأ", "اسم المستخدم أو كلمة المرور غير صحيحة", "error");
-                        return;
-                    }
-
-                    let result = await response.json();
-                    localStorage.setItem('userId', result.userId);
-                    localStorage.setItem('jwtToken', result.token);
-
-                    swal("نجاح", "تم تسجيل الدخول بنجاح", "success").then(() => {
-                        let StorItem = JSON.parse(localStorage.getItem("cartItems")) || [];
-
-                        if (StorItem.length > 0) {
-                            for (const item of StorItem) {
-                                if (item.id) {
-                                    StorItemInDataBase(item);
-                                } else {
-                                    console.error("Invalid ProductId for item:", item);
-                                }
-                            }
-                            localStorage.removeItem('cartItems');
-                        }
-                        window.location.href = "index.html";
-                    });
-                } catch (error) {
-                    console.error('Error:', error);
-                    swal("خطأ", "حدث خطأ أثناء تسجيل الدخول. يرجى المحاولة لاحقاً.", "error");
-                }
+          try {
+            let response = await fetch(url, {
+              method: "POST",
+              body: JSON.stringify(data),
+              headers: { "Content-Type": "application/json" },
             });
-        });
 
-        // تخزين عناصر العربة في قاعدة البيانات
-        async function StorItemInDataBase(item) {
-            try {
-                const response = await fetch("https://localhost:44327/api/CartItem/addtocart", {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({
-                        UserId: localStorage.getItem('userId'),
-                        CartId: item.CartId,
-                        ProductId: item.id,
-                        Quantity: item.quantity
-                    })
-                });
-
-                if (response.ok) {
-                    const result = await response.json();
-                    console.log("Item successfully stored:", result);
-                } else {
-                    console.error("Error in storing item:", response.status, response.statusText);
-                }
-            } catch (error) {
-                console.error("An error occurred:", error);
+            if (!response.ok) {
+              swal("خطأ", "اسم المستخدم أو كلمة المرور غير صحيحة", "error");
+              return;
             }
+
+            let result = await response.json();
+            localStorage.setItem("userId", result.userId);
+            localStorage.setItem("jwtToken", result.token);
+
+            swal("نجاح", "تم تسجيل الدخول بنجاح", "success").then(() => {
+              let StorItem =
+                JSON.parse(localStorage.getItem("cartItems")) || [];
+
+              if (StorItem.length > 0) {
+                for (const item of StorItem) {
+                  if (item.id) {
+                    StorItemInDataBase(item);
+                  } else {
+                    console.error("Invalid ProductId for item:", item);
+                  }
+                }
+                localStorage.removeItem("cartItems");
+              }
+              window.location.href = "index.html";
+            });
+          } catch (error) {
+            console.error("Error:", error);
+            swal(
+              "خطأ",
+              "حدث خطأ أثناء تسجيل الدخول. يرجى المحاولة لاحقاً.",
+              "error"
+            );
+          }
+        });
+      });
+
+      // تخزين عناصر العربة في قاعدة البيانات
+      async function StorItemInDataBase(item) {
+        try {
+          const response = await fetch(
+            "https://localhost:44327/api/CartItem/addtocart",
+            {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({
+                UserId: localStorage.getItem("userId"),
+                CartId: item.CartId,
+                ProductId: item.id,
+                Quantity: item.quantity,
+              }),
+            }
+          );
+
+          if (response.ok) {
+            const result = await response.json();
+            console.log("Item successfully stored:", result);
+          } else {
+            console.error(
+              "Error in storing item:",
+              response.status,
+              response.statusText
+            );
+          }
+        } catch (error) {
+          console.error("An error occurred:", error);
         }
+      }
     </script>
 
-<script>
-    // Function to update the cart item count
-    function updateCartItemCount() {
+    <script>
+      // Function to update the cart item count
+      function updateCartItemCount() {
         // Retrieve cart items from localStorage
         let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
-        
+
         // Get the cart item count
         let itemCount = cartItems.length;
 
         // Update the cart item count in the badge
         document.querySelector(".cart-btn .badge").textContent = itemCount;
-    }
+      }
 
-    // Call the function to update the cart item count on page load
-    updateCartItemCount();
-</script>
-</body>
-
+      // Call the function to update the cart item count on page load
+      updateCartItemCount();
+    </script>
+  </body>
 </html>

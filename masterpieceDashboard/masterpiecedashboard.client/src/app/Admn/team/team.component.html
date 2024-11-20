@@ -27,7 +27,7 @@
     <tr *ngFor="let Team of TeamArray">
       <!--<td>{{ Team.teamId }}</td>-->
       <td style="text-align: center;">{{ Team.teamName }}</td>
-      <td style="text-align: center;">{{ Team.teamImg }}</td>
+      <td style="text-align: center;"> <img src="https://localhost:7118/api/Product/images/{{ Team.teamImg }}" width="50" height="50" /> </td>
       <td style="text-align: center;">{{ Team.profession }}</td>
       <td style="text-align: center;">{{ Team.teamPhoneNum }} </td>
       <!--<td>
@@ -36,7 +36,7 @@
       <td style="text-align: center;">
         <button class="btn btn-success" [routerLink]="['/dashboard/UpdateMember', Team.teamId]">Edit</button>
       </td>
-      <td style="text-align: center;"> 
+      <td style="text-align: center;">
         <button class="btn btn-danger" (click)="deleteTeamById(Team.teamId)">Delete</button>
       </td>
     </tr>

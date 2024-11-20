@@ -6,16 +6,18 @@
 </h2>
 <hr />
 
-<div style="display: flex; justify-content: center; align-items: center;">
+<!--<div style="display: flex; justify-content: center; align-items: center;">
   <button class="btn btn-primary" (click)="navigateToAddProduct()">Add New Product</button>
-</div>
+</div>-->
 
 <table class="table table-striped">
   <thead>
     <tr>
       <!--<th scope="col">Product Id</th>-->
       <th scope="col" style="text-align: center;">Product Name</th>
-      <th scope="col" style="text-align: center;">Product Image</th>
+      <th scope="col" style="text-align: center;">Product Image 1</th>
+      <th scope="col" style="text-align: center;">Product Image 2</th>
+      <th scope="col" style="text-align: center;">Product Image 3</th>
       <th scope="col" style="text-align: center;">Product Description</th>
       <th scope="col" style="text-align: center;">Product feature1</th>
       <th scope="col" style="text-align: center;">Product feature2</th>
@@ -31,7 +33,9 @@
     <tr *ngFor="let Products of ProductArray">
       <!--<td>{{ Products.productId }}</td>-->
       <td style="text-align: center;">{{ Products.productName }}</td>
-      <td style="text-align: center;">{{ Products.productImage }}</td>
+      <td style="text-align: center;"> <img src="https://localhost:7118/api/Product/images/{{ Products.productImage }}" width="50" height="50" /> </td>
+      <td style="text-align: center;"> <img src="https://localhost:7118/api/Product/images/{{ Products.productImage2 }}" width="50" height="50" /> </td>
+      <td style="text-align: center;"> <img src="https://localhost:7118/api/Product/images/{{ Products.productImage3 }}" width="50" height="50" /> </td>
       <td style="text-align: center;">{{ Products.productDescription }}</td>
       <td style="text-align: center;">{{ Products.productDescriptionList1 }} </td>
       <td style="text-align: center;">{{ Products.productDescriptionList2 }} </td>

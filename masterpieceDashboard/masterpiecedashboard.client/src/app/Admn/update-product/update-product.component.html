@@ -4,7 +4,7 @@
 
 <hr />
 
-<form #EditTheProduct="ngForm" (ngSubmit)="UpdateProduct()">
+<form #EditTheProduct="ngForm" (ngSubmit)="UpdateProduct(EditTheProduct.value)">
   <div class="mb-3">
     <label for="memberName" class="form-label">Product Name:</label>
     <input type="text" name="productName" class="form-control" id="memberName" aria-describedby="nameHelp" required [(ngModel)]="ProductData.productName">
@@ -12,7 +12,17 @@
 
   <div class="mb-3">
     <label for="memberImage" class="form-label">Product Image:</label>
-    <input type="text" name="productImage" class="form-control" id="memberImage" aria-describedby="imageHelp" required [(ngModel)]="ProductData.productImage">
+    <input type="file" name="productImage" class="form-control" id="memberImage" aria-describedby="imageHelp" required [(ngModel)]="ProductData.productImage" (change)="imageChange($event)">
+  </div>
+
+  <div class="mb-3">
+    <label for="memberImage" class="form-label">Product Image:</label>
+    <input type="file" name="productImage2" class="form-control" id="memberImage" aria-describedby="imageHelp" required [(ngModel)]="ProductData.productImage" (change)="imageChange($event)">
+  </div>
+
+  <div class="mb-3">
+    <label for="memberImage" class="form-label">Product Image:</label>
+    <input type="file" name="productImage3" class="form-control" id="memberImage" aria-describedby="imageHelp" required [(ngModel)]="ProductData.productImage" (change)="imageChange($event)">
   </div>
 
   <div class="mb-3">

@@ -3,16 +3,168 @@
   "WorkspaceRootPath": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.client\\src\\app\\url\\service.service.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|solutionrelative:masterpiecedashboard.client\\src\\app\\url\\service.service.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DBB11A0-DF23-4229-85FE-58290AD5D663}|masterpieceDashboard.Server\\masterpieceDashboard.Server.csproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.server\\controllers\\tilercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DBB11A0-DF23-4229-85FE-58290AD5D663}|masterpieceDashboard.Server\\masterpieceDashboard.Server.csproj|solutionrelative:masterpiecedashboard.server\\controllers\\tilercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.client\\src\\app\\admn\\update-tiler\\update-tiler.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|solutionrelative:masterpiecedashboard.client\\src\\app\\admn\\update-tiler\\update-tiler.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.client\\src\\app\\admn\\update-tiler\\update-tiler.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|solutionrelative:masterpiecedashboard.client\\src\\app\\admn\\update-tiler\\update-tiler.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.client\\src\\app\\admn\\update-member\\update-member.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|solutionrelative:masterpiecedashboard.client\\src\\app\\admn\\update-member\\update-member.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.client\\src\\app\\admn\\update-member\\update-member.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|solutionrelative:masterpiecedashboard.client\\src\\app\\admn\\update-member\\update-member.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DBB11A0-DF23-4229-85FE-58290AD5D663}|masterpieceDashboard.Server\\masterpieceDashboard.Server.csproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.server\\controllers\\teamscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DBB11A0-DF23-4229-85FE-58290AD5D663}|masterpieceDashboard.Server\\masterpieceDashboard.Server.csproj|solutionrelative:masterpiecedashboard.server\\controllers\\teamscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DBB11A0-DF23-4229-85FE-58290AD5D663}|masterpieceDashboard.Server\\masterpieceDashboard.Server.csproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.server\\dtos\\tilerdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DBB11A0-DF23-4229-85FE-58290AD5D663}|masterpieceDashboard.Server\\masterpieceDashboard.Server.csproj|solutionrelative:masterpiecedashboard.server\\dtos\\tilerdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DBB11A0-DF23-4229-85FE-58290AD5D663}|masterpieceDashboard.Server\\masterpieceDashboard.Server.csproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.server\\dtos\\teamdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DBB11A0-DF23-4229-85FE-58290AD5D663}|masterpieceDashboard.Server\\masterpieceDashboard.Server.csproj|solutionrelative:masterpiecedashboard.server\\dtos\\teamdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.client\\src\\app\\admn\\add-tiler\\add-tiler.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|solutionrelative:masterpiecedashboard.client\\src\\app\\admn\\add-tiler\\add-tiler.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.client\\src\\app\\admn\\add-tiler\\add-tiler.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|solutionrelative:masterpiecedashboard.client\\src\\app\\admn\\add-tiler\\add-tiler.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.client\\src\\app\\admn\\add-member\\add-member.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|solutionrelative:masterpiecedashboard.client\\src\\app\\admn\\add-member\\add-member.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.client\\src\\app\\admn\\update-project\\update-project.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|solutionrelative:masterpiecedashboard.client\\src\\app\\admn\\update-project\\update-project.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.client\\src\\app\\admn\\update-project\\update-project.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|solutionrelative:masterpiecedashboard.client\\src\\app\\admn\\update-project\\update-project.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.client\\src\\app\\admn\\add-project\\add-project.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|solutionrelative:masterpiecedashboard.client\\src\\app\\admn\\add-project\\add-project.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.client\\src\\app\\admn\\add-project\\add-project.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|solutionrelative:masterpiecedashboard.client\\src\\app\\admn\\add-project\\add-project.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.client\\src\\app\\admn\\add-product\\add-product.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|solutionrelative:masterpiecedashboard.client\\src\\app\\admn\\add-product\\add-product.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.client\\src\\app\\admn\\add-product\\add-product.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|solutionrelative:masterpiecedashboard.client\\src\\app\\admn\\add-product\\add-product.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.client\\src\\app\\admn\\update-product\\update-product.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|solutionrelative:masterpiecedashboard.client\\src\\app\\admn\\update-product\\update-product.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.client\\src\\app\\admn\\update-category\\update-category.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|solutionrelative:masterpiecedashboard.client\\src\\app\\admn\\update-category\\update-category.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.client\\src\\app\\admn\\update-category\\update-category.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|solutionrelative:masterpiecedashboard.client\\src\\app\\admn\\update-category\\update-category.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DBB11A0-DF23-4229-85FE-58290AD5D663}|masterpieceDashboard.Server\\masterpieceDashboard.Server.csproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.server\\controllers\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DBB11A0-DF23-4229-85FE-58290AD5D663}|masterpieceDashboard.Server\\masterpieceDashboard.Server.csproj|solutionrelative:masterpiecedashboard.server\\controllers\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DBB11A0-DF23-4229-85FE-58290AD5D663}|masterpieceDashboard.Server\\masterpieceDashboard.Server.csproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.server\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DBB11A0-DF23-4229-85FE-58290AD5D663}|masterpieceDashboard.Server\\masterpieceDashboard.Server.csproj|solutionrelative:masterpiecedashboard.server\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.client\\src\\app\\admn\\project\\project.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|solutionrelative:masterpiecedashboard.client\\src\\app\\admn\\project\\project.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.client\\src\\app\\admn\\categry\\categry.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|solutionrelative:masterpiecedashboard.client\\src\\app\\admn\\categry\\categry.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DBB11A0-DF23-4229-85FE-58290AD5D663}|masterpieceDashboard.Server\\masterpieceDashboard.Server.csproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.server\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DBB11A0-DF23-4229-85FE-58290AD5D663}|masterpieceDashboard.Server\\masterpieceDashboard.Server.csproj|solutionrelative:masterpiecedashboard.server\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DBB11A0-DF23-4229-85FE-58290AD5D663}|masterpieceDashboard.Server\\masterpieceDashboard.Server.csproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.server\\dtos\\dtosproject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DBB11A0-DF23-4229-85FE-58290AD5D663}|masterpieceDashboard.Server\\masterpieceDashboard.Server.csproj|solutionrelative:masterpiecedashboard.server\\dtos\\dtosproject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DBB11A0-DF23-4229-85FE-58290AD5D663}|masterpieceDashboard.Server\\masterpieceDashboard.Server.csproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.server\\models\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DBB11A0-DF23-4229-85FE-58290AD5D663}|masterpieceDashboard.Server\\masterpieceDashboard.Server.csproj|solutionrelative:masterpiecedashboard.server\\models\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.client\\src\\app\\admn\\product-to-one-category\\product-to-one-category.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|solutionrelative:masterpiecedashboard.client\\src\\app\\admn\\product-to-one-category\\product-to-one-category.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.client\\src\\app\\admn\\categry\\categry.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|solutionrelative:masterpiecedashboard.client\\src\\app\\admn\\categry\\categry.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.client\\src\\app\\admn\\product\\product.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|solutionrelative:masterpiecedashboard.client\\src\\app\\admn\\product\\product.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.client\\src\\app\\admn\\product\\product.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|solutionrelative:masterpiecedashboard.client\\src\\app\\admn\\product\\product.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.client\\src\\app\\app.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|solutionrelative:masterpiecedashboard.client\\src\\app\\app.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.client\\src\\app\\admn\\product-to-one-category\\product-to-one-category.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|solutionrelative:masterpiecedashboard.client\\src\\app\\admn\\product-to-one-category\\product-to-one-category.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.client\\src\\app\\admn\\user-details\\user-details.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|solutionrelative:masterpiecedashboard.client\\src\\app\\admn\\user-details\\user-details.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.client\\src\\app\\admn\\user-details\\user-details.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|solutionrelative:masterpiecedashboard.client\\src\\app\\admn\\user-details\\user-details.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.client\\src\\app\\admn\\user\\user.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|solutionrelative:masterpiecedashboard.client\\src\\app\\admn\\user\\user.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.client\\src\\app\\admn\\update-category\\update-category.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|solutionrelative:masterpiecedashboard.client\\src\\app\\admn\\update-category\\update-category.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{7DBB11A0-DF23-4229-85FE-58290AD5D663}|masterpieceDashboard.Server\\masterpieceDashboard.Server.csproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.server\\dtos\\productrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DBB11A0-DF23-4229-85FE-58290AD5D663}|masterpieceDashboard.Server\\masterpieceDashboard.Server.csproj|solutionrelative:masterpiecedashboard.server\\dtos\\productrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DBB11A0-DF23-4229-85FE-58290AD5D663}|masterpieceDashboard.Server\\masterpieceDashboard.Server.csproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.server\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DBB11A0-DF23-4229-85FE-58290AD5D663}|masterpieceDashboard.Server\\masterpieceDashboard.Server.csproj|solutionrelative:masterpiecedashboard.server\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|c:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\node_modules\\@angular\\core\\fesm2022\\core.mjs||{14D17961-FE51-464D-9111-C4AF11D7D99A}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:masterpiecedashboard.client\\node_modules\\@angular\\core\\fesm2022\\core.mjs||{14D17961-FE51-464D-9111-C4AF11D7D99A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DBB11A0-DF23-4229-85FE-58290AD5D663}|masterpieceDashboard.Server\\masterpieceDashboard.Server.csproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DBB11A0-DF23-4229-85FE-58290AD5D663}|masterpieceDashboard.Server\\masterpieceDashboard.Server.csproj|solutionrelative:masterpiecedashboard.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.client\\src\\app\\admn\\tiler\\tiler.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -23,28 +175,12 @@
       "RelativeMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|solutionrelative:masterpiecedashboard.client\\src\\app\\admn\\team\\team.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.client\\src\\app\\admn\\project\\project.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|solutionrelative:masterpiecedashboard.client\\src\\app\\admn\\project\\project.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.client\\src\\app\\admn\\product\\product.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|solutionrelative:masterpiecedashboard.client\\src\\app\\admn\\product\\product.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.client\\src\\app\\admn\\order\\order.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|solutionrelative:masterpiecedashboard.client\\src\\app\\admn\\order\\order.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.client\\src\\app\\admn\\contact-us\\contact-us.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|solutionrelative:masterpiecedashboard.client\\src\\app\\admn\\contact-us\\contact-us.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.client\\src\\app\\admn\\categry\\categry.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|solutionrelative:masterpiecedashboard.client\\src\\app\\admn\\categry\\categry.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.client\\src\\app\\admn\\add-category\\add-category.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|solutionrelative:masterpiecedashboard.client\\src\\app\\admn\\add-category\\add-category.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7DBB11A0-DF23-4229-85FE-58290AD5D663}|masterpieceDashboard.Server\\masterpieceDashboard.Server.csproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.server\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -71,14 +207,6 @@
       "RelativeMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|solutionrelative:masterpiecedashboard.client\\src\\app\\admn\\dashboard\\dashboard.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.client\\src\\app\\app.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|solutionrelative:masterpiecedashboard.client\\src\\app\\app.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.client\\src\\app\\url\\service.service.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|solutionrelative:masterpiecedashboard.client\\src\\app\\url\\service.service.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7DBB11A0-DF23-4229-85FE-58290AD5D663}|masterpieceDashboard.Server\\masterpieceDashboard.Server.csproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.server\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7DBB11A0-DF23-4229-85FE-58290AD5D663}|masterpieceDashboard.Server\\masterpieceDashboard.Server.csproj|solutionrelative:masterpiecedashboard.server\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -95,10 +223,6 @@
       "RelativeMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|solutionrelative:masterpiecedashboard.client\\src\\app\\admn\\behaviorsubject\\behavior-subject.service.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7DBB11A0-DF23-4229-85FE-58290AD5D663}|masterpieceDashboard.Server\\masterpieceDashboard.Server.csproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.server\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7DBB11A0-DF23-4229-85FE-58290AD5D663}|masterpieceDashboard.Server\\masterpieceDashboard.Server.csproj|solutionrelative:masterpiecedashboard.server\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7DBB11A0-DF23-4229-85FE-58290AD5D663}|masterpieceDashboard.Server\\masterpieceDashboard.Server.csproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.server\\dtos\\useradmindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7DBB11A0-DF23-4229-85FE-58290AD5D663}|masterpieceDashboard.Server\\masterpieceDashboard.Server.csproj|solutionrelative:masterpiecedashboard.server\\dtos\\useradmindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -111,10 +235,6 @@
       "RelativeMoniker": "D:0:0:{7DBB11A0-DF23-4229-85FE-58290AD5D663}|masterpieceDashboard.Server\\masterpieceDashboard.Server.csproj|solutionrelative:masterpiecedashboard.server\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.client\\src\\app\\admn\\update-order\\update-order.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|solutionrelative:masterpiecedashboard.client\\src\\app\\admn\\update-order\\update-order.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.client\\src\\app\\admn\\user\\user.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
       "RelativeMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|solutionrelative:masterpiecedashboard.client\\src\\app\\admn\\user\\user.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
@@ -123,28 +243,8 @@
       "RelativeMoniker": "D:0:0:{7DBB11A0-DF23-4229-85FE-58290AD5D663}|masterpieceDashboard.Server\\masterpieceDashboard.Server.csproj|solutionrelative:masterpiecedashboard.server\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.client\\src\\app\\admn\\product\\product.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|solutionrelative:masterpiecedashboard.client\\src\\app\\admn\\product\\product.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.client\\src\\app\\admn\\update-category\\update-category.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|solutionrelative:masterpiecedashboard.client\\src\\app\\admn\\update-category\\update-category.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.client\\src\\app\\admn\\update-member\\update-member.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|solutionrelative:masterpiecedashboard.client\\src\\app\\admn\\update-member\\update-member.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.client\\src\\app\\admn\\user-details\\user-details.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|solutionrelative:masterpiecedashboard.client\\src\\app\\admn\\user-details\\user-details.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.client\\src\\app\\admn\\user-details\\user-details.component.spec.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
       "RelativeMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|solutionrelative:masterpiecedashboard.client\\src\\app\\admn\\user-details\\user-details.component.spec.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7DBB11A0-DF23-4229-85FE-58290AD5D663}|masterpieceDashboard.Server\\masterpieceDashboard.Server.csproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.server\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7DBB11A0-DF23-4229-85FE-58290AD5D663}|masterpieceDashboard.Server\\masterpieceDashboard.Server.csproj|solutionrelative:masterpiecedashboard.server\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7DBB11A0-DF23-4229-85FE-58290AD5D663}|masterpieceDashboard.Server\\masterpieceDashboard.Server.csproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.server\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -163,10 +263,6 @@
       "RelativeMoniker": "D:0:0:{7DBB11A0-DF23-4229-85FE-58290AD5D663}|masterpieceDashboard.Server\\masterpieceDashboard.Server.csproj|solutionrelative:masterpiecedashboard.server\\models\\orderstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7DBB11A0-DF23-4229-85FE-58290AD5D663}|masterpieceDashboard.Server\\masterpieceDashboard.Server.csproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7DBB11A0-DF23-4229-85FE-58290AD5D663}|masterpieceDashboard.Server\\masterpieceDashboard.Server.csproj|solutionrelative:masterpiecedashboard.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7DBB11A0-DF23-4229-85FE-58290AD5D663}|masterpieceDashboard.Server\\masterpieceDashboard.Server.csproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.server\\dtos\\orderproductdetailsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7DBB11A0-DF23-4229-85FE-58290AD5D663}|masterpieceDashboard.Server\\masterpieceDashboard.Server.csproj|solutionrelative:masterpiecedashboard.server\\dtos\\orderproductdetailsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -183,70 +279,6 @@
       "RelativeMoniker": "D:0:0:{7DBB11A0-DF23-4229-85FE-58290AD5D663}|masterpieceDashboard.Server\\masterpieceDashboard.Server.csproj|solutionrelative:masterpiecedashboard.server\\dtos\\dtosuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.client\\src\\app\\admn\\update-tiler\\update-tiler.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|solutionrelative:masterpiecedashboard.client\\src\\app\\admn\\update-tiler\\update-tiler.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.client\\src\\app\\admn\\update-tiler\\update-tiler.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|solutionrelative:masterpiecedashboard.client\\src\\app\\admn\\update-tiler\\update-tiler.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7DBB11A0-DF23-4229-85FE-58290AD5D663}|masterpieceDashboard.Server\\masterpieceDashboard.Server.csproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.server\\controllers\\tilercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7DBB11A0-DF23-4229-85FE-58290AD5D663}|masterpieceDashboard.Server\\masterpieceDashboard.Server.csproj|solutionrelative:masterpiecedashboard.server\\controllers\\tilercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7DBB11A0-DF23-4229-85FE-58290AD5D663}|masterpieceDashboard.Server\\masterpieceDashboard.Server.csproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.server\\controllers\\teamscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7DBB11A0-DF23-4229-85FE-58290AD5D663}|masterpieceDashboard.Server\\masterpieceDashboard.Server.csproj|solutionrelative:masterpiecedashboard.server\\controllers\\teamscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7DBB11A0-DF23-4229-85FE-58290AD5D663}|masterpieceDashboard.Server\\masterpieceDashboard.Server.csproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.server\\dtos\\productrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7DBB11A0-DF23-4229-85FE-58290AD5D663}|masterpieceDashboard.Server\\masterpieceDashboard.Server.csproj|solutionrelative:masterpiecedashboard.server\\dtos\\productrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7DBB11A0-DF23-4229-85FE-58290AD5D663}|masterpieceDashboard.Server\\masterpieceDashboard.Server.csproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.server\\dtos\\dtosproject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7DBB11A0-DF23-4229-85FE-58290AD5D663}|masterpieceDashboard.Server\\masterpieceDashboard.Server.csproj|solutionrelative:masterpiecedashboard.server\\dtos\\dtosproject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7DBB11A0-DF23-4229-85FE-58290AD5D663}|masterpieceDashboard.Server\\masterpieceDashboard.Server.csproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.server\\controllers\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7DBB11A0-DF23-4229-85FE-58290AD5D663}|masterpieceDashboard.Server\\masterpieceDashboard.Server.csproj|solutionrelative:masterpiecedashboard.server\\controllers\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.client\\src\\app\\admn\\update-project\\update-project.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|solutionrelative:masterpiecedashboard.client\\src\\app\\admn\\update-project\\update-project.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.client\\src\\app\\admn\\update-project\\update-project.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|solutionrelative:masterpiecedashboard.client\\src\\app\\admn\\update-project\\update-project.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7DBB11A0-DF23-4229-85FE-58290AD5D663}|masterpieceDashboard.Server\\masterpieceDashboard.Server.csproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.server\\models\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7DBB11A0-DF23-4229-85FE-58290AD5D663}|masterpieceDashboard.Server\\masterpieceDashboard.Server.csproj|solutionrelative:masterpiecedashboard.server\\models\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.client\\src\\app\\admn\\update-product\\update-product.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|solutionrelative:masterpiecedashboard.client\\src\\app\\admn\\update-product\\update-product.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.client\\src\\app\\admn\\update-product\\update-product.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|solutionrelative:masterpiecedashboard.client\\src\\app\\admn\\update-product\\update-product.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.client\\src\\app\\admn\\add-member\\add-member.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|solutionrelative:masterpiecedashboard.client\\src\\app\\admn\\add-member\\add-member.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.client\\src\\app\\admn\\add-member\\add-member.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|solutionrelative:masterpiecedashboard.client\\src\\app\\admn\\add-member\\add-member.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.client\\src\\app\\admn\\add-tiler\\add-tiler.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|solutionrelative:masterpiecedashboard.client\\src\\app\\admn\\add-tiler\\add-tiler.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.client\\src\\app\\admn\\add-tiler\\add-tiler.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|solutionrelative:masterpiecedashboard.client\\src\\app\\admn\\add-tiler\\add-tiler.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.client\\src\\app\\admn\\tiler\\tiler.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
       "RelativeMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|solutionrelative:masterpiecedashboard.client\\src\\app\\admn\\tiler\\tiler.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
@@ -255,28 +287,8 @@
       "RelativeMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|solutionrelative:masterpiecedashboard.client\\src\\app\\admn\\team\\team.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.client\\src\\app\\admn\\add-category\\add-category.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|solutionrelative:masterpiecedashboard.client\\src\\app\\admn\\add-category\\add-category.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.client\\src\\app\\admn\\add-project\\add-project.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|solutionrelative:masterpiecedashboard.client\\src\\app\\admn\\add-project\\add-project.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.client\\src\\app\\admn\\add-project\\add-project.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|solutionrelative:masterpiecedashboard.client\\src\\app\\admn\\add-project\\add-project.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.client\\src\\app\\admn\\project\\project.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
       "RelativeMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|solutionrelative:masterpiecedashboard.client\\src\\app\\admn\\project\\project.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.client\\src\\app\\admn\\add-product\\add-product.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|solutionrelative:masterpiecedashboard.client\\src\\app\\admn\\add-product\\add-product.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.client\\src\\app\\admn\\add-product\\add-product.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|solutionrelative:masterpiecedashboard.client\\src\\app\\admn\\add-product\\add-product.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.client\\src\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -303,18 +315,6 @@
       "RelativeMoniker": "D:0:0:{70F43E0A-FFDA-44C7-8B91-4B6D1EE0AB5C}|masterpiecedashboard.client\\masterpiecedashboard.client.esproj|solutionrelative:masterpiecedashboard.client\\angular.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7DBB11A0-DF23-4229-85FE-58290AD5D663}|masterpieceDashboard.Server\\masterpieceDashboard.Server.csproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.server\\dtos\\tilerdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7DBB11A0-DF23-4229-85FE-58290AD5D663}|masterpieceDashboard.Server\\masterpieceDashboard.Server.csproj|solutionrelative:masterpiecedashboard.server\\dtos\\tilerdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7DBB11A0-DF23-4229-85FE-58290AD5D663}|masterpieceDashboard.Server\\masterpieceDashboard.Server.csproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.server\\dtos\\teamdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7DBB11A0-DF23-4229-85FE-58290AD5D663}|masterpieceDashboard.Server\\masterpieceDashboard.Server.csproj|solutionrelative:masterpiecedashboard.server\\dtos\\teamdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7DBB11A0-DF23-4229-85FE-58290AD5D663}|masterpieceDashboard.Server\\masterpieceDashboard.Server.csproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.server\\dtos\\categoriesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7DBB11A0-DF23-4229-85FE-58290AD5D663}|masterpieceDashboard.Server\\masterpieceDashboard.Server.csproj|solutionrelative:masterpiecedashboard.server\\dtos\\categoriesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7DBB11A0-DF23-4229-85FE-58290AD5D663}|masterpieceDashboard.Server\\masterpieceDashboard.Server.csproj|c:\\users\\orange\\desktop\\my web sites\\masterpiece\\masterpiecedashboard\\masterpiecedashboard.server\\dtos\\tokengenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7DBB11A0-DF23-4229-85FE-58290AD5D663}|masterpieceDashboard.Server\\masterpieceDashboard.Server.csproj|solutionrelative:masterpiecedashboard.server\\dtos\\tokengenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -334,7 +334,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -342,680 +342,332 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "team.component.html",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\team\\team.component.html",
-              "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\team\\team.component.html",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\team\\team.component.html",
-              "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\team\\team.component.html",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABYAAAAxAAAA",
+              "DocumentIndex": 5,
+              "Title": "update-member.component.html",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\update-member\\update-member.component.html",
+              "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\update-member\\update-member.component.html",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\update-member\\update-member.component.html",
+              "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\update-member\\update-member.component.html",
+              "ViewState": "AQIAABgAAAAAAAAAAAAgwDAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-10-29T10:50:17.293Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "tiler.component.html",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\tiler\\tiler.component.html",
-              "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\tiler\\tiler.component.html",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\tiler\\tiler.component.html",
-              "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\tiler\\tiler.component.html",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAACMAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-10-29T11:05:23.516Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "update-category.component.html",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\update-category\\update-category.component.html",
-              "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\update-category\\update-category.component.html",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\update-category\\update-category.component.html",
-              "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\update-category\\update-category.component.html",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-11-17T03:27:12.024Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "user.component.html",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\user\\user.component.html",
-              "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\user\\user.component.html",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\user\\user.component.html",
-              "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\user\\user.component.html",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-11-17T22:55:53.548Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-20T10:03:22.85Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "user-details.component.html",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\user-details\\user-details.component.html",
-              "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\user-details\\user-details.component.html",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\user-details\\user-details.component.html",
-              "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\user-details\\user-details.component.html",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-11-18T00:29:44.352Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "project.component.html",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\project\\project.component.html",
-              "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\project\\project.component.html",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\project\\project.component.html",
-              "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\project\\project.component.html",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABUAAAAxAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-10-29T09:25:29.083Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "product.component.html",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\product\\product.component.html",
-              "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\product\\product.component.html",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\product\\product.component.html",
-              "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\product\\product.component.html",
-              "ViewState": "AQIAABsAAAAAAAAAAAAAACwAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-11-16T13:14:30.976Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "order.component.html",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\order\\order.component.html",
-              "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\order\\order.component.html",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\order\\order.component.html",
-              "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\order\\order.component.html",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAACEAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-11-18T05:47:15.512Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "contact-us.component.html",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\contact-us\\contact-us.component.html",
-              "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\contact-us\\contact-us.component.html",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\contact-us\\contact-us.component.html",
-              "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\contact-us\\contact-us.component.html",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAAB0AAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-11-15T22:34:26.987Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "categry.component.html",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\categry\\categry.component.html",
-              "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\categry\\categry.component.html",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\categry\\categry.component.html",
-              "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\categry\\categry.component.html",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABoAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-11-18T00:46:53.613Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "add-category.component.html",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\add-category\\add-category.component.html",
-              "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\add-category\\add-category.component.html",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\add-category\\add-category.component.html",
-              "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\add-category\\add-category.component.html",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-11-19T07:52:24.533Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "OrderController.cs",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\Controllers\\OrderController.cs",
-              "RelativeDocumentMoniker": "masterpieceDashboard.Server\\Controllers\\OrderController.cs",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\Controllers\\OrderController.cs",
-              "RelativeToolTip": "masterpieceDashboard.Server\\Controllers\\OrderController.cs",
-              "ViewState": "AQIAACkAAAAAAAAAAAAswHoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T06:02:26.47Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "log-in.component.ts",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\log-in\\log-in.component.ts",
-              "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\log-in\\log-in.component.ts",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\log-in\\log-in.component.ts",
-              "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\log-in\\log-in.component.ts",
-              "ViewState": "AQIAADwAAAAAAAAAAAAiwEcAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-11-19T05:18:39.415Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "log-in.component.css",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\log-in\\log-in.component.css",
-              "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\log-in\\log-in.component.css",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\log-in\\log-in.component.css",
-              "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\log-in\\log-in.component.css",
-              "ViewState": "AQIAABwAAAAAAAAAAAAUwDUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-11-19T05:33:09.276Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "log-in.component.html",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\log-in\\log-in.component.html",
-              "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\log-in\\log-in.component.html",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\log-in\\log-in.component.html",
-              "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\log-in\\log-in.component.html",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAkwBAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-11-19T05:15:45.907Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "dashboard.component.css",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\dashboard\\dashboard.component.css",
-              "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\dashboard\\dashboard.component.css",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\dashboard\\dashboard.component.css",
-              "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\dashboard\\dashboard.component.css",
-              "ViewState": "AQIAACgAAAAAAAAAAAAUwDQAAAADAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-10-29T06:55:18.545Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "dashboard.component.html",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\dashboard\\dashboard.component.html",
-              "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\dashboard\\dashboard.component.html",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\dashboard\\dashboard.component.html",
-              "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\dashboard\\dashboard.component.html",
-              "ViewState": "AQIAAEYAAAAAAAAAAAAkwF4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-10-29T06:49:28.003Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "app.module.ts",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\app.module.ts",
-              "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\app.module.ts",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\app.module.ts",
-              "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\app.module.ts",
-              "ViewState": "AQIAADsAAAAAAAAAAAAmwEQAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-10-29T06:48:05.101Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Admin.cs",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\Models\\Admin.cs",
-              "RelativeDocumentMoniker": "masterpieceDashboard.Server\\Models\\Admin.cs",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\Models\\Admin.cs",
-              "RelativeToolTip": "masterpieceDashboard.Server\\Models\\Admin.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T05:04:39.32Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
               "Title": "service.service.ts",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\URL\\service.service.ts",
               "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\URL\\service.service.ts",
               "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\URL\\service.service.ts",
               "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\URL\\service.service.ts",
-              "ViewState": "AQIAAKcAAAAAAAAAAAAowLsAAAAAAAAA",
+              "ViewState": "AQIAAIgAAAAAAAAAAAAQwIEAAABIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-10-29T08:04:02.785Z"
+              "WhenOpened": "2024-10-29T08:04:02.785Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "AdminController.cs",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\Controllers\\AdminController.cs",
-              "RelativeDocumentMoniker": "masterpieceDashboard.Server\\Controllers\\AdminController.cs",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\Controllers\\AdminController.cs",
-              "RelativeToolTip": "masterpieceDashboard.Server\\Controllers\\AdminController.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAmwCcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T05:09:21.973Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "behavior-subject.service.ts",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\BehaviorSubject\\behavior-subject.service.ts",
-              "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\BehaviorSubject\\behavior-subject.service.ts",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\BehaviorSubject\\behavior-subject.service.ts",
-              "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\BehaviorSubject\\behavior-subject.service.ts",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-11-19T05:24:10.012Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "dashboard.component.ts",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\dashboard\\dashboard.component.ts",
-              "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\dashboard\\dashboard.component.ts",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\dashboard\\dashboard.component.ts",
-              "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\dashboard\\dashboard.component.ts",
-              "ViewState": "AQIAACIAAAAAAAAAAAAQwCEAAAAHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-10-29T06:49:29.103Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "EmailService.cs",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\Services\\EmailService.cs",
-              "RelativeDocumentMoniker": "masterpieceDashboard.Server\\Services\\EmailService.cs",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\Services\\EmailService.cs",
-              "RelativeToolTip": "masterpieceDashboard.Server\\Services\\EmailService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T03:30:59.598Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "UserAdminDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\DTOs\\UserAdminDTO.cs",
-              "RelativeDocumentMoniker": "masterpieceDashboard.Server\\DTOs\\UserAdminDTO.cs",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\DTOs\\UserAdminDTO.cs",
-              "RelativeToolTip": "masterpieceDashboard.Server\\DTOs\\UserAdminDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T05:04:17.442Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "CategoryController.cs",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\Controllers\\CategoryController.cs",
-              "RelativeDocumentMoniker": "masterpieceDashboard.Server\\Controllers\\CategoryController.cs",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\Controllers\\CategoryController.cs",
-              "RelativeToolTip": "masterpieceDashboard.Server\\Controllers\\CategoryController.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T05:13:27.39Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "update-order.component.html",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\update-order\\update-order.component.html",
-              "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\update-order\\update-order.component.html",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\update-order\\update-order.component.html",
-              "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\update-order\\update-order.component.html",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-11-18T06:14:43.424Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "update-order.component.ts",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\update-order\\update-order.component.ts",
-              "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\update-order\\update-order.component.ts",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\update-order\\update-order.component.ts",
-              "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\update-order\\update-order.component.ts",
-              "ViewState": "AQIAACgAAAAAAAAAAAAAACoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-11-18T06:34:22.38Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "user.component.ts",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\user\\user.component.ts",
-              "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\user\\user.component.ts",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\user\\user.component.ts",
-              "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\user\\user.component.ts",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACkAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-11-17T23:01:48.735Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "masterpieceDashboard.Server\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\Controllers\\UserController.cs",
-              "RelativeToolTip": "masterpieceDashboard.Server\\Controllers\\UserController.cs",
-              "ViewState": "AQIAAFQAAAAAAAAAAAAswGQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T22:31:23.049Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "product.component.ts",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\product\\product.component.ts",
-              "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\product\\product.component.ts",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\product\\product.component.ts",
-              "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\product\\product.component.ts",
-              "ViewState": "AQIAABYAAAAAAAAAAAAQwA8AAABCAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-10-29T09:07:08.883Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "update-category.component.ts",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\update-category\\update-category.component.ts",
-              "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\update-category\\update-category.component.ts",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\update-category\\update-category.component.ts",
-              "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\update-category\\update-category.component.ts",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-11-16T21:02:23.206Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "update-member.component.ts",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\update-member\\update-member.component.ts",
-              "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\update-member\\update-member.component.ts",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\update-member\\update-member.component.ts",
-              "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\update-member\\update-member.component.ts",
-              "ViewState": "AQIAACIAAAAAAAAAAAAQwCgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-11-17T03:54:07.413Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "user-details.component.ts",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\user-details\\user-details.component.ts",
-              "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\user-details\\user-details.component.ts",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\user-details\\user-details.component.ts",
-              "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\user-details\\user-details.component.ts",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAAADAAAAADAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-11-18T00:59:33.464Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "user-details.component.spec.ts",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\user-details\\user-details.component.spec.ts",
-              "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\user-details\\user-details.component.spec.ts",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\user-details\\user-details.component.spec.ts",
-              "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\user-details\\user-details.component.spec.ts",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-11-18T05:30:26.932Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "Product.cs",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\Models\\Product.cs",
-              "RelativeDocumentMoniker": "masterpieceDashboard.Server\\Models\\Product.cs",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\Models\\Product.cs",
-              "RelativeToolTip": "masterpieceDashboard.Server\\Models\\Product.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAA9wBkAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T14:26:04.264Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "Order.cs",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\Models\\Order.cs",
-              "RelativeDocumentMoniker": "masterpieceDashboard.Server\\Models\\Order.cs",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\Models\\Order.cs",
-              "RelativeToolTip": "masterpieceDashboard.Server\\Models\\Order.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAqwB0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T03:03:56.38Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "OrderStatus.cs",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\Models\\OrderStatus.cs",
-              "RelativeDocumentMoniker": "masterpieceDashboard.Server\\Models\\OrderStatus.cs",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\Models\\OrderStatus.cs",
-              "RelativeToolTip": "masterpieceDashboard.Server\\Models\\OrderStatus.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T03:45:36.354Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "CartItem.cs",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\Models\\CartItem.cs",
-              "RelativeDocumentMoniker": "masterpieceDashboard.Server\\Models\\CartItem.cs",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\Models\\CartItem.cs",
-              "RelativeToolTip": "masterpieceDashboard.Server\\Models\\CartItem.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAA3wA0AAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T04:11:52.966Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "Cart.cs",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\Models\\Cart.cs",
-              "RelativeDocumentMoniker": "masterpieceDashboard.Server\\Models\\Cart.cs",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\Models\\Cart.cs",
-              "RelativeToolTip": "masterpieceDashboard.Server\\Models\\Cart.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T04:44:57.372Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\Program.cs",
-              "RelativeDocumentMoniker": "masterpieceDashboard.Server\\Program.cs",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\Program.cs",
-              "RelativeToolTip": "masterpieceDashboard.Server\\Program.cs",
-              "ViewState": "AQIAACUAAAAAAAAAAAAAACkAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T07:31:19.718Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "OrderProductDetailsDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\DTOs\\OrderProductDetailsDTO.cs",
-              "RelativeDocumentMoniker": "masterpieceDashboard.Server\\DTOs\\OrderProductDetailsDTO.cs",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\DTOs\\OrderProductDetailsDTO.cs",
-              "RelativeToolTip": "masterpieceDashboard.Server\\DTOs\\OrderProductDetailsDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAABIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T01:33:04.891Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "Edituser.cs",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\DTOs\\Edituser.cs",
-              "RelativeDocumentMoniker": "masterpieceDashboard.Server\\DTOs\\Edituser.cs",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\DTOs\\Edituser.cs",
-              "RelativeToolTip": "masterpieceDashboard.Server\\DTOs\\Edituser.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T23:49:08.768Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "CreateOrderDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\DTOs\\CreateOrderDTO.cs",
-              "RelativeDocumentMoniker": "masterpieceDashboard.Server\\DTOs\\CreateOrderDTO.cs",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\DTOs\\CreateOrderDTO.cs",
-              "RelativeToolTip": "masterpieceDashboard.Server\\DTOs\\CreateOrderDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T00:10:53.863Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "DTOsUser.cs",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\DTOs\\DTOsUser.cs",
-              "RelativeDocumentMoniker": "masterpieceDashboard.Server\\DTOs\\DTOsUser.cs",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\DTOs\\DTOsUser.cs",
-              "RelativeToolTip": "masterpieceDashboard.Server\\DTOs\\DTOsUser.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T22:28:12.916Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 3,
               "Title": "update-tiler.component.html",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\update-tiler\\update-tiler.component.html",
               "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\update-tiler\\update-tiler.component.html",
               "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\update-tiler\\update-tiler.component.html",
               "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\update-tiler\\update-tiler.component.html",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAA0AAAA",
+              "ViewState": "AQIAABgAAAAAAAAAAAAgwDAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2024-11-17T17:20:54.492Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 4,
+              "Title": "update-member.component.ts",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\update-member\\update-member.component.ts",
+              "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\update-member\\update-member.component.ts",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\update-member\\update-member.component.ts",
+              "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\update-member\\update-member.component.ts",
+              "ViewState": "AQIAAD0AAAAAAAAAAAAYwFUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-11-17T03:54:07.413Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "update-tiler.component.ts",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\update-tiler\\update-tiler.component.ts",
               "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\update-tiler\\update-tiler.component.ts",
               "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\update-tiler\\update-tiler.component.ts",
               "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\update-tiler\\update-tiler.component.ts",
-              "ViewState": "AQIAABYAAAAAAAAAAAAQwCoAAAANAAAA",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAYwFYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
               "WhenOpened": "2024-11-17T17:23:27.138Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 1,
               "Title": "TilerController.cs",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\Controllers\\TilerController.cs",
               "RelativeDocumentMoniker": "masterpieceDashboard.Server\\Controllers\\TilerController.cs",
               "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\Controllers\\TilerController.cs",
               "RelativeToolTip": "masterpieceDashboard.Server\\Controllers\\TilerController.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAYwCEAAAANAAAA",
+              "ViewState": "AQIAACAAAAAAAAAAAAAAwE4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-29T07:46:05.369Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 6,
               "Title": "TeamsController.cs",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\Controllers\\TeamsController.cs",
               "RelativeDocumentMoniker": "masterpieceDashboard.Server\\Controllers\\TeamsController.cs",
               "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\Controllers\\TeamsController.cs",
               "RelativeToolTip": "masterpieceDashboard.Server\\Controllers\\TeamsController.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAkwCMAAAAAAAAA",
+              "ViewState": "AQIAACsAAAAAAAAAAAAQwFEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T07:45:19.122Z"
+              "WhenOpened": "2024-11-20T09:56:39.891Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
-              "Title": "ProjectController.cs",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\Controllers\\ProjectController.cs",
-              "RelativeDocumentMoniker": "masterpieceDashboard.Server\\Controllers\\ProjectController.cs",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\Controllers\\ProjectController.cs",
-              "RelativeToolTip": "masterpieceDashboard.Server\\Controllers\\ProjectController.cs",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAowDYAAAAAAAAA",
+              "DocumentIndex": 7,
+              "Title": "TilerDTOs.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\DTOs\\TilerDTOs.cs",
+              "RelativeDocumentMoniker": "masterpieceDashboard.Server\\DTOs\\TilerDTOs.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\DTOs\\TilerDTOs.cs",
+              "RelativeToolTip": "masterpieceDashboard.Server\\DTOs\\TilerDTOs.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T07:44:40.998Z"
+              "WhenOpened": "2024-10-29T07:39:51.923Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 8,
+              "Title": "TeamDTOs.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\DTOs\\TeamDTOs.cs",
+              "RelativeDocumentMoniker": "masterpieceDashboard.Server\\DTOs\\TeamDTOs.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\DTOs\\TeamDTOs.cs",
+              "RelativeToolTip": "masterpieceDashboard.Server\\DTOs\\TeamDTOs.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T07:39:28.785Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "add-tiler.component.html",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\add-tiler\\add-tiler.component.html",
+              "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\add-tiler\\add-tiler.component.html",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\add-tiler\\add-tiler.component.html",
+              "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\add-tiler\\add-tiler.component.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-11-16T15:26:26.959Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "add-member.component.ts",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\add-member\\add-member.component.ts",
+              "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\add-member\\add-member.component.ts",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\add-member\\add-member.component.ts",
+              "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\add-member\\add-member.component.ts",
+              "ViewState": "AQIAACcAAAAAAAAAAAAYwD8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-11-20T09:51:41.639Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "update-project.component.ts",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\update-project\\update-project.component.ts",
               "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\update-project\\update-project.component.ts",
               "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\update-project\\update-project.component.ts",
               "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\update-project\\update-project.component.ts",
-              "ViewState": "AQIAACgAAAAAAAAAAAAUwDcAAAA9AAAA",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAYwFYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
               "WhenOpened": "2024-11-17T03:32:22.829Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
-              "Title": "DTOsProject.cs",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\DTOs\\DTOsProject.cs",
-              "RelativeDocumentMoniker": "masterpieceDashboard.Server\\DTOs\\DTOsProject.cs",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\DTOs\\DTOsProject.cs",
-              "RelativeToolTip": "masterpieceDashboard.Server\\DTOs\\DTOsProject.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T07:38:27.918Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 49,
-              "Title": "ProductRequest.cs",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\DTOs\\ProductRequest.cs",
-              "RelativeDocumentMoniker": "masterpieceDashboard.Server\\DTOs\\ProductRequest.cs",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\DTOs\\ProductRequest.cs",
-              "RelativeToolTip": "masterpieceDashboard.Server\\DTOs\\ProductRequest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T07:38:58.838Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 13,
               "Title": "update-project.component.html",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\update-project\\update-project.component.html",
               "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\update-project\\update-project.component.html",
               "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\update-project\\update-project.component.html",
               "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\update-project\\update-project.component.html",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAA4AAAA",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAgwCUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-11-17T03:27:18.016Z"
+              "WhenOpened": "2024-11-20T09:44:15.385Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 9,
+              "Title": "add-tiler.component.ts",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\add-tiler\\add-tiler.component.ts",
+              "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\add-tiler\\add-tiler.component.ts",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\add-tiler\\add-tiler.component.ts",
+              "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\add-tiler\\add-tiler.component.ts",
+              "ViewState": "AQIAADIAAAAAAAAAAAAIwBQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-11-16T15:29:10.83Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "add-project.component.html",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\add-project\\add-project.component.html",
+              "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\add-project\\add-project.component.html",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\add-project\\add-project.component.html",
+              "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\add-project\\add-project.component.html",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAgwB4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-11-16T14:52:09.77Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "add-product.component.ts",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\add-product\\add-product.component.ts",
+              "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\add-product\\add-product.component.ts",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\add-product\\add-product.component.ts",
+              "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\add-product\\add-product.component.ts",
+              "ViewState": "AQIAAEMAAAAAAAAAAAAQwA8AAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-11-16T14:10:45.256Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "add-product.component.html",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\add-product\\add-product.component.html",
+              "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\add-product\\add-product.component.html",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\add-product\\add-product.component.html",
+              "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\add-product\\add-product.component.html",
+              "ViewState": "AQIAAFEAAAAAAAAAAAAgwGcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-11-20T09:35:52.894Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "add-project.component.ts",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\add-project\\add-project.component.ts",
+              "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\add-project\\add-project.component.ts",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\add-project\\add-project.component.ts",
+              "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\add-project\\add-project.component.ts",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAFAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-11-16T14:55:35.869Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "update-category.component.html",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\update-category\\update-category.component.html",
+              "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\update-category\\update-category.component.html",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\update-category\\update-category.component.html",
+              "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\update-category\\update-category.component.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAC/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-11-17T03:27:12.024Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "update-category.component.ts",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\update-category\\update-category.component.ts",
+              "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\update-category\\update-category.component.ts",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\update-category\\update-category.component.ts",
+              "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\update-category\\update-category.component.ts",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-11-16T21:02:23.206Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "update-product.component.ts",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\update-product\\update-product.component.ts",
               "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\update-product\\update-product.component.ts",
               "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\update-product\\update-product.component.ts",
               "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\update-product\\update-product.component.ts",
-              "ViewState": "AQIAADgAAAAAAAAAAAAUwE8AAAAAAAAA",
+              "ViewState": "AQIAAD0AAAAAAAAAAAAQwDcAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
               "WhenOpened": "2024-11-17T02:26:48.759Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 21,
+              "Title": "ProjectController.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\Controllers\\ProjectController.cs",
+              "RelativeDocumentMoniker": "masterpieceDashboard.Server\\Controllers\\ProjectController.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\Controllers\\ProjectController.cs",
+              "RelativeToolTip": "masterpieceDashboard.Server\\Controllers\\ProjectController.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAQwFYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T07:44:40.998Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "masterpieceDashboard.Server\\Controllers\\CategoryController.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "masterpieceDashboard.Server\\Controllers\\CategoryController.cs",
+              "ViewState": "AQIAAHEAAAAAAAAAAAA7wJYAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T05:13:27.39Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "project.component.html",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\project\\project.component.html",
+              "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\project\\project.component.html",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\project\\project.component.html",
+              "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\project\\project.component.html",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAB8AAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-10-29T09:25:29.083Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "categry.component.html",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\categry\\categry.component.html",
+              "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\categry\\categry.component.html",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\categry\\categry.component.html",
+              "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\categry\\categry.component.html",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABkAAABXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-11-18T00:46:53.613Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "masterpieceDashboard.Server\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "masterpieceDashboard.Server\\Controllers\\ProductController.cs",
+              "ViewState": "AQIAAE0AAAAAAAAAAAAswJ4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T10:27:13.049Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "DTOsProject.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\DTOs\\DTOsProject.cs",
+              "RelativeDocumentMoniker": "masterpieceDashboard.Server\\DTOs\\DTOsProject.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\DTOs\\DTOsProject.cs",
+              "RelativeToolTip": "masterpieceDashboard.Server\\DTOs\\DTOsProject.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T07:38:27.918Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
               "Title": "Project.cs",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\Models\\Project.cs",
               "RelativeDocumentMoniker": "masterpieceDashboard.Server\\Models\\Project.cs",
@@ -1027,67 +679,499 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
-              "Title": "update-product.component.html",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\update-product\\update-product.component.html",
-              "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\update-product\\update-product.component.html",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\update-product\\update-product.component.html",
-              "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\update-product\\update-product.component.html",
-              "ViewState": "AQIAABcAAAAAAAAAAAAYwDEAAAAAAAAA",
+              "DocumentIndex": 29,
+              "Title": "categry.component.ts",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\categry\\categry.component.ts",
+              "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\categry\\categry.component.ts",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\categry\\categry.component.ts",
+              "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\categry\\categry.component.ts",
+              "ViewState": "AQIAABUAAAAAAAAAAAAYwEIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-11-20T05:51:36.253Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "product.component.html",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\product\\product.component.html",
+              "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\product\\product.component.html",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\product\\product.component.html",
+              "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\product\\product.component.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-11-17T02:16:38.985Z"
+              "WhenOpened": "2024-11-16T13:14:30.976Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "product-to-one-category.component.ts",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\product-to-one-category\\product-to-one-category.component.ts",
+              "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\product-to-one-category\\product-to-one-category.component.ts",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\product-to-one-category\\product-to-one-category.component.ts",
+              "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\product-to-one-category\\product-to-one-category.component.ts",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAB4AAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-11-20T04:46:30.573Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "product.component.ts",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\product\\product.component.ts",
+              "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\product\\product.component.ts",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\product\\product.component.ts",
+              "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\product\\product.component.ts",
+              "ViewState": "AQIAACgAAAAAAAAAAAAQwDUAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-10-29T09:07:08.883Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "app.module.ts",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\app.module.ts",
+              "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\app.module.ts",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\app.module.ts",
+              "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\app.module.ts",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAmwFIAAABNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-10-29T06:48:05.101Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "product-to-one-category.component.html",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\product-to-one-category\\product-to-one-category.component.html",
+              "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\product-to-one-category\\product-to-one-category.component.html",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\product-to-one-category\\product-to-one-category.component.html",
+              "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\product-to-one-category\\product-to-one-category.component.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-11-20T04:43:19.445Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "user-details.component.html",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\user-details\\user-details.component.html",
+              "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\user-details\\user-details.component.html",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\user-details\\user-details.component.html",
+              "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\user-details\\user-details.component.html",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABcAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-11-18T00:29:44.352Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "user-details.component.ts",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\user-details\\user-details.component.ts",
+              "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\user-details\\user-details.component.ts",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\user-details\\user-details.component.ts",
+              "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\user-details\\user-details.component.ts",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwBIAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-11-18T00:59:33.464Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "user.component.html",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\user\\user.component.html",
+              "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\user\\user.component.html",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\user\\user.component.html",
+              "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\user\\user.component.html",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-11-17T22:55:53.548Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "ProductRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\DTOs\\ProductRequest.cs",
+              "RelativeDocumentMoniker": "masterpieceDashboard.Server\\DTOs\\ProductRequest.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\DTOs\\ProductRequest.cs",
+              "RelativeToolTip": "masterpieceDashboard.Server\\DTOs\\ProductRequest.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAcwB0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T07:38:58.838Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "masterpieceDashboard.Server\\Models\\Product.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\Models\\Product.cs",
+              "RelativeToolTip": "masterpieceDashboard.Server\\Models\\Product.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAowB0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T14:26:04.264Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "core.mjs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\node_modules\\@angular\\core\\fesm2022\\core.mjs",
+              "RelativeDocumentMoniker": "masterpiecedashboard.client\\node_modules\\@angular\\core\\fesm2022\\core.mjs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\node_modules\\@angular\\core\\fesm2022\\core.mjs",
+              "RelativeToolTip": "masterpiecedashboard.client\\node_modules\\@angular\\core\\fesm2022\\core.mjs",
+              "ViewState": "AQIAALNkAAAAAAAAAAAIwLZkAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-11-19T13:15:44.465Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\Program.cs",
+              "RelativeDocumentMoniker": "masterpieceDashboard.Server\\Program.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\Program.cs",
+              "RelativeToolTip": "masterpieceDashboard.Server\\Program.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAIwA4AAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T07:31:19.718Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "team.component.html",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\team\\team.component.html",
+              "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\team\\team.component.html",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\team\\team.component.html",
+              "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\team\\team.component.html",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAB4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-10-29T10:50:17.293Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "tiler.component.html",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\tiler\\tiler.component.html",
+              "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\tiler\\tiler.component.html",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\tiler\\tiler.component.html",
+              "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\tiler\\tiler.component.html",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAB4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-10-29T11:05:23.516Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "order.component.html",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\order\\order.component.html",
+              "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\order\\order.component.html",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\order\\order.component.html",
+              "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\order\\order.component.html",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAACEAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-11-18T05:47:15.512Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "contact-us.component.html",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\contact-us\\contact-us.component.html",
+              "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\contact-us\\contact-us.component.html",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\contact-us\\contact-us.component.html",
+              "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\contact-us\\contact-us.component.html",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAB0AAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-11-15T22:34:26.987Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "masterpieceDashboard.Server\\Controllers\\OrderController.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "masterpieceDashboard.Server\\Controllers\\OrderController.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAswHoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T06:02:26.47Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "log-in.component.ts",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\log-in\\log-in.component.ts",
+              "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\log-in\\log-in.component.ts",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\log-in\\log-in.component.ts",
+              "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\log-in\\log-in.component.ts",
+              "ViewState": "AQIAADwAAAAAAAAAAAAiwEcAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-11-19T05:18:39.415Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "log-in.component.css",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\log-in\\log-in.component.css",
+              "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\log-in\\log-in.component.css",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\log-in\\log-in.component.css",
+              "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\log-in\\log-in.component.css",
+              "ViewState": "AQIAABwAAAAAAAAAAAAUwDUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-11-19T05:33:09.276Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "log-in.component.html",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\log-in\\log-in.component.html",
+              "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\log-in\\log-in.component.html",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\log-in\\log-in.component.html",
+              "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\log-in\\log-in.component.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAkwBAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-11-19T05:15:45.907Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "dashboard.component.css",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\dashboard\\dashboard.component.css",
+              "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\dashboard\\dashboard.component.css",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\dashboard\\dashboard.component.css",
+              "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\dashboard\\dashboard.component.css",
+              "ViewState": "AQIAACgAAAAAAAAAAAAUwDQAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-10-29T06:55:18.545Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "dashboard.component.html",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\dashboard\\dashboard.component.html",
+              "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\dashboard\\dashboard.component.html",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\dashboard\\dashboard.component.html",
+              "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\dashboard\\dashboard.component.html",
+              "ViewState": "AQIAAEYAAAAAAAAAAAAkwF4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-10-29T06:49:28.003Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "Admin.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\Models\\Admin.cs",
+              "RelativeDocumentMoniker": "masterpieceDashboard.Server\\Models\\Admin.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\Models\\Admin.cs",
+              "RelativeToolTip": "masterpieceDashboard.Server\\Models\\Admin.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T05:04:39.32Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "masterpieceDashboard.Server\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "masterpieceDashboard.Server\\Controllers\\AdminController.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAmwCcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T05:09:21.973Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "behavior-subject.service.ts",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\BehaviorSubject\\behavior-subject.service.ts",
+              "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\BehaviorSubject\\behavior-subject.service.ts",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\BehaviorSubject\\behavior-subject.service.ts",
+              "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\BehaviorSubject\\behavior-subject.service.ts",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-11-19T05:24:10.012Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "dashboard.component.ts",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\dashboard\\dashboard.component.ts",
+              "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\dashboard\\dashboard.component.ts",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\dashboard\\dashboard.component.ts",
+              "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\dashboard\\dashboard.component.ts",
+              "ViewState": "AQIAACIAAAAAAAAAAAAQwCEAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-10-29T06:49:29.103Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 57,
-              "Title": "add-member.component.html",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\add-member\\add-member.component.html",
-              "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\add-member\\add-member.component.html",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\add-member\\add-member.component.html",
-              "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\add-member\\add-member.component.html",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAcAAACEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-11-16T15:15:09.665Z"
+              "Title": "EmailService.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\Services\\EmailService.cs",
+              "RelativeDocumentMoniker": "masterpieceDashboard.Server\\Services\\EmailService.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\Services\\EmailService.cs",
+              "RelativeToolTip": "masterpieceDashboard.Server\\Services\\EmailService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T03:30:59.598Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "UserAdminDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\DTOs\\UserAdminDTO.cs",
+              "RelativeDocumentMoniker": "masterpieceDashboard.Server\\DTOs\\UserAdminDTO.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\DTOs\\UserAdminDTO.cs",
+              "RelativeToolTip": "masterpieceDashboard.Server\\DTOs\\UserAdminDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T05:04:17.442Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "update-order.component.ts",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\update-order\\update-order.component.ts",
+              "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\update-order\\update-order.component.ts",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\update-order\\update-order.component.ts",
+              "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\update-order\\update-order.component.ts",
+              "ViewState": "AQIAACgAAAAAAAAAAAAAACoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-11-18T06:34:22.38Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 58,
-              "Title": "add-member.component.ts",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\add-member\\add-member.component.ts",
-              "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\add-member\\add-member.component.ts",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\add-member\\add-member.component.ts",
-              "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\add-member\\add-member.component.ts",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Title": "user.component.ts",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\user\\user.component.ts",
+              "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\user\\user.component.ts",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\user\\user.component.ts",
+              "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\user\\user.component.ts",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACkAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-11-16T15:18:24.712Z"
+              "WhenOpened": "2024-11-17T23:01:48.735Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 59,
-              "Title": "add-tiler.component.ts",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\add-tiler\\add-tiler.component.ts",
-              "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\add-tiler\\add-tiler.component.ts",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\add-tiler\\add-tiler.component.ts",
-              "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\add-tiler\\add-tiler.component.ts",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADUAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-11-16T15:29:10.83Z"
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "masterpieceDashboard.Server\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\Controllers\\UserController.cs",
+              "RelativeToolTip": "masterpieceDashboard.Server\\Controllers\\UserController.cs",
+              "ViewState": "AQIAAFQAAAAAAAAAAAAswGQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T22:31:23.049Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 60,
-              "Title": "add-tiler.component.html",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\add-tiler\\add-tiler.component.html",
-              "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\add-tiler\\add-tiler.component.html",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\add-tiler\\add-tiler.component.html",
-              "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\add-tiler\\add-tiler.component.html",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAzAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-11-16T15:26:26.959Z"
+              "Title": "user-details.component.spec.ts",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\user-details\\user-details.component.spec.ts",
+              "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\user-details\\user-details.component.spec.ts",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\user-details\\user-details.component.spec.ts",
+              "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\user-details\\user-details.component.spec.ts",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-11-18T05:30:26.932Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 62,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "masterpieceDashboard.Server\\Models\\Order.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\Models\\Order.cs",
+              "RelativeToolTip": "masterpieceDashboard.Server\\Models\\Order.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAqwB0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T03:03:56.38Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "OrderStatus.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\Models\\OrderStatus.cs",
+              "RelativeDocumentMoniker": "masterpieceDashboard.Server\\Models\\OrderStatus.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\Models\\OrderStatus.cs",
+              "RelativeToolTip": "masterpieceDashboard.Server\\Models\\OrderStatus.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T03:45:36.354Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "CartItem.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\Models\\CartItem.cs",
+              "RelativeDocumentMoniker": "masterpieceDashboard.Server\\Models\\CartItem.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\Models\\CartItem.cs",
+              "RelativeToolTip": "masterpieceDashboard.Server\\Models\\CartItem.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAA3wA0AAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T04:11:52.966Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "Cart.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\Models\\Cart.cs",
+              "RelativeDocumentMoniker": "masterpieceDashboard.Server\\Models\\Cart.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\Models\\Cart.cs",
+              "RelativeToolTip": "masterpieceDashboard.Server\\Models\\Cart.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T04:44:57.372Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "OrderProductDetailsDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\DTOs\\OrderProductDetailsDTO.cs",
+              "RelativeDocumentMoniker": "masterpieceDashboard.Server\\DTOs\\OrderProductDetailsDTO.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\DTOs\\OrderProductDetailsDTO.cs",
+              "RelativeToolTip": "masterpieceDashboard.Server\\DTOs\\OrderProductDetailsDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T01:33:04.891Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "Edituser.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\DTOs\\Edituser.cs",
+              "RelativeDocumentMoniker": "masterpieceDashboard.Server\\DTOs\\Edituser.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\DTOs\\Edituser.cs",
+              "RelativeToolTip": "masterpieceDashboard.Server\\DTOs\\Edituser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T23:49:08.768Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "CreateOrderDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\DTOs\\CreateOrderDTO.cs",
+              "RelativeDocumentMoniker": "masterpieceDashboard.Server\\DTOs\\CreateOrderDTO.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\DTOs\\CreateOrderDTO.cs",
+              "RelativeToolTip": "masterpieceDashboard.Server\\DTOs\\CreateOrderDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T00:10:53.863Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "DTOsUser.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\DTOs\\DTOsUser.cs",
+              "RelativeDocumentMoniker": "masterpieceDashboard.Server\\DTOs\\DTOsUser.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\DTOs\\DTOsUser.cs",
+              "RelativeToolTip": "masterpieceDashboard.Server\\DTOs\\DTOsUser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T22:28:12.916Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
               "Title": "team.component.ts",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\team\\team.component.ts",
               "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\team\\team.component.ts",
@@ -1099,7 +1183,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 69,
               "Title": "tiler.component.ts",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\tiler\\tiler.component.ts",
               "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\tiler\\tiler.component.ts",
@@ -1111,43 +1195,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
-              "Title": "add-category.component.ts",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\add-category\\add-category.component.ts",
-              "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\add-category\\add-category.component.ts",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\add-category\\add-category.component.ts",
-              "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\add-category\\add-category.component.ts",
-              "ViewState": "AQIAACEAAAAAAAAAAAAAADQAAAADAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-11-16T12:39:42.864Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 65,
-              "Title": "add-project.component.html",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\add-project\\add-project.component.html",
-              "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\add-project\\add-project.component.html",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\add-project\\add-project.component.html",
-              "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\add-project\\add-project.component.html",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAswBsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-11-16T14:52:09.77Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 64,
-              "Title": "add-project.component.ts",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\add-project\\add-project.component.ts",
-              "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\add-project\\add-project.component.ts",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\add-project\\add-project.component.ts",
-              "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\add-project\\add-project.component.ts",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAAwBEAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-11-16T14:55:35.869Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 71,
               "Title": "project.component.ts",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\project\\project.component.ts",
               "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\project\\project.component.ts",
@@ -1159,31 +1207,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
-              "Title": "add-product.component.ts",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\add-product\\add-product.component.ts",
-              "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\add-product\\add-product.component.ts",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\add-product\\add-product.component.ts",
-              "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\add-product\\add-product.component.ts",
-              "ViewState": "AQIAABMAAAAAAAAAAAAQwBoAAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-11-16T14:10:45.256Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 68,
-              "Title": "add-product.component.html",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\add-product\\add-product.component.html",
-              "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\add-product\\add-product.component.html",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\add-product\\add-product.component.html",
-              "RelativeToolTip": "masterpiecedashboard.client\\src\\app\\Admn\\add-product\\add-product.component.html",
-              "ViewState": "AQIAABEAAAAAAAAAAAAswCkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-11-16T13:21:20.569Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 69,
+              "DocumentIndex": 72,
               "Title": "index.html",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\index.html",
               "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\index.html",
@@ -1195,7 +1219,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 70,
+              "DocumentIndex": 73,
               "Title": "ContactUsController.cs",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\Controllers\\ContactUsController.cs",
               "RelativeDocumentMoniker": "masterpieceDashboard.Server\\Controllers\\ContactUsController.cs",
@@ -1207,7 +1231,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 71,
+              "DocumentIndex": 74,
               "Title": "ContactRequest.cs",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\DTOs\\ContactRequest.cs",
               "RelativeDocumentMoniker": "masterpieceDashboard.Server\\DTOs\\ContactRequest.cs",
@@ -1219,7 +1243,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 72,
+              "DocumentIndex": 75,
               "Title": "ContactU.cs",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\Models\\ContactU.cs",
               "RelativeDocumentMoniker": "masterpieceDashboard.Server\\Models\\ContactU.cs",
@@ -1231,7 +1255,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 73,
+              "DocumentIndex": 76,
               "Title": "project.component.spec.ts",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\src\\app\\Admn\\project\\project.component.spec.ts",
               "RelativeDocumentMoniker": "masterpiecedashboard.client\\src\\app\\Admn\\project\\project.component.spec.ts",
@@ -1243,7 +1267,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 74,
+              "DocumentIndex": 77,
               "Title": "angular.json",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpiecedashboard.client\\angular.json",
               "RelativeDocumentMoniker": "masterpiecedashboard.client\\angular.json",
@@ -1252,42 +1276,6 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAHAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-10-29T06:52:28.28Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 75,
-              "Title": "TilerDTOs.cs",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\DTOs\\TilerDTOs.cs",
-              "RelativeDocumentMoniker": "masterpieceDashboard.Server\\DTOs\\TilerDTOs.cs",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\DTOs\\TilerDTOs.cs",
-              "RelativeToolTip": "masterpieceDashboard.Server\\DTOs\\TilerDTOs.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T07:39:51.923Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 76,
-              "Title": "TeamDTOs.cs",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\DTOs\\TeamDTOs.cs",
-              "RelativeDocumentMoniker": "masterpieceDashboard.Server\\DTOs\\TeamDTOs.cs",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\DTOs\\TeamDTOs.cs",
-              "RelativeToolTip": "masterpieceDashboard.Server\\DTOs\\TeamDTOs.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T07:39:28.785Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 77,
-              "Title": "CategoriesDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\DTOs\\CategoriesDTO.cs",
-              "RelativeDocumentMoniker": "masterpieceDashboard.Server\\DTOs\\CategoriesDTO.cs",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\My Web Sites\\Masterpiece\\masterpieceDashboard\\masterpieceDashboard.Server\\DTOs\\CategoriesDTO.cs",
-              "RelativeToolTip": "masterpieceDashboard.Server\\DTOs\\CategoriesDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T07:38:05.093Z"
             },
             {
               "$type": "Document",

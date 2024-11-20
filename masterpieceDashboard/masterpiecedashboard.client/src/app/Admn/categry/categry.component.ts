@@ -36,17 +36,35 @@ export class CategryComponent {
       confirmButtonText: 'Yes, delete it!'
     }).then((result) => {
       if (result.isConfirmed) {
-        this._ser.deleteCategory(id).subscribe(() => {
-          Swal.fire(
-            'Deleted!',
-            'This Category has been deleted successfully.',
-            'success'
-          );
-          this.getAllCategory();
-        });
+        this._ser.deleteCategory(id).subscribe(
+          () => {
+            Swal.fire(
+              'Deleted!',
+              'This Category has been deleted successfully.',
+              'success'
+            );
+            this.getAllCategory();
+          },
+          (error) => {
+            if (error.status === 400) {
+              Swal.fire(
+                'Error',
+                'Cannot delete this category because it contains products.',
+                'error'
+              );
+            } else {
+              Swal.fire(
+                'Error',
+                'An error occurred while deleting the category. Please try again.',
+                'error'
+              );
+            }
+          }
+        );
       }
     });
   }
+
 
 
   navigateToAddCategory() {

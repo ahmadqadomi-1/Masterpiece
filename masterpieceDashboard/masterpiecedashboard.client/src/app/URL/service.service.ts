@@ -24,15 +24,12 @@ export class ServiceService {
 
 
   addCategory(data: any): Observable<any> {
-    return this.http.post<any>(`${this.staticData}/Category`, data, {
-      headers: { 'Content-Type': 'application/json' }
-    });
+    return this.http.post<any>(`${this.staticData}/Category`, data);
   }
 
-  EditCategory(id: any, data: any): Observable<any> {
-    return this.http.put<any>(`${this.staticData}/Category/${id}`, data)
+  EditCategory(id: string | null, productData: any) {
+    return this.http.put(`${this.staticData}/Category/${id}`, productData);
   }
-
 
   deleteCategory(id: any): Observable<any> {
 
@@ -42,6 +39,10 @@ export class ServiceService {
   getProduct(): Observable<any> {
     return this.http.get<any>(`${this.staticData}/Product/GetAllProducts`);
 
+  }
+
+  getproductbycategoryid(id: string): Observable<any> {
+    return this.http.get<any>(`${this.staticData}/Product/GetAllProductsForOneCategory/${id}`);
   }
 
   getProductById(id: string): Observable<any> {
@@ -56,6 +57,11 @@ export class ServiceService {
   addProduct(data: FormData): Observable<any> {
     return this.http.post<any>(`${this.staticData}/Product/AddNewProduct`, data);
   }
+
+  addProductToCategory(categoryId: string, data: FormData): Observable<any> {
+    return this.http.post<any>(`${this.staticData}/Category/AddProductToCategory/${categoryId}`, data);
+  }
+
 
 
   deleteProduct(id: any): Observable<any> {
@@ -78,13 +84,11 @@ export class ServiceService {
   }
 
   addProject(data: any): Observable<any> {
-    return this.http.post<any>(`${this.staticData}/Project/AddProject`, data, {
-      headers: { 'Content-Type': 'application/json' }
-    });
+    return this.http.post<any>(`${this.staticData}/Project/AddProject`, data);
   }
 
-  deleteProject(id: any): Observable<any> {
 
+  deleteProject(id: any): Observable<any> {
     return this.http.delete<any>(`${this.staticData}/Project/DeleteProject/${id}`)
   }
 
@@ -99,13 +103,12 @@ export class ServiceService {
   }
 
   EditTeam(id: any, data: any): Observable<any> {
-    return this.http.put<any>(`${this.staticData}/Teams/${id}`, data)
+    return this.http.put<any>(`${this.staticData}/Teams/UpdateTeamByID/${id}`, data);
   }
 
+
   addTeam(data: any): Observable<any> {
-    return this.http.post<any>(`${this.staticData}/Teams/AddTeam`, data, {
-      headers: { 'Content-Type': 'application/json' }
-    });
+    return this.http.post<any>(`${this.staticData}/Teams/AddTeam`, data);
   }
 
   deleteTeam(id: any): Observable<any> {
@@ -124,12 +127,11 @@ export class ServiceService {
   }
 
   EditTiler(id: any, data: any): Observable<any> {
-    return this.http.put<any>(`${this.staticData}/Tiler/${id}`, data)
+    return this.http.put<any>(`${this.staticData}/Tiler/UpdateTilerByID/${id}`, data);
   }
+
   addTiler(data: any): Observable<any> {
-    return this.http.post<any>(`${this.staticData}/Tiler/AddTiler`, data, {
-      headers: { 'Content-Type': 'application/json' }
-    });
+    return this.http.post<any>(`${this.staticData}/Tiler/AddTiler`, data);
   }
 
   deleteTiler(id: any): Observable<any> {

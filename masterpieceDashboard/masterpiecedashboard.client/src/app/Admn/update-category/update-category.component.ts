@@ -17,6 +17,11 @@ export class UpdateCategoryComponent {
     private _active: ActivatedRoute
   ) { }
 
+  image: any
+  imageChange(e: any) {
+    this.image = e.target.files[0];
+  }
+
   ngOnInit() {
     this.param = this._active.snapshot.paramMap.get('id');
     console.log('Category ID:', this.param);
@@ -36,9 +41,15 @@ export class UpdateCategoryComponent {
   }
 
   UpdateCategory(data: any) {
+    const formData = new FormData();
+    for (let key in data) {
+      formData.append(key, data[key]);
+    }
     console.log('Form Data:', data);
-
-    this._ser.EditCategory(this.param, data).subscribe(
+    console.log(this.image, " this.image r ")
+    formData.append("categoryImage", this.image)
+    console.log('category Data:', this.categoryData);
+    this._ser.EditCategory(this.param, formData).subscribe(
       () => {
         Swal.fire({
           icon: 'success',

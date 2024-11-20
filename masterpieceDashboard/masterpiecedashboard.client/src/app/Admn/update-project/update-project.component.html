@@ -6,28 +6,31 @@
 
 <form #EditTheProject="ngForm" (ngSubmit)="UpdateProject(EditTheProject.value)">
   <div class="mb-3">
-    <label for="memberName" class="form-label">Project Name:</label>
-    <input type="text" name="projectName" class="form-control" id="memberName" aria-describedby="nameHelp" required [(ngModel)]="ProjectData.projectName">
+    <label for="projectName" class="form-label">Project Name:</label>
+    <input type="text" name="projectName" class="form-control" id="projectName" required [(ngModel)]="ProjectData.projectName">
   </div>
 
   <div class="mb-3">
-    <label for="memberImage" class="form-label">Project Image:</label>
-    <input type="text" name="projectImage" class="form-control" id="memberImage" aria-describedby="imageHelp" required [(ngModel)]="ProjectData.projectImage">
+    <label for="projectImage" class="form-label">Project Image:</label>
+    <input type="file" name="projectImage" class="form-control" id="projectImage" (change)="imageChange($event)">
   </div>
 
   <div class="mb-3">
-    <label for="memberImage" class="form-label">Project Type:</label>
-    <input type="text" name="projectType" class="form-control" id="memberImage" aria-describedby="imageHelp" required [(ngModel)]="ProjectData.projectType">
+    <label for="projectType" class="form-label">Project Type:</label>
+    <input type="text" name="projectType" class="form-control" id="projectType" required [(ngModel)]="ProjectData.projectType">
   </div>
 
   <div class="mb-3">
-    <label for="memberImage" class="form-label">Project Location:</label>
-    <input type="text" name="location" class="form-control" id="memberImage" aria-describedby="imageHelp" required [(ngModel)]="ProjectData.location">
+    <label for="location" class="form-label">Project Location:</label>
+    <select name="location" class="form-control" id="location" required [(ngModel)]="ProjectData.location">
+      <option value="" disabled>Select a Location</option>
+      <option *ngFor="let governorate of governorates" [value]="governorate">{{governorate}}</option>
+    </select>
   </div>
 
   <div class="mb-3">
-    <label for="memberImage" class="form-label">Project Description:</label>
-    <input type="text" name="description" class="form-control" id="memberImage" aria-describedby="imageHelp" required [(ngModel)]="ProjectData.description">
+    <label for="description" class="form-label">Project Description:</label>
+    <textarea name="description" class="form-control" id="description" rows="5" required [(ngModel)]="ProjectData.description"></textarea>
   </div>
 
   <button type="submit" class="btn btn-primary">Submit</button>

@@ -12,8 +12,7 @@
 
   <div class="mb-3">
     <label for="memberImage" class="form-label">Category Image:</label>
-    <input type="text" name="categoryImage" class="form-control" id="memberImage" aria-describedby="imageHelp" required [(ngModel)]="categoryData.categoryImage">
+    <input type="file" name="categoryImage" class="form-control" id="memberImage" aria-describedby="imageHelp" required [(ngModel)]="categoryData.categoryImage" (change)="imageChange($event)">
   </div>
-
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>

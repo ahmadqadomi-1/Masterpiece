@@ -16,15 +16,17 @@ namespace masterpieceDashboard.Server.Controllers
         }
 
         [HttpGet("GetAllTeams")]
-        public IActionResult Ti()
+        public IActionResult GetAllTeams()
         {
-            var PP = _db.Teams
+            var teams = _db.Teams
                 .OrderBy(team => team.Profession == "إدارة" ? 0 :
-                                  team.Profession == "رجل مبيعات" ? 2 : 1)
-                .ThenBy(team => team.TeamName) 
+                                  team.Profession == "رجل مبيعات" ? 1 : 2) 
+                .ThenBy(team => team.TeamId) 
                 .ToList();
-            return Ok(PP);
+
+            return Ok(teams);
         }
+
 
 
 
@@ -42,19 +44,34 @@ namespace masterpieceDashboard.Server.Controllers
 
 
         [HttpPost("AddTeam")]
-        public IActionResult AddTeam([FromBody] TeamDTOs newTeam)
+        public IActionResult AddTeam([FromForm] TeamDTOs newTeam)
         {
+            if (newTeam == null || newTeam.TeamImg == null)
+            {
+                return BadRequest("Invalid team data or missing image.");
+            }
+
+            var folderPath = Path.Combine(Directory.GetCurrentDirectory(), "img");
+            if (!Directory.Exists(folderPath))
+            {
+                Directory.CreateDirectory(folderPath);
+            }
+
+            string imageFileName = newTeam.TeamImg.FileName;
+            var imageURL = Path.Combine(folderPath, imageFileName);
+
+            using (var stream = new FileStream(imageURL, FileMode.Create))
+            {
+                newTeam.TeamImg.CopyTo(stream);
+            }
+
             var data = new Team
             {
                 TeamName = newTeam.TeamName,
-                TeamImg = newTeam.TeamImg,
+                TeamImg = imageFileName,
                 Profession = newTeam.Profession,
                 TeamPhoneNum = newTeam.TeamPhoneNum,
             };
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
 
             _db.Teams.Add(data);
             _db.SaveChanges();
@@ -62,30 +79,49 @@ namespace masterpieceDashboard.Server.Controllers
             return Ok(data);
         }
 
-        [HttpPut("{id}")]
-        public IActionResult UpdateTeam(int id, [FromBody] TeamDTOs teamDTOs)
+        [HttpPut("UpdateTeamByID/{id}")]
+        public async Task<IActionResult> UpdateTeam(int id, [FromForm] TeamDTOs teamDTOs)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-
             var existingTeam = _db.Teams.FirstOrDefault(c => c.TeamId == id);
-
             if (existingTeam == null)
             {
-                return NotFound();
+                return NotFound("Team not found");
             }
-            existingTeam.TeamName = teamDTOs.TeamName;
-            existingTeam.TeamImg = teamDTOs.TeamImg;
-            existingTeam.Profession = teamDTOs.Profession;
-            existingTeam.TeamPhoneNum = teamDTOs.TeamPhoneNum;
+
+            var folderPath = Path.Combine(Directory.GetCurrentDirectory(), "img");
+            if (!Directory.Exists(folderPath))
+            {
+                Directory.CreateDirectory(folderPath);
+            }
+
+            string? imageFileName = null;
+
+            if (teamDTOs.TeamImg != null)
+            {
+                imageFileName = teamDTOs.TeamImg.FileName;
+                var imageURL = Path.Combine(folderPath, imageFileName);
+                using (var stream = new FileStream(imageURL, FileMode.Create))
+                {
+                    await teamDTOs.TeamImg.CopyToAsync(stream);
+                }
+                existingTeam.TeamImg = imageFileName;
+            }
+
+            if (!string.IsNullOrEmpty(teamDTOs.TeamName))
+                existingTeam.TeamName = teamDTOs.TeamName;
+
+            if (!string.IsNullOrEmpty(teamDTOs.Profession))
+                existingTeam.Profession = teamDTOs.Profession;
+
+            if (!string.IsNullOrEmpty(teamDTOs.TeamPhoneNum))
+                existingTeam.TeamPhoneNum = teamDTOs.TeamPhoneNum;
 
             _db.Teams.Update(existingTeam);
             _db.SaveChanges();
 
             return Ok(existingTeam);
         }
+
 
         [HttpDelete("DeleteTeam/{id}")]
         public IActionResult DeleteTeam(int id)

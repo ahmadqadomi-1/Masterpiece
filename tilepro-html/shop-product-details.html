@@ -293,13 +293,13 @@
 </section>
 
 
-<section class="product-description">
+<section class="product-description" style="direction: rtl;">
 <div class="container pt-0 pb-90">
 <div class="product-discription">
 <div class="tabs-box">
 <div class="tab-btn-box text-center">
 <ul class="tab-btns tab-buttons clearfix">
-<li class="tab-btn active-btn" data-tab="#tab-1">Description</li>
+<li class="tab-btn active-btn" data-tab="#tab-1">التفاصيل</li>
 <li class="tab-btn" data-tab="#tab-2">Reviews</li>
 </ul>
 </div>
@@ -631,7 +631,7 @@ let data = await response.json();
 console.log(data)
 let priceItem = document.getElementById("Disc");
 priceItem.innerHTML += `
-<p class="product-details__content-text1"> ${data.productDescription} </p>
+<p class="product-details__content-text1" style="direction: rtl"> ${data.productDescription} </p>
     `;
   console.log(data);
 }
@@ -664,20 +664,20 @@ let data = await response.json();
 console.log(data)
 let priceItem = document.getElementById("ProductDescriptions");
 priceItem.innerHTML += `
-                <h3 class="product-description__title">Description</h3>
+                <h3 class="product-description__title">وصف المنتج</h3>
 <p class="product-description__text1">
 ${data.productDescription}
 </p>
 <div class="product-description__list">
 <ul class="list-unstyled">
 <li>
-<p><span class="fa fa-arrow-right">${data.productDescriptionList1}</span> </p>
+<p><span class="fa fa-arrow-left">${data.productDescriptionList1}</span> </p>
 </li>
 <li>
-<p><span class="fa fa-arrow-right">${data.productDescriptionList2}</span> </p>
+<p><span class="fa fa-arrow-left">${data.productDescriptionList2}</span> </p>
 </li>
 <li>
-<p><span class="fa fa-arrow-right">${data.productDescriptionList3}</span> </p>
+<p><span class="fa fa-arrow-left">${data.productDescriptionList3}</span> </p>
 </li>
 </ul>
 </div>
@@ -696,8 +696,8 @@ let priceItem = document.getElementById("ImageToPro");
 priceItem.innerHTML += `
         <div class="slider-content">
     <figure class="image-box">
-        <a href="img/${data.productImage}" class="lightbox-image" data-fancybox="gallery">
-            <img src="img/${data.productImage}" alt="${data.productImage3} (image not found)">
+        <a href="https://localhost:44327/api/Category/images/${data.productImage}" class="lightbox-image" data-fancybox="gallery">
+            <img src="https://localhost:44327/api/Category/images/${data.productImage}" alt="${data.productImage3} (image not found)">
         </a>
     </figure>
     <div class="slider-pager">
@@ -705,21 +705,21 @@ priceItem.innerHTML += `
             <li>
                 <a class="active" data-slide-index="0" href="#">
                     <figure>
-                        <img src="img/${data.productImage}" alt="${data.productImage3} (image not found)">
+                        <img src="https://localhost:44327/api/Category/images/${data.productImage}" alt="${data.productImage3} (image not found)">
                     </figure>
                 </a>
             </li>
             <li>
                 <a data-slide-index="1" href="#">
                     <figure>
-                        <img src="img/${data.productImage2}" alt="${data.productImage3} (image not found)">
+                        <img src="https://localhost:44327/api/Category/images/${data.productImage2}" alt="${data.productImage3} (image not found)">
                     </figure>
                 </a>
             </li>
             <li>
                 <a data-slide-index="2" href="#">
                     <figure>
-                        <img src="img/${data.productImage3}" alt="${data.productImage3} (image not found)">
+                        <img src="https://localhost:44327/api/Category/images/${data.productImage3}" alt="${data.productImage3} (image not found)">
                     </figure>
                 </a>
             </li>
@@ -729,8 +729,8 @@ priceItem.innerHTML += `
 
 <div class="slider-content" style="display: none;">
     <figure class="image-box">
-        <a href="img/${data.productImage2}" class="lightbox-image" data-fancybox="gallery">
-            <img src="img/${data.productImage2}" alt="${data.productImage3} (image not found)">
+        <a href="https://localhost:44327/api/Category/images/${data.productImage2}" class="lightbox-image" data-fancybox="gallery">
+            <img src="https://localhost:44327/api/Category/images/${data.productImage2}" alt="${data.productImage3} (image not found)">
         </a>
     </figure>
     <div class="slider-pager">
@@ -738,21 +738,21 @@ priceItem.innerHTML += `
             <li>
                 <a class="active" data-slide-index="0" href="#">
                     <figure>
-                        <img src="img/${data.productImage}" alt="${data.productImage3} (image not found)">
+                        <img src="https://localhost:44327/api/Category/images/${data.productImage}" alt="${data.productImage3} (image not found)">
                     </figure>
                 </a>
             </li>
             <li>
                 <a data-slide-index="1" href="#">
                     <figure>
-                        <img src="img/${data.productImage2}" alt="${data.productImage3} (image not found)">
+                        <img src="https://localhost:44327/api/Category/images/${data.productImage2}" alt="${data.productImage3} (image not found)">
                     </figure>
                 </a>
             </li>
             <li>
                 <a data-slide-index="2" href="#">
                     <figure>
-                        <img src="img/${data.productImage3}" alt="${data.productImage3} (image not found)">
+                        <img src="https://localhost:44327/api/Category/images/${data.productImage3}" alt="${data.productImage3} (image not found)">
                     </figure>
                 </a>
             </li>
@@ -762,8 +762,8 @@ priceItem.innerHTML += `
 
 <div class="slider-content" style="display: none;">
     <figure class="image-box">
-        <a href="img/${data.productImage3}" class="lightbox-image" data-fancybox="gallery">
-            <img src="img/${data.productImage3}" alt="${data.productImage3} (image not found)">
+        <a href="https://localhost:44327/api/Category/images/${data.productImage3}" class="lightbox-image" data-fancybox="gallery">
+            <img src="https://localhost:44327/api/Category/images/${data.productImage3}" alt="${data.productImage3} (image not found)">
         </a>
     </figure>
     <div class="slider-pager">
@@ -771,21 +771,21 @@ priceItem.innerHTML += `
             <li>
                 <a class="active" data-slide-index="0" href="#">
                     <figure>
-                        <img src="img/${data.productImage}" alt="${data.productImage3} (image not found)">
+                        <img src="https://localhost:44327/api/Category/images/${data.productImage}" alt="${data.productImage3} (image not found)">
                     </figure>
                 </a>
             </li>
             <li>
                 <a data-slide-index="1" href="#">
                     <figure>
-                        <img src="img/${data.productImage2}" alt="${data.productImage3} (image not found)">
+                        <img src="https://localhost:44327/api/Category/images/${data.productImage2}" alt="${data.productImage3} (image not found)">
                     </figure>
                 </a>
             </li>
             <li>
                 <a data-slide-index="2" href="#">
                     <figure>
-                        <img src="img/${data.productImage3}" alt="${data.productImage3} (image not found)">
+                        <img src="https://localhost:44327/api/Category/images/${data.productImage3}" alt="${data.productImage3} (image not found)">
                     </figure>
                 </a>
             </li>

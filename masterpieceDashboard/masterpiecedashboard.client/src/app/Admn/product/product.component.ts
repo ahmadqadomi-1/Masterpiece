@@ -48,7 +48,7 @@ export class ProductComponent {
     });
   }
 
-  navigateToAddProduct() {
-    this.router.navigate(['/dashboard/AddProduct']);
-  }
+  //navigateToAddProduct() {
+  //  this.router.navigate(['/dashboard/AddProduct']);
+  //}
 }

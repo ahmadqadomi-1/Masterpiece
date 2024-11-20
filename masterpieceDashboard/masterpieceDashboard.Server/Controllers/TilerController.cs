@@ -36,12 +36,32 @@ namespace masterpieceDashboard.Server.Controllers
         }
 
         [HttpPost("AddTiler")]
-        public IActionResult AddTiler([FromBody] TilerDTOs tilerDT)
+        public IActionResult AddTiler([FromForm] TilerDTOs tilerDT)
         {
+
+            if (tilerDT == null || tilerDT.TilerImg == null)
+            {
+                return BadRequest("Invalid team data or missing image.");
+            }
+
+            var folderPath = Path.Combine(Directory.GetCurrentDirectory(), "img");
+            if (!Directory.Exists(folderPath))
+            {
+                Directory.CreateDirectory(folderPath);
+            }
+
+            string imageFileName = tilerDT.TilerImg.FileName;
+            var imageURL = Path.Combine(folderPath, imageFileName);
+
+            using (var stream = new FileStream(imageURL, FileMode.Create))
+            {
+                tilerDT.TilerImg.CopyTo(stream);
+            }
+
             var data = new Tiler
             {
                 TilerName = tilerDT.TilerName,
-                TilerImg = tilerDT.TilerImg,
+                TilerImg = imageFileName,
                 Profession = tilerDT.Profession,
                 TilerPhoneNum = tilerDT.TilerPhoneNum,
             };
@@ -56,27 +76,45 @@ namespace masterpieceDashboard.Server.Controllers
             return Ok(data);
         }
 
-        [HttpPut("{id}")]
-        public IActionResult UpdateTiler(int id, [FromBody] TilerDTOs tilerDTOs)
+        [HttpPut("UpdateTilerByID/{id}")]
+        public async Task<IActionResult> UpdateTiler(int id, [FromForm] TilerDTOs tilerDTOs)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-
             var existingTiler = _db.Tilers.FirstOrDefault(c => c.TilerId == id);
-
             if (existingTiler == null)
             {
-                return NotFound();
+                return NotFound("Tiler not found");
             }
-            existingTiler.TilerName = tilerDTOs.TilerName;
-            existingTiler.TilerImg = tilerDTOs.TilerImg;
-            existingTiler.Profession = tilerDTOs.Profession;
-            existingTiler.TilerPhoneNum = tilerDTOs.TilerPhoneNum;
+
+            var folderPath = Path.Combine(Directory.GetCurrentDirectory(), "img");
+            if (!Directory.Exists(folderPath))
+            {
+                Directory.CreateDirectory(folderPath);
+            }
+
+            string? imageFileName = null;
+
+            if (tilerDTOs.TilerImg != null)
+            {
+                imageFileName = tilerDTOs.TilerImg.FileName;
+                var imageURL = Path.Combine(folderPath, imageFileName);
+                using (var stream = new FileStream(imageURL, FileMode.Create))
+                {
+                    await tilerDTOs.TilerImg.CopyToAsync(stream);
+                }
+                existingTiler.TilerImg = imageFileName;
+            }
+
+            if (!string.IsNullOrEmpty(tilerDTOs.TilerName))
+                existingTiler.TilerName = tilerDTOs.TilerName;
+
+            if (!string.IsNullOrEmpty(tilerDTOs.Profession))
+                existingTiler.Profession = tilerDTOs.Profession;
+
+            if (!string.IsNullOrEmpty(tilerDTOs.TilerPhoneNum))
+                existingTiler.TilerPhoneNum = tilerDTOs.TilerPhoneNum;
 
             _db.Tilers.Update(existingTiler);
-            _db.SaveChanges();
+            await _db.SaveChangesAsync();
 
             return Ok(existingTiler);
         }

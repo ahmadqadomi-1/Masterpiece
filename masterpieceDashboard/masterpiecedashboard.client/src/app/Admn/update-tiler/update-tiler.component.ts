@@ -6,21 +6,18 @@ import Swal from 'sweetalert2';
 @Component({
   selector: 'app-update-tiler',
   templateUrl: './update-tiler.component.html',
-  styleUrl: './update-tiler.component.css'
+  styleUrls: ['./update-tiler.component.css']
 })
 export class UpdateTilerComponent implements OnInit {
   param: string | null = null;
   tilerData: any = {
     tilerName: '',
-    tilerImg: '',
     profession: '',
     tilerPhoneNum: ''
   };
+  selectedFile: File | null = null;
 
-  constructor(
-    private _ser: ServiceService,
-    private _active: ActivatedRoute
-  ) { }
+  constructor(private _ser: ServiceService, private _active: ActivatedRoute) { }
 
   ngOnInit() {
     this.param = this._active.snapshot.paramMap.get('id');
@@ -39,38 +36,51 @@ export class UpdateTilerComponent implements OnInit {
     }
   }
 
+  onFileSelected(event: any) {
+    const file = event.target.files[0];
+    if (file) {
+      this.selectedFile = file;
+    }
+  }
 
   UpdateTiler() {
-    console.log('Form Data:', this.tilerData);
-    if (this.param && this.tilerData) {
-      this._ser.EditTiler(this.param, this.tilerData).subscribe(
-        () => {
-          Swal.fire({
-            icon: 'success',
-            title: 'Success',
-            text: 'The tiler has been updated successfully!',
-            confirmButtonColor: '#3085d6'
-          });
-        },
-        (error) => {
-          console.error('Error:', error);
-          Swal.fire({
-            icon: 'error',
-            title: 'Error',
-            text: 'An error occurred while updating the tiler.',
-            confirmButtonColor: '#d33'
-          });
-        }
-      );
-    } else {
+    if (!this.param || !this.tilerData) {
       Swal.fire({
         icon: 'warning',
         title: 'Warning',
         text: 'Tiler data is missing. Please try again.',
         confirmButtonColor: '#d33'
       });
+      return;
     }
+
+    const formData = new FormData();
+    formData.append('tilerName', this.tilerData.tilerName);
+    formData.append('profession', this.tilerData.profession);
+    formData.append('tilerPhoneNum', this.tilerData.tilerPhoneNum);
+
+    if (this.selectedFile) {
+      formData.append('tilerImg', this.selectedFile);
+    }
+
+    this._ser.EditTiler(this.param, formData).subscribe(
+      () => {
+        Swal.fire({
+          icon: 'success',
+          title: 'Success',
+          text: 'The tiler has been updated successfully!',
+          confirmButtonColor: '#3085d6'
+        });
+      },
+      (error) => {
+        console.error('Error:', error);
+        Swal.fire({
+          icon: 'error',
+          title: 'Error',
+          text: 'An error occurred while updating the tiler.',
+          confirmButtonColor: '#d33'
+        });
+      }
+    );
   }
-
-
 }

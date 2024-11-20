@@ -4,7 +4,7 @@
     {
         public string? TilerName { get; set; }
 
-        public string? TilerImg { get; set; }
+        public IFormFile? TilerImg { get; set; }
 
         public string? Profession { get; set; }
 

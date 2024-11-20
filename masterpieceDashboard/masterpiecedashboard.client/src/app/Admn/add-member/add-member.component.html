@@ -2,22 +2,61 @@
   <span>Add New Member</span>
 </h2>
 <hr />
-<form #CreateMember="ngForm" (ngSubmit)="AddNewMember(CreateMember.value)">
+<form #CreateMember="ngForm" (ngSubmit)="AddNewMember(CreateMember)">
   <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Member Name:</label>
-    <input type="text" name="teamName" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required="" ngModel>
+    <label for="teamName" class="form-label">Member Name:</label>
+    <input type="text"
+           name="teamName"
+           class="form-control"
+           id="teamName"
+           required
+           ngModel
+           #teamName="ngModel" />
+    <div *ngIf="teamName.invalid && teamName.touched" class="text-danger">
+      Member name is required.
+    </div>
   </div>
   <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Member Image:</label>
-    <input type="text" name="teamImg" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required="" ngModel>
+    <label for="teamImg" class="form-label">Member Image:</label>
+    <input type="file"
+           name="teamImg"
+           class="form-control"
+           id="teamImg"
+           required
+           (change)="imageChange($event)" />
+    <div *ngIf="!image && isSubmitted" class="text-danger">
+      Member image is required.
+    </div>
   </div>
   <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">profession:</label>
-    <input type="text" name="profession" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required="" ngModel>
+    <label for="profession" class="form-label">Profession:</label>
+    <select name="profession"
+            id="profession"
+            class="form-control"
+            required
+            ngModel
+            #profession="ngModel">
+      <option value="" disabled>Select Profession</option>
+      <option value="إدارة">إدارة</option>
+      <option value="رجل مبيعات">رجل مبيعات</option>
+      <option value="ساحات">ساحات</option>
+    </select>
+    <div *ngIf="profession.invalid && profession.touched" class="text-danger">
+      Profession is required.
+    </div>
   </div>
   <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Phone Number:</label>
-    <input type="text" name="teamPhoneNum" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required="" ngModel>
+    <label for="teamPhoneNum" class="form-label">Phone Number:</label>
+    <input type="text"
+           name="teamPhoneNum"
+           class="form-control"
+           id="teamPhoneNum"
+           required
+           ngModel
+           #teamPhoneNum="ngModel" />
+    <div *ngIf="teamPhoneNum.invalid && teamPhoneNum.touched" class="text-danger">
+      Phone number is required.
+    </div>
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>

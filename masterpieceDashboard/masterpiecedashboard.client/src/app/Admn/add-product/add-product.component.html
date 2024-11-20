@@ -2,40 +2,102 @@
   <span>Add New Product</span>
 </h2>
 <hr />
-<form #CreateProduct="ngForm" (ngSubmit)="AddNewProduct(CreateProduct.value)">
+<form #CreateProduct="ngForm" (ngSubmit)="AddNewProduct(CreateProduct)">
   <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Product Name:</label>
-    <input type="text" name="productName" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required="" ngModel>
-  </div>
-  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Product Image:</label>
-    <input type="text" name="productImage" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required="" ngModel>
-  </div>
-  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Product Description:</label>
-    <input type="text" name="productDescription" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required="" ngModel>
-  </div>
-
-  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Product feature1:</label>
-    <input type="text" name="productDescriptionList1" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required="" ngModel>
-  </div>
-  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Product feature2:</label>
-    <input type="text" name="productDescriptionList2" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required="" ngModel>
-  </div>
-  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Product feature3:</label>
-    <input type="text" name="productDescriptionList3" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required="" ngModel>
+    <label for="productName" class="form-label">Product Name:</label>
+    <input type="text"
+           name="productName"
+           class="form-control"
+           id="productName"
+           required
+           ngModel
+           #productName="ngModel" />
+    <div *ngIf="productName.invalid && productName.touched" class="text-danger">
+      Product Name is required.
+    </div>
   </div>
 
   <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Product Price:</label>
-    <input type="number" name="price" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required="" ngModel>
+    <label for="productImage" class="form-label">Product Image 1:</label>
+    <input type="file"
+           name="productImage"
+           class="form-control"
+           id="productImage"
+           required
+           (change)="imageChange1($event)" />
+    <div *ngIf="!image1 && isSubmitted" class="text-danger">
+      Product Image 1 is required.
+    </div>
   </div>
+
   <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Stock:</label>
-    <input type="number" name="stock" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required="" ngModel>
+    <label for="productImage2" class="form-label">Product Image 2:</label>
+    <input type="file"
+           name="productImage2"
+           class="form-control"
+           id="productImage2"
+           required
+           (change)="imageChange2($event)" />
+    <div *ngIf="!image2 && isSubmitted" class="text-danger">
+      Product Image 2 is required.
+    </div>
   </div>
+
+  <div class="mb-3">
+    <label for="productImage3" class="form-label">Product Image 3:</label>
+    <input type="file"
+           name="productImage3"
+           class="form-control"
+           id="productImage3"
+           required
+           (change)="imageChange3($event)" />
+    <div *ngIf="!image3 && isSubmitted" class="text-danger">
+      Product Image 3 is required.
+    </div>
+  </div>
+
+  <div class="mb-3">
+    <label for="productDescription" class="form-label">Product Description:</label>
+    <input type="text"
+           name="productDescription"
+           class="form-control"
+           id="productDescription"
+           required
+           ngModel
+           #productDescription="ngModel" />
+    <div *ngIf="productDescription.invalid && productDescription.touched" class="text-danger">
+      Product Description is required.
+    </div>
+  </div>
+
+  <!-- Additional fields for features and price -->
+  <div class="mb-3">
+    <label for="price" class="form-label">Product Price:</label>
+    <input type="number"
+           name="price"
+           class="form-control"
+           id="price"
+           required
+           ngModel
+           #price="ngModel" />
+    <div *ngIf="price.invalid && price.touched" class="text-danger">
+      Product Price is required.
+    </div>
+  </div>
+
+  <div class="mb-3">
+    <label for="stock" class="form-label">Stock:</label>
+    <input type="number"
+           name="stock"
+           class="form-control"
+           id="stock"
+           required
+           ngModel
+           #stock="ngModel" />
+    <div *ngIf="stock.invalid && stock.touched" class="text-danger">
+      Stock is required.
+    </div>
+  </div>
+
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>

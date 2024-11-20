@@ -2,26 +2,29 @@
   <span>Add New Project</span>
 </h2>
 <hr />
-<form #CreateProject="ngForm" (ngSubmit)="AddNewProject(CreateProject.value)">
+<form #CreateProject="ngForm" (ngSubmit)="AddNewProject(CreateProject)">
   <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Project Name:</label>
-    <input type="text" name="projectName" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required="" ngModel>
+    <label for="projectName" class="form-label">Project Name:</label>
+    <input type="text" name="projectName" class="form-control" id="projectName" required ngModel>
   </div>
   <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Project Type:</label>
-    <input type="text" name="projectType" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required="" ngModel>
+    <label for="projectType" class="form-label">Project Type:</label>
+    <input type="text" name="projectType" class="form-control" id="projectType" required ngModel>
   </div>
   <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Project Image:</label>
-    <input type="text" name="projectImage" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required="" ngModel>
+    <label for="projectImage" class="form-label">Project Image:</label>
+    <input type="file" name="projectImage" class="form-control" id="projectImage" required (change)="imageChange($event)">
   </div>
   <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Project Location:</label>
-    <input type="text" name="location" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required="" ngModel>
+    <label for="location" class="form-label">Project Location:</label>
+    <select name="location" class="form-control" id="location" required ngModel>
+      <option value="" disabled selected>Select a Location</option>
+      <option *ngFor="let governorate of governorates" [value]="governorate">{{governorate}}</option>
+    </select>
   </div>
   <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Project Description</label>
-    <input type="text" name="description" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required="" ngModel>
+    <label for="description" class="form-label">Project Description:</label>
+    <input type="text" name="description" class="form-control" id="description" required ngModel>
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>

@@ -12,7 +12,7 @@ async function Category() {
     <div class="image-box">
     <figure class="image overlay-anim">
         <a href="#" onclick="save(${category.categoryId});">
-            <img src="img/${category.categoryImage}" width="575px" height="575px" alt="${category.categoryName} (Image not found)">
+            <img src="https://localhost:44327/api/Category/images/${category.categoryImage}" width="575px" height="575px" alt="${category.categoryName} (Image not found)">
         </a>
     </figure>
     <figure class="image-2">
@@ -84,7 +84,7 @@ async function FeedBack() {
 <div class="content-box">
 <div class="text"> ${feedbackk.message} </div>
 <div class="auther-info">
-<img src=" ${feedbackk.userFeedbackImage} " width="70px" height="70px" alt=" ${feedbackk.userFeedbackImage}  (Image not found) ">
+<img src=" https://localhost:44327/api/Category/images/${feedbackk.userFeedbackImage} " width="70px" height="70px" alt=" ${feedbackk.userFeedbackImage}  (Image not found) ">
 <div class="info-box">
 <h6 class="title"> ${feedbackk.name} </h6>
 <span> ${feedbackk.profession} </span>
@@ -115,7 +115,7 @@ async function ProjectData() {
         <div class="image-box">
             <figure class="image">
                 <a href="shop-product-details.html">
-                    <img src="${Project.projectImage}" alt="${Project.projectImage} (Image not found)">
+                    <img src="https://localhost:44327/api/Category/images/${Project.projectImage}" alt="${Project.projectImage} (Image not found)">
                 </a>
             </figure>
         </div>

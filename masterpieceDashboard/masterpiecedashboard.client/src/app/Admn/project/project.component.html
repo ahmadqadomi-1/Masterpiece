@@ -27,8 +27,7 @@
       <!--<td>{{ Project.projectId }}</td>-->
       <td style="text-align: center;">{{ Project.projectName }}</td>
       <td style="text-align: center;">{{ Project.projectType }}</td>
-      <td style="text-align: center;">{{ Project.projectImage }}</td>
-
+      <td style="text-align: center;"> <img src="https://localhost:7118/api/Product/images/{{ Project.projectImage  }}" width="50" height="50" /> </td>
       <td style="text-align: center;">{{ Project.projectDate | date: 'MM/dd/yyyy, HH:mm' }}</td>
       <td style="text-align: center;">{{ Project.location }}</td>
       <td style="text-align: center;">{{ Project.description }}</td>

@@ -2,14 +2,31 @@
   <span>Add New Category</span>
 </h2>
 <hr />
-<form #CreateCategory="ngForm" (ngSubmit)="AddNewCategory(CreateCategory.value)">
+<form #CreateCategory="ngForm" (ngSubmit)="AddNewCategory(CreateCategory)">
   <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Category Name:</label>
-    <input type="text" name="categoryName" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required="" ngModel>
+    <label for="CategoryName" class="form-label">Category Name:</label>
+    <input type="text"
+           name="CategoryName"
+           class="form-control"
+           id="CategoryName"
+           required
+           ngModel
+           #CategoryName="ngModel">
+    <div *ngIf="CategoryName.invalid && CategoryName.touched" class="text-danger">
+      Category name is required.
+    </div>
   </div>
   <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Category Image:</label>
-    <input type="text" name="categoryImage" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required="" ngModel>
+    <label for="CategoryImage" class="form-label">Category Image:</label>
+    <input type="file"
+           name="CategoryImage"
+           class="form-control"
+           id="CategoryImage"
+           required
+           (change)="imageChange($event)">
+    <div *ngIf="!image && isSubmitted" class="text-danger">
+      Please select an image.
+    </div>
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>

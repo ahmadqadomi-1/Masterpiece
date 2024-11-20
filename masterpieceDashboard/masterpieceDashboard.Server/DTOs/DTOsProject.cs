@@ -8,7 +8,7 @@
 
         public DateTime? ProjectDate { get; set; }
 
-        public string? ProjectImage { get; set; }
+        public IFormFile? ProjectImage { get; set; }
 
         public string? Location { get; set; }
 

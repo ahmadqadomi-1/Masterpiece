@@ -5,18 +5,40 @@ import Swal from 'sweetalert2';
 @Component({
   selector: 'app-add-category',
   templateUrl: './add-category.component.html',
-  styleUrl: './add-category.component.css'
+  styleUrls: ['./add-category.component.css']
 })
 export class AddCategoryComponent {
-  ngOnInit() {
+  image: any;
+  isSubmitted = false; 
+
+  constructor(private _ser: ServiceService) { }
+
+  ngOnInit() { }
+
+  imageChange(e: any) {
+    this.image = e.target.files[0];
   }
 
-  constructor(private _ser: ServiceService) {
+  AddNewCategory(form: any) {
+    this.isSubmitted = true;
 
-  }
+    if (!form.valid || !this.image) {
+      Swal.fire({
+        icon: 'error',
+        title: 'Form Error',
+        text: 'Please fill in all required fields and upload an image.',
+        confirmButtonColor: '#d33'
+      });
+      return;
+    }
 
-  AddNewCategory(data: any) {
-    this._ser.addCategory(data).subscribe(
+    const formData = new FormData();
+    for (let key in form.value) {
+      formData.append(key, form.value[key]);
+    }
+    formData.append("CategoryImage", this.image);
+
+    this._ser.addCategory(formData).subscribe(
       () => {
         Swal.fire({
           icon: 'success',
@@ -24,33 +46,24 @@ export class AddCategoryComponent {
           text: 'The Category Added Successfully',
           confirmButtonColor: '#3085d6'
         });
+        this.isSubmitted = false; 
+        form.reset(); 
+        this.image = null; 
       },
       (error) => {
+        let errorMessage = 'An unexpected error occurred. Please try again later.';
         if (error.status === 400) {
-          Swal.fire({
-            icon: 'error',
-            title: 'Error',
-            text: 'There was an error in the data you submitted. Please check your inputs.',
-            confirmButtonColor: '#d33'
-          });
+          errorMessage = 'There was an error in the data you submitted. Please check your inputs.';
         } else if (error.status === 500) {
-          Swal.fire({
-            icon: 'error',
-            title: 'Server Error',
-            text: 'An internal server error occurred. Please try again later.',
-            confirmButtonColor: '#d33'
-          });
-        } else {
-          Swal.fire({
-            icon: 'error',
-            title: 'Unexpected Error',
-            text: 'An unexpected error occurred: ' + error.message,
-            confirmButtonColor: '#d33'
-          });
+          errorMessage = 'An internal server error occurred. Please try again later.';
         }
+        Swal.fire({
+          icon: 'error',
+          title: 'Error',
+          text: errorMessage,
+          confirmButtonColor: '#d33'
+        });
       }
     );
   }
-
-
 }

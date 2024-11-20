@@ -1,0 +1,54 @@
+<h2 class="text-center my-4 d-flex flex-column align-items-center">
+  <!--<a routerLink="/adminDashboard" class="header-logo-box d-flex flex-column align-items-center">-->
+  <!--<img src="assets/media/logo.png" alt="logo" class="header-logo mb-3">-->
+  <span>Products</span>
+  <!--</a>-->
+</h2>
+<hr />
+
+<div style="display: flex; justify-content: center; align-items: center;">
+  <button class="btn btn-primary" (click)="navigateToAddProduct()">Add New Product</button>
+</div>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <!--<th scope="col">Product Id</th>-->
+      <th scope="col" style="text-align: center;">Product Name</th>
+      <th scope="col" style="text-align: center;">Product Image 1</th>
+      <th scope="col" style="text-align: center;">Product Image 2</th>
+      <th scope="col" style="text-align: center;">Product Image 3</th>
+      <th scope="col" style="text-align: center;">Product Description</th>
+      <th scope="col" style="text-align: center;">Product feature1</th>
+      <th scope="col" style="text-align: center;">Product feature2</th>
+      <th scope="col" style="text-align: center;">Product feature3</th>
+      <th scope="col" style="text-align: center;">Product Price</th>
+      <th scope="col" style="text-align: center;">Stock</th>
+      <th scope="col" style="text-align: center;">Product Rate</th>
+      <th scope="col" style="text-align: center;">Edit</th>
+      <th scope="col" style="text-align: center;">Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let Products of ProductArray">
+      <!--<td>{{ Products.productId }}</td>-->
+      <td style="text-align: center;">{{ Products.productName }}</td>
+      <td style="text-align: center;"> <img src="https://localhost:7118/api/Product/images/{{ Products.productImage }}" width="50" height="50" /> </td>
+      <td style="text-align: center;"> <img src="https://localhost:7118/api/Product/images/{{ Products.productImage2 }}" width="50" height="50" /> </td>
+      <td style="text-align: center;"> <img src="https://localhost:7118/api/Product/images/{{ Products.productImage3 }}" width="50" height="50" /> </td>
+      <td style="text-align: center;">{{ Products.productDescription }}</td>
+      <td style="text-align: center;">{{ Products.productDescriptionList1 }} </td>
+      <td style="text-align: center;">{{ Products.productDescriptionList2 }} </td>
+      <td style="text-align: center;">{{ Products.productDescriptionList3 }} </td>
+      <td style="text-align: center;">{{ Products.price }} JOD</td>
+      <td style="text-align: center;">{{ Products.stock }} Meters</td>
+      <td style="text-align: center;">{{ Products.productRate }} Stars</td>
+      <td style="text-align: center;">
+        <button class="btn btn-success" [routerLink]="['/dashboard/UpdateProduct', Products.productId]">Edit</button>
+      </td>
+      <td style="text-align: center;">
+        <button class="btn btn-danger" (click)="deleteProductById(Products.productId)">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

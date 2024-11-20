@@ -2,22 +2,57 @@
   <span>Add New Tiler</span>
 </h2>
 <hr />
-<form #CreateTiler="ngForm" (ngSubmit)="AddNewTiler(CreateTiler.value)">
+<form #CreateTiler="ngForm" (ngSubmit)="AddNewTiler(CreateTiler)">
   <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Tiler Name:</label>
-    <input type="text" name="tilerName" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required="" ngModel>
+    <label for="tilerName" class="form-label">Tiler Name:</label>
+    <input type="text"
+           name="tilerName"
+           class="form-control"
+           id="tilerName"
+           required
+           ngModel
+           #tilerName="ngModel" />
+    <div *ngIf="tilerName.invalid && tilerName.touched" class="text-danger">
+      Tiler name is required.
+    </div>
   </div>
   <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Tiler Image:</label>
-    <input type="text" name="tilerImg" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required="" ngModel>
+    <label for="tilerImg" class="form-label">Tiler Image:</label>
+    <input type="file"
+           name="tilerImg"
+           class="form-control"
+           id="tilerImg"
+           required
+           (change)="imageChange($event)" />
+    <div *ngIf="!image && isSubmitted" class="text-danger">
+      Tiler image is required.
+    </div>
   </div>
   <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">profession:</label>
-    <input type="text" name="profession" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required="" ngModel>
+    <label for="profession" class="form-label">Profession:</label>
+    <input type="text"
+           name="profession"
+           class="form-control"
+           id="profession"
+           required
+           ngModel
+           #profession="ngModel" />
+    <div *ngIf="profession.invalid && profession.touched" class="text-danger">
+      Profession is required.
+    </div>
   </div>
   <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Phone Number:</label>
-    <input type="text" name="tilerPhoneNum" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required="" ngModel>
+    <label for="tilerPhoneNum" class="form-label">Phone Number:</label>
+    <input type="text"
+           name="tilerPhoneNum"
+           class="form-control"
+           id="tilerPhoneNum"
+           required
+           ngModel
+           #tilerPhoneNum="ngModel" />
+    <div *ngIf="tilerPhoneNum.invalid && tilerPhoneNum.touched" class="text-danger">
+      Phone number is required.
+    </div>
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>

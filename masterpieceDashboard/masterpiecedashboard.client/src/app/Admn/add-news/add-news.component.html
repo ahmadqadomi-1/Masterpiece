@@ -1,0 +1,49 @@
+<h2 class="text-center my-4 d-flex flex-column align-items-center">
+  <span>Add New News</span>
+</h2>
+<hr />
+<form #CreateNews="ngForm" (ngSubmit)="AddNewNews(CreateNews)">
+  <div class="mb-3">
+    <label for="newsName" class="form-label">News Name:</label>
+    <input type="text"
+           name="newsName"
+           class="form-control"
+           id="newsName"
+           required
+           ngModel
+           #newsName="ngModel">
+    <div *ngIf="newsName.invalid && newsName.touched" class="text-danger">
+      News name is required.
+    </div>
+  </div>
+
+  <div class="mb-3">
+    <label for="youtubeUrl" class="form-label">Youtube URL:</label>
+    <input type="text"
+           name="youtubeUrl"
+           class="form-control"
+           id="youtubeUrl"
+           required
+           ngModel
+           #youtubeUrl="ngModel">
+    <div *ngIf="youtubeUrl.invalid && youtubeUrl.touched" class="text-danger">
+      Youtube URL is required.
+    </div>
+  </div>
+
+  <div class="mb-3">
+    <label for="newsDescription" class="form-label">Description:</label>
+    <input type="text"
+           name="newsDescription"
+           class="form-control"
+           id="newsDescription"
+           required
+           ngModel
+           #newsDescription="ngModel">
+    <div *ngIf="newsDescription.invalid && newsDescription.touched" class="text-danger">
+      Description is required.
+    </div>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>

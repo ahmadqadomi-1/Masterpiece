@@ -26,15 +26,12 @@ namespace masterpieceDashboard.Server.Controllers
         [HttpPost("login")]
         public IActionResult Log([FromForm] UserAdminDTO admin)
         {
-            // التحقق من بيانات تسجيل الدخول
             var logg = _db.Admins.FirstOrDefault(x => x.Email == admin.Email && x.Password == admin.Password);
             if (logg == null)
             {
-                // إعادة رسالة خطأ واضحة إذا كانت البيانات غير صحيحة
                 return BadRequest(new { message = "Password or email invalid" });
             }
 
-            // إعادة الحقول المطلوبة فقط
             return Ok(new { userId = logg.Id, userName = logg.Username });
         }
 

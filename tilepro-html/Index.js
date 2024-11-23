@@ -1,5 +1,4 @@
 async function Category() {
-    // debugger
     let url = `https://localhost:44327/api/Category/GetAllCategories`;
     let response = await fetch(url);
     let data = await response.json();

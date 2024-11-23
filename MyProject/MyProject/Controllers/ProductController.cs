@@ -158,5 +158,30 @@ namespace MyProject.Controllers
         }
 
 
+        [HttpGet("checkrating")]
+        public IActionResult checkrating()
+        {
+            var count = _db.Ratings.Count();
+            var x = _db.Ratings.Sum(x => x.RatingValue) / count;
+            return Ok(x);
+        }
+
+
+        [HttpGet("GetProductRate/{id}")]
+        public IActionResult GetProductRate(int id)
+        {
+            var product = _db.Products
+                .Where(p => p.ProductId == id)
+                .Select(p => new { p.ProductId, p.ProductRate })
+                .FirstOrDefault();
+
+            if (product == null)
+            {
+                return NotFound("Product not found.");
+            }
+
+            return Ok(product);
+        }
+
     }
 }

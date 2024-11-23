@@ -308,7 +308,6 @@
             let orderNotes = document.getElementById("orderNotes").value;
     
             if (paymentMethod === "الدفع عند الإستلام") {
-                // عرض رسالة نجاح للدفع عند الاستلام
                 Swal.fire({
                     text: "تم تقديم الطلب بنجاح",
                     icon: "success",
@@ -327,11 +326,9 @@
                     comment: orderNotes
                 };
     
-                // التحقق من البيانات المرسلة
                 console.log("Order data to be sent:", orderData);
     
                 try {
-                    // إرسال بيانات الطلب إلى API لقاعدة البيانات
                     let response = await fetch("https://localhost:44327/api/Order", {
                         method: "POST",
                         headers: {
@@ -341,11 +338,9 @@
                     });
     
                     if (response.ok) {
-                        // إذا تم حفظ الطلب بنجاح في قاعدة البيانات
                         localStorage.removeItem("cartItems");
-                        window.location.href = "index.html"; // إعادة توجيه المستخدم إلى الصفحة الرئيسية
+                        window.location.href = "index.html";
                     } else {
-                        // في حالة حدوث خطأ في الحفظ
                         Swal.fire({
                             text: "حدث خطأ أثناء حفظ الطلب.",
                             icon: "error",
@@ -355,7 +350,6 @@
                     }
                 } catch (error) {
                     console.error("Error:", error);
-                    // في حالة فشل الاتصال بالخادم
                     Swal.fire({
                         text: "فشل الاتصال بالخادم.",
                         icon: "error",
@@ -364,7 +358,6 @@
                     });
                 }
             } else if (paymentMethod === "Paypal") {
-                // توجيه المستخدم إلى صفحة الدفع عبر PayPal
                 window.location.href = "Paypal.html";
             }
         });
@@ -411,21 +404,16 @@
     
             tableBody.innerHTML = "";
             let cartSubtotal = 0;
-            let shippingFees = 0.00;
     
-            // لتسجيل الأخطاء والأشياء التي قد تكون مفقودة
             console.log("Cart items in localStorage:", cartItems);
     
             for (let item of cartItems) {
                 let url = `https://localhost:44327/api/Product/GetProductByID/${item.id}`;
                 try {
                     let response = await fetch(url);
-    
                     if (!response.ok) throw new Error("Network response was not ok");
     
                     let productData = await response.json();
-    
-                    // تحقق من شكل البيانات المستلمة
                     console.log("Product data:", productData);
     
                     let subtotal = productData.price * item.quantity;
@@ -446,10 +434,8 @@
                         <td class="product-subtotal"><span class="amount">JOD ${subtotal.toFixed(2)}</span></td>
                     `;
     
-                    // Add event listener to the "Remove" button
                     row.querySelector(".remove").addEventListener("click", function(event) {
                         event.preventDefault();
-                        // Show confirmation alert
                         Swal.fire({
                             title: "هل ترغب في حذف المنتج من العربة؟",
                             icon: "warning",
@@ -458,7 +444,6 @@
                             cancelButtonText: "إلغاء"
                         }).then((result) => {
                             if (result.isConfirmed) {
-                                // Remove the item and show success message
                                 removeItemFromCart(item.id);
                                 Swal.fire({
                                     text: "تم الحذف بنجاح!",
@@ -482,25 +467,29 @@
                 }
             }
     
-            document.querySelector(".cart-total tr:nth-child(1) td:nth-child(2)").textContent = `JOD ${cartSubtotal.toFixed(2)}`;
-            document.querySelector(".cart-total tr:nth-child(2) td:nth-child(2)").textContent = `JOD ${shippingFees.toFixed(2)}`;
-            document.querySelector(".cart-total tr:nth-child(3) td:nth-child(2)").textContent = `JOD ${(cartSubtotal + shippingFees).toFixed(2)}`;
-            localStorage.setItem("amount", (cartSubtotal + shippingFees).toFixed(2));
+            document.getElementById("cartSubtotal").innerText = `JOD ${cartSubtotal.toFixed(2)}`;
+            document.getElementById("orderTotal").innerText = `JOD ${cartSubtotal.toFixed(2)}`;
+            localStorage.setItem("amount", cartSubtotal.toFixed(2));
+            updateCartItemCount();
         }
     
-        // Function to remove an item from the cart
         function removeItemFromCart(itemId) {
             let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
-            // Filter out the item with the matching ID
             cartItems = cartItems.filter(item => item.id !== itemId);
-            // Update localStorage with the new cart items
             localStorage.setItem("cartItems", JSON.stringify(cartItems));
-            // Re-render the cart
             getAllProductInCart();
+            updateCartItemCount();
         }
     
-        getAllProductInCart();
+        function updateCartItemCount() {
+            let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+            let itemCount = cartItems.reduce((total, item) => total + item.quantity, 0);
+            document.querySelector(".cart-btn .badge").textContent = itemCount;
+        }
+    
+        updateCartItemCount();
     </script>
+    
     
     
     

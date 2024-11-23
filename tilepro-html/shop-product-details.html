@@ -18,6 +18,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     
     <style>
+        .star-container {
+    position: relative;
+    display: inline-block;
+    width: 16px; /* عرض النجمة */
+    height: 16px; /* ارتفاع النجمة */
+    overflow: hidden;
+}
+
+.star-container .fa-star {
+    color: #ccc; /* لون النجمة الأساسية */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.star-fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #ffc107; /* لون تعبئة النجمة */
+    z-index: 2;
+    display: block;
+}
+
         /* Modal Styles */
 .modal {
     display: none; /* مخفي بشكل افتراضي */
@@ -254,13 +280,9 @@
 
 </div>
 <div class="product-details__reveiw">
-    <i class="fa fa-star"></i>
-    <i class="fa fa-star"></i>
-    <i class="fa fa-star"></i>
-    <i class="fa fa-star"></i>
-    <i class="fa fa-star-half-alt"></i>
-<span>80 Customer Reviews</span>
+    <!-- سيتم استبدال النجوم ديناميكيًا -->
 </div>
+
 <div class="product-details__content" id="Disc">
 
 </div>
@@ -300,7 +322,7 @@
 <div class="tab-btn-box text-center">
 <ul class="tab-btns tab-buttons clearfix">
 <li class="tab-btn active-btn" data-tab="#tab-1">التفاصيل</li>
-<li class="tab-btn" data-tab="#tab-2">Reviews</li>
+<!-- <li class="tab-btn" data-tab="#tab-2">Reviews</li> -->
 </ul>
 </div>
 <div class="tabs-content">
@@ -350,7 +372,8 @@
 </div>
 </div>
 </div>
-<div class="comment-box">
+
+<!-- <div class="comment-box">
     <h3>!شارك تجربتك معنا</h3>
     <form id="contact_form" name="contact_form" action="https://html.kodesolution.com/2024/tilepro-html/includes/sendmail.php" method="post" onsubmit="return validateForm()">
         <div class="mb-3">
@@ -396,16 +419,16 @@
             <button type="submit" class="theme-btn btn-style-one" data-loading-text="Please wait...">Submit Comment</button>
         </div>
     </form>
-</div>
+</div> -->
 
 <!-- Modal -->
-<div id="popupModal" class="modal">
+<!-- <div id="popupModal" class="modal">
     <div class="modal-content">
         <span class="close" onclick="closePopup()">&times;</span>
         <p>يجب الموافقة على حفظ الاسم والبريد الإلكتروني قبل تأكيد التعليق.</p>
         <button class="theme-btn btn-style-one" onclick="closePopup()">موافق</button>
     </div>
-</div>
+</div> -->
 
 </div>
 </div>
@@ -824,6 +847,70 @@ authBtn.addEventListener("click", function(event) {
 });
 </script>
 
+<script>
+    // استدعاء التقييم وعرض النجوم تلقائيًا
+async function displayProductDetails() {
+    const productId = localStorage.getItem("productId"); // جلب معرف المنتج من localStorage
+
+    if (!productId) {
+        console.error("Product ID not found in localStorage.");
+        return;
+    }
+
+    // استدعاء API لجلب تفاصيل المنتج
+    let url = `https://localhost:44327/api/Product/GetProductRate/${productId}`;
+    try {
+        let response = await fetch(url);
+        if (!response.ok) {
+            throw new Error("Failed to fetch product details.");
+        }
+
+        let product = await response.json(); // جلب بيانات المنتج
+
+        // توليد النجوم بناءً على تقييم المنتج
+        const starsHTML = generateStars(product.productRate);
+
+        // تحديث النجوم داخل العنصر
+        const reviewContainer = document.querySelector(".product-details__reveiw");
+    } catch (error) {
+        console.error("Error fetching product details:", error);
+    }
+}
+
+// دالة لتوليد النجوم بناءً على التقييم
+function generateStars(rate) {
+    let stars = "";
+    const fullStars = Math.floor(rate); // النجوم الكاملة
+    const fraction = rate % 1;         // الجزء العشري من التقييم
+    const emptyStars = 5 - Math.ceil(rate); // النجوم الفارغة
+
+    // إضافة النجوم الكاملة
+    for (let i = 0; i < fullStars; i++) {
+        stars += '<i class="fa fa-star"></i>';
+    }
+
+    // إضافة النجمة الجزئية إذا كانت موجودة
+    if (fraction > 0) {
+        stars += `
+            <span class="star-container">
+                <i class="fa fa-star"></i>
+                <span class="star-fill" style="width: ${fraction * 100}%"></span>
+            </span>
+        `;
+    }
+
+    // إضافة النجوم الفارغة المتبقية
+    for (let i = 0; i < emptyStars; i++) {
+        stars += '<i class="fa fa-star-o"></i>';
+    }
+
+    return stars;
+}
+
+// استدعاء الدالة عند تحميل الصفحة
+window.onload = displayProductDetails;
+
+</script>
 
 <script>
     function validateForm() {
@@ -886,35 +973,65 @@ function closePopup() {
 	})(jQuery);
 </script>
 <script>
-    // الحصول على عناصر النجوم
-    const stars = document.querySelectorAll('#user-rating li');
+    // استدعاء التقييم وعرض النجوم تلقائيًا
+    async function displayProductDetails() {
+        const productId = localStorage.getItem("productId"); // جلب معرف المنتج من localStorage
 
-    // إضافة حدث click لكل نجمة
-    stars.forEach(star => {
-        star.addEventListener('click', function() {
-            // الحصول على قيمة النجمة التي تم النقر عليها
-            const ratingValue = this.getAttribute('data-value');
+        if (!productId) {
+            console.error("Product ID not found in localStorage.");
+            return;
+        }
 
-            // تحديث النجوم المعروضة
-            updateStars(ratingValue);
-        });
-    });
-
-    // دالة لتحديث النجوم
-    function updateStars(rating) {
-        stars.forEach(star => {
-            const starValue = star.getAttribute('data-value');
-            if (starValue <= rating) {
-                star.innerHTML = '<i class="fas fa-star"></i>'; // نجمة مملوءة
-            } else {
-                star.innerHTML = '<i class="far fa-star"></i>'; // نجمة فارغة
+        // استدعاء API لجلب تفاصيل المنتج
+        let url = `https://localhost:44327/api/Product/GetProductRate/${productId}`;
+        try {
+            let response = await fetch(url);
+            if (!response.ok) {
+                throw new Error("Failed to fetch product details.");
             }
-        });
 
-        // يمكنك هنا حفظ التقييم في متغير أو إرسال البيانات إلى الخادم
-        console.log('تم تقييم المنتج بـ ' + rating + ' نجوم');
+            let product = await response.json(); // جلب بيانات المنتج
+
+            // توليد النجوم بناءً على تقييم المنتج
+            const starsHTML = generateStars(product.productRate);
+
+            // تحديث النجوم داخل العنصر
+            const reviewContainer = document.querySelector(".product-details__reveiw");
+            reviewContainer.innerHTML = starsHTML + `تقييم المنتج`; // إضافة النص مع النجوم
+        } catch (error) {
+            console.error("Error fetching product details:", error);
+        }
     }
+
+    // دالة لتوليد النجوم بناءً على التقييم
+    function generateStars(rate) {
+        let stars = "";
+        const fullStars = Math.floor(rate); // النجوم الكاملة
+        const halfStar = rate % 1 >= 0.5;   // نصف النجمة
+        const emptyStars = 5 - fullStars - (halfStar ? 1 : 0); // النجوم الفارغة
+
+        // إضافة النجوم الكاملة
+        for (let i = 0; i < fullStars; i++) {
+            stars += '<i class="fa fa-star" style="color: #ffc107;"></i>';
+        }
+
+        // إضافة نصف النجمة إذا كانت موجودة
+        if (halfStar) {
+            stars += '<i class="fa fa-star-half-alt" style="color: #ffc107;"></i>';
+        }
+
+        // إضافة النجوم الفارغة المتبقية
+        for (let i = 0; i < emptyStars; i++) {
+            stars += '<i class="fa fa-star-o" style="color: #ccc;"></i>';
+        }
+
+        return stars;
+    }
+
+    // استدعاء الدالة عند تحميل الصفحة
+    window.onload = displayProductDetails;
 </script>
+
 
 <script>
     // Function to update the cart item count

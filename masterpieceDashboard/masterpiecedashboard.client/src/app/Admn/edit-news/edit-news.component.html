@@ -1,0 +1,27 @@
+<h2 class="text-center my-4 d-flex flex-column align-items-center">
+  <span>Update the News</span>
+</h2>
+
+<hr />
+
+<form #EditTheNews="ngForm" (ngSubmit)="UpdateNews(EditTheNews.value)">
+  <div class="mb-3">
+    <label for="memberName" class="form-label">News Name:</label>
+    <input type="text" name="newsName" class="form-control" id="memberName" aria-describedby="nameHelp" required [(ngModel)]="newsData.newsName">
+  </div>
+
+  <div class="mb-3">
+    <label for="memberName" class="form-label">Youtube URL:</label>
+    <input type="text" name="youtubeUrl" class="form-control" id="memberName" aria-describedby="nameHelp" required [(ngModel)]="newsData.youtubeUrl">
+  </div>
+
+  <div class="mb-3">
+    <label for="memberName" class="form-label">Description:</label>
+    <input type="text" name="newsDescription" class="form-control" id="memberName" aria-describedby="nameHelp" required [(ngModel)]="newsData.newsDescription">
+  </div>
+
+
+
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>

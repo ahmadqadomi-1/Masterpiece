@@ -172,6 +172,7 @@
         </div>
     </div>
 </header>
+<a href="shop-product-details.html"></a>
 
 
 <section class="page-title" style="background-image: url(images/background/page-title-bg.png);">
@@ -244,32 +245,66 @@ authBtn.addEventListener("click", function(event) {
 
 
 
-    async function Projected() {
-    debugger
+async function Projected() {
     let url = `https://localhost:44327/api/Project/GetAllProject`;
-    let response = await fetch(url);
-    let data = await response.json();
-    let priceItem = document.getElementById("Project");
-    data.forEach((Pro) => {
-    priceItem.innerHTML += `
+    try {
+        let response = await fetch(url);
+
+        // التحقق من الاستجابة
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+        let data = await response.json();
+
+        let priceItem = document.getElementById("Project");
+
+        if (!data || data.length === 0) {
+            priceItem.innerHTML = `<p>لا توجد مشاريع لعرضها حالياً.</p>`;
+            return;
+        }
+
+        data.forEach((Pro) => {
+            priceItem.innerHTML += `
 <div class="project-block-two col-lg-6 col-md-6 wow fadeInUp">
-<div class="inner-box">
-<div class="image-box">
-<figure class="image overlay-anim"><a href="page-project-details.html" tabindex="-1"><img src="https://localhost:44327/api/Category/images/${Pro.projectImage}" style="width: 573px; height: 545.75px;" alt="${Pro.projectImage} (Image not found)"></a></figure>
-<div class="content-box">
-<span>${Pro.projectType}</span>
-<h4 class="title"><a href="page-project-details.html"> ${Pro.projectName} </a></h4>
-<a href="page-project-details.html" class="btn"><img src="images/resource/arrow-btn.png" alt></a>
+    <div class="inner-box">
+        <div class="image-box">
+            <figure class="image overlay-anim">
+                <a href="page-project-details.html?id=${Pro.projectId}" tabindex="-1">
+                    <img src="https://localhost:44327/api/Category/images/${Pro.projectImage?.trim()}" style="width: 573px; height: 545.75px;" alt="${Pro.projectImage || 'صورة غير متوفرة'}">
+                </a>
+            </figure>
+        </div>
+        <div class="content-box">
+            <span>${Pro.projectType || 'نوع غير متوفر'}</span>
+            <h4 class="title">
+                <a href="page-project-details.html?id=${Pro.projectId}">
+                    ${Pro.projectName || 'اسم غير متوفر'}
+                </a>
+            </h4>
+            <a href="page-project-details.html?id=${Pro.projectId}" class="btn">
+                <img src="images/resource/arrow-btn.png" alt>
+            </a>
+        </div>
+    </div>
 </div>
-</div>
-</div>
-</div>
-    `;
-});
-    console.log(data);
+            `;
+        });
+
+        console.log(data); // عرض البيانات في وحدة التحكم
+    } catch (error) {
+        console.error("Error fetching projects:", error);
+
+        // عرض رسالة خطأ في حال حدوث مشكلة
+        document.getElementById("Project").innerHTML = `<p>حدث خطأ أثناء تحميل المشاريع. يرجى المحاولة مرة أخرى لاحقاً.</p>`;
+    }
 }
 Projected();
+
+
 </script>
+
+
 <script>
     // Function to update the cart item count
     function updateCartItemCount() {

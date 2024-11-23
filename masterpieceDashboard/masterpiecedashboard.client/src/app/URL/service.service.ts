@@ -188,9 +188,27 @@ export class ServiceService {
     return this.http.post<any>(`${this.staticData}/Admin/login`, data);
   }
 
+  addNews(data: FormData): Observable<any> {
+    return this.http.post<any>(`${this.staticData}/News/AddNewNews`, data);
+  }
 
+  EditNews(id: any, data: any): Observable<any> {
+    return this.http.put<any>(`${this.staticData}/News/${id}`, data);
+  }
 
+  deleteNews(id: any): Observable<any> {
 
+    return this.http.delete<any>(`${this.staticData}/News/DeleteNews/${id}`)
+  }
+
+  getNews(): Observable<any> {
+    return this.http.get<any>(`${this.staticData}/News/GetAllNews`);
+
+  }
+
+  getNewsbyid(id: string): Observable<any> {
+    return this.http.get<any>(`${this.staticData}/News/${id}`);
+  }
 
 
 

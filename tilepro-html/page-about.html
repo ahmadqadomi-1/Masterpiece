@@ -11,15 +11,15 @@
     <link rel="stylesheet" type="text/css" href="css/slick.css">
     <link href="css/style.css" rel="stylesheet">
     <link rel="shortcut icon" href="img/Logo-removebg-preview (1).png" type="image/x-icon">
-    <link rel="icon" href="img/Logo-removebg-preview (1).png" type="image/x-icon">
+    <link rel="icon" href="img/Logo-removebg-preview (1).png"  type="image/x-icon">
     
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     
     <style>
-        img {
+        /* img {
     height: 342px;
-    }   
+    }    */
     </style>
 
     </head>
@@ -38,8 +38,7 @@
                             <img src="img/Logo-removebg-preview (1).png" style="height: 100px;" alt="شعار القادمي" title="الصفحة الرئيسية">
                         </a>
                     </div>
-                </div>
-
+                </div> 
                 <div class="nav-outer">
                     <nav class="nav main-menu">
                         <ul class="navigation">
@@ -250,6 +249,26 @@
 </section>
 
 
+<section class="project-section" >
+    <div class="auto-container">
+    <div class="sec-title" >
+    <h2>اكتشف المنتجات المتاحة لدينا</h2>
+    <div class="text">القدومي يقدم لك جميع الحلول اللازمة لبناء منزلك بطريقة عصرية ومتوافقة مع احتياجاتك</div>
+    </div>
+    <div class="slider-btn">
+    <button class="prev-btn"><span><i class="flaticon-arrow-pointing-to-right btn-icon"></i></span></button>
+    <button class="next-btn"><span><i class="flaticon-arrow-pointing-to-right btn-icon"></i></span></button>
+    </div>
+    </div>
+    <div class="row project-slider" id="Batool">
+    
+
+
+
+    </div>
+    </section>
+
+
 
 <section class="service-section" style="direction: rtl ;">
 <div class="auto-container">
@@ -327,6 +346,11 @@
 </section>
 
 
+<section class="map-section">
+    <iframe class="map w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3362.445816896865!2d35.867312999999996!3d32.567632599999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151c7432370fff93%3A0x1ccde88792caaf9!2z2KfZhNmC2K_ZiNmF2Yog2YTZhNiz2YrYsdin2YXZitmD!5e0!3m2!1sar!2sjo!4v1722115683791!5m2!1sar!2sjo"></iframe>
+    </section>
+
+
 
 
 <footer class="main-footer footer-style-one">
@@ -350,21 +374,61 @@
 
 <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></div>
 
+<script>
+    async function Category() {
+    let url = `https://localhost:44327/api/Category/GetAllCategories`;
+    let response = await fetch(url);
+    let data = await response.json();
+    let priceItem = document.getElementById("Batool");
 
+    data.forEach((category) => {
+        priceItem.innerHTML += `
+<div class="project-block col-lg-3 col-md-6">
+    <div class="inner-box">
+    <div class="image-box">
+    <figure class="image overlay-anim">
+        <a href="#" onclick="save(${category.categoryId});">
+            <img src="https://localhost:44327/api/Category/images/${category.categoryImage}" width="575px" height="575px" style="height: 342px; alt="${category.categoryName} (Image not found)">
+        </a>
+    </figure>
+    <figure class="image-2">
+        <a href="#" onclick="save(${category.categoryId});">
+            <img src="images/resource/projec1-2.png" alt="Alternative Image">
+        </a>
+    </figure>
+    </div>
+    <div class="content-box">
+    <span>${category.categoryName}</span>
+    <h6 class="title"><a href="#" onclick="save(${category.categoryId});">المزيد</a></h6>
+    </div>
+    </div>
+    </div>
+    `;
+    });
 
+    console.log(data);
+}
+
+function save(categoryId) {
+    localStorage.setItem("categoryId", categoryId);
+    window.location.href = "shop-products2.html";
+}
+
+Category();
+</script>
 
 
 
 <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/jquery.js"></script>
-<script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/slick.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/popper.min.js"></script>
 <script src="js/slick-animation.min.js"></script>
 <script src="js/jquery.fancybox.js"></script>
 <script src="js/jquery-ui.js"></script>
 <script src="js/wow.js"></script>
 <script src="js/appear.js"></script>
-<script src="js/script.js"></script>
 
 
 

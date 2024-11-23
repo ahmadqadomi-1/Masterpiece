@@ -1,0 +1,47 @@
+<h2 class="text-center my-4 d-flex flex-column align-items-center">
+  <span>News</span>
+</h2>
+
+<hr />
+
+
+<div class="d-flex justify-content-center align-items-center mb-4">
+  <button class="btn btn-primary" (click)="navigateToAddNews()">Add New News</button>
+</div>
+
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col" style="text-align: center;">News Name</th>
+      <th scope="col" style="text-align: center;">Youtube Video</th>
+      <th scope="col" style="text-align: center;">Created Date</th>
+      <th scope="col" style="text-align: center;">Description</th>
+      <th scope="col" style="text-align: center;">Edit</th>
+      <th scope="col" style="text-align: center;">Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let News of NewsArray">
+      <td style="text-align: center;">{{ News.newsName }}</td>
+      <td style="text-align: center;">
+        <iframe *ngIf="News.youtubeUrl"
+                [src]="sanitizeUrl(News.youtubeUrl)"
+                width="200"
+                height="150"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+        </iframe>
+      </td>
+      <td style="text-align: center;">{{ News.newsDate }}</td>
+      <td style="text-align: center;">{{ News.newsDescription }}</td>
+      <td style="text-align: center;">
+        <button class="btn btn-success" [routerLink]="['/dashboard/EditNews', News.newsId]">Edit</button>
+      </td>
+      <td style="text-align: center;">
+        <button class="btn btn-danger" (click)="deleteNewsById(News.newsId)">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

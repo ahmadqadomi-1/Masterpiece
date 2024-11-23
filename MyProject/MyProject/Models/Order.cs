@@ -19,5 +19,11 @@ public partial class Order
 
     public string? Comment { get; set; }
 
+    public int? OrderStatusId { get; set; }
+
+    public virtual OrderStatus? OrderStatusNavigation { get; set; }
+
     public virtual User? User { get; set; }
+
+    public virtual ICollection<CartItem> CartItems { get; set; } = new List<CartItem>();
 }

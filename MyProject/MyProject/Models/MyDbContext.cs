@@ -23,6 +23,8 @@ public partial class MyDbContext : DbContext
 
     public virtual DbSet<Category> Categories { get; set; }
 
+    public virtual DbSet<Comment> Comments { get; set; }
+
     public virtual DbSet<ContactU> ContactUs { get; set; }
 
     public virtual DbSet<Feedback> Feedbacks { get; set; }
@@ -31,9 +33,13 @@ public partial class MyDbContext : DbContext
 
     public virtual DbSet<Order> Orders { get; set; }
 
+    public virtual DbSet<OrderStatus> OrderStatuses { get; set; }
+
     public virtual DbSet<Product> Products { get; set; }
 
     public virtual DbSet<Project> Projects { get; set; }
+
+    public virtual DbSet<Rating> Ratings { get; set; }
 
     public virtual DbSet<Review> Reviews { get; set; }
 
@@ -111,6 +117,25 @@ public partial class MyDbContext : DbContext
             entity.HasOne(d => d.User).WithMany(p => p.CartItems)
                 .HasForeignKey(d => d.UserId)
                 .HasConstraintName("FK_CartItems_Users");
+
+            entity.HasMany(d => d.Orders).WithMany(p => p.CartItems)
+                .UsingEntity<Dictionary<string, object>>(
+                    "CartItemsOrder",
+                    r => r.HasOne<Order>().WithMany()
+                        .HasForeignKey("OrderId")
+                        .OnDelete(DeleteBehavior.ClientSetNull)
+                        .HasConstraintName("FK__CartItems__Order__40058253"),
+                    l => l.HasOne<CartItem>().WithMany()
+                        .HasForeignKey("CartItemId")
+                        .OnDelete(DeleteBehavior.ClientSetNull)
+                        .HasConstraintName("FK__CartItems__CartI__3F115E1A"),
+                    j =>
+                    {
+                        j.HasKey("CartItemId", "OrderId").HasName("PK__CartItem__A4B20E908BF559CD");
+                        j.ToTable("CartItems_Orders");
+                        j.IndexerProperty<int>("CartItemId").HasColumnName("CartItemID");
+                        j.IndexerProperty<int>("OrderId").HasColumnName("OrderID");
+                    });
         });
 
         modelBuilder.Entity<Category>(entity =>
@@ -122,6 +147,34 @@ public partial class MyDbContext : DbContext
             entity.Property(e => e.CategoryRate)
                 .HasDefaultValue(0m)
                 .HasColumnType("decimal(2, 1)");
+        });
+
+        modelBuilder.Entity<Comment>(entity =>
+        {
+            entity.HasKey(e => e.CommentId).HasName("PK__Comments__C3B4DFAAA652B67E");
+
+            entity.Property(e => e.CommentId).HasColumnName("CommentID");
+            entity.Property(e => e.CommentText).HasMaxLength(1000);
+            entity.Property(e => e.CreatedAt)
+                .HasDefaultValueSql("(getdate())")
+                .HasColumnType("datetime");
+            entity.Property(e => e.Email)
+                .HasMaxLength(100)
+                .IsUnicode(false);
+            entity.Property(e => e.ProductId).HasColumnName("ProductID");
+            entity.Property(e => e.Status)
+                .HasMaxLength(50)
+                .IsUnicode(false);
+            entity.Property(e => e.UserId).HasColumnName("UserID");
+            entity.Property(e => e.UserName).HasMaxLength(100);
+
+            entity.HasOne(d => d.Product).WithMany(p => p.Comments)
+                .HasForeignKey(d => d.ProductId)
+                .HasConstraintName("FK__Comments__Produc__4F47C5E3");
+
+            entity.HasOne(d => d.User).WithMany(p => p.Comments)
+                .HasForeignKey(d => d.UserId)
+                .HasConstraintName("FK__Comments__UserID__503BEA1C");
         });
 
         modelBuilder.Entity<ContactU>(entity =>
@@ -173,13 +226,29 @@ public partial class MyDbContext : DbContext
             entity.Property(e => e.OrderId).HasColumnName("OrderID");
             entity.Property(e => e.OrderDate).HasDefaultValueSql("(getdate())");
             entity.Property(e => e.OrderStatus).HasMaxLength(50);
+            entity.Property(e => e.OrderStatusId).HasColumnName("OrderStatusID");
             entity.Property(e => e.PaymentMethod).HasMaxLength(50);
             entity.Property(e => e.TotalAmount).HasColumnType("decimal(10, 2)");
             entity.Property(e => e.UserId).HasColumnName("UserID");
 
+            entity.HasOne(d => d.OrderStatusNavigation).WithMany(p => p.Orders)
+                .HasForeignKey(d => d.OrderStatusId)
+                .HasConstraintName("FK_Orders_OrderStatus");
+
             entity.HasOne(d => d.User).WithMany(p => p.Orders)
                 .HasForeignKey(d => d.UserId)
                 .HasConstraintName("FK__Orders__UserID__02FC7413");
+        });
+
+        modelBuilder.Entity<OrderStatus>(entity =>
+        {
+            entity.HasKey(e => e.OrderStatusId).HasName("PK__OrderSta__BC674F414E1F96C1");
+
+            entity.ToTable("OrderStatus");
+
+            entity.Property(e => e.OrderStatusId).HasColumnName("OrderStatusID");
+            entity.Property(e => e.StatusDescription).HasMaxLength(255);
+            entity.Property(e => e.StatusName).HasMaxLength(50);
         });
 
         modelBuilder.Entity<Product>(entity =>
@@ -212,6 +281,25 @@ public partial class MyDbContext : DbContext
                 .HasColumnType("datetime");
             entity.Property(e => e.ProjectName).HasMaxLength(200);
             entity.Property(e => e.ProjectType).HasMaxLength(100);
+        });
+
+        modelBuilder.Entity<Rating>(entity =>
+        {
+            entity.HasKey(e => e.RatingId).HasName("PK__Ratings__FCCDF87C81D179A9");
+
+            entity.Property(e => e.CreatedAt)
+                .HasDefaultValueSql("(getdate())")
+                .HasColumnType("datetime");
+
+            entity.HasOne(d => d.Product).WithMany(p => p.Ratings)
+                .HasForeignKey(d => d.ProductId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_Ratings_Products");
+
+            entity.HasOne(d => d.User).WithMany(p => p.Ratings)
+                .HasForeignKey(d => d.UserId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_Ratings_Users");
         });
 
         modelBuilder.Entity<Review>(entity =>

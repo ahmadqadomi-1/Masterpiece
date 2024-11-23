@@ -44,9 +44,14 @@ namespace MyProject.Controllers
             }
 
             // Step 2: Check if the requested quantity is available
+            if (product.Stock <= 0)
+            {
+                return BadRequest("هذا المنتج غير متوفر.");
+            }
+
             if (product.Stock < cart.Quantity)
             {
-                return BadRequest("The requested quantity is not available.");
+                return BadRequest("الكمية المطلوبة غير متوفرة.");
             }
 
             // Step 3: Retrieve or create the user's cart

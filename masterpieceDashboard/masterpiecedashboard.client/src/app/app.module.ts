@@ -29,6 +29,9 @@ import { OrderComponent } from './Admn/order/order.component';
 import { UpdateOrderComponent } from './Admn/update-order/update-order.component';
 import { LogInComponent } from './Admn/log-in/log-in.component';
 import { ProductToOneCategoryComponent } from './Admn/product-to-one-category/product-to-one-category.component';
+import { NewsComponent } from './Admn/news/news.component';
+import { AddNewsComponent } from './Admn/add-news/add-news.component';
+import { EditNewsComponent } from './Admn/edit-news/edit-news.component';
 
 @NgModule({
   declarations: [
@@ -55,7 +58,10 @@ import { ProductToOneCategoryComponent } from './Admn/product-to-one-category/pr
     OrderComponent,
     UpdateOrderComponent,
     LogInComponent,
-    ProductToOneCategoryComponent
+    ProductToOneCategoryComponent,
+    NewsComponent,
+    AddNewsComponent,
+    EditNewsComponent
   ],
   imports: [
     BrowserModule,
@@ -78,13 +84,16 @@ import { ProductToOneCategoryComponent } from './Admn/product-to-one-category/pr
           { path: "Project", component: ProjectComponent },
           { path: "Team", component: TeamComponent },
           { path: "Tiler", component: TilerComponent },
+          { path: "News", component: NewsComponent },
           { path: "ContactUs", component: ContactUsComponent },
           { path: "AddCategory", component: AddCategoryComponent },
           { path: 'AddProduct/:categoryId', component: AddProductComponent },
           { path: "AddProject", component: AddProjectComponent },
+          { path: "AddNews", component: AddNewsComponent },
           { path: "AddMember", component: AddMemberComponent },
           { path: "AddTiler", component: AddTilerComponent },
           { path: "UpdateCategory/:id", component: UpdateCategoryComponent },
+          { path: "EditNews/:id", component: EditNewsComponent },
           { path: "UpdateProduct/:id", component: UpdateProductComponent },
           { path: "UpdateProject/:id", component: UpdateProjectComponent },
           { path: "UpdateMember/:id", component: UpdateMemberComponent },
